@@ -1,0 +1,24 @@
+2019-08-05 20:07:01,665 INFO 7320 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-05 20:08:13,258 INFO 6824 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-05 20:08:15,316 INFO 2320 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-05 20:08:17,476 INFO 17656 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-05 20:08:25,207 INFO 17656 [egg-sequelize](6ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2019-08-05 20:08:25,215 INFO 17656 [egg-sequelize](6ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` ORDER BY `user`.`created_at` DESC, `user`.`id` DESC LIMIT 0, 0;
+2019-08-05 20:09:17,318 INFO 17656 [egg-sequelize](6ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2019-08-05 20:09:17,321 INFO 17656 [egg-sequelize](8ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` ORDER BY `user`.`created_at` DESC, `user`.`id` DESC LIMIT 0, 0;
+2019-08-05 20:10:26,071 INFO 11176 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-05 20:10:28,136 INFO 13848 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-05 20:10:37,157 INFO 13848 [egg-sequelize](6ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2019-08-05 20:10:37,166 INFO 13848 [egg-sequelize](7ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` ORDER BY `user`.`created_at` DESC, `user`.`id` DESC LIMIT 0, 0;
+2019-08-05 20:10:38,113 INFO 12564 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-05 20:10:39,211 INFO 12564 [egg-sequelize](6ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2019-08-05 20:10:39,221 INFO 12564 [egg-sequelize](8ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` ORDER BY `user`.`created_at` DESC, `user`.`id` DESC LIMIT 0, 0;
+2019-08-05 20:12:10,817 INFO 12564 [egg-sequelize](6ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2019-08-05 20:12:10,818 INFO 12564 [egg-sequelize](7ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` ORDER BY `user`.`created_at` DESC, `user`.`id` DESC LIMIT 0, 0;
+2019-08-05 20:12:23,483 INFO 15560 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-05 20:12:38,433 INFO 15560 [egg-sequelize](6ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2019-08-05 20:12:38,442 INFO 15560 [egg-sequelize](7ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` ORDER BY `user`.`created_at` DESC, `user`.`id` DESC LIMIT 0, 0;
+2019-08-05 20:12:39,010 INFO 304 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-05 20:12:47,554 INFO 12088 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-05 20:12:48,807 INFO 12088 [egg-sequelize](9ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2019-08-05 20:12:48,821 INFO 12088 [egg-sequelize](11ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` ORDER BY `user`.`created_at` DESC, `user`.`id` DESC LIMIT 0, 10;

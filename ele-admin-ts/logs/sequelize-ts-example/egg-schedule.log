@@ -1,0 +1,33 @@
+2019-08-05 20:07:00,828 INFO 7320 [egg-schedule]: register schedule E:\饿了吗全链路开发\参考仓库\examples-master\sequelize-ts\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-05 20:07:00,828 INFO 7320 [egg-schedule]: register schedule E:\饿了吗全链路开发\参考仓库\examples-master\sequelize-ts\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-05 20:07:00,828 INFO 7320 [egg-schedule]: register schedule E:\饿了吗全链路开发\参考仓库\examples-master\sequelize-ts\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-05 20:07:01,681 INFO 12340 [Timer] E:\饿了吗全链路开发\参考仓库\examples-master\sequelize-ts\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 30178322ms at 2019-08-06 04:30:00.003
+2019-08-05 20:07:01,681 INFO 12340 [Timer] E:\饿了吗全链路开发\参考仓库\examples-master\sequelize-ts\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 13978319ms at 2019-08-06 00:00:00.000
+2019-08-05 20:07:01,681 INFO 12340 [Timer] E:\饿了吗全链路开发\参考仓库\examples-master\sequelize-ts\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 13979319ms at 2019-08-06 00:00:01.000
+2019-08-05 20:08:10,883 INFO 6824 [egg-schedule]: register schedule E:\饿了吗全链路开发\参考仓库\examples-master\sequelize-ts\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-05 20:08:10,883 INFO 6824 [egg-schedule]: register schedule E:\饿了吗全链路开发\参考仓库\examples-master\sequelize-ts\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-05 20:08:10,883 INFO 6824 [egg-schedule]: register schedule E:\饿了吗全链路开发\参考仓库\examples-master\sequelize-ts\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-05 20:08:14,759 INFO 2320 [egg-schedule]: register schedule E:\饿了吗全链路开发\参考仓库\examples-master\sequelize-ts\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-05 20:08:14,759 INFO 2320 [egg-schedule]: register schedule E:\饿了吗全链路开发\参考仓库\examples-master\sequelize-ts\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-05 20:08:14,759 INFO 2320 [egg-schedule]: register schedule E:\饿了吗全链路开发\参考仓库\examples-master\sequelize-ts\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-05 20:08:16,881 INFO 17656 [egg-schedule]: register schedule E:\饿了吗全链路开发\参考仓库\examples-master\sequelize-ts\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-05 20:08:16,881 INFO 17656 [egg-schedule]: register schedule E:\饿了吗全链路开发\参考仓库\examples-master\sequelize-ts\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-05 20:08:16,881 INFO 17656 [egg-schedule]: register schedule E:\饿了吗全链路开发\参考仓库\examples-master\sequelize-ts\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-05 20:10:25,533 INFO 11176 [egg-schedule]: register schedule E:\饿了吗全链路开发\参考仓库\examples-master\sequelize-ts\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-05 20:10:25,533 INFO 11176 [egg-schedule]: register schedule E:\饿了吗全链路开发\参考仓库\examples-master\sequelize-ts\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-05 20:10:25,533 INFO 11176 [egg-schedule]: register schedule E:\饿了吗全链路开发\参考仓库\examples-master\sequelize-ts\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-05 20:10:27,592 INFO 13848 [egg-schedule]: register schedule E:\饿了吗全链路开发\参考仓库\examples-master\sequelize-ts\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-05 20:10:27,592 INFO 13848 [egg-schedule]: register schedule E:\饿了吗全链路开发\参考仓库\examples-master\sequelize-ts\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-05 20:10:27,592 INFO 13848 [egg-schedule]: register schedule E:\饿了吗全链路开发\参考仓库\examples-master\sequelize-ts\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-05 20:10:35,584 INFO 12564 [egg-schedule]: register schedule E:\饿了吗全链路开发\参考仓库\examples-master\sequelize-ts\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-05 20:10:35,584 INFO 12564 [egg-schedule]: register schedule E:\饿了吗全链路开发\参考仓库\examples-master\sequelize-ts\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-05 20:10:35,584 INFO 12564 [egg-schedule]: register schedule E:\饿了吗全链路开发\参考仓库\examples-master\sequelize-ts\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-05 20:12:22,932 INFO 15560 [egg-schedule]: register schedule E:\饿了吗全链路开发\参考仓库\examples-master\sequelize-ts\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-05 20:12:22,932 INFO 15560 [egg-schedule]: register schedule E:\饿了吗全链路开发\参考仓库\examples-master\sequelize-ts\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-05 20:12:22,932 INFO 15560 [egg-schedule]: register schedule E:\饿了吗全链路开发\参考仓库\examples-master\sequelize-ts\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-05 20:12:36,144 INFO 304 [egg-schedule]: register schedule E:\饿了吗全链路开发\参考仓库\examples-master\sequelize-ts\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-05 20:12:36,144 INFO 304 [egg-schedule]: register schedule E:\饿了吗全链路开发\参考仓库\examples-master\sequelize-ts\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-05 20:12:36,144 INFO 304 [egg-schedule]: register schedule E:\饿了吗全链路开发\参考仓库\examples-master\sequelize-ts\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-05 20:12:46,965 INFO 12088 [egg-schedule]: register schedule E:\饿了吗全链路开发\参考仓库\examples-master\sequelize-ts\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-05 20:12:46,965 INFO 12088 [egg-schedule]: register schedule E:\饿了吗全链路开发\参考仓库\examples-master\sequelize-ts\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-05 20:12:46,965 INFO 12088 [egg-schedule]: register schedule E:\饿了吗全链路开发\参考仓库\examples-master\sequelize-ts\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
