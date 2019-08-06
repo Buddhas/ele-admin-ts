@@ -73,7 +73,7 @@
     "onerror": {
       "errorPageUrl": "",
       "appErrorFilter": null,
-      "templatePath": "E:\\饿了吗全链路开发\\参考仓库\\examples-master\\sequelize-ts\\node_modules\\egg-onerror\\lib\\onerror_page.mustache"
+      "templatePath": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-onerror\\lib\\onerror_page.mustache"
     },
     "i18n": {
       "defaultLocale": "en_US",
@@ -86,8 +86,8 @@
     "watcher": {
       "type": "development",
       "eventSources": {
-        "default": "E:\\饿了吗全链路开发\\参考仓库\\examples-master\\sequelize-ts\\node_modules\\egg-watcher\\lib\\event-sources\\default",
-        "development": "E:\\饿了吗全链路开发\\参考仓库\\examples-master\\sequelize-ts\\node_modules\\egg-watcher\\lib\\event-sources\\development"
+        "default": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-watcher\\lib\\event-sources\\default",
+        "development": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-watcher\\lib\\event-sources\\development"
       }
     },
     "customLogger": {
@@ -133,14 +133,14 @@
     },
     "static": {
       "prefix": "/public/",
-      "dir": "E:\\饿了吗全链路开发\\参考仓库\\examples-master\\sequelize-ts\\app\\public",
+      "dir": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\app\\public",
       "dynamic": true,
       "preload": false,
       "buffer": false,
       "maxFiles": 1000
     },
     "view": {
-      "root": "E:\\饿了吗全链路开发\\参考仓库\\examples-master\\sequelize-ts\\app\\view",
+      "root": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\app\\view",
       "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "",
@@ -200,9 +200,9 @@
       "author": "Qi Yu <njuyuqi@gmail.coom>",
       "license": "MIT"
     },
-    "baseDir": "E:\\饿了吗全链路开发\\参考仓库\\examples-master\\sequelize-ts",
+    "baseDir": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts",
     "HOME": "C:\\Users\\笑佛弥勒",
-    "rundir": "E:\\饿了吗全链路开发\\参考仓库\\examples-master\\sequelize-ts\\run",
+    "rundir": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\run",
     "dump": {
       "ignore": "<Set>"
     },
@@ -233,7 +233,7 @@
       "onerror": "<Function onerror>"
     },
     "logger": {
-      "dir": "E:\\饿了吗全链路开发\\参考仓库\\examples-master\\sequelize-ts\\logs\\sequelize-ts-example",
+      "dir": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\logs\\sequelize-ts-example",
       "encoding": "utf8",
       "env": "local",
       "level": "INFO",
@@ -308,8 +308,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\饿了吗全链路开发\\参考仓库\\examples-master\\sequelize-ts\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\饿了吗全链路开发\\参考仓库\\examples-master\\sequelize-ts\\node_modules\\egg-session",
+      "from": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-session",
       "version": "3.1.0"
     },
     "security": {
@@ -321,8 +321,8 @@
         "session"
       ],
       "env": [],
-      "from": "E:\\饿了吗全链路开发\\参考仓库\\examples-master\\sequelize-ts\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\饿了吗全链路开发\\参考仓库\\examples-master\\sequelize-ts\\node_modules\\egg-security",
+      "from": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security",
       "version": "2.5.0"
     },
     "jsonp": {
@@ -334,8 +334,8 @@
         "security"
       ],
       "env": [],
-      "from": "E:\\饿了吗全链路开发\\参考仓库\\examples-master\\sequelize-ts\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\饿了吗全链路开发\\参考仓库\\examples-master\\sequelize-ts\\node_modules\\egg-jsonp",
+      "from": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-jsonp",
       "version": "2.0.0"
     },
     "onerror": {
@@ -347,8 +347,8 @@
         "jsonp"
       ],
       "env": [],
-      "from": "E:\\饿了吗全链路开发\\参考仓库\\examples-master\\sequelize-ts\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\饿了吗全链路开发\\参考仓库\\examples-master\\sequelize-ts\\node_modules\\egg-onerror",
+      "from": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-onerror",
       "version": "2.1.0"
     },
     "i18n": {
@@ -358,8 +358,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\饿了吗全链路开发\\参考仓库\\examples-master\\sequelize-ts\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\饿了吗全链路开发\\参考仓库\\examples-master\\sequelize-ts\\node_modules\\egg-i18n",
+      "from": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-i18n",
       "version": "2.1.1"
     },
     "watcher": {
@@ -369,8 +369,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\饿了吗全链路开发\\参考仓库\\examples-master\\sequelize-ts\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\饿了吗全链路开发\\参考仓库\\examples-master\\sequelize-ts\\node_modules\\egg-watcher",
+      "from": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-watcher",
       "version": "3.1.0"
     },
     "schedule": {
@@ -380,8 +380,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\饿了吗全链路开发\\参考仓库\\examples-master\\sequelize-ts\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\饿了吗全链路开发\\参考仓库\\examples-master\\sequelize-ts\\node_modules\\egg-schedule",
+      "from": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-schedule",
       "version": "3.6.4"
     },
     "multipart": {
@@ -393,8 +393,8 @@
         "schedule"
       ],
       "env": [],
-      "from": "E:\\饿了吗全链路开发\\参考仓库\\examples-master\\sequelize-ts\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\饿了吗全链路开发\\参考仓库\\examples-master\\sequelize-ts\\node_modules\\egg-multipart",
+      "from": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-multipart",
       "version": "2.8.0"
     },
     "development": {
@@ -408,8 +408,8 @@
       "env": [
         "local"
       ],
-      "from": "E:\\饿了吗全链路开发\\参考仓库\\examples-master\\sequelize-ts\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\饿了吗全链路开发\\参考仓库\\examples-master\\sequelize-ts\\node_modules\\egg-development",
+      "from": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-development",
       "version": "2.4.3"
     },
     "logrotator": {
@@ -421,8 +421,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\饿了吗全链路开发\\参考仓库\\examples-master\\sequelize-ts\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\饿了吗全链路开发\\参考仓库\\examples-master\\sequelize-ts\\node_modules\\egg-logrotator",
+      "from": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-logrotator",
       "version": "3.1.0"
     },
     "static": {
@@ -432,8 +432,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\饿了吗全链路开发\\参考仓库\\examples-master\\sequelize-ts\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\饿了吗全链路开发\\参考仓库\\examples-master\\sequelize-ts\\node_modules\\egg-static",
+      "from": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-static",
       "version": "2.2.0"
     },
     "view": {
@@ -443,8 +443,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\饿了吗全链路开发\\参考仓库\\examples-master\\sequelize-ts\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\饿了吗全链路开发\\参考仓库\\examples-master\\sequelize-ts\\node_modules\\egg-view",
+      "from": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-view",
       "version": "2.1.2"
     },
     "sequelize": {
@@ -454,8 +454,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\饿了吗全链路开发\\参考仓库\\examples-master\\sequelize-ts\\config\\plugin.ts",
-      "path": "E:\\饿了吗全链路开发\\参考仓库\\examples-master\\sequelize-ts\\node_modules\\egg-sequelize",
+      "from": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\config\\plugin.ts",
+      "path": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-sequelize",
       "version": "5.2.0"
     }
   }

@@ -14,11 +14,15 @@ export default function(app: Application) {
     age: INTEGER,
     created_at: DATE(6),
     updated_at: DATE(6),
-  });
+  },
+  {
+    freezeTableName: true,
+    tableName: 'user',       
+    timestamps: false  
+}
+  );
 
   return class extends User {
-    static associate() {
-      app.model.User.hasMany(app.model.Post, { as: 'posts' });
-    }
+    
   }
 }

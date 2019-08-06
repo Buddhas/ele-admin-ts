@@ -9,6 +9,7 @@ export default class UserController extends Controller {
       limit: ctx.helper.parseInt(ctx.query.limit),
       offset: ctx.helper.parseInt(ctx.query.offset),
     };
+    //ctx.body = await ctx.service.admin.login()
     ctx.body = await ctx.service.user.list(query);
   }
 
