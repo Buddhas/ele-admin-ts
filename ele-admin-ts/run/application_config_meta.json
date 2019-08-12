@@ -9,18 +9,9 @@
     "password": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\config\\config.default.ts",
     "timezone": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\config\\config.default.ts"
   },
-  "session": {
-    "maxAge": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-session\\config\\config.default.js",
-    "key": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-session\\config\\config.default.js",
-    "httpOnly": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-session\\config\\config.default.js",
-    "encrypt": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-session\\config\\config.default.js"
-  },
   "security": {
-    "domainWhiteList": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js",
-    "protocolWhiteList": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js",
-    "defaultMiddleware": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js",
     "csrf": {
-      "enable": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js",
+      "enable": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\config\\config.default.ts",
       "useSession": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js",
       "ignoreJSON": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js",
       "cookieName": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js",
@@ -29,6 +20,9 @@
       "bodyName": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js",
       "queryName": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js"
     },
+    "domainWhiteList": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js",
+    "protocolWhiteList": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js",
+    "defaultMiddleware": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js",
     "xframe": {
       "enable": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js",
       "value": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js"
@@ -66,6 +60,17 @@
       "ipBlackList": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js",
       "checkAddress": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js"
     }
+  },
+  "cors": {
+    "origin": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\config\\config.default.ts",
+    "allowMethods": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\config\\config.default.ts"
+  },
+  "middleware": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\config\\config.default.ts",
+  "session": {
+    "maxAge": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-session\\config\\config.default.js",
+    "key": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-session\\config\\config.default.js",
+    "httpOnly": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-session\\config\\config.default.js",
+    "encrypt": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-session\\config\\config.default.js"
   },
   "helper": {
     "shtml": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js"
@@ -151,6 +156,7 @@
     "defaultViewEngine": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-view\\config\\config.default.js",
     "mapping": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-view\\config\\config.default.js"
   },
+  "validate": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-validate\\config\\config.default.js",
   "env": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
   "name": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
   "proxy": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
@@ -165,7 +171,9 @@
     "private": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
     "dependencies": {
       "egg": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
+      "egg-cors": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
       "egg-sequelize": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
+      "egg-validate": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
       "mysql2": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js"
     },
     "devDependencies": {
@@ -190,7 +198,8 @@
       "cov": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
       "ci": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
       "autod": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-      "sequelize": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js"
+      "sequelize": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
+      "debug": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js"
     },
     "author": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
     "license": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js"

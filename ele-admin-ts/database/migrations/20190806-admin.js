@@ -12,6 +12,7 @@ module.exports = {
       permissions: STRING(10),
       created_at:  DATE(6),
       updated_at: DATE(6),
+      password: STRING(255)
     });
   },
 

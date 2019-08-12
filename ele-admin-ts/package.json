@@ -5,7 +5,9 @@
   "private": true,
   "dependencies": {
     "egg": "^2.10.0",
+    "egg-cors": "^2.2.0",
     "egg-sequelize": "^5.0.0",
+    "egg-validate": "^2.0.2",
     "mysql2": "^1.6.1"
   },
   "devDependencies": {
@@ -30,7 +32,8 @@
     "cov": "egg-bin cov",
     "ci": "npm run cov",
     "autod": "autod",
-    "sequelize": "sequelize --"
+    "sequelize": "sequelize --",
+    "debug": "egg-bin debug"
   },
   "author": "Qi Yu <njuyuqi@gmail.coom>",
   "license": "MIT"

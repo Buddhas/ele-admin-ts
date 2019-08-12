@@ -11,7 +11,7 @@
       "protocolWhiteList": [],
       "defaultMiddleware": "csrf,hsts,methodnoallow,noopen,nosniff,csp,xssProtection,xframe,dta",
       "csrf": {
-        "enable": true,
+        "enable": false,
         "useSession": false,
         "ignoreJSON": false,
         "cookieName": "csrfToken",
@@ -155,6 +155,11 @@
       "password": "<String len: 12>",
       "timezone": "+08:00"
     },
+    "cors": {
+      "origin": "*",
+      "allowMethods": "GET,HEAD,PUT,POST,DELETE,PATCH"
+    },
+    "validate": {},
     "env": "local",
     "name": "sequelize-ts-example",
     "keys": "<String len: 26>",
@@ -170,7 +175,9 @@
       "private": true,
       "dependencies": {
         "egg": "^2.10.0",
+        "egg-cors": "^2.2.0",
         "egg-sequelize": "^5.0.0",
+        "egg-validate": "^2.0.2",
         "mysql2": "^1.6.1"
       },
       "devDependencies": {
@@ -195,7 +202,8 @@
         "cov": "egg-bin cov",
         "ci": "npm run cov",
         "autod": "autod",
-        "sequelize": "sequelize --"
+        "sequelize": "sequelize --",
+        "debug": "egg-bin debug"
       },
       "author": "Qi Yu <njuyuqi@gmail.coom>",
       "license": "MIT"
@@ -296,9 +304,12 @@
       "responseTimeout": 60000
     },
     "onClientError": null,
+    "middleware": [
+      "errorHandler"
+    ],
     "coreMiddlewares": "~config~coreMiddleware",
-    "appMiddlewares": [],
-    "appMiddleware": "~config~appMiddlewares"
+    "appMiddlewares": "~config~middleware",
+    "appMiddleware": "~config~middleware"
   },
   "plugins": {
     "session": {
@@ -457,6 +468,28 @@
       "from": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\config\\plugin.ts",
       "path": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-sequelize",
       "version": "5.2.0"
+    },
+    "cors": {
+      "enable": true,
+      "package": "egg-cors",
+      "name": "cors",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\config\\plugin.ts",
+      "path": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-cors",
+      "version": "2.2.0"
+    },
+    "validate": {
+      "enable": true,
+      "package": "egg-validate",
+      "name": "validate",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\config\\plugin.ts",
+      "path": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-validate",
+      "version": "2.0.2"
     }
   }
 }

@@ -1,15 +1,22 @@
 import { Service } from 'egg';
 
 class Admin extends Service {
-
-    public async login() {
-        //const { mobile } = ctx.params
-        let mobile = '17688702092' 
-        // this.ctx.model.Admin.findByPk(mobile)
-        if (this.ctx.model.Admin.findByIdMobile(mobile)) {
-            return this.ctx.model.Admin.findByIdMobile(mobile)
-        } 
-        
+    // 检测时候有这个用户
+    public async hasUser() {
+        let mobile = this.ctx.request.body.mobile
+        return await this.ctx.model.Admin.findByIdMobile(mobile)
+    }
+    // 创建用户
+    public async createUser(mobile, password) {
+        return await this.ctx.model.Admin.create({
+            mobile: mobile,
+            password: password,
+            user_name: mobile,
+            registe_time: new Date(),
+            permissions: 1,
+            created_at: new Date(),
+            updated_at: new Date(),
+        })
     }
 }
 
