@@ -1,506 +1,1962 @@
-2019-08-12 15:10:47,544 ERROR 1976 nodejs.unhandledRejectionError: WHERE parameter "mobile" has invalid "undefined" value
-    at MySQLQueryGenerator.whereItemQuery (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2081:13)
-    at Utils.getComplexKeys.forEach.prop (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2070:25)
-    at Array.forEach (<anonymous>)
-    at MySQLQueryGenerator.whereItemsQuery (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2068:35)
-    at MySQLQueryGenerator.getWhereConditions (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2480:19)
-    at MySQLQueryGenerator.selectQuery (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1301:28)
-    at QueryInterface.select (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\query-interface.js:1121:27)
-    at Promise.try.then.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:1756:34)
-    at runCallback (timers.js:705:18)
-    at tryOnImmediate (timers.js:676:5)
-    at processImmediate (timers.js:658:5)
-From previous event:
-    at Function.findAll (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:1753:8)
-    at Function.findOne (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:1923:17)
-    at Function.findByIdMobile (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\model\admin.ts:28:31)
-    at eval (eval at login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:7:37), <anonymous>:1:22)
-    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:7:37)
-    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
-    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at xframe (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-name: "unhandledRejectionError"
-pid: 1976
-hostname: DESKTOP-COOIT9S
-
-2019-08-12 15:10:47,559 ERROR 1976 nodejs.unhandledRejectionError: WHERE parameter "mobile" has invalid "undefined" value
-    at MySQLQueryGenerator.whereItemQuery (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2081:13)
-    at Utils.getComplexKeys.forEach.prop (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2070:25)
-    at Array.forEach (<anonymous>)
-    at MySQLQueryGenerator.whereItemsQuery (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2068:35)
-    at MySQLQueryGenerator.getWhereConditions (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2480:19)
-    at MySQLQueryGenerator.selectQuery (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1301:28)
-    at QueryInterface.select (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\query-interface.js:1121:27)
-    at Promise.try.then.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:1756:34)
-    at runCallback (timers.js:705:18)
-    at tryOnImmediate (timers.js:676:5)
-    at processImmediate (timers.js:658:5)
-From previous event:
-    at Function.findAll (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:1753:8)
-    at Function.findOne (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:1923:17)
-    at Function.findByIdMobile (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\model\admin.ts:28:31)
-    at eval (eval at login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:7:37), <anonymous>:1:22)
-    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:7:37)
-    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
-    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at xframe (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-name: "unhandledRejectionError"
-pid: 1976
-hostname: DESKTOP-COOIT9S
-
-2019-08-12 15:10:47,573 ERROR 1976 nodejs.unhandledRejectionError: WHERE parameter "mobile" has invalid "undefined" value
-    at MySQLQueryGenerator.whereItemQuery (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2081:13)
-    at Utils.getComplexKeys.forEach.prop (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2070:25)
-    at Array.forEach (<anonymous>)
-    at MySQLQueryGenerator.whereItemsQuery (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2068:35)
-    at MySQLQueryGenerator.getWhereConditions (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2480:19)
-    at MySQLQueryGenerator.selectQuery (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1301:28)
-    at QueryInterface.select (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\query-interface.js:1121:27)
-    at Promise.try.then.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:1756:34)
-    at runCallback (timers.js:705:18)
-    at tryOnImmediate (timers.js:676:5)
-    at processImmediate (timers.js:658:5)
-From previous event:
-    at Function.findAll (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:1753:8)
-    at Function.findOne (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:1923:17)
-    at Function.findByIdMobile (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\model\admin.ts:28:31)
-    at eval (eval at login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:7:37), <anonymous>:1:22)
-    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:7:37)
-    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
-    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at xframe (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-name: "unhandledRejectionError"
-pid: 1976
-hostname: DESKTOP-COOIT9S
-
-2019-08-12 15:10:47,587 ERROR 1976 nodejs.unhandledRejectionError: WHERE parameter "mobile" has invalid "undefined" value
-    at MySQLQueryGenerator.whereItemQuery (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2081:13)
-    at Utils.getComplexKeys.forEach.prop (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2070:25)
-    at Array.forEach (<anonymous>)
-    at MySQLQueryGenerator.whereItemsQuery (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2068:35)
-    at MySQLQueryGenerator.getWhereConditions (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2480:19)
-    at MySQLQueryGenerator.selectQuery (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1301:28)
-    at QueryInterface.select (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\query-interface.js:1121:27)
-    at Promise.try.then.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:1756:34)
-    at runCallback (timers.js:705:18)
-    at tryOnImmediate (timers.js:676:5)
-    at processImmediate (timers.js:658:5)
-From previous event:
-    at Function.findAll (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:1753:8)
-    at Function.findOne (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:1923:17)
-    at Function.findByIdMobile (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\model\admin.ts:28:31)
-    at eval (eval at login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:7:37), <anonymous>:1:22)
-    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:7:37)
-    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
-    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at xframe (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-name: "unhandledRejectionError"
-pid: 1976
-hostname: DESKTOP-COOIT9S
-
-2019-08-12 15:10:47,601 ERROR 1976 nodejs.unhandledRejectionError: WHERE parameter "mobile" has invalid "undefined" value
-    at MySQLQueryGenerator.whereItemQuery (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2081:13)
-    at Utils.getComplexKeys.forEach.prop (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2070:25)
-    at Array.forEach (<anonymous>)
-    at MySQLQueryGenerator.whereItemsQuery (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2068:35)
-    at MySQLQueryGenerator.getWhereConditions (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2480:19)
-    at MySQLQueryGenerator.selectQuery (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1301:28)
-    at QueryInterface.select (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\query-interface.js:1121:27)
-    at Promise.try.then.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:1756:34)
-    at runCallback (timers.js:705:18)
-    at tryOnImmediate (timers.js:676:5)
-    at processImmediate (timers.js:658:5)
-From previous event:
-    at Function.findAll (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:1753:8)
-    at Function.findOne (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:1923:17)
-    at Function.findByIdMobile (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\model\admin.ts:28:31)
-    at eval (eval at login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:7:37), <anonymous>:1:22)
-    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:7:37)
-    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
-    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at xframe (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-name: "unhandledRejectionError"
-pid: 1976
-hostname: DESKTOP-COOIT9S
-
-2019-08-12 15:10:47,617 ERROR 1976 nodejs.unhandledRejectionError: WHERE parameter "mobile" has invalid "undefined" value
-    at MySQLQueryGenerator.whereItemQuery (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2081:13)
-    at Utils.getComplexKeys.forEach.prop (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2070:25)
-    at Array.forEach (<anonymous>)
-    at MySQLQueryGenerator.whereItemsQuery (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2068:35)
-    at MySQLQueryGenerator.getWhereConditions (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2480:19)
-    at MySQLQueryGenerator.selectQuery (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1301:28)
-    at QueryInterface.select (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\query-interface.js:1121:27)
-    at Promise.try.then.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:1756:34)
-    at runCallback (timers.js:705:18)
-    at tryOnImmediate (timers.js:676:5)
-    at processImmediate (timers.js:658:5)
-From previous event:
-    at Function.findAll (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:1753:8)
-    at Function.findOne (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:1923:17)
-    at Function.findByIdMobile (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\model\admin.ts:28:31)
-    at eval (eval at login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:7:37), <anonymous>:1:22)
-    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:7:37)
-    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
-    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at xframe (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-name: "unhandledRejectionError"
-pid: 1976
-hostname: DESKTOP-COOIT9S
-
-2019-08-12 15:10:47,630 ERROR 1976 nodejs.unhandledRejectionError: WHERE parameter "mobile" has invalid "undefined" value
-    at MySQLQueryGenerator.whereItemQuery (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2081:13)
-    at Utils.getComplexKeys.forEach.prop (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2070:25)
-    at Array.forEach (<anonymous>)
-    at MySQLQueryGenerator.whereItemsQuery (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2068:35)
-    at MySQLQueryGenerator.getWhereConditions (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2480:19)
-    at MySQLQueryGenerator.selectQuery (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1301:28)
-    at QueryInterface.select (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\query-interface.js:1121:27)
-    at Promise.try.then.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:1756:34)
-    at runCallback (timers.js:705:18)
-    at tryOnImmediate (timers.js:676:5)
-    at processImmediate (timers.js:658:5)
-From previous event:
-    at Function.findAll (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:1753:8)
-    at Function.findOne (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:1923:17)
-    at Function.findByIdMobile (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\model\admin.ts:28:31)
-    at eval (eval at login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:7:37), <anonymous>:1:22)
-    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:7:37)
-    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
-    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at xframe (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-name: "unhandledRejectionError"
-pid: 1976
-hostname: DESKTOP-COOIT9S
-
-2019-08-12 15:26:55,971 ERROR 9628 [-/127.0.0.1/-/16ms POST /login] nodejs.TypeError: Cannot read property 'service' of undefined
-    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:22:29)
-    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
-    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at xframe (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at xssProtection (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
-
-pid: 9628
-hostname: DESKTOP-COOIT9S
-
-2019-08-12 15:27:18,851 ERROR 9628 [-/127.0.0.1/-/12ms POST /login] nodejs.TypeError: Cannot read property 'service' of undefined
-    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:22:29)
-    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
-    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at xframe (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at xssProtection (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
-
-pid: 9628
-hostname: DESKTOP-COOIT9S
-
-2019-08-12 15:28:01,697 ERROR 9628 [-/127.0.0.1/-/3ms POST /login] nodejs.TypeError: Cannot read property 'service' of undefined
-    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:22:29)
-    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
-    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at xframe (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at xssProtection (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
-
-pid: 9628
-hostname: DESKTOP-COOIT9S
-
-2019-08-12 15:58:13,892 ERROR 9916 nodejs.ClusterClientNoResponseError: client no response in 73982ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+2019-08-13 00:01:37,767 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 76828ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
     at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
     at ontimeout (timers.js:436:11)
     at tryOnTimeout (timers.js:300:5)
     at listOnTimeout (timers.js:263:5)
     at Timer.processTimers (timers.js:223:10)
 name: "ClusterClientNoResponseError"
-pid: 9916
+pid: 12348
 hostname: DESKTOP-COOIT9S
 
-2019-08-12 17:58:21,046 ERROR 8416 [-/127.0.0.1/-/8ms POST /login] nodejs.TypeError: app.emit is not a function
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:11
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-
-pid: 8416
-hostname: DESKTOP-COOIT9S
-
-2019-08-12 17:58:30,004 ERROR 8416 [-/127.0.0.1/-/3ms POST /login] nodejs.TypeError: app.emit is not a function
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:11
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-
-pid: 8416
-hostname: DESKTOP-COOIT9S
-
-2019-08-12 17:59:42,515 ERROR 7512 nodejs.ClusterClientNoResponseError: client no response in 63703ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+2019-08-13 00:05:05,045 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67269ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
     at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
     at ontimeout (timers.js:436:11)
     at tryOnTimeout (timers.js:300:5)
     at listOnTimeout (timers.js:263:5)
     at Timer.processTimers (timers.js:223:10)
 name: "ClusterClientNoResponseError"
-pid: 7512
+pid: 12348
 hostname: DESKTOP-COOIT9S
 
-2019-08-12 18:06:17,423 ERROR 8416 [-/127.0.0.1/-/451879ms POST /login] nodejs.TypeError: app.emit is not a function
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:11
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-
-pid: 8416
-hostname: DESKTOP-COOIT9S
-
-2019-08-12 18:06:17,429 ERROR 8416 nodejs.ECONNABORTEDError: write ECONNABORTED (address: 127.0.0.1:55225)
-    at afterWriteDispatched (internal/stream_base_commons.js:78:25)
-    at writeGeneric (internal/stream_base_commons.js:73:3)
-    at Socket._writeGeneric (net.js:704:5)
-    at Socket._write (net.js:716:8)
-    at doWrite (_stream_writable.js:410:12)
-    at writeOrBuffer (_stream_writable.js:394:5)
-    at Socket.Writable.write (_stream_writable.js:294:11)
-    at Follower.sendHeartBeat (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\tcp-base\lib\base.js:105:18)
-    at Timeout._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\tcp-base\lib\base.js:437:12)
-    at ontimeout (timers.js:436:11)
-    at tryOnTimeout (timers.js:300:5)
-    at listOnTimeout (timers.js:263:5)
-    at Timer.processTimers (timers.js:223:10)
-errno: "ECONNABORTED"
-code: "ECONNABORTED"
-syscall: "write"
-name: "ECONNABORTEDError"
-pid: 8416
-hostname: DESKTOP-COOIT9S
-
-2019-08-12 18:16:56,787 ERROR 9768 nodejs.ClusterClientNoResponseError: client no response in 75720ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+2019-08-13 00:08:33,088 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 68012ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
     at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
     at ontimeout (timers.js:436:11)
     at tryOnTimeout (timers.js:300:5)
     at listOnTimeout (timers.js:263:5)
     at Timer.processTimers (timers.js:223:10)
 name: "ClusterClientNoResponseError"
-pid: 9768
+pid: 12348
 hostname: DESKTOP-COOIT9S
 
-2019-08-12 18:18:12,432 ERROR 14024 [-/127.0.0.1/-/139280ms POST /login] nodejs.TypeError: app.emit is not a function
+2019-08-13 00:14:30,172 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 77072ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 00:22:58,228 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67952ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 00:26:26,212 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67928ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 00:32:24,143 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 77840ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 00:45:50,506 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 66275ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 00:56:14,670 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67140ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 00:59:42,768 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 68092ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 01:03:10,869 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 68093ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 01:09:07,505 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 76627ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 01:12:35,544 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 68013ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 01:18:32,704 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 77148ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 01:21:59,698 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 66985ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 01:25:28,040 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 68319ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 01:28:56,059 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67975ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 01:32:24,106 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 68019ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 01:38:51,174 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67045ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 01:45:19,230 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67964ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 01:48:46,176 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 66886ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 01:52:13,170 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 66935ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 01:55:41,060 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67810ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 02:00:08,179 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67100ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 02:03:36,175 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67933ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 02:07:04,125 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67906ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 02:10:31,189 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67045ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 02:13:59,184 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67932ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 02:17:27,179 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67917ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 02:20:55,142 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67848ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 02:24:22,595 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67396ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 02:27:48,845 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 66241ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 02:31:16,759 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67908ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 02:34:45,053 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 68282ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 02:38:13,047 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67964ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 02:41:41,051 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67962ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 02:45:08,224 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67123ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 02:48:36,256 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67970ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 02:52:03,180 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 66841ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 02:56:31,150 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67915ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 02:59:57,169 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 65961ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 03:03:24,171 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 66899ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 03:06:51,177 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 66927ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 03:10:19,175 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67897ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 03:13:47,132 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67877ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 03:17:14,048 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 66833ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 03:20:42,146 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 68068ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 03:24:09,101 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 66947ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 03:27:35,160 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 66005ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 03:31:32,178 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 76944ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 03:34:59,199 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 66972ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 03:38:27,045 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67766ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 03:41:55,166 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67644ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 03:45:22,054 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 66844ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 03:48:49,164 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67091ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 03:52:17,150 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67977ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 03:56:44,172 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67418ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 04:00:11,173 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 66909ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 04:03:39,178 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67939ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 04:07:07,170 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67946ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 04:10:35,169 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67910ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 04:16:31,503 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 76246ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 04:19:58,508 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 66974ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 04:23:26,594 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 68068ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 04:40:54,185 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67555ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 04:44:22,091 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67816ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 04:47:49,190 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67088ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 04:51:16,168 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 66876ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 04:55:44,145 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67882ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 04:59:12,183 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 68028ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 05:02:40,071 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67822ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 05:08:38,151 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 78068ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 05:12:06,198 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67988ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 05:23:02,501 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 76209ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 05:26:29,568 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67037ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 05:29:57,588 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 68014ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 05:43:25,052 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67438ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 05:54:22,086 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 76510ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 06:05:20,073 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 77851ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 06:08:46,208 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 66125ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 06:12:14,046 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67768ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 06:18:10,176 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 76082ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 06:21:38,134 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67878ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 06:25:05,629 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67426ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 06:28:32,575 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 66937ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 06:32:00,609 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 68026ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 06:35:27,742 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67119ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 06:41:24,722 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 76966ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 06:44:52,755 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 68019ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 06:48:20,858 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 68093ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 06:51:48,802 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67922ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 06:58:45,044 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 76217ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 07:02:13,046 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67970ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 07:08:10,195 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 77103ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 07:14:08,139 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 77839ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 07:17:36,068 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67855ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 07:21:03,167 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67087ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 07:24:31,158 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67939ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 07:27:59,174 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 68005ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 07:31:26,176 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 66912ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 07:34:54,238 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67978ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 07:48:20,503 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 66169ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 08:01:49,045 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 68493ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 08:26:17,048 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67936ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 08:29:44,158 ERROR 12348 nodejs.ClusterClientNoResponseError: client no response in 67084ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12348
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:16:10,896 ERROR 10636 [-/127.0.0.1/-/69ms POST /login] nodejs.TypeError: app.emit is not a function
     at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:11
-    at process._tickCallback (internal/process/next_tick.js:68:7)
 
-pid: 14024
+pid: 10636
 hostname: DESKTOP-COOIT9S
 
-2019-08-12 18:22:28,154 ERROR 12260 [-/127.0.0.1/-/9ms POST /login] nodejs.TypeError: app.emit is not a function
+2019-08-13 14:17:31,650 ERROR 10636 [-/127.0.0.1/-/43398ms POST /login] nodejs.TypeError: app.emit is not a function
     at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:11
-    at process._tickCallback (internal/process/next_tick.js:68:7)
 
-pid: 12260
+pid: 10636
 hostname: DESKTOP-COOIT9S
 
-2019-08-12 18:38:18,791 ERROR 9724 [-/127.0.0.1/-/11925ms POST /login] nodejs.TypeError: Cannot read property 'addRule' of undefined
-    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:24:23)
-    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
-    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at xframe (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at xssProtection (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
-
-pid: 9724
+2019-08-13 14:18:50,624 ERROR 17956 nodejs.SequelizeDatabaseError: Table 'ele.admins' doesn't exist
+    at Query.formatError (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:243:16)
+    at handler (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:50:23)
+    at Prepare.Commands.Prepare [as onResult] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:636:11)
+    at Prepare.execute (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:39:12)
+    at runHooks.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:29)
+From previous event:
+    at Promise.try.then.connection (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:12)
+From previous event:
+    at Promise.resolve.retry (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:637:10)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:60:10)
+    at Promise.try (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:627:30)
+From previous event:
+    at Sequelize.query (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:576:23)
+    at QueryInterface.insert (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\query-interface.js:885:27)
+    at Promise.try.then.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3835:52)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Object.save (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3812:8)
+    at Function.create (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:2223:8)
+    at Admin.createUser (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\service\admin.ts:26:43)
+    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:36:31)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+original: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+sql: "INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"
+pid: 17956
 hostname: DESKTOP-COOIT9S
 
-2019-08-12 18:43:30,385 ERROR 9768 nodejs.unhandledExceptionError: read ECONNRESET
+2019-08-13 14:18:50,639 ERROR 17956 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+
+pid: 17956
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:20:42,938 ERROR 17956 nodejs.SequelizeDatabaseError: Table 'ele.admins' doesn't exist
+    at Query.formatError (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:243:16)
+    at handler (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:50:23)
+    at Prepare.Commands.Prepare [as onResult] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:636:11)
+    at Prepare.execute (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:39:12)
+    at runHooks.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:29)
+From previous event:
+    at Promise.try.then.connection (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:12)
+From previous event:
+    at Promise.resolve.retry (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:637:10)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:60:10)
+    at Promise.try (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:627:30)
+From previous event:
+    at Sequelize.query (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:576:23)
+    at QueryInterface.insert (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\query-interface.js:885:27)
+    at Promise.try.then.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3835:52)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Object.save (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3812:8)
+    at Function.create (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:2223:8)
+    at Admin.createUser (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\service\admin.ts:26:43)
+    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:36:31)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+original: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+sql: "INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"
+pid: 17956
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:20:42,945 ERROR 17956 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+
+pid: 17956
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:22:27,896 ERROR 17956 nodejs.SequelizeDatabaseError: Table 'ele.admins' doesn't exist
+    at Query.formatError (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:243:16)
+    at handler (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:50:23)
+    at Prepare.Commands.Prepare [as onResult] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:636:11)
+    at Prepare.execute (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:39:12)
+    at runHooks.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:29)
+From previous event:
+    at Promise.try.then.connection (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:12)
+From previous event:
+    at Promise.resolve.retry (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:637:10)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:60:10)
+    at Promise.try (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:627:30)
+From previous event:
+    at Sequelize.query (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:576:23)
+    at QueryInterface.insert (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\query-interface.js:885:27)
+    at Promise.try.then.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3835:52)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Object.save (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3812:8)
+    at Function.create (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:2223:8)
+    at Admin.createUser (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\service\admin.ts:26:43)
+    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:36:31)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+original: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+sql: "INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"
+pid: 17956
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:22:27,904 ERROR 17956 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+
+pid: 17956
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:23:21,782 ERROR 8416 nodejs.SequelizeDatabaseError: Table 'ele.admins' doesn't exist
+    at Query.formatError (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:243:16)
+    at handler (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:50:23)
+    at Prepare.Commands.Prepare [as onResult] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:636:11)
+    at Prepare.execute (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:39:12)
+    at runHooks.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:29)
+From previous event:
+    at Promise.try.then.connection (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:12)
+From previous event:
+    at Promise.resolve.retry (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:637:10)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:60:10)
+    at Promise.try (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:627:30)
+From previous event:
+    at Sequelize.query (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:576:23)
+    at QueryInterface.insert (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\query-interface.js:885:27)
+    at Promise.try.then.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3835:52)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Object.save (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3812:8)
+    at Function.create (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:2223:8)
+    at Admin.createUser (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\service\admin.ts:26:43)
+    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:36:31)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+original: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+sql: "INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"
+pid: 8416
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:23:21,804 ERROR 8416 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+
+pid: 8416
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:23:33,322 ERROR 18940 nodejs.SequelizeDatabaseError: Table 'ele.admins' doesn't exist
+    at Query.formatError (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:243:16)
+    at handler (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:50:23)
+    at Prepare.Commands.Prepare [as onResult] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:636:11)
+    at Prepare.execute (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:39:12)
+    at runHooks.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:29)
+From previous event:
+    at Promise.try.then.connection (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:12)
+From previous event:
+    at Promise.resolve.retry (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:637:10)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:60:10)
+    at Promise.try (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:627:30)
+From previous event:
+    at Sequelize.query (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:576:23)
+    at QueryInterface.insert (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\query-interface.js:885:27)
+    at Promise.try.then.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3835:52)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Object.save (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3812:8)
+    at Function.create (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:2223:8)
+    at Admin.createUser (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\service\admin.ts:26:43)
+    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:36:31)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+original: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+sql: "INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"
+pid: 18940
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:23:33,330 ERROR 18940 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+
+pid: 18940
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:25:55,977 ERROR 19208 nodejs.SequelizeDatabaseError: Table 'ele.admins' doesn't exist
+    at Query.formatError (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:243:16)
+    at handler (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:50:23)
+    at Prepare.Commands.Prepare [as onResult] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:636:11)
+    at Prepare.execute (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:39:12)
+    at runHooks.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:29)
+From previous event:
+    at Promise.try.then.connection (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:12)
+From previous event:
+    at Promise.resolve.retry (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:637:10)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:60:10)
+    at Promise.try (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:627:30)
+From previous event:
+    at Sequelize.query (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:576:23)
+    at QueryInterface.insert (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\query-interface.js:885:27)
+    at Promise.try.then.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3835:52)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Object.save (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3812:8)
+    at Function.create (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:2223:8)
+    at Admin.createUser (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\service\admin.ts:26:43)
+    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:35:31)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+original: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+sql: "INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"
+pid: 19208
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:25:55,987 ERROR 19208 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+
+pid: 19208
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:27:02,665 ERROR 18948 nodejs.SequelizeDatabaseError: Table 'ele.admins' doesn't exist
+    at Query.formatError (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:243:16)
+    at handler (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:50:23)
+    at Prepare.Commands.Prepare [as onResult] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:636:11)
+    at Prepare.execute (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:39:12)
+    at runHooks.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:29)
+From previous event:
+    at Promise.try.then.connection (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:12)
+From previous event:
+    at Promise.resolve.retry (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:637:10)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:60:10)
+    at Promise.try (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:627:30)
+From previous event:
+    at Sequelize.query (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:576:23)
+    at QueryInterface.insert (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\query-interface.js:885:27)
+    at Promise.try.then.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3835:52)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Object.save (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3812:8)
+    at Function.create (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:2223:8)
+    at Admin.createUser (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\service\admin.ts:26:43)
+    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:34:31)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+original: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+sql: "INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"
+pid: 18948
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:27:02,674 ERROR 18948 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+
+pid: 18948
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:27:12,552 ERROR 8800 nodejs.SequelizeDatabaseError: Table 'ele.admins' doesn't exist
+    at Query.formatError (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:243:16)
+    at handler (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:50:23)
+    at Prepare.Commands.Prepare [as onResult] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:636:11)
+    at Prepare.execute (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:39:12)
+    at runHooks.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:29)
+From previous event:
+    at Promise.try.then.connection (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:12)
+From previous event:
+    at Promise.resolve.retry (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:637:10)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:60:10)
+    at Promise.try (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:627:30)
+From previous event:
+    at Sequelize.query (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:576:23)
+    at QueryInterface.insert (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\query-interface.js:885:27)
+    at Promise.try.then.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3835:52)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Object.save (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3812:8)
+    at Function.create (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:2223:8)
+    at Admin.createUser (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\service\admin.ts:26:43)
+    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:34:31)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+original: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+sql: "INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"
+pid: 8800
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:27:12,560 ERROR 8800 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+
+pid: 8800
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:28:29,912 ERROR 8304 { message: '错了' }
+2019-08-13 14:28:29,914 ERROR 8304 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+
+pid: 8304
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:29:26,311 ERROR 6540 nodejs.SequelizeDatabaseError: Table 'ele.admins' doesn't exist
+    at Query.formatError (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:243:16)
+    at handler (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:50:23)
+    at Prepare.Commands.Prepare [as onResult] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:636:11)
+    at Prepare.execute (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:39:12)
+    at runHooks.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:29)
+From previous event:
+    at Promise.try.then.connection (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:12)
+From previous event:
+    at Promise.resolve.retry (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:637:10)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:60:10)
+    at Promise.try (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:627:30)
+From previous event:
+    at Sequelize.query (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:576:23)
+    at QueryInterface.insert (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\query-interface.js:885:27)
+    at Promise.try.then.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3835:52)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Object.save (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3812:8)
+    at Function.create (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:2223:8)
+    at Admin.createUser (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\service\admin.ts:25:43)
+    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:34:31)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+original: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+sql: "INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"
+pid: 6540
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:29:26,317 ERROR 6540 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+
+pid: 6540
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 15:18:32,437 ERROR 12704 nodejs.SequelizeDatabaseError: Table 'ele.admins' doesn't exist
+    at Query.formatError (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:243:16)
+    at handler (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:50:23)
+    at Prepare.Commands.Prepare [as onResult] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:636:11)
+    at Prepare.execute (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:39:12)
+    at runHooks.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:29)
+From previous event:
+    at Promise.try.then.connection (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:12)
+From previous event:
+    at Promise.resolve.retry (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:637:10)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:60:10)
+    at Promise.try (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:627:30)
+From previous event:
+    at Sequelize.query (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:576:23)
+    at QueryInterface.insert (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\query-interface.js:885:27)
+    at Promise.try.then.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3835:52)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Object.save (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3812:8)
+    at Function.create (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:2223:8)
+    at Admin.createUser (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\service\admin.ts:23:43)
+    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:36:31)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+original: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+sql: "INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"
+pid: 12704
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 15:18:32,442 ERROR 12704 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+
+pid: 12704
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 18:21:39,620 ERROR 17616 nodejs.ClusterClientNoResponseError: client no response in 72247ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 17616
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 19:23:58,368 ERROR 12536 nodejs.unhandledExceptionError: read ECONNRESET
     at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
 errno: "ECONNRESET"
 code: "ECONNRESET"
 syscall: "read"
 name: "unhandledExceptionError"
-pid: 9768
+pid: 12536
 hostname: DESKTOP-COOIT9S
 
-2019-08-12 20:19:32,052 ERROR 9768 nodejs.unhandledExceptionError: read ECONNRESET
+2019-08-13 20:11:36,837 ERROR 13900 nodejs.TypeError: Cannot read property 'warn' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:37:18)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 13900
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:11:48,192 ERROR 13900 nodejs.TypeError: Cannot read property 'warn' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:37:18)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 13900
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:12:23,250 ERROR 13900 nodejs.TypeError: Cannot read property 'warn' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:37:18)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 13900
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:13:18,967 ERROR 13900 nodejs.TypeError: Cannot read property 'warn' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:37:18)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 13900
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:13:55,971 ERROR 8596 nodejs.TypeError: this.ctx.service.admin.updateAvatar is not a function
+    at AdminController.updated (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:82:34)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:13:13
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+
+pid: 8596
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:13:55,982 ERROR 8596 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 8596
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:14:48,810 ERROR 1380 nodejs.TypeError: this.ctx.service.admin.updateAvatar is not a function
+    at AdminController.updated (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:82:34)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:13:13
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+
+pid: 1380
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:14:48,816 ERROR 1380 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 1380
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:16:26,350 ERROR 18924 nodejs.TypeError: this.ctx.service.admin.updateAvatar is not a function
+    at AdminController.updated (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:82:34)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:13:13
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+
+pid: 18924
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:16:26,355 ERROR 18924 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 18924
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:17:11,211 ERROR 18436 nodejs.TypeError: this.ctx.service.admin.updateAvatar is not a function
+    at AdminController.updated (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:82:34)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:13:13
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+
+pid: 18436
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:17:11,230 ERROR 18436 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 18436
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:18:54,371 ERROR 3600 nodejs.ClusterClientNoResponseError: client no response in 63434ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 3600
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:20:27,633 ERROR 18436 nodejs.TypeError: this.ctx.service.admin.updateAvatar is not a function
+    at AdminController.updated (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:82:34)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:13:13
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+
+pid: 18436
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:20:27,643 ERROR 18436 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 18436
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:23:28,422 ERROR 20144 nodejs.TypeError: this.ctx.service.admin.findByIdMobile is not a function
+    at AdminController.updated (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:78:34)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:13:13
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+
+pid: 20144
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:23:28,429 ERROR 20144 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 20144
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:23:30,163 ERROR 20144 nodejs.TypeError: this.ctx.service.admin.findByIdMobile is not a function
+    at AdminController.updated (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:78:34)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:13:13
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+
+pid: 20144
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:23:30,168 ERROR 20144 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 20144
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:23:32,468 ERROR 20752 nodejs.TypeError: this.ctx.service.admin.findByIdMobile is not a function
+    at AdminController.updated (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:78:34)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:13:13
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+
+pid: 20752
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:23:32,473 ERROR 20752 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 20752
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:24:28,873 ERROR 3600 nodejs.unhandledExceptionError: read ECONNRESET
     at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
 errno: "ECONNRESET"
 code: "ECONNRESET"
 syscall: "read"
 name: "unhandledExceptionError"
-pid: 9768
+pid: 3600
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:25:02,437 ERROR 3600 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 3600
 hostname: DESKTOP-COOIT9S
 

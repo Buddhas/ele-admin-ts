@@ -1,205 +1,776 @@
-2019-08-12 15:08:48,339 INFO 1976 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 15:10:47,684 INFO 1976 [egg-sequelize](13ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17688702012' LIMIT 1;
-2019-08-12 15:14:01,335 INFO 10408 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 15:26:18,890 INFO 4288 [egg-sequelize](18ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 15:26:25,213 INFO 800 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 15:26:29,494 INFO 13744 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 15:26:31,839 INFO 5172 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 15:26:37,772 INFO 13556 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 15:26:40,140 INFO 9628 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 15:26:55,974 ERROR 9628 [-/127.0.0.1/-/16ms POST /login] nodejs.TypeError: Cannot read property 'service' of undefined
-    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:22:29)
-    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
-    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at xframe (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at xssProtection (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
-
-pid: 9628
-hostname: DESKTOP-COOIT9S
-
-2019-08-12 15:27:18,854 ERROR 9628 [-/127.0.0.1/-/12ms POST /login] nodejs.TypeError: Cannot read property 'service' of undefined
-    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:22:29)
-    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
-    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at xframe (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at xssProtection (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
-
-pid: 9628
-hostname: DESKTOP-COOIT9S
-
-2019-08-12 15:28:01,699 ERROR 9628 [-/127.0.0.1/-/3ms POST /login] nodejs.TypeError: Cannot read property 'service' of undefined
-    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:22:29)
-    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
-    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at xframe (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at xssProtection (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
-
-pid: 9628
-hostname: DESKTOP-COOIT9S
-
-2019-08-12 15:28:01,804 INFO 11588 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 15:28:04,140 INFO 16100 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 15:28:08,760 INFO 16100 [egg-sequelize](6ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17688702012' LIMIT 1;
-2019-08-12 15:28:08,784 INFO 16100 [egg-sequelize](13ms) Executed (default): INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);
-2019-08-12 15:47:08,697 INFO 16100 [egg-sequelize](6ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17688702012' LIMIT 1;
-2019-08-12 15:47:58,075 INFO 16100 [egg-sequelize](5ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17688702012' LIMIT 1;
-2019-08-12 15:49:38,556 INFO 13228 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 15:49:40,745 INFO 3424 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 15:50:08,901 INFO 10504 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 15:50:11,177 INFO 7204 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 15:50:31,603 INFO 12436 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 15:50:33,848 INFO 8040 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 15:50:38,272 INFO 12708 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 15:50:48,912 INFO 7860 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 15:50:51,436 INFO 10444 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 15:51:12,877 INFO 16040 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 15:51:15,458 INFO 3884 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 15:55:34,694 INFO 16460 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 15:55:36,796 INFO 12424 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 15:55:48,283 INFO 12424 [egg-sequelize](22ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17688702012' LIMIT 1;
-2019-08-12 15:56:45,461 INFO 12424 [egg-sequelize](6ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17688702012' LIMIT 1;
-2019-08-12 15:56:59,913 INFO 12424 [egg-sequelize](9ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17688702012' LIMIT 1;
-2019-08-12 15:59:36,972 INFO 12424 [egg-sequelize](10ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17688702012' LIMIT 1;
-2019-08-12 16:00:05,141 INFO 12424 [egg-sequelize](9ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17688702012' LIMIT 1;
-2019-08-12 16:00:10,368 INFO 12424 [egg-sequelize](10ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17688702012' LIMIT 1;
-2019-08-12 16:00:40,467 INFO 12424 [egg-sequelize](11ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17688702012' LIMIT 1;
-2019-08-12 16:01:07,465 INFO 12424 [egg-sequelize](10ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17688702012' LIMIT 1;
-2019-08-12 16:01:52,918 INFO 12424 [egg-sequelize](14ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17688702012' LIMIT 1;
-2019-08-12 16:01:53,888 INFO 6892 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 16:01:56,227 INFO 8800 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 16:02:04,007 INFO 16012 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 16:02:06,236 INFO 8040 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 16:02:19,495 INFO 8040 [egg-sequelize](12ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17688702012' LIMIT 1;
-2019-08-12 16:24:18,718 INFO 8144 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 16:24:20,872 INFO 16752 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 16:35:45,530 INFO 6784 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 16:44:34,121 INFO 8096 [egg-sequelize](15ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 16:52:50,959 INFO 4764 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 16:56:35,320 INFO 6272 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 16:56:37,426 INFO 16024 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 17:24:10,893 INFO 6496 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 17:27:14,155 INFO 7016 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 17:27:16,354 INFO 7928 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 17:29:45,365 INFO 7892 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 17:29:47,491 INFO 8820 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 17:30:31,146 INFO 13748 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 17:30:33,226 INFO 14756 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 17:30:54,545 INFO 2524 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 17:30:56,621 INFO 14024 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 17:37:08,532 INFO 15172 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 17:37:10,581 INFO 3688 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 17:40:45,851 INFO 9408 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 17:40:48,002 INFO 4532 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 17:41:01,250 INFO 14012 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 17:41:03,288 INFO 16940 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 17:55:24,629 INFO 8756 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 17:55:26,800 INFO 3252 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 17:57:47,166 INFO 9976 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 17:57:48,671 INFO 11636 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 17:58:16,789 INFO 592 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 17:58:18,908 INFO 8416 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 17:58:21,047 ERROR 8416 [-/127.0.0.1/-/8ms POST /login] nodejs.TypeError: app.emit is not a function
+2019-08-13 14:11:47,869 INFO 18584 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 14:11:50,375 INFO 5688 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 14:11:53,214 INFO 6540 [egg-sequelize](11ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 14:12:03,339 INFO 17560 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 14:12:07,592 INFO 10636 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 14:12:13,861 INFO 10636 [egg-sequelize](7ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17688702092' LIMIT 1;
+2019-08-13 14:16:10,858 INFO 10636 [egg-sequelize](6ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17688702092' LIMIT 1;
+2019-08-13 14:16:10,891 INFO 10636 [egg-sequelize](5ms) Executed (default): INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);
+2019-08-13 14:16:10,896 ERROR 10636 [-/127.0.0.1/-/69ms POST /login] nodejs.TypeError: app.emit is not a function
     at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:11
-    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 10636
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:16:48,294 INFO 10636 [egg-sequelize](8ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17688702092' LIMIT 1;
+2019-08-13 14:16:48,309 INFO 10636 [egg-sequelize](8ms) Executed (default): INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);
+2019-08-13 14:17:31,650 ERROR 10636 [-/127.0.0.1/-/43398ms POST /login] nodejs.TypeError: app.emit is not a function
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:11
+
+pid: 10636
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:18:32,429 INFO 13900 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 14:18:34,743 INFO 17956 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 14:18:38,732 INFO 17956 [egg-sequelize](4ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17688702092' LIMIT 1;
+2019-08-13 14:18:38,777 INFO 17956 [egg-sequelize](6ms) Executed (default): INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);
+2019-08-13 14:18:50,638 ERROR 17956 nodejs.SequelizeDatabaseError: Table 'ele.admins' doesn't exist
+    at Query.formatError (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:243:16)
+    at handler (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:50:23)
+    at Prepare.Commands.Prepare [as onResult] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:636:11)
+    at Prepare.execute (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:39:12)
+    at runHooks.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:29)
+From previous event:
+    at Promise.try.then.connection (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:12)
+From previous event:
+    at Promise.resolve.retry (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:637:10)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:60:10)
+    at Promise.try (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:627:30)
+From previous event:
+    at Sequelize.query (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:576:23)
+    at QueryInterface.insert (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\query-interface.js:885:27)
+    at Promise.try.then.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3835:52)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Object.save (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3812:8)
+    at Function.create (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:2223:8)
+    at Admin.createUser (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\service\admin.ts:26:43)
+    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:36:31)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+original: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+sql: "INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"
+pid: 17956
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:18:50,641 ERROR 17956 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+
+pid: 17956
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:20:37,756 INFO 17956 [egg-sequelize](4ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17688702092' LIMIT 1;
+2019-08-13 14:20:37,770 INFO 17956 [egg-sequelize](5ms) Executed (default): INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);
+2019-08-13 14:20:42,945 ERROR 17956 nodejs.SequelizeDatabaseError: Table 'ele.admins' doesn't exist
+    at Query.formatError (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:243:16)
+    at handler (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:50:23)
+    at Prepare.Commands.Prepare [as onResult] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:636:11)
+    at Prepare.execute (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:39:12)
+    at runHooks.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:29)
+From previous event:
+    at Promise.try.then.connection (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:12)
+From previous event:
+    at Promise.resolve.retry (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:637:10)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:60:10)
+    at Promise.try (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:627:30)
+From previous event:
+    at Sequelize.query (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:576:23)
+    at QueryInterface.insert (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\query-interface.js:885:27)
+    at Promise.try.then.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3835:52)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Object.save (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3812:8)
+    at Function.create (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:2223:8)
+    at Admin.createUser (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\service\admin.ts:26:43)
+    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:36:31)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+original: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+sql: "INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"
+pid: 17956
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:20:42,947 ERROR 17956 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+
+pid: 17956
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:22:08,414 INFO 17956 [egg-sequelize](10ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17688702092' LIMIT 1;
+2019-08-13 14:22:16,036 INFO 17956 [egg-sequelize](8ms) Executed (default): INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);
+2019-08-13 14:22:27,904 ERROR 17956 nodejs.SequelizeDatabaseError: Table 'ele.admins' doesn't exist
+    at Query.formatError (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:243:16)
+    at handler (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:50:23)
+    at Prepare.Commands.Prepare [as onResult] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:636:11)
+    at Prepare.execute (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:39:12)
+    at runHooks.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:29)
+From previous event:
+    at Promise.try.then.connection (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:12)
+From previous event:
+    at Promise.resolve.retry (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:637:10)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:60:10)
+    at Promise.try (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:627:30)
+From previous event:
+    at Sequelize.query (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:576:23)
+    at QueryInterface.insert (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\query-interface.js:885:27)
+    at Promise.try.then.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3835:52)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Object.save (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3812:8)
+    at Function.create (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:2223:8)
+    at Admin.createUser (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\service\admin.ts:26:43)
+    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:36:31)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+original: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+sql: "INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"
+pid: 17956
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:22:27,905 ERROR 17956 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+
+pid: 17956
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:23:21,234 INFO 8416 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 14:23:21,743 INFO 8416 [egg-sequelize](8ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17688702092' LIMIT 1;
+2019-08-13 14:23:21,777 INFO 8416 [egg-sequelize](8ms) Executed (default): INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);
+2019-08-13 14:23:21,803 ERROR 8416 nodejs.SequelizeDatabaseError: Table 'ele.admins' doesn't exist
+    at Query.formatError (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:243:16)
+    at handler (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:50:23)
+    at Prepare.Commands.Prepare [as onResult] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:636:11)
+    at Prepare.execute (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:39:12)
+    at runHooks.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:29)
+From previous event:
+    at Promise.try.then.connection (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:12)
+From previous event:
+    at Promise.resolve.retry (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:637:10)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:60:10)
+    at Promise.try (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:627:30)
+From previous event:
+    at Sequelize.query (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:576:23)
+    at QueryInterface.insert (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\query-interface.js:885:27)
+    at Promise.try.then.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3835:52)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Object.save (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3812:8)
+    at Function.create (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:2223:8)
+    at Admin.createUser (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\service\admin.ts:26:43)
+    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:36:31)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+original: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+sql: "INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"
+pid: 8416
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:23:21,805 ERROR 8416 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
 
 pid: 8416
 hostname: DESKTOP-COOIT9S
 
-2019-08-12 17:58:30,004 ERROR 8416 [-/127.0.0.1/-/3ms POST /login] nodejs.TypeError: app.emit is not a function
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:11
+2019-08-13 14:23:23,748 INFO 18940 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 14:23:32,785 INFO 18940 [egg-sequelize](5ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17688702092' LIMIT 1;
+2019-08-13 14:23:32,819 INFO 18940 [egg-sequelize](5ms) Executed (default): INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);
+2019-08-13 14:23:33,330 ERROR 18940 nodejs.SequelizeDatabaseError: Table 'ele.admins' doesn't exist
+    at Query.formatError (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:243:16)
+    at handler (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:50:23)
+    at Prepare.Commands.Prepare [as onResult] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:636:11)
+    at Prepare.execute (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:39:12)
+    at runHooks.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:29)
+From previous event:
+    at Promise.try.then.connection (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:12)
+From previous event:
+    at Promise.resolve.retry (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:637:10)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:60:10)
+    at Promise.try (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:627:30)
+From previous event:
+    at Sequelize.query (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:576:23)
+    at QueryInterface.insert (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\query-interface.js:885:27)
+    at Promise.try.then.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3835:52)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Object.save (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3812:8)
+    at Function.create (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:2223:8)
+    at Admin.createUser (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\service\admin.ts:26:43)
+    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:36:31)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+original: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+sql: "INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"
+pid: 18940
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:23:33,331 ERROR 18940 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+
+pid: 18940
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:25:46,648 INFO 7804 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 14:25:49,303 INFO 19208 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 14:25:55,605 INFO 19208 [egg-sequelize](7ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17688702092' LIMIT 1;
+2019-08-13 14:25:55,655 INFO 19208 [egg-sequelize](8ms) Executed (default): INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);
+2019-08-13 14:25:55,986 ERROR 19208 nodejs.SequelizeDatabaseError: Table 'ele.admins' doesn't exist
+    at Query.formatError (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:243:16)
+    at handler (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:50:23)
+    at Prepare.Commands.Prepare [as onResult] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:636:11)
+    at Prepare.execute (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:39:12)
+    at runHooks.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:29)
+From previous event:
+    at Promise.try.then.connection (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:12)
+From previous event:
+    at Promise.resolve.retry (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:637:10)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:60:10)
+    at Promise.try (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:627:30)
+From previous event:
+    at Sequelize.query (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:576:23)
+    at QueryInterface.insert (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\query-interface.js:885:27)
+    at Promise.try.then.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3835:52)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Object.save (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3812:8)
+    at Function.create (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:2223:8)
+    at Admin.createUser (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\service\admin.ts:26:43)
+    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:35:31)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+original: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+sql: "INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"
+pid: 19208
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:25:55,988 ERROR 19208 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+
+pid: 19208
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:27:00,986 INFO 18948 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 14:27:02,603 INFO 18948 [egg-sequelize](8ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17688702092' LIMIT 1;
+2019-08-13 14:27:02,646 INFO 18948 [egg-sequelize](9ms) Executed (default): INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);
+2019-08-13 14:27:02,673 ERROR 18948 nodejs.SequelizeDatabaseError: Table 'ele.admins' doesn't exist
+    at Query.formatError (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:243:16)
+    at handler (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:50:23)
+    at Prepare.Commands.Prepare [as onResult] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:636:11)
+    at Prepare.execute (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:39:12)
+    at runHooks.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:29)
+From previous event:
+    at Promise.try.then.connection (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:12)
+From previous event:
+    at Promise.resolve.retry (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:637:10)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:60:10)
+    at Promise.try (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:627:30)
+From previous event:
+    at Sequelize.query (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:576:23)
+    at QueryInterface.insert (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\query-interface.js:885:27)
+    at Promise.try.then.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3835:52)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Object.save (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3812:8)
+    at Function.create (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:2223:8)
+    at Admin.createUser (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\service\admin.ts:26:43)
+    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:34:31)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+original: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+sql: "INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"
+pid: 18948
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:27:02,675 ERROR 18948 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+
+pid: 18948
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:27:03,574 INFO 8800 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 14:27:12,028 INFO 8800 [egg-sequelize](5ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17688702092' LIMIT 1;
+2019-08-13 14:27:12,061 INFO 8800 [egg-sequelize](6ms) Executed (default): INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);
+2019-08-13 14:27:12,560 ERROR 8800 nodejs.SequelizeDatabaseError: Table 'ele.admins' doesn't exist
+    at Query.formatError (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:243:16)
+    at handler (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:50:23)
+    at Prepare.Commands.Prepare [as onResult] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:636:11)
+    at Prepare.execute (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:39:12)
+    at runHooks.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:29)
+From previous event:
+    at Promise.try.then.connection (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:12)
+From previous event:
+    at Promise.resolve.retry (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:637:10)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:60:10)
+    at Promise.try (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:627:30)
+From previous event:
+    at Sequelize.query (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:576:23)
+    at QueryInterface.insert (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\query-interface.js:885:27)
+    at Promise.try.then.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3835:52)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Object.save (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3812:8)
+    at Function.create (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:2223:8)
+    at Admin.createUser (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\service\admin.ts:26:43)
+    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:34:31)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+original: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+sql: "INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"
+pid: 8800
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:27:12,562 ERROR 8800 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+
+pid: 8800
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:28:20,372 INFO 13220 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 14:28:23,100 INFO 8304 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 14:28:29,503 INFO 8304 [egg-sequelize](8ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17688702092' LIMIT 1;
+2019-08-13 14:28:29,913 ERROR 8304 { message: '错了' }
+2019-08-13 14:28:29,915 ERROR 8304 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+
+pid: 8304
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:29:14,214 INFO 7264 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 14:29:16,461 INFO 6540 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 14:29:25,820 INFO 6540 [egg-sequelize](6ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17688702092' LIMIT 1;
+2019-08-13 14:29:25,853 INFO 6540 [egg-sequelize](7ms) Executed (default): INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);
+2019-08-13 14:29:26,317 ERROR 6540 nodejs.SequelizeDatabaseError: Table 'ele.admins' doesn't exist
+    at Query.formatError (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:243:16)
+    at handler (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:50:23)
+    at Prepare.Commands.Prepare [as onResult] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:636:11)
+    at Prepare.execute (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:39:12)
+    at runHooks.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:29)
+From previous event:
+    at Promise.try.then.connection (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:12)
+From previous event:
+    at Promise.resolve.retry (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:637:10)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:60:10)
+    at Promise.try (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:627:30)
+From previous event:
+    at Sequelize.query (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:576:23)
+    at QueryInterface.insert (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\query-interface.js:885:27)
+    at Promise.try.then.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3835:52)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Object.save (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3812:8)
+    at Function.create (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:2223:8)
+    at Admin.createUser (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\service\admin.ts:25:43)
+    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:34:31)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+original: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+sql: "INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"
+pid: 6540
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:29:26,319 ERROR 6540 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+
+pid: 6540
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 14:29:46,440 INFO 6448 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 14:29:48,736 INFO 12936 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 14:32:07,271 INFO 16884 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 14:32:09,949 INFO 7412 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 15:18:29,809 INFO 12704 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 15:18:32,397 INFO 12704 [egg-sequelize](4ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17688702092' LIMIT 1;
+2019-08-13 15:18:32,431 INFO 12704 [egg-sequelize](9ms) Executed (default): INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);
+2019-08-13 15:18:32,442 ERROR 12704 nodejs.SequelizeDatabaseError: Table 'ele.admins' doesn't exist
+    at Query.formatError (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:243:16)
+    at handler (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:50:23)
+    at Prepare.Commands.Prepare [as onResult] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:636:11)
+    at Prepare.execute (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:39:12)
+    at runHooks.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:29)
+From previous event:
+    at Promise.try.then.connection (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:12)
+From previous event:
+    at Promise.resolve.retry (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:637:10)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:60:10)
+    at Promise.try (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:627:30)
+From previous event:
+    at Sequelize.query (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:576:23)
+    at QueryInterface.insert (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\query-interface.js:885:27)
+    at Promise.try.then.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3835:52)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Object.save (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:3812:8)
+    at Function.create (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:2223:8)
+    at Admin.createUser (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\service\admin.ts:23:43)
+    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:36:31)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+original: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"}
+sql: "INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);"
+pid: 12704
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 15:18:32,444 ERROR 12704 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+
+pid: 12704
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 15:18:35,200 INFO 16284 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 15:18:58,734 INFO 16284 [egg-sequelize](9ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17688702092' LIMIT 1;
+2019-08-13 15:24:15,594 INFO 18544 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 15:24:17,783 INFO 17856 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 15:24:25,806 INFO 17856 [egg-sequelize](7ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17688702092' LIMIT 1;
+2019-08-13 15:58:27,639 INFO 14604 [egg-sequelize](13ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 15:58:30,015 INFO 17268 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 16:11:41,388 INFO 10864 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 16:15:42,231 INFO 11744 [egg-sequelize](12ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 16:15:52,192 INFO 18040 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 16:15:54,724 INFO 11900 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 16:16:12,722 INFO 10112 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 16:16:14,979 INFO 17628 [egg-sequelize](12ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 16:31:24,340 INFO 16544 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 16:31:26,700 INFO 14720 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 18:19:25,374 INFO 17908 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 18:19:27,442 INFO 784 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 18:27:09,401 INFO 18808 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 18:27:58,615 INFO 16968 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 18:28:00,793 INFO 11472 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 18:34:45,781 INFO 13540 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 18:38:46,738 INFO 4108 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 18:38:49,548 INFO 18272 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 19:23:55,374 INFO 4880 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 19:23:58,834 INFO 15956 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 19:56:48,364 INFO 13004 [egg-sequelize](18ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 19:59:52,790 INFO 10628 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:02:40,853 INFO 13292 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:02:44,819 INFO 21204 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:06:16,245 INFO 11212 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:06:19,166 INFO 19980 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:06:46,076 INFO 2192 [egg-sequelize](11ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:06:48,830 INFO 2472 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:10:27,325 INFO 21076 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:10:30,039 INFO 20760 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:11:32,151 INFO 10140 [egg-sequelize](11ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:11:36,119 INFO 13900 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:11:36,830 WARN 13900 nodejs.BadRequestError: Content-Type must be multipart/*
+    at Object.throw (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\lib\context.js:97:11)
+    at Object.multipart (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-multipart\app\extend\context.js:166:17)
+    at Object.getFileStream (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-multipart\app\extend\context.js:206:24)
+    at AdminController.updated (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:79:35)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:13:13
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+message: "Content-Type must be multipart/*"
+pid: 13900
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:11:36,839 ERROR 13900 nodejs.TypeError: Cannot read property 'warn' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:37:18)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
     at process._tickCallback (internal/process/next_tick.js:68:7)
 
-pid: 8416
+pid: 13900
 hostname: DESKTOP-COOIT9S
 
-2019-08-12 18:06:17,424 ERROR 8416 [-/127.0.0.1/-/451879ms POST /login] nodejs.TypeError: app.emit is not a function
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:11
+2019-08-13 20:11:48,151 WARN 13900 nodejs.BadRequestError: Content-Type must be multipart/*
+    at Object.throw (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\lib\context.js:97:11)
+    at Object.multipart (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-multipart\app\extend\context.js:166:17)
+    at Object.getFileStream (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-multipart\app\extend\context.js:206:24)
+    at AdminController.updated (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:79:35)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:13:13
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+message: "Content-Type must be multipart/*"
+pid: 13900
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:11:48,198 ERROR 13900 nodejs.TypeError: Cannot read property 'warn' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:37:18)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
     at process._tickCallback (internal/process/next_tick.js:68:7)
 
-pid: 8416
+pid: 13900
 hostname: DESKTOP-COOIT9S
 
-2019-08-12 18:10:26,937 INFO 12752 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 18:15:41,180 INFO 14024 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 18:18:12,455 ERROR 14024 [-/127.0.0.1/-/139280ms POST /login] nodejs.TypeError: app.emit is not a function
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:11
+2019-08-13 20:12:23,229 WARN 13900 nodejs.BadRequestError: Content-Type must be multipart/*
+    at Object.throw (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\lib\context.js:97:11)
+    at Object.multipart (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-multipart\app\extend\context.js:166:17)
+    at Object.getFileStream (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-multipart\app\extend\context.js:206:24)
+    at AdminController.updated (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:79:35)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:13:13
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+message: "Content-Type must be multipart/*"
+pid: 13900
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:12:23,252 ERROR 13900 nodejs.TypeError: Cannot read property 'warn' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:37:18)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
     at process._tickCallback (internal/process/next_tick.js:68:7)
 
-pid: 14024
+pid: 13900
 hostname: DESKTOP-COOIT9S
 
-2019-08-12 18:18:17,169 INFO 7160 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 18:18:19,346 INFO 15320 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 18:18:43,100 INFO 15320 [egg-sequelize](20ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17688702' LIMIT 1;
-2019-08-12 18:18:47,378 INFO 15320 [egg-sequelize](23ms) Executed (default): INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);
-2019-08-12 18:22:23,052 INFO 8596 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 18:22:25,174 INFO 12260 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 18:22:28,154 ERROR 12260 [-/127.0.0.1/-/9ms POST /login] nodejs.TypeError: app.emit is not a function
-    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:11
+2019-08-13 20:13:18,962 WARN 13900 nodejs.BadRequestError: Content-Type must be multipart/*
+    at Object.throw (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\lib\context.js:97:11)
+    at Object.multipart (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-multipart\app\extend\context.js:166:17)
+    at Object.getFileStream (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-multipart\app\extend\context.js:206:24)
+    at AdminController.updated (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:79:35)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:13:13
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+message: "Content-Type must be multipart/*"
+pid: 13900
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:13:18,968 ERROR 13900 nodejs.TypeError: Cannot read property 'warn' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:37:18)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
     at process._tickCallback (internal/process/next_tick.js:68:7)
 
-pid: 12260
+pid: 13900
 hostname: DESKTOP-COOIT9S
 
-2019-08-12 18:24:08,192 INFO 4520 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 18:24:10,292 INFO 6076 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 18:24:14,486 INFO 16012 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 18:24:16,691 INFO 2680 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 18:24:25,802 WARN 2680 [-/127.0.0.1/-/3431ms POST /login] nodejs.UnprocessableEntityError: Validation Failed
-    at Object.throw (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\lib\context.js:97:11)
-    at Object.validate (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-validate\app\extend\context.js:14:17)
-    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:22:13)
+2019-08-13 20:13:39,470 INFO 8596 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:13:55,982 ERROR 8596 nodejs.TypeError: this.ctx.service.admin.updateAvatar is not a function
+    at AdminController.updated (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:82:34)
     at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
     at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
     at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
@@ -211,6 +782,8 @@ hostname: DESKTOP-COOIT9S
     at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
     at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
     at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:13:13
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
     at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
     at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
     at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
@@ -219,20 +792,25 @@ hostname: DESKTOP-COOIT9S
     at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
     at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
     at xframe (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
-message: "Validation Failed"
-code: "invalid_param"
-errors: [{"message":"手机号码不正确","code":"invalid","field":"mobile"}]
-pid: 2680
+
+pid: 8596
 hostname: DESKTOP-COOIT9S
 
-2019-08-12 18:24:58,123 INFO 11452 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 18:25:02,094 INFO 12080 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 18:26:07,385 INFO 9976 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 18:26:11,799 INFO 16816 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 18:26:17,845 WARN 16816 [-/127.0.0.1/-/2049ms POST /login] nodejs.UnprocessableEntityError: Validation Failed
-    at Object.throw (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\lib\context.js:97:11)
-    at Object.validate (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-validate\app\extend\context.js:14:17)
-    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:22:13)
+2019-08-13 20:13:55,984 ERROR 8596 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 8596
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:14:31,074 INFO 2840 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:14:34,498 INFO 20772 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:14:39,465 INFO 5068 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:14:41,849 INFO 1380 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:14:48,815 ERROR 1380 nodejs.TypeError: this.ctx.service.admin.updateAvatar is not a function
+    at AdminController.updated (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:82:34)
     at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
     at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
     at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
@@ -244,6 +822,8 @@ hostname: DESKTOP-COOIT9S
     at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
     at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
     at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:13:13
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
     at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
     at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
     at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
@@ -252,16 +832,23 @@ hostname: DESKTOP-COOIT9S
     at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
     at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
     at xframe (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
-message: "Validation Failed"
-code: "invalid_param"
-errors: [{"message":"手机号码不正确","code":"invalid","field":"mobile"}]
-pid: 16816
+
+pid: 1380
 hostname: DESKTOP-COOIT9S
 
-2019-08-12 18:27:49,231 WARN 16816 [-/127.0.0.1/-/30940ms POST /login] nodejs.UnprocessableEntityError: Validation Failed
-    at Object.throw (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\lib\context.js:97:11)
-    at Object.validate (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-validate\app\extend\context.js:14:17)
-    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:22:13)
+2019-08-13 20:14:48,817 ERROR 1380 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 1380
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:16:20,860 INFO 20988 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:16:23,230 INFO 18924 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:16:26,354 ERROR 18924 nodejs.TypeError: this.ctx.service.admin.updateAvatar is not a function
+    at AdminController.updated (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:82:34)
     at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
     at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
     at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
@@ -273,6 +860,8 @@ hostname: DESKTOP-COOIT9S
     at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
     at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
     at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:13:13
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
     at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
     at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
     at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
@@ -281,16 +870,23 @@ hostname: DESKTOP-COOIT9S
     at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
     at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
     at xframe (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
-message: "Validation Failed"
-code: "invalid_param"
-errors: [{"message":"手机号码不正确","code":"invalid","field":"mobile"}]
-pid: 16816
+
+pid: 18924
 hostname: DESKTOP-COOIT9S
 
-2019-08-12 18:37:49,966 INFO 8468 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 18:37:52,166 INFO 9724 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 18:38:18,792 ERROR 9724 [-/127.0.0.1/-/11925ms POST /login] nodejs.TypeError: Cannot read property 'addRule' of undefined
-    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:24:23)
+2019-08-13 20:16:26,356 ERROR 18924 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 18924
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:16:48,461 INFO 13420 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:16:50,965 INFO 18436 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:17:11,230 ERROR 18436 nodejs.TypeError: this.ctx.service.admin.updateAvatar is not a function
+    at AdminController.updated (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:82:34)
     at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
     at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
     at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
@@ -302,6 +898,8 @@ hostname: DESKTOP-COOIT9S
     at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
     at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
     at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:13:13
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
     at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
     at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
     at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
@@ -310,27 +908,21 @@ hostname: DESKTOP-COOIT9S
     at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
     at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
     at xframe (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
-    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
-    at xssProtection (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
 
-pid: 9724
+pid: 18436
 hostname: DESKTOP-COOIT9S
 
-2019-08-12 18:39:08,356 INFO 784 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 18:39:11,135 INFO 14368 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 18:39:12,152 INFO 14368 [egg-sequelize](8ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17' LIMIT 1;
-2019-08-12 18:39:12,178 INFO 14368 [egg-sequelize](13ms) Executed (default): INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);
-2019-08-12 18:39:31,977 INFO 16008 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 18:39:34,055 INFO 11588 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 18:39:35,414 INFO 11588 [egg-sequelize](10ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17' LIMIT 1;
-2019-08-12 18:40:10,147 INFO 11588 [egg-sequelize](10ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17' LIMIT 1;
-2019-08-12 18:43:26,464 INFO 9296 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 18:43:30,794 INFO 12260 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 18:43:32,645 INFO 16572 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 18:44:06,520 WARN 16572 [-/127.0.0.1/-/27386ms POST /login] nodejs.UnprocessableEntityError: Validation Failed
-    at Object.throw (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\lib\context.js:97:11)
-    at Object.validate (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-validate\app\extend\context.js:14:17)
-    at AdminController.login (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:31:9)
+2019-08-13 20:17:11,232 ERROR 18436 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 18436
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:20:27,642 ERROR 18436 nodejs.TypeError: this.ctx.service.admin.updateAvatar is not a function
+    at AdminController.updated (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:82:34)
     at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
     at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
     at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
@@ -342,6 +934,8 @@ hostname: DESKTOP-COOIT9S
     at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
     at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
     at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:13:13
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
     at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
     at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
     at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
@@ -350,66 +944,146 @@ hostname: DESKTOP-COOIT9S
     at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
     at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
     at xframe (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
-message: "Validation Failed"
-code: "invalid_param"
-errors: [{"message":"手机号码不正确","code":"invalid","field":"mobile"}]
-pid: 16572
+
+pid: 18436
 hostname: DESKTOP-COOIT9S
 
-2019-08-12 18:45:58,586 INFO 14992 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 18:46:00,996 INFO 15484 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 18:46:04,030 INFO 15484 [egg-sequelize](9ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17' LIMIT 1;
-2019-08-12 19:36:43,856 INFO 16552 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 19:36:46,009 INFO 1388 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 19:37:00,062 INFO 12444 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 19:37:04,085 INFO 6544 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 19:37:15,907 INFO 6544 [egg-sequelize](33ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17' LIMIT 1;
-2019-08-12 20:02:12,597 INFO 18392 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:02:15,049 INFO 9652 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:04:07,925 INFO 9652 [egg-sequelize](7ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17' LIMIT 1;
-2019-08-12 20:04:07,957 INFO 9652 [egg-sequelize](18ms) Executed (default): INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);
-2019-08-12 20:04:19,537 INFO 9652 [egg-sequelize](9ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17' LIMIT 1;
-2019-08-12 20:07:25,159 INFO 14992 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:07:28,899 INFO 3592 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:07:44,509 INFO 17640 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:07:48,485 INFO 3688 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:08:00,194 INFO 17852 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:08:04,614 INFO 14348 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:08:05,309 INFO 14348 [egg-sequelize](7ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17' LIMIT 1;
-2019-08-12 20:12:31,499 INFO 3112 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:12:35,316 INFO 4544 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:14:20,885 INFO 6860 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:14:23,210 INFO 16352 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:14:32,204 INFO 16352 [egg-sequelize](10ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17' LIMIT 1;
-2019-08-12 20:19:26,313 INFO 6028 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:19:32,345 INFO 6368 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:19:34,281 INFO 13188 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:19:54,336 INFO 9480 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:19:58,556 INFO 17688 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:20:02,289 INFO 17688 [egg-sequelize](7ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17' LIMIT 1;
-2019-08-12 20:20:30,569 INFO 16768 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:20:32,718 INFO 13280 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:20:33,305 INFO 13280 [egg-sequelize](10ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17' LIMIT 1;
-2019-08-12 20:23:32,997 INFO 13860 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:23:36,847 INFO 11212 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:23:47,315 INFO 16572 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:23:51,315 INFO 10436 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:24:04,318 INFO 6484 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:24:17,366 INFO 11528 [egg-sequelize](12ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:24:21,319 INFO 14436 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:25:11,830 INFO 18016 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:25:14,488 INFO 13292 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:30:40,638 INFO 12960 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:30:43,070 INFO 16512 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:31:13,652 INFO 17436 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:31:15,768 INFO 18416 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:33:17,554 INFO 3308 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:33:21,323 INFO 17872 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:33:50,104 INFO 3344 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:33:53,785 INFO 4748 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:34:30,691 INFO 7068 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:34:34,417 INFO 17288 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:35:17,066 INFO 7376 [egg-sequelize](11ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:35:21,205 INFO 18312 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:35:43,363 INFO 9976 [egg-sequelize](12ms) Executed (default): SELECT 1+1 AS result
-2019-08-12 20:35:47,343 INFO 13832 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:20:27,644 ERROR 18436 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 18436
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:23:28,209 INFO 20144 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:23:28,428 ERROR 20144 nodejs.TypeError: this.ctx.service.admin.findByIdMobile is not a function
+    at AdminController.updated (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:78:34)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:13:13
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+
+pid: 20144
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:23:28,431 ERROR 20144 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 20144
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:23:30,168 ERROR 20144 nodejs.TypeError: this.ctx.service.admin.findByIdMobile is not a function
+    at AdminController.updated (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:78:34)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:13:13
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+
+pid: 20144
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:23:30,169 ERROR 20144 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 20144
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:23:30,960 INFO 20752 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:23:32,472 ERROR 20752 nodejs.TypeError: this.ctx.service.admin.findByIdMobile is not a function
+    at AdminController.updated (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:78:34)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:13:13
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+
+pid: 20752
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:23:32,488 ERROR 20752 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 20752
+hostname: DESKTOP-COOIT9S
+
+2019-08-13 20:23:51,636 INFO 20752 [egg-sequelize](11ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17688702092' LIMIT 1;
+2019-08-13 20:24:26,057 INFO 14484 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:24:29,278 INFO 21332 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:24:49,242 INFO 21380 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:24:51,593 INFO 19340 [egg-sequelize](11ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:24:57,843 INFO 8072 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:25:03,293 INFO 14548 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:30:29,671 INFO 21296 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:31:58,347 INFO 20476 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:32:00,738 INFO 19984 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:32:47,437 INFO 4540 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:32:49,712 INFO 18452 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:33:15,250 INFO 18452 [egg-sequelize](19ms) Executed (default): UPDATE `admins` SET `avatar`=? WHERE `mobile` = ?
+2019-08-13 20:34:31,952 INFO 21256 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:34:34,477 INFO 12960 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:35:30,654 INFO 12316 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:35:33,067 INFO 21444 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:35:49,221 INFO 21444 [egg-sequelize](19ms) Executed (default): UPDATE `admins` SET `avatar`=? WHERE `mobile` = ?
+2019-08-13 20:47:54,844 INFO 12668 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-13 20:47:57,416 INFO 18592 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result

@@ -1,12 +1,34 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: 笑佛弥勒
+ * @Date: 2019-08-06 15:38:40
+ * @LastEditors: 笑佛弥勒
+ * @LastEditTime: 2019-08-13 20:35:25
+ */
 import { Service } from 'egg';
 
 class Admin extends Service {
-    // 检测时候有这个用户
+    /**
+     * @Descripttion: 检测时候有这个用户
+     * @Author: 笑佛弥勒
+     * @param {type} 
+     * @return: 
+     */
     public async hasUser() {
-        let mobile = this.ctx.request.body.mobile
-        return await this.ctx.model.Admin.findByIdMobile(mobile)
+        try {
+            let mobile = this.ctx.request.body.mobile
+            return await this.ctx.model.Admin.findByIdMobile(mobile)
+        } catch (error) {
+            
+        }
     }
-    // 创建用户
+    /**
+     * @Descripttion: 创建用户
+     * @Author: 笑佛弥勒
+     * @param {mobile} 手机号 {password} 密码
+     * @return: 
+     */
     public async createUser(mobile, password) {
         return await this.ctx.model.Admin.create({
             mobile: mobile,
@@ -17,6 +39,15 @@ class Admin extends Service {
             created_at: new Date(),
             updated_at: new Date(),
         })
+    }
+    /**
+     * @Descripttion: 更新管理员头像
+     * @Author: 笑佛弥勒
+     * @param {url} 头像地址，{mobile}管理员手机号
+     * @return: 
+     */
+    public async updateAvatar(url, mobile) {
+        return await this.ctx.model.Admin.updateAvatar(url, mobile)
     }
 }
 

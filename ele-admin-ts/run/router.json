@@ -25,6 +25,18 @@
     ]
   },
   {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/updateAvatar",
+    "regexp": "/^\\/updateAvatar(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
     "name": "users",
     "methods": [
       "HEAD",

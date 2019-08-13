@@ -4,10 +4,13 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 16:46:01
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-12 20:31:09
+ * @LastEditTime: 2019-08-13 20:47:49
  */
 
 import { Controller } from "egg";
+import * as path from "path";
+import { mkdirSync, saveImg } from '../util/util'
+
 
 export default class AdminController extends Controller {
   /**
@@ -19,14 +22,13 @@ export default class AdminController extends Controller {
   public async login() {
     const { ctx } = this;
     const { mobile, password } = this.ctx.request.body;
-
     try {
       ctx.validate({ mobile: "mobile" });
-      ctx.validate({ password: {type: 'string', min: 1, max: 10}})
+      ctx.validate({ password: { type: "string", min: 1, max: 10 } });
     } catch (error) {
       ctx.body = {
         msg: error,
-        status: '-1'
+        status: "-1"
       };
       return;
     }
@@ -42,6 +44,33 @@ export default class AdminController extends Controller {
           status: "-100",
           msg: "密码错误"
         };
+      }
+    }
+  }
+  /**
+   * @Descripttion: 修改管理员头像
+   * @Author: 笑佛弥勒
+   * @param {type}
+   * @return:
+   */
+  public async updateAvatar() {
+
+    const stream = await this.ctx.getFileStream()
+    const uplaodBasePath = "app/public/adminAvatar"
+    const filename = `${Date.now()}${path.extname(stream.filename).toLocaleLowerCase()}`
+    try {
+      mkdirSync(path.join(uplaodBasePath))
+      const target = path.join(uplaodBasePath, filename)
+      saveImg(stream, target)
+      await this.ctx.service.admin.updateAvatar(filename, '17688702092')
+      this.ctx.body = {
+        status: 200,
+        url: filename
+      }
+    } catch (error) {
+      this.ctx.body = {
+        status: -1,
+        msg: '图片保存失败'
       }
     }
   }

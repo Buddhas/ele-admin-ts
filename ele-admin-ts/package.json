@@ -4,6 +4,7 @@
   "description": "The egg ts example project that uses egg-sequelize plugin.",
   "private": true,
   "dependencies": {
+    "await-stream-ready": "^1.0.1",
     "egg": "^2.10.0",
     "egg-cors": "^2.2.0",
     "egg-sequelize": "^5.0.0",
