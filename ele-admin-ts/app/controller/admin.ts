@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 16:46:01
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-13 20:47:49
+ * @LastEditTime: 2019-08-13 21:42:56
  */
 
 import { Controller } from "egg";
@@ -54,15 +54,16 @@ export default class AdminController extends Controller {
    * @return:
    */
   public async updateAvatar() {
-
     const stream = await this.ctx.getFileStream()
     const uplaodBasePath = "app/public/adminAvatar"
     const filename = `${Date.now()}${path.extname(stream.filename).toLocaleLowerCase()}`
+
     try {
       mkdirSync(path.join(uplaodBasePath))
       const target = path.join(uplaodBasePath, filename)
       saveImg(stream, target)
       await this.ctx.service.admin.updateAvatar(filename, '17688702092')
+
       this.ctx.body = {
         status: 200,
         url: filename
@@ -73,5 +74,18 @@ export default class AdminController extends Controller {
         msg: '图片保存失败'
       }
     }
+  }
+  /**
+   * @Descripttion: 获取管理员数量
+   * @Author: 笑佛弥勒
+   * @param {type} 
+   * @return: 
+   */
+  public async getAdminCount() {
+     return await this.ctx.service.admin.getAdminCount()
+  }
+  public async findAllAndCount() {
+    const { page, pageSize } = this.ctx.request.body 
+    return await this.ctx.service.admin.findAllAndCount(page, pageSize)
   }
 }

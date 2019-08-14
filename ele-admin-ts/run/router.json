@@ -30,8 +30,8 @@
       "POST"
     ],
     "paramNames": [],
-    "path": "/updateAvatar",
-    "regexp": "/^\\/updateAvatar(?:\\/(?=$))?$/",
+    "path": "/findAllAndCount",
+    "regexp": "/^\\/findAllAndCount(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]

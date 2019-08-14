@@ -280,3 +280,69 @@
 2019-08-13 20:47:56,767 INFO 18592 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
 2019-08-13 20:47:56,767 INFO 18592 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\clean_log.js
 2019-08-13 20:47:56,767 INFO 18592 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-13 20:52:04,392 INFO 3328 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-13 20:52:04,392 INFO 3328 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-13 20:52:04,392 INFO 3328 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-13 20:52:25,934 INFO 14056 [Timer] E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 27454069ms at 2019-08-14 04:30:00.003
+2019-08-13 20:52:25,934 INFO 14056 [Timer] E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 11254066ms at 2019-08-14 00:00:00.000
+2019-08-13 20:52:25,935 INFO 14056 [Timer] E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 11255066ms at 2019-08-14 00:00:01.001
+2019-08-13 20:52:52,785 INFO 5660 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-13 20:52:52,785 INFO 5660 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-13 20:52:52,785 INFO 5660 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-13 20:53:18,461 INFO 1804 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-13 20:53:18,461 INFO 1804 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-13 20:53:18,461 INFO 1804 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-13 20:53:23,983 INFO 18600 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-13 20:53:23,983 INFO 18600 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-13 20:53:23,983 INFO 18600 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-13 20:54:38,237 INFO 12460 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-13 20:54:38,237 INFO 12460 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-13 20:54:38,237 INFO 12460 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-13 20:54:42,919 INFO 13164 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-13 20:54:42,919 INFO 13164 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-13 20:54:42,919 INFO 13164 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-13 20:59:38,291 INFO 13644 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-13 20:59:38,291 INFO 13644 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-13 20:59:38,291 INFO 13644 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-13 20:59:50,246 INFO 6176 [Timer] E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 27009757ms at 2019-08-14 04:30:00.003
+2019-08-13 20:59:50,247 INFO 6176 [Timer] E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 10809753ms at 2019-08-14 00:00:00.000
+2019-08-13 20:59:50,247 INFO 6176 [Timer] E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 10810753ms at 2019-08-14 00:00:01.000
+2019-08-13 21:00:42,747 INFO 16544 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-13 21:00:42,747 INFO 16544 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-13 21:00:42,747 INFO 16544 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-13 21:00:46,853 INFO 20128 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-13 21:00:46,853 INFO 20128 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-13 21:00:46,853 INFO 20128 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-13 21:06:27,322 INFO 1672 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-13 21:06:27,322 INFO 1672 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-13 21:06:27,322 INFO 1672 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-13 21:06:31,981 INFO 19840 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-13 21:06:31,981 INFO 19840 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-13 21:06:31,981 INFO 19840 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-13 21:33:39,892 INFO 4112 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-13 21:33:39,892 INFO 4112 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-13 21:33:39,892 INFO 4112 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-13 21:33:45,734 INFO 6160 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-13 21:33:45,734 INFO 6160 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-13 21:33:45,734 INFO 6160 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-13 21:39:19,367 INFO 20872 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-13 21:39:19,367 INFO 20872 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-13 21:39:19,367 INFO 20872 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-13 21:39:23,508 INFO 2992 [Timer] E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 24636496ms at 2019-08-14 04:30:00.004
+2019-08-13 21:39:23,508 INFO 2992 [Timer] E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 8436492ms at 2019-08-14 00:00:00.000
+2019-08-13 21:39:23,508 INFO 2992 [Timer] E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 8437492ms at 2019-08-14 00:00:01.000
+2019-08-13 21:40:22,320 INFO 12504 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-13 21:40:22,320 INFO 12504 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-13 21:40:22,320 INFO 12504 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-13 21:40:26,751 INFO 9032 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-13 21:40:26,751 INFO 9032 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-13 21:40:26,751 INFO 9032 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-13 21:43:00,417 INFO 18036 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-13 21:43:00,417 INFO 18036 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-13 21:43:00,417 INFO 18036 [egg-schedule]: register schedule E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-13 21:43:04,556 INFO 9692 [Timer] E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 24415446ms at 2019-08-14 04:30:00.002
+2019-08-13 21:43:04,557 INFO 9692 [Timer] E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 8215444ms at 2019-08-14 00:00:00.001
+2019-08-13 21:43:04,557 INFO 9692 [Timer] E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 8216443ms at 2019-08-14 00:00:01.000
+2019-08-14 00:00:00,140 INFO 9692 [Timer] E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 86399884ms at 2019-08-15 00:00:00.022
+2019-08-14 00:00:01,110 INFO 9692 [Timer] E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 86399892ms at 2019-08-15 00:00:01.002
+2019-08-14 04:30:00,081 INFO 9692 [Timer] E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 86399926ms at 2019-08-15 04:30:00.005

@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 15:17:07
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-13 20:31:53
+ * @LastEditTime: 2019-08-13 21:37:03
  */
 import { Application } from "egg";
 
@@ -35,13 +35,19 @@ export default function(app: Application) {
   );
   return class extends Admin {
     static async updateAvatar(url: string, mobile: string) {
-        console.log('!!!!!!!!!')
         return await this.update({avatar: url},{where: {mobile: mobile}})
     }
     static async findByIdMobile(mobile: string) {
       return await this.findOne({
         where: { mobile: mobile }
       });
+    }
+    static async findAllAndCount(offset, limit) {
+      return await this.findAllAndCount({
+        limit: limit,
+      },{
+        offset: offset
+      })
     }
   };
 }

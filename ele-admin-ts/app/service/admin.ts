@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 15:38:40
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-13 20:35:25
+ * @LastEditTime: 2019-08-13 21:40:20
  */
 import { Service } from 'egg';
 
@@ -20,7 +20,7 @@ class Admin extends Service {
             let mobile = this.ctx.request.body.mobile
             return await this.ctx.model.Admin.findByIdMobile(mobile)
         } catch (error) {
-            
+            throw "查询用户出错"
         }
     }
     /**
@@ -40,6 +40,7 @@ class Admin extends Service {
             updated_at: new Date(),
         })
     }
+
     /**
      * @Descripttion: 更新管理员头像
      * @Author: 笑佛弥勒
@@ -48,6 +49,19 @@ class Admin extends Service {
      */
     public async updateAvatar(url, mobile) {
         return await this.ctx.model.Admin.updateAvatar(url, mobile)
+    }
+
+    /**
+     * @Descripttion: 获取管理员数量
+     * @Author: 笑佛弥勒
+     * @param {type} 
+     * @return: 
+     */
+    public async getAdminCount() {
+        return await this.ctx.model.Admin.count()
+    }
+    public async findAllAndCount(offset, limit) {
+        return await this.ctx.model.Admin.findAllAndCount(offset, limit)
     }
 }
 
