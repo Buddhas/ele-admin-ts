@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-12 16:22:42
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-13 16:15:49
+ * @LastEditTime: 2019-08-14 14:09:27
  */
 module.exports = () => {
   // 中间件的配置项，框架会将 app.config[${middlewareName}] 传递进来
@@ -22,6 +22,7 @@ module.exports = () => {
       // 从 error 对象上读出各个属性，设置到响应中
       ctx.body = { error_msg };
       ctx.body.success = false;
+      ctx.body.status = err.status
       if (status === 422) {
         ctx.body.detail = err.errors;
       }

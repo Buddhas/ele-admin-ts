@@ -30,8 +30,8 @@
       "POST"
     ],
     "paramNames": [],
-    "path": "/findAllAndCount",
-    "regexp": "/^\\/findAllAndCount(?:\\/(?=$))?$/",
+    "path": "/findAdminByPage",
+    "regexp": "/^\\/findAdminByPage(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -224,6 +224,18 @@
     ],
     "path": "/posts/:id",
     "regexp": "/^\\/posts\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/test",
+    "regexp": "/^\\/test(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]

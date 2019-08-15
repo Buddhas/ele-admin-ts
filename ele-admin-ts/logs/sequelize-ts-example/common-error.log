@@ -2005,3 +2005,517 @@ hostname: DESKTOP-COOIT9S
 pid: 20872
 hostname: DESKTOP-COOIT9S
 
+2019-08-14 10:30:35,276 ERROR 7492 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 7492
+hostname: DESKTOP-COOIT9S
+
+2019-08-14 10:32:45,025 ERROR 7816 nodejs.SequelizeDatabaseError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1', '10'' at line 1
+    at Query.formatError (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:243:16)
+    at Query.handler [as onResult] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:50:23)
+    at Query.execute (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:39:12)
+    at runHooks.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:29)
+From previous event:
+    at Promise.try.then.connection (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:12)
+From previous event:
+    at Promise.resolve.retry (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:637:10)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:60:10)
+    at Promise.try (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:627:30)
+From previous event:
+    at Sequelize.query (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:576:23)
+    at QueryInterface.select (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\query-interface.js:1120:27)
+    at Promise.try.then.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:1756:34)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Function.findAll (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:1753:8)
+    at Function.findAndCountAll (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:2095:12)
+    at Function.findAdminByPage (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\model\admin.ts:46:25)
+    at Admin.findAdminByPage (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\service\admin.ts:64:43)
+    at AdminController.findAdminByPage (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:95:41)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:13:13
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1', '10'' at line 1","sql":"SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` LIMIT '1', '10';"}
+original: {"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1', '10'' at line 1","sql":"SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` LIMIT '1', '10';"}
+sql: "SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` LIMIT '1', '10';"
+pid: 7816
+hostname: DESKTOP-COOIT9S
+
+2019-08-14 10:32:45,055 ERROR 7816 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+
+pid: 7816
+hostname: DESKTOP-COOIT9S
+
+2019-08-14 10:38:49,240 ERROR 10936 nodejs.SequelizeDatabaseError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1', '10'' at line 1
+    at Query.formatError (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:243:16)
+    at Query.handler [as onResult] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:50:23)
+    at Query.execute (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:39:12)
+    at runHooks.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:29)
+From previous event:
+    at Promise.try.then.connection (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:12)
+From previous event:
+    at Promise.resolve.retry (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:637:10)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:60:10)
+    at Promise.try (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:627:30)
+From previous event:
+    at Sequelize.query (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:576:23)
+    at QueryInterface.select (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\query-interface.js:1120:27)
+    at Promise.try.then.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:1756:34)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Function.findAll (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:1753:8)
+    at Function.findAndCountAll (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:2095:12)
+    at Function.findAdminByPage (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\model\admin.ts:46:25)
+    at Admin.findAdminByPage (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\service\admin.ts:64:43)
+    at AdminController.findAdminByPage (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:103:41)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:13:13
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1', '10'' at line 1","sql":"SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` LIMIT '1', '10';"}
+original: {"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1', '10'' at line 1","sql":"SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` LIMIT '1', '10';"}
+sql: "SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` LIMIT '1', '10';"
+pid: 10936
+hostname: DESKTOP-COOIT9S
+
+2019-08-14 10:38:49,265 ERROR 10936 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+
+pid: 10936
+hostname: DESKTOP-COOIT9S
+
+2019-08-14 10:39:49,671 ERROR 2832 nodejs.SequelizeDatabaseError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1', '10'' at line 1
+    at Query.formatError (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:243:16)
+    at Query.handler [as onResult] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:50:23)
+    at Query.execute (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:39:12)
+    at runHooks.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:29)
+From previous event:
+    at Promise.try.then.connection (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:12)
+From previous event:
+    at Promise.resolve.retry (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:637:10)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:60:10)
+    at Promise.try (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:627:30)
+From previous event:
+    at Sequelize.query (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:576:23)
+    at QueryInterface.select (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\query-interface.js:1120:27)
+    at Promise.try.then.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:1756:34)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Function.findAll (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:1753:8)
+    at Function.findAndCountAll (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:2095:12)
+    at Function.findAdminByPage (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\model\admin.ts:46:25)
+    at Admin.findAdminByPage (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\service\admin.ts:64:43)
+    at AdminController.findAdminByPage (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:103:41)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:13:13
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1', '10'' at line 1","sql":"SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` LIMIT '1', '10';"}
+original: {"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1', '10'' at line 1","sql":"SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` LIMIT '1', '10';"}
+sql: "SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` LIMIT '1', '10';"
+pid: 2832
+hostname: DESKTOP-COOIT9S
+
+2019-08-14 10:39:49,695 ERROR 2832 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+
+pid: 2832
+hostname: DESKTOP-COOIT9S
+
+2019-08-14 14:06:06,828 ERROR 14816 { error_msg: '查询出错', status: '-1' }
+2019-08-14 14:06:06,834 ERROR 14816 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 14816
+hostname: DESKTOP-COOIT9S
+
+2019-08-14 14:06:06,841 ERROR 14816 [-/127.0.0.1/-/50ms POST /findAdminByPage] nodejs.AssertionError [ERR_ASSERTION]: status code must be a number
+    at Object.set status [as status] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\lib\response.js:86:5)
+    at Object.status (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\delegates\index.js:92:31)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:28:18
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+generatedMessage: false
+name: "AssertionError [ERR_ASSERTION]"
+code: "ERR_ASSERTION"
+actual: false
+expected: true
+operator: "=="
+pid: 14816
+hostname: DESKTOP-COOIT9S
+
+2019-08-14 14:06:10,337 ERROR 14816 { error_msg: '查询出错', status: '-1' }
+2019-08-14 14:06:10,348 ERROR 14816 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+
+pid: 14816
+hostname: DESKTOP-COOIT9S
+
+2019-08-14 14:06:10,352 ERROR 14816 [-/127.0.0.1/-/30ms POST /findAdminByPage] nodejs.AssertionError [ERR_ASSERTION]: status code must be a number
+    at Object.set status [as status] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\lib\response.js:86:5)
+    at Object.status (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\delegates\index.js:92:31)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:28:18
+generatedMessage: false
+name: "AssertionError [ERR_ASSERTION]"
+code: "ERR_ASSERTION"
+actual: false
+expected: true
+operator: "=="
+pid: 14816
+hostname: DESKTOP-COOIT9S
+
+2019-08-14 14:06:34,243 ERROR 5784 { error_msg: '查询出错', status: -1 }
+2019-08-14 14:06:34,244 ERROR 5784 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 5784
+hostname: DESKTOP-COOIT9S
+
+2019-08-14 14:06:34,249 ERROR 5784 [-/127.0.0.1/-/39ms POST /findAdminByPage] nodejs.AssertionError [ERR_ASSERTION]: invalid status code: -1
+    at Object.set status [as status] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\lib\response.js:87:5)
+    at Object.status (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\delegates\index.js:92:31)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:28:18
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+generatedMessage: false
+name: "AssertionError [ERR_ASSERTION]"
+code: "ERR_ASSERTION"
+actual: false
+expected: true
+operator: "=="
+pid: 5784
+hostname: DESKTOP-COOIT9S
+
+2019-08-14 14:06:35,573 ERROR 5784 { error_msg: '查询出错', status: -1 }
+2019-08-14 14:06:35,573 ERROR 5784 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+
+pid: 5784
+hostname: DESKTOP-COOIT9S
+
+2019-08-14 14:06:35,575 ERROR 5784 [-/127.0.0.1/-/28ms POST /findAdminByPage] nodejs.AssertionError [ERR_ASSERTION]: invalid status code: -1
+    at Object.set status [as status] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\lib\response.js:87:5)
+    at Object.status (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\delegates\index.js:92:31)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:28:18
+generatedMessage: false
+name: "AssertionError [ERR_ASSERTION]"
+code: "ERR_ASSERTION"
+actual: false
+expected: true
+operator: "=="
+pid: 5784
+hostname: DESKTOP-COOIT9S
+
+2019-08-14 14:06:36,559 ERROR 5784 { error_msg: '查询出错', status: -1 }
+2019-08-14 14:06:36,560 ERROR 5784 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+
+pid: 5784
+hostname: DESKTOP-COOIT9S
+
+2019-08-14 14:06:36,562 ERROR 5784 [-/127.0.0.1/-/16ms POST /findAdminByPage] nodejs.AssertionError [ERR_ASSERTION]: invalid status code: -1
+    at Object.set status [as status] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\lib\response.js:87:5)
+    at Object.status (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\delegates\index.js:92:31)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:28:18
+generatedMessage: false
+name: "AssertionError [ERR_ASSERTION]"
+code: "ERR_ASSERTION"
+actual: false
+expected: true
+operator: "=="
+pid: 5784
+hostname: DESKTOP-COOIT9S
+
+2019-08-14 14:06:49,749 ERROR 14720 { error_msg: '查询出错' }
+2019-08-14 14:06:49,750 ERROR 14720 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 14720
+hostname: DESKTOP-COOIT9S
+
+2019-08-14 14:07:03,074 ERROR 14720 { error_msg: '查询出错' }
+2019-08-14 14:07:03,075 ERROR 14720 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+
+pid: 14720
+hostname: DESKTOP-COOIT9S
+
+2019-08-14 14:08:01,934 ERROR 5576 { message: '查询出错', status: -1 }
+2019-08-14 14:08:01,940 ERROR 5576 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 5576
+hostname: DESKTOP-COOIT9S
+
+2019-08-14 14:08:01,945 ERROR 5576 [-/127.0.0.1/-/47ms POST /findAdminByPage] nodejs.AssertionError [ERR_ASSERTION]: invalid status code: -1
+    at Object.set status [as status] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\lib\response.js:87:5)
+    at Object.status (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\delegates\index.js:92:31)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:28:18
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+generatedMessage: false
+name: "AssertionError [ERR_ASSERTION]"
+code: "ERR_ASSERTION"
+actual: false
+expected: true
+operator: "=="
+pid: 5576
+hostname: DESKTOP-COOIT9S
+
+2019-08-14 14:08:03,499 ERROR 5576 { message: '查询出错', status: -1 }
+2019-08-14 14:08:03,509 ERROR 5576 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+
+pid: 5576
+hostname: DESKTOP-COOIT9S
+
+2019-08-14 14:08:03,512 ERROR 5576 [-/127.0.0.1/-/35ms POST /findAdminByPage] nodejs.AssertionError [ERR_ASSERTION]: invalid status code: -1
+    at Object.set status [as status] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\lib\response.js:87:5)
+    at Object.status (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\delegates\index.js:92:31)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:28:18
+generatedMessage: false
+name: "AssertionError [ERR_ASSERTION]"
+code: "ERR_ASSERTION"
+actual: false
+expected: true
+operator: "=="
+pid: 5576
+hostname: DESKTOP-COOIT9S
+
+2019-08-14 14:08:46,181 ERROR 12320 nodejs.TypeError: Cannot read property 'warn' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:37:18)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 12320
+hostname: DESKTOP-COOIT9S
+
+2019-08-14 14:09:38,843 ERROR 14360 nodejs.TypeError: Cannot read property 'warn' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:37:18)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 14360
+hostname: DESKTOP-COOIT9S
+
+2019-08-14 14:16:55,297 ERROR 1456 nodejs.SequelizeDatabaseError: Table 'ele.admins' doesn't exist
+    at Query.formatError (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:243:16)
+    at Query.handler [as onResult] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:50:23)
+    at Query.execute (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\dialects\mysql\query.js:39:12)
+    at runHooks.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:29)
+From previous event:
+    at Promise.try.then.connection (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:641:12)
+From previous event:
+    at Promise.resolve.retry (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:637:10)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\retry-as-promised\index.js:60:10)
+    at Promise.try (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:627:30)
+From previous event:
+    at Sequelize.query (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\sequelize.js:576:23)
+    at QueryInterface.select (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\query-interface.js:1120:27)
+    at Promise.try.then.then.then (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:1756:34)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Function.findAll (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:1753:8)
+    at Function.findOne (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\sequelize\lib\model.js:1923:17)
+    at Function.findByIdMobile (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\model\admin.ts:41:25)
+    at Admin.test (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\service\admin.ts:73:43)
+    at AdminController.test (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:119:51)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:13:13
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17688702092' LIMIT 1;"}
+original: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'ele.admins' doesn't exist","sql":"SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17688702092' LIMIT 1;"}
+sql: "SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '17688702092' LIMIT 1;"
+pid: 1456
+hostname: DESKTOP-COOIT9S
+
+2019-08-14 14:16:55,333 ERROR 1456 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+
+pid: 1456
+hostname: DESKTOP-COOIT9S
+
+2019-08-14 14:22:26,895 ERROR 12568 nodejs.ClusterClientNoResponseError: client no response in 66069ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12568
+hostname: DESKTOP-COOIT9S
+
+2019-08-14 16:40:49,036 ERROR 12568 nodejs.ClusterClientNoResponseError: client no response in 1651644ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 12568
+hostname: DESKTOP-COOIT9S
+

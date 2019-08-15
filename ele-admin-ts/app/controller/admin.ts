@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 16:46:01
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-13 21:42:56
+ * @LastEditTime: 2019-08-14 14:19:14
  */
 
 import { Controller } from "egg";
@@ -63,7 +63,6 @@ export default class AdminController extends Controller {
       const target = path.join(uplaodBasePath, filename)
       saveImg(stream, target)
       await this.ctx.service.admin.updateAvatar(filename, '17688702092')
-
       this.ctx.body = {
         status: 200,
         url: filename
@@ -84,8 +83,42 @@ export default class AdminController extends Controller {
   public async getAdminCount() {
      return await this.ctx.service.admin.getAdminCount()
   }
-  public async findAllAndCount() {
-    const { page, pageSize } = this.ctx.request.body 
-    return await this.ctx.service.admin.findAllAndCount(page, pageSize)
+  /**
+   * @Descripttion: 管理员列表分页
+   * @Author: 笑佛弥勒
+   * @param {type} 
+   * @return: 
+   */
+  public async findAdminByPage() {
+    let { page, pageSize } = this.ctx.request.body
+    page = Number(page)
+    pageSize = Number(pageSize)
+
+    try {
+      this.ctx.validate({page: 'number'}, {page: page})
+      this.ctx.validate({pageSize: 'number'}, {pageSize: pageSize})
+    } catch (error) {
+      this.ctx.body = {
+        msg: '参数错误',
+        status: '-1'
+      }
+      return
+    }
+
+    try {
+      this.ctx.body =  await this.ctx.service.admin.findAdminByPage(page,pageSize)
+    } catch (error) {
+      throw {
+        message: '查询出错',
+        status: 400
+      }
+    }
+    
+  }
+  public async test() {
+    await this.ctx.service.admin.test().then((res) => {
+      console.log(res)
+    })
+    this.ctx.body =  await this.ctx.service.admin.test()
   }
 }
