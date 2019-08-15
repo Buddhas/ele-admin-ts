@@ -4,13 +4,12 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 16:46:01
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-14 14:19:14
+ * @LastEditTime: 2019-08-15 10:13:57
  */
 
 import { Controller } from "egg";
 import * as path from "path";
-import { mkdirSync, saveImg } from '../util/util'
-
+import { mkdirSync, saveImg } from "../util/util";
 
 export default class AdminController extends Controller {
   /**
@@ -54,71 +53,75 @@ export default class AdminController extends Controller {
    * @return:
    */
   public async updateAvatar() {
-    const stream = await this.ctx.getFileStream()
-    const uplaodBasePath = "app/public/adminAvatar"
-    const filename = `${Date.now()}${path.extname(stream.filename).toLocaleLowerCase()}`
+    const stream = await this.ctx.getFileStream();
+    const uplaodBasePath = "app/public/adminAvatar";
+    const filename = `${Date.now()}${path
+      .extname(stream.filename)
+      .toLocaleLowerCase()}`;
 
     try {
-      mkdirSync(path.join(uplaodBasePath))
-      const target = path.join(uplaodBasePath, filename)
-      saveImg(stream, target)
-      await this.ctx.service.admin.updateAvatar(filename, '17688702092')
+      mkdirSync(path.join(uplaodBasePath));
+      const target = path.join(uplaodBasePath, filename);
+      saveImg(stream, target);
+      await this.ctx.service.admin.updateAvatar(filename, "17688702092");
       this.ctx.body = {
         status: 200,
         url: filename
-      }
+      };
     } catch (error) {
       this.ctx.body = {
         status: -1,
-        msg: '图片保存失败'
-      }
+        msg: "图片保存失败"
+      };
     }
   }
   /**
    * @Descripttion: 获取管理员数量
    * @Author: 笑佛弥勒
-   * @param {type} 
-   * @return: 
+   * @param {type}
+   * @return:
    */
   public async getAdminCount() {
-     return await this.ctx.service.admin.getAdminCount()
+    return await this.ctx.service.admin.getAdminCount();
   }
   /**
    * @Descripttion: 管理员列表分页
    * @Author: 笑佛弥勒
-   * @param {type} 
-   * @return: 
+   * @param {type}
+   * @return:
    */
   public async findAdminByPage() {
-    let { page, pageSize } = this.ctx.request.body
-    page = Number(page)
-    pageSize = Number(pageSize)
+    let { page, pageSize } = this.ctx.request.body;
+    page = Number(page);
+    pageSize = Number(pageSize);
 
     try {
-      this.ctx.validate({page: 'number'}, {page: page})
-      this.ctx.validate({pageSize: 'number'}, {pageSize: pageSize})
+      this.ctx.validate({ page: "number" }, { page: page });
+      this.ctx.validate({ pageSize: "number" }, { pageSize: pageSize });
     } catch (error) {
       this.ctx.body = {
-        msg: '参数错误',
-        status: '-1'
-      }
-      return
+        msg: "参数错误",
+        status: "-1"
+      };
+      return;
     }
 
     try {
-      this.ctx.body =  await this.ctx.service.admin.findAdminByPage(page,pageSize)
+      this.ctx.body = await this.ctx.service.admin.findAdminByPage(
+        page,
+        pageSize
+      );
     } catch (error) {
       throw {
-        message: '查询出错',
+        message: "查询出错",
         status: 400
-      }
+      };
     }
-    
   }
   public async test() {
-    await this.ctx.service.admin.test().then((res) => {
-      console.log(res)
-    })
-    this.ctx.body =  await this.ctx.service.admin.test()
+    await this.ctx.service.admin.test().then(res => {
+      console.log(res);
+    });
+    this.ctx.body = await this.ctx.service.admin.test();
   }
 }
