@@ -210,6 +210,7 @@
         "egg-cors": "^2.2.0",
         "egg-sequelize": "^5.0.0",
         "egg-validate": "^2.0.2",
+        "jsonwebtoken": "^8.5.1",
         "mysql2": "^1.6.1"
       },
       "devDependencies": {
@@ -302,13 +303,17 @@
         "keepAlive": true,
         "freeSocketTimeout": 4000,
         "maxSockets": 9007199254740991,
-        "maxFreeSockets": 256
+        "maxFreeSockets": 256,
+        "timeout": 30000,
+        "socketActiveTTL": 0
       },
       "httpsAgent": {
         "keepAlive": true,
         "freeSocketTimeout": 4000,
         "maxSockets": 9007199254740991,
-        "maxFreeSockets": 256
+        "maxFreeSockets": 256,
+        "timeout": 30000,
+        "socketActiveTTL": 0
       }
     },
     "meta": {

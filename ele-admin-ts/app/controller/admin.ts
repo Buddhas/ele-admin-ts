@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 16:46:01
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-15 10:13:57
+ * @LastEditTime: 2019-08-19 21:08:52
  */
 
 import { Controller } from "egg";
@@ -34,10 +34,11 @@ export default class AdminController extends Controller {
 
     let res = await ctx.service.admin.hasUser(mobile);
     if (!res) {
-      await ctx.service.admin.createUser(mobile, password);
+      let user = await ctx.service.admin.createUser(mobile, password);
     } else {
       if (res.password == password) {
         ctx.body = res;
+        ctx.session = res
       } else {
         ctx.body = {
           status: "-100",
@@ -94,7 +95,6 @@ export default class AdminController extends Controller {
     let { page, pageSize } = this.ctx.request.body;
     page = Number(page);
     pageSize = Number(pageSize);
-
     try {
       this.ctx.validate({ page: "number" }, { page: page });
       this.ctx.validate({ pageSize: "number" }, { pageSize: pageSize });

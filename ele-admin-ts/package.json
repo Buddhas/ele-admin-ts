@@ -9,6 +9,7 @@
     "egg-cors": "^2.2.0",
     "egg-sequelize": "^5.0.0",
     "egg-validate": "^2.0.2",
+    "jsonwebtoken": "^8.5.1",
     "mysql2": "^1.6.1"
   },
   "devDependencies": {

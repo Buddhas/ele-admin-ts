@@ -175,6 +175,7 @@
       "egg-cors": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
       "egg-sequelize": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
       "egg-validate": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
+      "jsonwebtoken": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
       "mysql2": "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js"
     },
     "devDependencies": {
