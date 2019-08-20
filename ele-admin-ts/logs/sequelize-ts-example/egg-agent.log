@@ -13,3 +13,14 @@
 2019-08-20 16:21:06,229 INFO 15472 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\app\\middleware\\error_handler.js","stat":{"dev":219155770,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":562949954050026,"size":1094,"atimeMs":1566289266226.9104,"mtimeMs":1565762968180.6863,"ctimeMs":1565762968180.6863,"birthtimeMs":1565598162171.3374,"atime":"2019-08-20T08:21:06.227Z","mtime":"2019-08-14T06:09:28.181Z","ctime":"2019-08-14T06:09:28.181Z","birthtime":"2019-08-12T08:22:42.171Z"},"remove":false,"isDirectory":false,"isFile":true}
 2019-08-20 16:21:06,442 WARN 15472 [agent:development] reload worker because E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js change
 2019-08-20 16:21:08,947 WARN 15472 [ClusterClient:Connection] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-08-20 16:24:06,229 INFO 15972 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-20 16:24:05,740 INFO 15972 [egg:logger] init all loggers with options: {"dir":"E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\logs\\sequelize-ts-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-ts-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2019-08-20 16:24:06,090 INFO 15972 [egg:core] dump config after load, 3ms
+2019-08-20 16:24:06,133 INFO 15972 [egg-watcher] Start watching: ["E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\app","E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\config","E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\mocks","E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\mocks_proxy","E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\app.js"]
+2019-08-20 16:24:06,134 INFO 15972 [egg-watcher] Start watching: "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\app"
+2019-08-20 16:24:06,134 INFO 15972 [egg-watcher] Start watching: "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\config"
+2019-08-20 16:24:06,134 INFO 15972 [egg-watcher] Start watching: "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\mocks"
+2019-08-20 16:24:06,134 INFO 15972 [egg-watcher] Start watching: "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\mocks_proxy"
+2019-08-20 16:24:06,134 INFO 15972 [egg-watcher] Start watching: "E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\app.js"
+2019-08-20 16:24:06,134 INFO 15972 [egg-watcher:agent] watcher start success
+2019-08-20 16:24:06,236 INFO 15972 [egg:core] dump config after ready, 3ms

@@ -26,3 +26,16 @@
 2019-08-20 16:21:08,806 INFO 8972 [egg:core] dump config after load, 5ms
 2019-08-20 16:21:08,826 INFO 8972 [egg-watcher:application] watcher start success
 2019-08-20 16:21:08,942 INFO 8972 [egg:core] dump config after ready, 3ms
+2019-08-20 16:24:07,915 INFO 10380 [egg:logger] init all loggers with options: {"dir":"E:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\logs\\sequelize-ts-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-ts-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-08-20 16:24:07,948 INFO 10380 [egg-multipart] stream mode enable
+2019-08-20 16:24:08,382 INFO 10380 [egg-static] starting static serve /public/ -> E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\public
+2019-08-20 16:24:08,385 INFO 10380 [egg-security] use methodnoallow middleware
+2019-08-20 16:24:08,386 INFO 10380 [egg-security] use noopen middleware
+2019-08-20 16:24:08,387 INFO 10380 [egg-security] use nosniff middleware
+2019-08-20 16:24:08,388 INFO 10380 [egg-security] use xssProtection middleware
+2019-08-20 16:24:08,388 INFO 10380 [egg-security] use xframe middleware
+2019-08-20 16:24:08,389 INFO 10380 [egg-security] use dta middleware
+2019-08-20 16:24:08,389 INFO 10380 [egg-security] compose 6 middlewares into one security middleware
+2019-08-20 16:24:08,413 INFO 10380 [egg:core] dump config after load, 5ms
+2019-08-20 16:24:08,432 INFO 10380 [egg-watcher:application] watcher start success
+2019-08-20 16:24:08,508 INFO 10380 [egg:core] dump config after ready, 3ms
