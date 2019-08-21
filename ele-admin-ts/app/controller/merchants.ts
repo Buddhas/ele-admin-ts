@@ -4,13 +4,13 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 16:59:30
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-19 20:37:20
+ * @LastEditTime: 2019-08-21 14:26:10
  */
 import { Controller } from "egg";
 import * as path from "path";
 
 export default class Merchants extends Controller {
-    
+
   /**
    * @Descripttion: 创建商户
    * @Author: 笑佛弥勒
@@ -175,5 +175,43 @@ export default class Merchants extends Controller {
         msg: "图片保存失败"
       };
     }
+  }
+  /**
+   * @Descripttion: 更新商户信息
+   * @Author: 笑佛弥勒
+   * @param {type} 
+   * @return: 
+   */
+  public async updateMerchants() {
+    let params = this.ctx.request.body;
+    try {
+      this.ctx.validate({ params: "updateMerchants" });
+    } catch (error) {
+      this.ctx.body = {
+        msg: error,
+        status: "-1"
+      };
+      return;
+    }
+
+    try {
+      this.ctx.service.merchants.updateMerchants(params)
+    } catch (error) {
+      this.ctx.body = {
+        msg: "更新商铺信息失败",
+        status: "-1"
+      };
+    }
+  }
+
+  /**
+   * @Descripttion: 根据商铺名称模糊查询商铺
+   * @Author: 笑佛弥勒
+   * @param {type} 
+   * @return: 
+   */
+  public async findMerchantsByName() {
+    const { page, pageSize, name } = this.ctx.request.body
+    this.ctx.body = await this.service.merchants.findMerchantsByName(Number(page), Number(pageSize), name)
   }
 }

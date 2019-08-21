@@ -8,7 +8,7 @@
  */
 import { Application } from "egg";
 
-export default function(app: Application) {
+export default function (app: Application) {
   const { STRING, INTEGER, DATE } = app.Sequelize;
   const Admin = app.model.define(
     "admin",

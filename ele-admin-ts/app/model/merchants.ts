@@ -4,14 +4,17 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 16:21:27
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-19 20:15:39
+ * @LastEditTime: 2019-08-21 14:26:27
  */
 "use strict";
 
 import { Application } from "egg";
 
-export default function(app: Application) {
+
+export default function (app: Application) {
   const { INTEGER, DATE, STRING, DECIMAL } = app.Sequelize;
+  const Op = app.Sequelize.Op
+  
   const Merchants = app.model.define(
     "merchants",
     {
@@ -69,6 +72,24 @@ export default function(app: Application) {
         offset: (page - 1) * pageSize,
         limit: pageSize
       });
+    }
+    /**
+     * @Descripttion: 根据商铺名称模糊查询商铺
+     * @Author: 笑佛弥勒
+     * @param {type} 
+     * @return: 
+     */
+    static async findMerchantsByName(page: number, pageSize: number, name: string) {
+      console.log(name)
+      return await this.findAndCountAll({
+        offset: (page - 1) * pageSize,
+        limit: pageSize,
+        where: {
+          name: {
+            [Op.like]: `%${name}%` 
+          }
+        }
+      })
     }
   };
 }

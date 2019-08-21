@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-13 16:39:28
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-13 18:34:37
+ * @LastEditTime: 2019-08-21 11:32:12
  */
 import * as fs from "fs";
 import * as path from "path";
@@ -32,13 +32,13 @@ export function mkdirSync(dirname) {
 }
 
 export async function saveImg(stream, target) {
-    const writeStream = fs.createWriteStream(target);
-    try {
-      //异步把文件流 写入
-      await awaitWriteStream(stream.pipe(writeStream));
-    } catch (err) {
-      //如果出现错误，关闭管道
-      await sendToWormhole(stream);
-      throw "图片保存失败";
-    }
+  const writeStream = fs.createWriteStream(target);
+  try {
+    //异步把文件流 写入
+    await awaitWriteStream(stream.pipe(writeStream));
+  } catch (err) {
+    //如果出现错误，关闭管道
+    await sendToWormhole(stream);
+    throw "图片保存失败";
+  }
 }

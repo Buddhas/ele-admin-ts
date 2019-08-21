@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 16:30:21
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-19 20:19:09
+ * @LastEditTime: 2019-08-21 14:23:30
  */
 import { Service } from "egg";
 
@@ -54,6 +54,31 @@ class Merchants extends Service {
    */
   public async findAdminByPage(page: number, pageSize: number) {
     return await this.ctx.model.Merchants.findMerchantsByPage(page, pageSize);
+  }
+  /**
+   * @Descripttion: 更新商户信息
+   * @Author: 笑佛弥勒
+   * @param {type} 
+   * @return: 
+   */
+  public async updateMerchants(params) {
+    return await this.ctx.model.Merchants.update({
+      name: params.name,
+      address: params.address,
+      mobile: params.mobile,
+      synopsis: params.synopsis,
+      slogan: params.slogan,
+      category: params.category,
+      shop_avatar: params.shop_avatar,
+      longitude: params.longitude,
+      latitude: params.latitude,
+    }, {
+        where: { id: params.id }
+      })
+  }
+
+  public async findMerchantsByName(page: number, pageSize: number, name: string) {
+    return this.ctx.model.Merchants.findMerchantsByName(page, pageSize, name)
   }
 }
 

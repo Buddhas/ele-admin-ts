@@ -5,8 +5,8 @@
       "POST"
     ],
     "paramNames": [],
-    "path": "/login",
-    "regexp": "/^\\/login(?:\\/(?=$))?$/",
+    "path": "/admin/login",
+    "regexp": "/^\\/admin\\/login(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -17,8 +17,8 @@
       "POST"
     ],
     "paramNames": [],
-    "path": "/updateAvatar",
-    "regexp": "/^\\/updateAvatar(?:\\/(?=$))?$/",
+    "path": "/admin/updateAvatar",
+    "regexp": "/^\\/admin\\/updateAvatar(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -29,8 +29,8 @@
       "POST"
     ],
     "paramNames": [],
-    "path": "/getAdminCount",
-    "regexp": "/^\\/getAdminCount(?:\\/(?=$))?$/",
+    "path": "/admin/getAdminCount",
+    "regexp": "/^\\/admin\\/getAdminCount(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -41,8 +41,92 @@
       "POST"
     ],
     "paramNames": [],
-    "path": "/findAdminByPage",
-    "regexp": "/^\\/findAdminByPage(?:\\/(?=$))?$/",
+    "path": "/admin/findAdminByPage",
+    "regexp": "/^\\/admin\\/findAdminByPage(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/merchants/createMerchants",
+    "regexp": "/^\\/merchants\\/createMerchants(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/merchants/deleteMerchants",
+    "regexp": "/^\\/merchants\\/deleteMerchants(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/merchants/findMerchantsByPage",
+    "regexp": "/^\\/merchants\\/findMerchantsByPage(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/merchants/updateShopAvatar",
+    "regexp": "/^\\/merchants\\/updateShopAvatar(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/merchants/updateBusinessLicense",
+    "regexp": "/^\\/merchants\\/updateBusinessLicense(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/merchants/updateCateringLicense",
+    "regexp": "/^\\/merchants\\/updateCateringLicense(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/merchants/findMerchantsByName",
+    "regexp": "/^\\/merchants\\/findMerchantsByName(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
