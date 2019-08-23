@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-22 20:17:28
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-22 21:02:20
+ * @LastEditTime: 2019-08-23 10:22:51
  */
 import { Controller } from "egg";
 import * as path from "path";
@@ -38,5 +38,15 @@ export default class Food extends Controller {
                 status: "-1"
             }
         }
+    }
+
+    /**
+     * @Descripttion: 删除食品
+     * @Author: 笑佛弥勒
+     * @param {type} 
+     * @return: 
+     */
+    public async deleteFood() {
+        
     }
 }
