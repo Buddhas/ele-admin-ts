@@ -3,15 +3,15 @@
 
 import 'egg';
 import ExportAdmin from '../../../app/model/admin';
+import ExportFood from '../../../app/model/food';
 import ExportMerchants from '../../../app/model/merchants';
-import ExportPost from '../../../app/model/post';
-import ExportUser from '../../../app/model/user';
+import ExportPreferential from '../../../app/model/preferential';
 
 declare module 'egg' {
   interface IModel {
     Admin: ReturnType<typeof ExportAdmin>;
+    Food: ReturnType<typeof ExportFood>;
     Merchants: ReturnType<typeof ExportMerchants>;
-    Post: ReturnType<typeof ExportPost>;
-    User: ReturnType<typeof ExportUser>;
+    Preferential: ReturnType<typeof ExportPreferential>;
   }
 }

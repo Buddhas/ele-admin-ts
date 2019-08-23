@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 16:59:30
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-21 14:26:10
+ * @LastEditTime: 2019-08-22 20:50:32
  */
 import { Controller } from "egg";
 import * as path from "path";
@@ -28,7 +28,15 @@ export default class Merchants extends Controller {
       };
       return;
     }
-    this.ctx.body = await this.ctx.service.merchants.createMerchants(params);
+    try {
+      this.ctx.body = await this.ctx.service.merchants.createMerchants(params);
+    } catch (error) {
+      this.ctx.body = {
+        msg: "创建商户错误",
+        status: "-1"
+      }
+    }
+    
   }
 
   /**
@@ -211,7 +219,30 @@ export default class Merchants extends Controller {
    * @return: 
    */
   public async findMerchantsByName() {
-    const { page, pageSize, name } = this.ctx.request.body
-    this.ctx.body = await this.service.merchants.findMerchantsByName(Number(page), Number(pageSize), name)
+    let { page, pageSize, name } = this.ctx.request.body
+    page = Number(page)
+    pageSize = Number(pageSize)
+
+    try {
+      this.ctx.validate({ page: "number" }, { page: page })
+      this.ctx.validate({ pageSize: "number" }, { pageSize: pageSize })
+      this.ctx.validate({ name: "string" }, { name: name })
+    } catch (error) {
+      this.ctx.body = {
+        msg: "参数错误",
+        status: "-1"
+      };
+      return;
+    }
+
+    try {
+      this.ctx.body = await this.service.merchants.findMerchantsByName(Number(page), Number(pageSize), name)
+    } catch (error) {
+      this.ctx.body = {
+        msg: '查询错误',
+        status: '-1'
+      }
+    }
+
   }
 }

@@ -3,15 +3,15 @@
 
 import 'egg';
 import ExportAdmin from '../../../app/service/admin';
+import ExportFood from '../../../app/service/food';
 import ExportMerchants from '../../../app/service/merchants';
-import ExportPost from '../../../app/service/post';
-import ExportUser from '../../../app/service/user';
+import ExportPreferential from '../../../app/service/preferential';
 
 declare module 'egg' {
   interface IService {
     admin: ExportAdmin;
+    food: ExportFood;
     merchants: ExportMerchants;
-    post: ExportPost;
-    user: ExportUser;
+    preferential: ExportPreferential;
   }
 }

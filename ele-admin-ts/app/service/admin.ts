@@ -1,10 +1,10 @@
 /*
- * @Descripttion:
+ * @Descripttion: 管理员Service层
  * @version:
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 15:38:40
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-14 14:39:55
+ * @LastEditTime: 2019-08-22 14:51:42
  */
 import { Service } from "egg";
 

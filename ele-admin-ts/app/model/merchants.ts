@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 16:21:27
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-21 14:26:27
+ * @LastEditTime: 2019-08-21 14:58:58
  */
 "use strict";
 
@@ -80,7 +80,6 @@ export default function (app: Application) {
      * @return: 
      */
     static async findMerchantsByName(page: number, pageSize: number, name: string) {
-      console.log(name)
       return await this.findAndCountAll({
         offset: (page - 1) * pageSize,
         limit: pageSize,
@@ -89,6 +88,10 @@ export default function (app: Application) {
             [Op.like]: `%${name}%` 
           }
         }
+      }).then(res => {
+        res['page'] = page
+        res['pageSize'] = pageSize
+        return res
       })
     }
   };
