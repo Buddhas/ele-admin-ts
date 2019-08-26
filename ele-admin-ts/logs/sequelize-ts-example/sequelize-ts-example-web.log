@@ -1,0 +1,399 @@
+2019-08-23 14:16:38,923 INFO 14180 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 14:16:39,941 INFO 12604 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 14:19:39,129 INFO 17688 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 14:19:41,426 INFO 1808 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 14:21:10,527 INFO 16456 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 14:21:12,715 INFO 15372 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 14:22:10,787 INFO 17480 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 14:22:14,493 INFO 13608 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 14:22:37,589 INFO 17904 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 14:22:40,057 INFO 5100 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 14:23:06,353 INFO 12040 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 14:23:08,628 INFO 15924 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 14:26:08,040 INFO 12080 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 14:26:10,244 INFO 13440 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 14:28:04,896 INFO 13940 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 14:28:07,188 INFO 4892 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 14:28:41,815 INFO 4772 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 14:28:44,013 INFO 11960 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 14:28:49,033 INFO 5272 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 14:28:51,353 INFO 18096 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 14:28:55,332 INFO 4296 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 14:29:11,020 INFO 16424 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 14:29:13,428 INFO 14248 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 14:36:29,895 INFO 7732 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 14:36:32,084 INFO 11056 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 14:37:24,796 INFO 10480 [egg-sequelize](12ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 14:37:29,307 INFO 18112 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 14:37:31,420 INFO 17436 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 14:40:09,432 INFO 12200 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 14:47:11,638 INFO 12716 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 14:47:14,144 INFO 3560 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:03:26,401 INFO 16596 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:03:28,970 INFO 15972 [egg-sequelize](11ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:06:31,985 INFO 17152 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:06:36,197 INFO 3280 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:06:38,376 INFO 12232 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:09:40,578 INFO 13292 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:09:42,695 INFO 17888 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:10:36,980 INFO 11628 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:11:02,230 INFO 12568 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:11:06,308 INFO 2460 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:12:45,476 INFO 10464 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:12:48,071 INFO 10580 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:13:20,872 INFO 2344 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:13:22,990 INFO 10892 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:13:36,081 INFO 10464 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:13:38,248 INFO 15508 [egg-sequelize](11ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:13:59,630 INFO 8140 [egg-sequelize](14ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:14:01,968 INFO 12548 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:14:24,230 INFO 5692 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:14:26,368 INFO 18392 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:14:46,986 INFO 128 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:14:49,223 INFO 17904 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:15:48,210 INFO 16404 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:15:50,465 INFO 7028 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:16:22,183 INFO 17872 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:16:26,252 INFO 13744 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:16:26,843 INFO 11868 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:16:29,656 ERROR 11868 nodejs.TypeError: this.ctx.service.food.deleteFood is not a function
+    at Food.deleteFood (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\food.ts:60:44)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:13:13
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+
+pid: 11868
+hostname: DESKTOP-COOIT9S
+
+2019-08-23 15:16:29,660 ERROR 11868 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 11868
+hostname: DESKTOP-COOIT9S
+
+2019-08-23 15:17:22,643 INFO 7688 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:17:25,276 INFO 1548 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:17:33,371 ERROR 1548 nodejs.TypeError: this.ctx.service.food.deleteFood is not a function
+    at Food.deleteFood (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\food.ts:60:44)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:13:13
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+
+pid: 1548
+hostname: DESKTOP-COOIT9S
+
+2019-08-23 15:17:33,374 ERROR 1548 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 1548
+hostname: DESKTOP-COOIT9S
+
+2019-08-23 15:17:41,231 INFO 13996 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:17:43,382 INFO 11212 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:17:58,559 ERROR 11212 nodejs.TypeError: this.ctx.service.food.deleteFood is not a function
+    at Food.deleteFood (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\food.ts:60:44)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:13:13
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+
+pid: 11212
+hostname: DESKTOP-COOIT9S
+
+2019-08-23 15:17:58,563 ERROR 11212 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 11212
+hostname: DESKTOP-COOIT9S
+
+2019-08-23 15:18:32,861 INFO 17720 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:18:35,016 INFO 5036 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:18:38,858 ERROR 5036 nodejs.TypeError: Cannot read property 'update' of undefined
+    at Food.deleteFood (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\service\food.ts:38:42)
+    at Food.deleteFood (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\food.ts:60:44)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:13:13
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+
+pid: 5036
+hostname: DESKTOP-COOIT9S
+
+2019-08-23 15:18:38,861 ERROR 5036 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 5036
+hostname: DESKTOP-COOIT9S
+
+2019-08-23 15:19:12,197 INFO 2784 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:19:14,336 INFO 5684 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:19:43,591 ERROR 5684 nodejs.TypeError: Cannot read property 'update' of undefined
+    at Food.deleteFood (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\service\food.ts:38:42)
+    at Food.deleteFood (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\controller\food.ts:60:44)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at next (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:45:18)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:44:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:13:13
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+
+pid: 5684
+hostname: DESKTOP-COOIT9S
+
+2019-08-23 15:19:43,594 ERROR 5684 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at E:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 5684
+hostname: DESKTOP-COOIT9S
+
+2019-08-23 15:20:55,259 INFO 5692 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:21:08,429 INFO 2056 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:21:10,630 INFO 5740 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:21:15,349 INFO 5740 [egg-sequelize](16ms) Executed (default): UPDATE `food` SET `is_delete`=? WHERE `id` = ?
+2019-08-23 15:21:44,929 INFO 9068 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:21:47,131 INFO 16916 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:22:03,701 INFO 3448 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:22:05,838 INFO 17904 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:22:20,329 INFO 604 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:22:22,477 INFO 14396 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:22:29,622 INFO 16712 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:22:31,735 INFO 16620 [egg-sequelize](11ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:22:35,086 INFO 16620 [egg-sequelize](18ms) Executed (default): INSERT INTO `food` (`id`,`name`,`introduce`,`category`,`image`,`shop_id`,`price`,`is_delete`) VALUES (DEFAULT,?,?,?,?,?,?,?);
+2019-08-23 15:22:52,384 INFO 3644 [egg-sequelize](11ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:22:54,517 INFO 17832 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:24:12,327 INFO 5396 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:24:16,635 INFO 18072 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:24:34,791 INFO 10912 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:24:40,729 INFO 15084 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:24:50,817 INFO 13260 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:24:54,478 INFO 3644 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:25:09,935 INFO 7692 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:25:13,677 INFO 13008 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:25:50,755 INFO 14992 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:25:53,570 INFO 15032 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:26:16,423 INFO 14832 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:26:18,557 INFO 18376 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:33:28,223 INFO 18376 [egg-sequelize](9ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '123' LIMIT 1;
+2019-08-23 15:33:31,058 INFO 18376 [egg-sequelize](20ms) Executed (default): INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);
+2019-08-23 15:42:24,374 INFO 8668 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:42:28,262 INFO 11868 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:42:36,788 INFO 13644 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:42:40,811 INFO 12196 [egg-sequelize](11ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:42:56,493 INFO 5180 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:43:00,996 INFO 14244 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:47:25,786 INFO 13436 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:47:30,104 INFO 15336 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:47:35,163 INFO 15268 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:47:39,144 INFO 16304 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:47:51,456 INFO 1776 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:47:55,315 INFO 18080 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:49:06,758 INFO 11664 [egg-sequelize](15ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:49:09,187 INFO 11464 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:49:38,422 INFO 8480 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:49:40,605 INFO 15888 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:50:07,380 INFO 16768 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:50:09,665 INFO 16912 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:50:49,502 INFO 12800 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 15:50:51,659 INFO 17108 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:10:46,720 INFO 8532 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:10:49,116 INFO 17652 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:11:31,049 INFO 2376 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:11:33,340 INFO 5996 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:12:10,795 INFO 19404 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:12:13,111 INFO 18840 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:12:31,746 INFO 1280 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:12:34,216 INFO 7288 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:13:03,871 INFO 17096 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:13:08,206 INFO 5668 [egg-sequelize](11ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:13:18,477 INFO 10752 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:13:22,531 INFO 15556 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:13:58,438 INFO 19220 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:14:02,663 INFO 18964 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:14:39,327 INFO 16324 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:14:43,493 INFO 14164 [egg-sequelize](15ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:17:12,385 INFO 19108 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:17:16,412 INFO 11520 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:17:55,858 INFO 13620 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:17:58,063 INFO 19348 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:18:16,594 INFO 12112 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:18:19,041 INFO 13396 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:19:19,967 INFO 2452 [egg-sequelize](12ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:19:23,938 INFO 8248 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:19:43,908 INFO 16664 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:19:46,239 INFO 19048 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:20:21,130 INFO 16680 [egg-sequelize](14ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:20:23,348 INFO 18948 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:20:44,077 INFO 19184 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:20:46,261 INFO 18452 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:21:01,962 INFO 4356 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:21:04,192 INFO 19112 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:21:11,811 INFO 15784 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:21:18,233 INFO 18740 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:21:26,483 INFO 16312 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:21:28,745 INFO 8544 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:25:16,234 INFO 16000 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:25:18,585 INFO 19152 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:27:22,952 INFO 11924 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:27:25,144 INFO 18188 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:31:40,789 INFO 18380 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:31:43,341 INFO 18848 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:33:45,726 INFO 11464 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:33:50,039 INFO 12508 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:34:19,505 INFO 13424 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:34:23,422 INFO 15332 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:34:29,187 INFO 19052 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:34:32,863 INFO 13620 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:37:32,370 INFO 15144 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:37:36,188 INFO 11464 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:38:02,907 INFO 16400 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:38:05,194 INFO 14916 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:39:15,396 INFO 18676 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:39:17,583 INFO 8544 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:39:49,201 INFO 16068 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:39:51,390 INFO 18636 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:40:20,149 INFO 19024 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:40:22,370 INFO 16364 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:41:00,512 INFO 1348 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:41:02,654 INFO 4408 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:41:51,956 INFO 10912 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:41:54,262 INFO 15556 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:47:19,126 INFO 3568 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:47:21,335 INFO 16884 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:54:23,425 INFO 16124 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:56:00,073 INFO 720 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:56:04,164 INFO 17112 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:56:14,164 INFO 3280 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 16:56:19,117 INFO 8540 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 17:02:49,971 INFO 16996 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 17:02:53,860 INFO 15712 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 17:03:06,331 INFO 16496 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 17:03:10,650 INFO 16996 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 17:03:38,081 INFO 19356 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 17:03:41,963 INFO 3564 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 17:06:56,603 INFO 8768 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 17:07:00,984 INFO 1384 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 17:08:15,679 INFO 14232 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 17:08:17,869 INFO 7912 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 17:08:24,161 INFO 15968 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 17:08:26,421 INFO 19056 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 17:09:20,572 INFO 5736 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 17:09:24,425 INFO 19184 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 17:12:51,444 INFO 11664 [egg-sequelize](11ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 17:16:02,303 INFO 1448 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 17:16:06,525 INFO 2808 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 17:17:33,117 INFO 16124 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 17:18:32,881 INFO 17884 [egg-sequelize](12ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 17:18:35,432 INFO 18508 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 17:19:40,930 INFO 16036 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 17:19:43,330 INFO 5684 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 17:20:16,628 INFO 8512 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 17:20:20,976 INFO 18664 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 17:21:20,798 INFO 19448 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 17:21:22,985 INFO 19308 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 17:23:39,267 INFO 17568 [egg-sequelize](18ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 17:23:41,656 INFO 11876 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 17:24:41,386 INFO 18128 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 17:24:46,552 INFO 1196 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 17:25:35,850 INFO 5736 [egg-sequelize](12ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 17:25:40,157 INFO 14072 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 17:27:26,861 INFO 18508 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 17:27:30,954 INFO 17652 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-08-23 17:27:46,815 INFO 17652 [egg-sequelize](14ms) Executed (default): INSERT INTO `food` (`id`,`name`,`introduce`,`category`,`image`,`shop_id`,`price`,`is_delete`) VALUES (DEFAULT,?,?,?,?,?,?,?);

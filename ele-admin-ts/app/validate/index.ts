@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-12 17:24:57
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-22 20:58:25
+ * @LastEditTime: 2019-08-23 17:27:24
  */
 import { Application } from 'egg';
 
@@ -74,7 +74,7 @@ export default function(app: Application) {
     })
 
     // 添加食品校验
-    validator.addRule('addFood', (params) => {
+    validator.addRule('addFood', (rule, params) => {
         if (params.name.trim().length === 0) {
             throw "请填写商户名"
         } else if (params.introduce.trim().length === 0) {
@@ -83,9 +83,24 @@ export default function(app: Application) {
             throw "请填写食品分类"
         } else if (params.image.trim().length === 0) {
             throw "请上传图片"
-        } else if (params.shop_id.trim().length === 0) {
+        } else if ( !Number(params.shop_id)) {
             throw "所选商铺有误"
-        } else if (params.price.trim().length === 0) {
+        } else if (!Number(params.price)) {
+            throw "请填写食品价格"
+        }
+    })
+
+    // 更改食品属性校验
+    validator.addRule('updatFood', (rule, value) => {
+        if (value.name.trim().length === 0) {
+            throw "请填写商户名"
+        } else if (value.introduce.trim().length === 0) {
+            throw "请填写食品介绍"
+        } else if (value.category.trim().length === 0) {
+            throw "请填写食品分类"
+        } else if (value.image.trim().length === 0) {
+            throw "请上传图片"
+        } else if (!Number(value.price)) {
             throw "请填写食品价格"
         }
     })

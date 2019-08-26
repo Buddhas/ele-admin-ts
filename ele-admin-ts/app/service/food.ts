@@ -4,11 +4,11 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-22 20:15:46
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-22 20:37:49
+ * @LastEditTime: 2019-08-23 17:21:16
  */
 import { Service } from "egg";
 
-class Admin extends Service {
+class Food extends Service {
     /**
      * @Descripttion: 添加食品
      * @Author: 笑佛弥勒
@@ -16,7 +16,7 @@ class Admin extends Service {
      * @return: 
      */
     public async createdFood(params:any) {
-        return await this.ctx.model.food.create({
+        return await this.ctx.model.Food.create({
             name: params.name,
             introduce: params.introduce,
             category: params.category,
@@ -35,7 +35,7 @@ class Admin extends Service {
      * @return: 
      */
     public async deleteFood(foodId: number) {
-        return await this.ctx.model.food.update({
+        return await this.ctx.model.Food.update({
             is_delete: '1'
         },{
             where: {
@@ -51,13 +51,12 @@ class Admin extends Service {
      * @return: 
      */
     public async updatedFood(params:any) {
-        return await this.ctx.model.food.updated({
+        return await this.ctx.model.Food.update({
             name: params.name,
             introduce: params.introduce,
             category: params.category,
             image: params.image,
-            price: params.price,
-            score: params.score,
+            price: params.price
         },{
             where: {
                 id: params.id
@@ -72,6 +71,8 @@ class Admin extends Service {
      * @return: 
      */
     public async findFoodByPage(page: number, pageSize: number) {
-        return await this.ctx.model.food.findFoodByPage(page, pageSize);
+        return await this.ctx.model.Food.findFoodByPage(page, pageSize);
     }
 }
+
+module.exports = Food;

@@ -14,7 +14,7 @@
     "lib": ["es6", "dom"],
     "noEmitOnError": false,
     "noUnusedLocals": false,
-    "noUnusedParameters": true,
+    "noUnusedParameters": false,
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "strictPropertyInitialization": false,
