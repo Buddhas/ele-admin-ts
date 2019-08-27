@@ -4,17 +4,17 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 15:17:07
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-14 14:40:10
+ * @LastEditTime: 2019-08-26 10:22:12
  */
 import { Application } from "egg";
 
 export default function (app: Application) {
-  const { STRING, INTEGER, DATE } = app.Sequelize;
+  const { STRING, INTEGER, DATE, BIGINT } = app.Sequelize;
   const Admin = app.model.define(
     "admin",
     {
       id: {
-        type: INTEGER,
+        type: BIGINT,
         primaryKey: true,
         autoIncrement: true
       },

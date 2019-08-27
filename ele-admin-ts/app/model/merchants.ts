@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 16:21:27
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-21 14:58:58
+ * @LastEditTime: 2019-08-26 10:23:11
  */
 "use strict";
 
@@ -12,13 +12,13 @@ import { Application } from "egg";
 
 
 export default function (app: Application) {
-  const { INTEGER, DATE, STRING, DECIMAL } = app.Sequelize;
+  const { INTEGER, DATE, STRING, DECIMAL,BIGINT } = app.Sequelize;
   const Op = app.Sequelize.Op
   
   const Merchants = app.model.define(
     "merchants",
     {
-      id: { type: INTEGER, primaryKey: true, autoIncrement: true },
+      id: { type: BIGINT, primaryKey: true, autoIncrement: true },
       name: STRING(255),
       address: STRING(255),
       mobile: STRING(20),

@@ -4,17 +4,17 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-22 20:10:27
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-22 20:35:27
+ * @LastEditTime: 2019-08-26 10:22:44
  */
 import { Application } from "egg";
 
 export default function (app: Application) {
-    const { STRING, INTEGER, DECIMAL } = app.Sequelize;
+    const { STRING, DECIMAL, BIGINT } = app.Sequelize;
     const Food = app.model.define(
         "food",
         {
           id: {
-            type: INTEGER,
+            type: BIGINT,
             primaryKey: true,
             autoIncrement: true
           },
@@ -22,7 +22,7 @@ export default function (app: Application) {
           introduce: STRING(255),
           category: STRING(50),
           image: STRING(50),
-          shop_id: INTEGER,
+          shop_id: BIGINT,
           price: DECIMAL,
           score: STRING(10),
           is_delete: STRING(10)

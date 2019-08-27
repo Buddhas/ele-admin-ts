@@ -4,17 +4,17 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-22 14:03:38
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-22 14:09:01
+ * @LastEditTime: 2019-08-26 10:23:44
  */
 import { Application } from "egg";
 
 export default function (app: Application) {
-    const { STRING, INTEGER, DATE } = app.Sequelize;
+    const { STRING, INTEGER, DATE, BIGINT } = app.Sequelize;
     const Preferential = app.model.define(
         "preferential",
         {
             id: {
-                type: INTEGER,
+                type: BIGINT,
                 primaryKey: true,
                 autoIncrement: true
             },

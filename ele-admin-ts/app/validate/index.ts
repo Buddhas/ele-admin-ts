@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-12 17:24:57
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-23 17:27:24
+ * @LastEditTime: 2019-08-26 17:58:47
  */
 import { Application } from 'egg';
 
@@ -102,6 +102,42 @@ export default function(app: Application) {
             throw "请上传图片"
         } else if (!Number(value.price)) {
             throw "请填写食品价格"
+        }
+    })
+
+    // 用户下单校验
+    validator.addRule('addOrder', (rule, params) => {
+        // 订单状态：0：待支付、1：准时送达、2：超时
+        let status = [0,1,2]
+        if (!Number(params.shop_id)) {
+            throw "商户id错误"
+        } else if (!Number(params.price)) {
+            throw "订单价格错误"
+        } else if (!Number(params.user_id)) {
+            throw "用户id错误"
+        } else if (!Number(params.ship_fee)) {
+            throw "配送费错误"
+        } else if (!Number(params.meals_fee)) {
+            throw "餐盒费错误"
+        } else if (!Number(params.user_address_id)) {
+            throw "用户地址id"
+        } else if (!Number(params.preferential_id)) {
+            throw "优惠id错误"
+        } else if ( Number(params.status) || !status.includes(Number(params.status)) ) {
+            throw "订单状态错误"
+        }
+    })
+
+    // 订单详情
+    validator.addRule('addOrder', (rule, params) => {
+        if (params.food_name.trim().length === 0) {
+            throw "食品名称错误"
+        } else if (!Number(params.food_id)) {
+            throw "食品id错误"
+        } else if (!Number(params.count)) {
+            throw "食品数量错误"
+        } else if (!Number(params.prince)) {
+            throw "食品价格错误"
         }
     })
 }
