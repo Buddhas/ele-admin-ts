@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-22 20:17:28
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-23 17:23:23
+ * @LastEditTime: 2019-09-03 21:04:51
  */
 import { Controller } from "egg"
 
@@ -17,25 +17,26 @@ export default class Food extends Controller {
      */
     public async createdFood() {
         let params = this.ctx.request.body
-        params.shop_id = Number(params.shop_id)
-        params.price = Number(params.price)
-        
         try {
             this.ctx.validate({params: 'addFood', }, {params: params})
         } catch (error) {
             this.ctx.body = {
                 msg: error,
-                status: "-1"
+                status: 500
             }
             return
         }
 
         try {
-            this.ctx.body = await this.ctx.service.food.createdFood(params)
+            await this.ctx.service.food.createdFood(params)
+            this.ctx.body = {
+                msg: "添加成功",
+                status: 200
+            }
         } catch (error) {
             this.ctx.body = {
-                msg: "添加食品失败",
-                status: "-1"
+                msg: "添加失败",
+                status: 500
             }
         }
     }
@@ -48,16 +49,36 @@ export default class Food extends Controller {
      */
     public async deleteFood() {
         let foodId = this.ctx.query.foodId
-        foodId = Number(foodId)
         try {
-            this.ctx.validate({ foodId: 'number' }, { foodId: foodId })
+            this.ctx.validate({ foodId: 'number' }, { foodId: Number(foodId) })
         } catch (error) {
             this.ctx.body = {
                 msg: '参数错误',
-                status: '-1'
+                status: 500
+            }
+            return 
+        }
+
+        try {
+            let res = await this.ctx.service.food.deleteFood(Number(foodId))
+            if (res[0]) {
+                this.ctx.body = {
+                    msg: "删除成功",
+                    status: 200
+                }
+            } else {
+                this.ctx.body = {
+                    msg: "食品不存在或者已删除",
+                    status: 500
+                }
+            }
+        } catch (error) {
+            this.ctx.body = {
+                msg: "删除失败",
+                status: 500
             }
         }
-        return await this.ctx.service.food.deleteFood(foodId)
+        
     }
 
     /**
@@ -68,24 +89,26 @@ export default class Food extends Controller {
      */
     public async updatedFood() {
         let params = this.ctx.request.body
-        params.price = Number(params.price)
         try {
             this.ctx.validate({params: 'updatFood', }, {params: params})
         } catch (error) {
             this.ctx.body = {
                 msg: error,
-                status: "-1"
+                status: 500
             }
             return
         }
 
         try {
-            return await this.ctx.service.food.updatedFood(params)
+            await this.ctx.service.food.updatedFood(params)
+            this.ctx.body = {
+                msg: '更新食品属性成功',
+                status: 200
+            }
         } catch (error) {
             this.ctx.body = {
-                error: error,
-                msg: '更新商品属性失败',
-                status: '-1'
+                msg: '更新食品属性失败',
+                status: 500
             }
         }
     }
@@ -98,8 +121,6 @@ export default class Food extends Controller {
      */
     public async findFoodByPage() {
         let { page, pageSize } = this.ctx.request.body
-        page = Number(page)
-        pageSize = Number(pageSize)
 
         try {
             this.ctx.validate({ page: "number" }, { page: page })
@@ -107,20 +128,19 @@ export default class Food extends Controller {
         } catch (error) {
             this.ctx.body = {
                 msg: "参数错误",
-                status: "-1"
+                status: 500
             }
             return
         }
 
         try {
-            this.ctx.body = await this.service.food.findMerchantsByName(page, pageSize)
+            this.ctx.body = await this.service.food.findFoodByPage(page, pageSize)
         } catch (error) {
             this.ctx.body = {
                 msg: '查询错误',
-                status: '-1'
+                status: 500
             }
         }
-
     }
 
 }

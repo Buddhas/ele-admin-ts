@@ -1,10 +1,10 @@
 /*
- * @Descripttion:
+ * @Descripttion:商户controller层
  * @version:
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 16:59:30
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-22 20:50:32
+ * @LastEditTime: 2019-09-03 21:13:13
  */
 import { Controller } from "egg"
 import * as path from "path"
@@ -24,7 +24,7 @@ export default class Merchants extends Controller {
     } catch (error) {
       this.ctx.body = {
         msg: error,
-        status: "-1"
+        status: 500
       }
       return
     }
@@ -33,7 +33,7 @@ export default class Merchants extends Controller {
     } catch (error) {
       this.ctx.body = {
         msg: "创建商户错误",
-        status: "-1"
+        status: 500
       }
     }
     

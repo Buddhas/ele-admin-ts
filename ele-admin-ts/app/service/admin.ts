@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 15:38:40
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-22 14:51:42
+ * @LastEditTime: 2019-09-03 14:59:40
  */
 import { Service } from "egg";
 
@@ -26,7 +26,8 @@ class Admin extends Service {
   /**
    * @Descripttion: 创建用户
    * @Author: 笑佛弥勒
-   * @param {mobile} 手机号 {password} 密码
+   * @param {mobile} 手机号 
+   * @param {password} 密码
    * @return:
    */
   public async createUser(mobile, password) {

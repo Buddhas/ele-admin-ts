@@ -4,17 +4,17 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-12 17:24:57
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-26 17:58:47
+ * @LastEditTime: 2019-09-03 15:43:28
  */
 import { Application } from 'egg';
 
 export default function(app: Application) {
     let { validator } = app;
-    let reg = /1\d{10}/
+    let reg = /0?(13|14|15|17|18|19)[0-9]{9}/
     
     // 手机校验
-    validator.addRule('mobile', (value) => {
-        if (reg.test(value)) {
+    validator.addRule('mobile', (value, params) => {
+        if (!reg.test(params)) {
             throw "请填写正确的手机号码";
         }
     })
@@ -123,20 +123,20 @@ export default function(app: Application) {
             throw "用户地址id"
         } else if (!Number(params.preferential_id)) {
             throw "优惠id错误"
-        } else if ( Number(params.status) || !status.includes(Number(params.status)) ) {
+        } else if (!status.includes(params.status)) {
             throw "订单状态错误"
         }
     })
 
     // 订单详情
-    validator.addRule('addOrder', (rule, params) => {
+    validator.addRule('orderDetail', (rule, params) => {
         if (params.food_name.trim().length === 0) {
             throw "食品名称错误"
         } else if (!Number(params.food_id)) {
             throw "食品id错误"
         } else if (!Number(params.count)) {
             throw "食品数量错误"
-        } else if (!Number(params.prince)) {
+        } else if (!Number(params.price)) {
             throw "食品价格错误"
         }
     })

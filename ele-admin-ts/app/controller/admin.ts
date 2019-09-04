@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 16:46:01
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-23 14:37:20
+ * @LastEditTime: 2019-09-03 15:52:39
  */
 
 import { Controller } from "egg"
@@ -27,21 +27,27 @@ export default class AdminController extends Controller {
     } catch (error) {
       ctx.body = {
         msg: error,
-        status: "-1"
+        status: 500
       }
       return
     }
 
     let res = await ctx.service.admin.hasUser(mobile)
     if (!res) {
-      let user = await ctx.service.admin.createUser(mobile, password)
+      await ctx.service.admin.createUser(mobile, password)
+      ctx.body = {
+        msg: "注册成功",
+        status: 200,
+      }
     } else {
       if (res.password == password) {
-        ctx.body = res
-        ctx.session = res
+        ctx.body = {
+          msg: "登录成功",
+          status: 200
+        }
       } else {
         ctx.body = {
-          status: "-100",
+          status: 500,
           msg: "密码错误"
         }
       }
@@ -71,7 +77,7 @@ export default class AdminController extends Controller {
       }
     } catch (error) {
       this.ctx.body = {
-        status: -1,
+        status: 500,
         msg: "图片保存失败"
       }
     }
@@ -93,15 +99,13 @@ export default class AdminController extends Controller {
    */
   public async findAdminByPage() {
     let { page, pageSize } = this.ctx.request.body
-    page = Number(page)
-    pageSize = Number(pageSize)
     try {
       this.ctx.validate({ page: "number" }, { page: page })
       this.ctx.validate({ pageSize: "number" }, { pageSize: pageSize })
     } catch (error) {
       this.ctx.body = {
         msg: "参数错误",
-        status: "-1"
+        status: 500
       }
       return
     }
@@ -114,14 +118,8 @@ export default class AdminController extends Controller {
     } catch (error) {
       throw {
         message: "查询出错",
-        status: 400
+        status: 500
       }
     }
-  }
-  public async test() {
-    await this.ctx.service.admin.test().then(res => {
-      console.log(res)
-    })
-    this.ctx.body = await this.ctx.service.admin.test()
   }
 }
