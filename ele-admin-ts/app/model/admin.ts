@@ -1,10 +1,10 @@
 /*
- * @Descripttion:
+ * @Descripttion: 管理员model层
  * @version:
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 15:17:07
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-26 10:22:12
+ * @LastEditTime: 2019-09-05 21:01:03
  */
 import { Application } from "egg";
 

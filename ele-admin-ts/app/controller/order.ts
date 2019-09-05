@@ -1,10 +1,10 @@
 /*
- * @Descripttion:
+ * @Descripttion:订单controller层
  * @version:
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 16:46:01
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-03 13:48:19
+ * @LastEditTime: 2019-09-05 20:55:49
  */
 
 import { Controller } from "egg"
@@ -69,11 +69,16 @@ export default class Order extends Controller {
             }
         }
     }
+
+    /**
+     * @Descripttion: 订单分页
+     * @Author: 笑佛弥勒
+     * @param {type} 
+     * @return: 
+     */
     public async findOrderByPage() {
         let { page, pageSize, shopName } = this.ctx.request.body
-        page = Number(page)
-        pageSize = Number(pageSize)
-
+        
         try {
             this.ctx.validate({ page: "number" }, { page: page })
             this.ctx.validate({ pageSize: "number" }, { pageSize: pageSize })

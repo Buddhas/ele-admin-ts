@@ -2168,3 +2168,31 @@ hostname: DESKTOP-COOIT9S
 pid: 616
 hostname: DESKTOP-COOIT9S
 
+2019-09-05 20:20:02,416 ERROR 16376 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 16376
+hostname: DESKTOP-COOIT9S
+
+2019-09-05 20:20:13,071 ERROR 16376 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 16376
+hostname: DESKTOP-COOIT9S
+
+2019-09-05 20:49:16,621 ERROR 8736 { message: '查询出错', status: 500 }
+2019-09-05 20:49:16,623 ERROR 8736 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (e:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at e:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 8736
+hostname: DESKTOP-COOIT9S
+

@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 16:59:30
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-03 21:13:13
+ * @LastEditTime: 2019-09-05 20:54:48
  */
 import { Controller } from "egg"
 import * as path from "path"
@@ -19,8 +19,9 @@ export default class Merchants extends Controller {
    */
   public async createMerchants() {
     let params = this.ctx.request.body
+
     try {
-      this.ctx.validate({ params: "addMerchants" })
+      this.ctx.validate({ params: "addMerchants" }, { params: params })
     } catch (error) {
       this.ctx.body = {
         msg: error,
@@ -29,14 +30,18 @@ export default class Merchants extends Controller {
       return
     }
     try {
-      this.ctx.body = await this.ctx.service.merchants.createMerchants(params)
+      await this.ctx.service.merchants.createMerchants(params)
+      this.ctx.body = {
+        msg: "创建商户成功",
+        status: 200
+      }
     } catch (error) {
       this.ctx.body = {
         msg: "创建商户错误",
         status: 500
       }
     }
-    
+
   }
 
   /**
@@ -47,23 +52,34 @@ export default class Merchants extends Controller {
    */
   public async deleteMerchants() {
     try {
-      this.ctx.validate({ id: "string" }, this.ctx.request.body)
+      this.ctx.validate({ id: "number" }, this.ctx.request.body)
     } catch (error) {
       this.ctx.body = {
         msg: "商户id错误",
-        status: "-1"
+        status: 500
       }
       return
     }
 
     try {
-      this.ctx.body = await this.ctx.service.merchants.deleteMerchants(
-        Number(this.ctx.request.body.id)
+      let res = await this.ctx.service.merchants.deleteMerchants(
+        this.ctx.request.body.id
       )
+      if (res[0]) {
+        this.ctx.body = {
+          msg: "删除商户成功",
+          status: 500
+        }
+      } else {
+        this.ctx.body = {
+          msg: "商户不存在或者已删除",
+          status: 500
+        }
+      }
     } catch (error) {
       this.ctx.body = {
         msg: "删除商户错误",
-        status: "-1"
+        status: 500
       }
     }
   }
@@ -75,15 +91,14 @@ export default class Merchants extends Controller {
    */
   public async findMerchantsByPage() {
     let { page, pageSize } = this.ctx.request.body
-    page = Number(page)
-    pageSize = Number(pageSize)
+
     try {
       this.ctx.validate({ page: "number" }, { page: page })
       this.ctx.validate({ pageSize: "number" }, { pageSize: pageSize })
     } catch (error) {
       this.ctx.body = {
         msg: "参数错误",
-        status: "-1"
+        status: 500
       }
       return
     }
@@ -94,9 +109,9 @@ export default class Merchants extends Controller {
         pageSize
       )
     } catch (error) {
-      throw {
+      this.ctx.body = {
         message: "查询出错",
-        status: 400
+        status: 500
       }
     }
   }
@@ -123,7 +138,7 @@ export default class Merchants extends Controller {
       }
     } catch (error) {
       this.ctx.body = {
-        status: -1,
+        status: 500,
         msg: "图片保存失败"
       }
     }
@@ -179,7 +194,7 @@ export default class Merchants extends Controller {
       }
     } catch (error) {
       this.ctx.body = {
-        status: -1,
+        status: 500,
         msg: "图片保存失败"
       }
     }
@@ -197,7 +212,7 @@ export default class Merchants extends Controller {
     } catch (error) {
       this.ctx.body = {
         msg: error,
-        status: "-1"
+        status: 500
       }
       return
     }
@@ -207,7 +222,7 @@ export default class Merchants extends Controller {
     } catch (error) {
       this.ctx.body = {
         msg: "更新商铺信息失败",
-        status: "-1"
+        status: 500
       }
     }
   }
@@ -220,8 +235,6 @@ export default class Merchants extends Controller {
    */
   public async findMerchantsByName() {
     let { page, pageSize, name } = this.ctx.request.body
-    page = Number(page)
-    pageSize = Number(pageSize)
 
     try {
       this.ctx.validate({ page: "number" }, { page: page })
@@ -230,7 +243,7 @@ export default class Merchants extends Controller {
     } catch (error) {
       this.ctx.body = {
         msg: "参数错误",
-        status: "-1"
+        status: 500
       }
       return
     }
@@ -240,7 +253,7 @@ export default class Merchants extends Controller {
     } catch (error) {
       this.ctx.body = {
         msg: '查询错误',
-        status: '-1'
+        status: 500
       }
     }
 

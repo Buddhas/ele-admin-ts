@@ -579,3 +579,84 @@ hostname: DESKTOP-COOIT9S
 2019-09-03 21:13:17,233 INFO 10772 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
 2019-09-03 21:13:19,417 INFO 16288 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
 2019-09-03 21:14:09,118 INFO 16192 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:19:15,984 INFO 2936 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:19:29,364 INFO 14736 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:19:31,489 INFO 14292 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:19:37,782 INFO 15064 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:19:39,921 INFO 1584 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:19:44,903 INFO 13712 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:19:47,062 INFO 5180 [egg-sequelize](11ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:19:50,998 INFO 10052 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:19:58,665 INFO 5512 [egg-sequelize](11ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:20:02,915 INFO 5564 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:20:09,287 INFO 10156 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:20:14,631 INFO 15692 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:20:19,470 INFO 12040 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:20:21,666 INFO 15420 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:20:39,560 INFO 15204 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:20:41,624 INFO 15016 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:20:55,211 INFO 1220 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:20:57,268 INFO 6036 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:29:56,536 INFO 7992 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:29:58,942 INFO 8568 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:30:29,023 INFO 7592 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:31:19,259 INFO 8092 [egg-sequelize](15ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:32:16,233 INFO 7428 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:32:24,775 INFO 14884 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:33:03,755 INFO 13788 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:33:13,600 INFO 1396 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:33:33,992 INFO 1396 [egg-sequelize](25ms) Executed (default): INSERT INTO `merchants` (`id`,`name`,`address`,`mobile`,`synopsis`,`slogan`,`category`,`ship_price`,`send_price`,`start_time`,`end_time`,`shop_avatar`,`business_license`,`catering_license`,`longitude`,`latitude`,`is_delete`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);
+2019-09-05 20:35:24,759 INFO 9668 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:35:30,270 INFO 9296 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:37:37,602 INFO 14584 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:37:48,970 INFO 11652 [egg-sequelize](13ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:38:52,802 INFO 11652 [egg-sequelize](25ms) Executed (default): UPDATE `merchants` SET `is_delete`=? WHERE `id` = ?
+2019-09-05 20:39:18,504 INFO 11652 [egg-sequelize](14ms) Executed (default): UPDATE `merchants` SET `is_delete`=? WHERE `id` = ?
+2019-09-05 20:39:29,353 INFO 11652 [egg-sequelize](20ms) Executed (default): UPDATE `merchants` SET `is_delete`=? WHERE `id` = ?
+2019-09-05 20:42:12,654 INFO 9828 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:42:20,177 INFO 15460 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:46:12,114 INFO 11132 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:46:18,470 INFO 5512 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:47:42,362 INFO 5512 [egg-sequelize](7ms) Executed (default): SELECT count(*) AS `count` FROM `merchants` AS `merchants`;
+2019-09-05 20:47:42,367 INFO 5512 [egg-sequelize](13ms) Executed (default): SELECT `id`, `name`, `address`, `mobile`, `synopsis`, `slogan`, `category`, `ship_price`, `send_price`, `start_time`, `end_time`, `shop_avatar`, `business_license`, `catering_license`, `score`, `longitude`, `latitude`, `is_delete` FROM `merchants` AS `merchants` LIMIT 0, 10;
+2019-09-05 20:48:54,333 INFO 7664 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:49:00,058 INFO 8736 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:49:16,594 INFO 8736 [egg-sequelize](5ms) Executed (default): SELECT count(*) AS `count` FROM `merchants` AS `merchants` WHERE `merchants`.`is_detele` = 0;
+2019-09-05 20:49:16,622 ERROR 8736 { message: '查询出错', status: 500 }
+2019-09-05 20:49:16,627 ERROR 8736 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (e:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-onerror\app.js:27:20)
+    at Application.emit (events.js:189:13)
+    at e:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 8736
+hostname: DESKTOP-COOIT9S
+
+2019-09-05 20:49:16,630 INFO 8736 [egg-sequelize](11ms) Executed (default): SELECT `id`, `name`, `address`, `mobile`, `synopsis`, `slogan`, `category`, `ship_price`, `send_price`, `start_time`, `end_time`, `shop_avatar`, `business_license`, `catering_license`, `score`, `longitude`, `latitude`, `is_delete` FROM `merchants` AS `merchants` WHERE `merchants`.`is_detele` = 0 LIMIT 0, 10;
+2019-09-05 20:50:07,628 INFO 14020 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:50:15,516 INFO 15636 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:50:27,184 INFO 15636 [egg-sequelize](6ms) Executed (default): SELECT count(*) AS `count` FROM `merchants` AS `merchants` WHERE `merchants`.`is_detele` = 0;
+2019-09-05 20:50:27,213 INFO 15636 [egg-sequelize](7ms) Executed (default): SELECT `id`, `name`, `address`, `mobile`, `synopsis`, `slogan`, `category`, `ship_price`, `send_price`, `start_time`, `end_time`, `shop_avatar`, `business_license`, `catering_license`, `score`, `longitude`, `latitude`, `is_delete` FROM `merchants` AS `merchants` WHERE `merchants`.`is_detele` = 0 LIMIT 0, 10;
+2019-09-05 20:51:19,099 INFO 9948 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:51:28,545 INFO 6356 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:51:46,071 INFO 6356 [egg-sequelize](6ms) Executed (default): SELECT count(*) AS `count` FROM `merchants` AS `merchants` WHERE `merchants`.`is_delete` = 0;
+2019-09-05 20:51:46,076 INFO 6356 [egg-sequelize](10ms) Executed (default): SELECT `id`, `name`, `address`, `mobile`, `synopsis`, `slogan`, `category`, `ship_price`, `send_price`, `start_time`, `end_time`, `shop_avatar`, `business_license`, `catering_license`, `score`, `longitude`, `latitude`, `is_delete` FROM `merchants` AS `merchants` WHERE `merchants`.`is_delete` = 0 LIMIT 0, 10;
+2019-09-05 20:54:39,293 INFO 6356 [egg-sequelize](5ms) Executed (default): SELECT count(*) AS `count` FROM `merchants` AS `merchants` WHERE `merchants`.`name` LIKE '%笑佛弥勒%' AND `merchants`.`is_delete` = 0;
+2019-09-05 20:54:39,302 INFO 6356 [egg-sequelize](7ms) Executed (default): SELECT `id`, `name`, `address`, `mobile`, `synopsis`, `slogan`, `category`, `ship_price`, `send_price`, `start_time`, `end_time`, `shop_avatar`, `business_license`, `catering_license`, `score`, `longitude`, `latitude`, `is_delete` FROM `merchants` AS `merchants` WHERE `merchants`.`name` LIKE '%笑佛弥勒%' AND `merchants`.`is_delete` = 0 LIMIT 0, 10;
+2019-09-05 20:54:57,359 INFO 14400 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:55:04,783 INFO 14432 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:55:47,864 INFO 9244 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:55:58,603 INFO 8612 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 20:56:06,404 INFO 9240 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 21:00:40,632 INFO 13520 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 21:01:07,887 INFO 14736 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 21:01:10,276 INFO 15820 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 21:01:27,931 INFO 12156 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 21:01:29,990 INFO 13240 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 21:01:36,147 INFO 14020 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 21:01:38,416 INFO 5264 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 21:01:50,548 INFO 10232 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 21:01:52,661 INFO 1800 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 21:02:31,554 INFO 16220 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 21:02:33,672 INFO 13364 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-09-05 21:02:38,471 INFO 10808 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result

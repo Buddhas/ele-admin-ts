@@ -1,10 +1,10 @@
 /*
- * @Descripttion:
+ * @Descripttion: 商户model层
  * @version:
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 16:21:27
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-26 10:23:11
+ * @LastEditTime: 2019-09-05 21:01:31
  */
 "use strict";
 
@@ -70,7 +70,10 @@ export default function (app: Application) {
     static async findMerchantsByPage(page: number, pageSize: number) {
       return await this.findAndCountAll({
         offset: (page - 1) * pageSize,
-        limit: pageSize
+        limit: pageSize,
+        where: {
+          is_delete: 0
+        }
       });
     }
     /**
@@ -86,7 +89,8 @@ export default function (app: Application) {
         where: {
           name: {
             [Op.like]: `%${name}%` 
-          }
+          }, 
+          is_delete: 0
         }
       }).then(res => {
         res['page'] = page

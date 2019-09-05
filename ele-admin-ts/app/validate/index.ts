@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-12 17:24:57
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-03 15:43:28
+ * @LastEditTime: 2019-09-05 20:32:55
  */
 import { Application } from 'egg';
 
@@ -20,12 +20,12 @@ export default function(app: Application) {
     })
     
     // 商户添加校验
-    validator.addRule('addMerchants', (params) => {
+    validator.addRule('addMerchants', (value, params) => {
         if (params.name.trim().length === 0) {
             throw "请填写商户名"
         } else if (params.address.trim().length === 0) {
             throw "请填写商户地址"
-        } else if (reg.test(params.mobile)) {
+        } else if (!reg.test(params.mobile)) {
             throw "请填写正确的手机号码"
         } else if (params.synopsis.trim().length === 0) {
             throw "请填写商铺简介"
