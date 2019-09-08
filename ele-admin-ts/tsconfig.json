@@ -19,6 +19,6 @@
     "allowUnusedLabels": false,
     "strictPropertyInitialization": false,
     "noFallthroughCasesInSwitch": true,
-    "inlineSourceMap": true
+    "inlineSourceMap": true,
   }
 }

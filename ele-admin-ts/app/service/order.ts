@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-26 10:32:55
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-26 17:11:33
+ * @LastEditTime: 2019-09-08 16:56:08
  */
 import { Service } from "egg";
 
@@ -51,6 +51,24 @@ class Order extends Service {
      */
     public async findOrderByPage(page: number, pageSize: number, shopName: string) {
         return await this.ctx.model.Order.findOrderByPage(page, pageSize, shopName)
+    }
+    /**
+     * @Descripttion: 获取今日订单总量
+     * @Author: 笑佛弥勒
+     * @param {type} 
+     * @return: 
+     */
+    public async findOrderTodayCount() {
+        return await this.ctx.model.Order.findOrderTodayCount()
+    }
+    /**
+     * @Descripttion: 获取订单总量
+     * @Author: 笑佛弥勒
+     * @param {type} 
+     * @return: 
+     */
+    public async orderCount() {
+        return await this.ctx.model.Order.count()
     }
 }
 

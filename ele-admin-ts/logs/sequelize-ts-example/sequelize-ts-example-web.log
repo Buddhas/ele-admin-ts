@@ -660,3 +660,216 @@ hostname: DESKTOP-COOIT9S
 2019-09-05 21:02:31,554 INFO 16220 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
 2019-09-05 21:02:33,672 INFO 13364 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
 2019-09-05 21:02:38,471 INFO 10808 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 10:33:49,824 INFO 8480 [egg-sequelize](12ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 10:40:08,795 INFO 8480 [egg-sequelize](22ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '13430147480' LIMIT 1;
+2019-09-08 10:40:31,315 INFO 8480 [egg-sequelize](12ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '13430147481' LIMIT 1;
+2019-09-08 10:40:31,384 INFO 8480 [egg-sequelize](29ms) Executed (default): INSERT INTO `admins` (`id`,`user_name`,`mobile`,`registe_time`,`permissions`,`created_at`,`updated_at`,`password`) VALUES (DEFAULT,?,?,?,?,?,?,?);
+2019-09-08 10:43:44,331 INFO 6884 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 10:43:44,831 INFO 6884 [egg-sequelize](13ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '13430147481' LIMIT 1;
+2019-09-08 10:43:58,246 INFO 6884 [egg-sequelize](12ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '13430147481' LIMIT 1;
+2019-09-08 10:44:26,948 INFO 8976 [egg-sequelize](33ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 10:44:44,637 INFO 7288 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 10:44:50,074 INFO 7288 [egg-sequelize](15ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '13430147481' LIMIT 1;
+2019-09-08 10:44:50,088 ERROR 7288 nodejs.TypeError: Cannot read property 'md5' of undefined
+    at AdminController.login (F:\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:38:24)
+
+pid: 7288
+hostname: DESKTOP-FJK6CD0
+
+2019-09-08 10:44:50,091 ERROR 7288 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-onerror@2.1.0@egg-onerror\app.js:27:20)
+    at Application.emit (events.js:198:13)
+    at F:\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+
+pid: 7288
+hostname: DESKTOP-FJK6CD0
+
+2019-09-08 10:45:03,874 INFO 9548 [egg-sequelize](13ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 10:50:06,678 INFO 12236 [egg-sequelize](29ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 10:52:07,355 INFO 12236 [egg-sequelize](14ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '13430147481' LIMIT 1;
+2019-09-08 10:52:40,278 INFO 12236 [egg-sequelize](11ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` WHERE `admin`.`mobile` = '13430147481' LIMIT 1;
+2019-09-08 10:53:27,701 INFO 5384 [egg-sequelize](11ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 10:54:22,825 INFO 11088 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 11:55:35,603 INFO 10268 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 11:55:43,162 INFO 11856 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 12:16:05,344 INFO 12316 [egg-sequelize](15ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 12:16:12,374 INFO 11888 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 13:36:07,136 INFO 14656 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 13:36:14,785 INFO 10244 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 13:42:05,986 INFO 6516 [egg-sequelize](13ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 13:42:14,988 INFO 6956 [egg-sequelize](12ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 13:42:57,438 INFO 14616 [egg-sequelize](12ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 13:43:04,797 INFO 15040 [egg-sequelize](17ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 13:45:42,620 INFO 15040 [egg-sequelize](8ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin`;
+2019-09-08 13:45:42,630 INFO 15040 [egg-sequelize](16ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` LIMIT 0, 10;
+2019-09-08 13:50:25,132 INFO 15040 [egg-sequelize](11ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin`;
+2019-09-08 13:50:25,150 INFO 15040 [egg-sequelize](27ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` LIMIT 0, 10;
+2019-09-08 13:50:35,907 INFO 15040 [egg-sequelize](13ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin`;
+2019-09-08 13:50:35,914 INFO 15040 [egg-sequelize](12ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` LIMIT 0, 10;
+2019-09-08 13:50:37,774 INFO 15040 [egg-sequelize](7ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin`;
+2019-09-08 13:50:37,789 INFO 15040 [egg-sequelize](22ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` LIMIT 0, 10;
+2019-09-08 13:51:07,196 INFO 15040 [egg-sequelize](11ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin`;
+2019-09-08 13:51:07,204 INFO 15040 [egg-sequelize](15ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` LIMIT 0, 10;
+2019-09-08 13:51:09,953 INFO 15040 [egg-sequelize](8ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` LIMIT 0, 10;
+2019-09-08 13:51:09,956 INFO 15040 [egg-sequelize](11ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin`;
+2019-09-08 13:51:36,892 INFO 15040 [egg-sequelize](10ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin`;
+2019-09-08 13:51:36,902 INFO 15040 [egg-sequelize](10ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` LIMIT 0, 10;
+2019-09-08 13:52:12,591 INFO 15040 [egg-sequelize](7ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin`;
+2019-09-08 13:52:12,605 INFO 15040 [egg-sequelize](14ms) Executed (default): SELECT `id`, `avatar`, `user_name`, `mobile`, `registe_time`, `permissions`, `created_at`, `updated_at`, `password` FROM `admins` AS `admin` LIMIT 0, 10;
+2019-09-08 13:55:54,599 INFO 12656 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 14:07:03,393 INFO 6860 [egg-sequelize](18ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 14:16:44,218 INFO 12648 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 14:17:15,412 INFO 5656 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 14:17:54,461 INFO 14436 [egg-sequelize](11ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 14:18:02,948 INFO 2424 [egg-sequelize](11ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 14:18:24,036 INFO 9060 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 14:18:32,369 INFO 8176 [egg-sequelize](15ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 14:19:09,313 INFO 13636 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 14:19:16,097 INFO 9436 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 14:19:36,286 INFO 9436 [egg-sequelize](16ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin` WHERE TO_DAYS(`admin`.`registe_time`) = TO_DAYS();
+2019-09-08 14:19:36,331 ERROR 9436 nodejs.SequelizeDatabaseError: Incorrect parameter count in the call to native function 'TO_DAYS'
+    at Query.formatError (F:\ele-admin-ts\ele-admin-ts\node_modules\_sequelize@5.18.1@sequelize\lib\dialects\mysql\query.js:244:16)
+    at Query.handler [as onResult] (F:\ele-admin-ts\ele-admin-ts\node_modules\_sequelize@5.18.1@sequelize\lib\dialects\mysql\query.js:51:23)
+    at Query.execute (F:\ele-admin-ts\ele-admin-ts\node_modules\_mysql2@1.7.0@mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (F:\ele-admin-ts\ele-admin-ts\node_modules\_mysql2@1.7.0@mysql2\lib\connection.js:408:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (F:\ele-admin-ts\ele-admin-ts\node_modules\_mysql2@1.7.0@mysql2\lib\connection.js:70:12)
+    at PacketParser.executeStart (F:\ele-admin-ts\ele-admin-ts\node_modules\_mysql2@1.7.0@mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (F:\ele-admin-ts\ele-admin-ts\node_modules\_mysql2@1.7.0@mysql2\lib\connection.js:77:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (F:\ele-admin-ts\ele-admin-ts\node_modules\_bluebird@3.5.5@bluebird\js\release\debuggability.js:411:19)
+    at Promise._then (F:\ele-admin-ts\ele-admin-ts\node_modules\_bluebird@3.5.5@bluebird\js\release\promise.js:237:17)
+    at Promise.then (F:\ele-admin-ts\ele-admin-ts\node_modules\_bluebird@3.5.5@bluebird\js\release\promise.js:130:17)
+    at Function.count (F:\ele-admin-ts\ele-admin-ts\node_modules\_sequelize@5.18.1@sequelize\lib\model.js:2028:8)
+    at Function.findRegTodayCount (F:\ele-admin-ts\ele-admin-ts\app\model\admin.ts:55:25)
+    at AdminController.todayData (F:\ele-admin-ts\ele-admin-ts\app\controller\admin.ts:146:48)
+    at Object.callFn (F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-core@4.17.3@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-core@4.17.3@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\ele-admin-ts\ele-admin-ts\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\ele-admin-ts\ele-admin-ts\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\ele-admin-ts\ele-admin-ts\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (F:\ele-admin-ts\ele-admin-ts\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at F:\ele-admin-ts\ele-admin-ts\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (F:\ele-admin-ts\ele-admin-ts\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at F:\ele-admin-ts\ele-admin-ts\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+    at dispatch (F:\ele-admin-ts\ele-admin-ts\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:195:33)
+    at dispatch (F:\ele-admin-ts\ele-admin-ts\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at F:\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:13:13
+    at dispatch (F:\ele-admin-ts\ele-admin-ts\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-development@2.4.3@egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (F:\ele-admin-ts\ele-admin-ts\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at i18n (F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-i18n@2.1.1@egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (F:\ele-admin-ts\ele-admin-ts\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at dispatch (F:\ele-admin-ts\ele-admin-ts\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at dta (F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-security@2.6.1@egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (F:\ele-admin-ts\ele-admin-ts\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at xframe (F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-security@2.6.1@egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (F:\ele-admin-ts\ele-admin-ts\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_WRONG_PARAMCOUNT_TO_NATIVE_FCT","errno":1582,"sqlState":"42000","sqlMessage":"Incorrect parameter count in the call to native function 'TO_DAYS'","sql":"SELECT count(*) AS `count` FROM `admins` AS `admin` WHERE TO_DAYS(`admin`.`registe_time`) = TO_DAYS();"}
+original: {"code":"ER_WRONG_PARAMCOUNT_TO_NATIVE_FCT","errno":1582,"sqlState":"42000","sqlMessage":"Incorrect parameter count in the call to native function 'TO_DAYS'","sql":"SELECT count(*) AS `count` FROM `admins` AS `admin` WHERE TO_DAYS(`admin`.`registe_time`) = TO_DAYS();"}
+sql: "SELECT count(*) AS `count` FROM `admins` AS `admin` WHERE TO_DAYS(`admin`.`registe_time`) = TO_DAYS();"
+parameters: undefined
+pid: 9436
+hostname: DESKTOP-FJK6CD0
+
+2019-09-08 14:19:36,337 ERROR 9436 nodejs.TypeError: Cannot read property 'error' of undefined
+    at Application.app.on (F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-onerror@2.1.0@egg-onerror\app.js:27:20)
+    at Application.emit (events.js:198:13)
+    at F:\ele-admin-ts\ele-admin-ts\app\middleware\error_handler.js:16:15
+
+pid: 9436
+hostname: DESKTOP-FJK6CD0
+
+2019-09-08 14:20:26,424 INFO 9624 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 14:20:33,172 INFO 4076 [egg-sequelize](11ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 14:20:54,201 INFO 4076 [egg-sequelize](5ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin` WHERE TO_DAYS(`admin`.`registe_time`) = TO_DAYS('2019-09-01');
+2019-09-08 14:21:25,364 INFO 13508 [egg-sequelize](15ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 14:21:32,771 INFO 12936 [egg-sequelize](27ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 14:22:02,168 INFO 12936 [egg-sequelize](52ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin` WHERE TO_DAYS(`admin`.`registe_time`) >= TO_DAYS('2019-09-01');
+2019-09-08 14:23:22,802 INFO 9292 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 14:23:26,815 INFO 9292 [egg-sequelize](7ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin` WHERE TO_DAYS(`admin`.`registe_time`) >= TO_DAYS(now());
+2019-09-08 14:23:30,520 INFO 1336 [egg-sequelize](16ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 14:26:13,301 INFO 12436 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 14:26:20,518 INFO 14712 [egg-sequelize](11ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 15:54:44,868 INFO 14712 [egg-sequelize](7ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin` WHERE TO_DAYS(`admin`.`registe_time`) >= TO_DAYS(now());
+2019-09-08 15:54:55,116 INFO 7596 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 15:55:00,861 INFO 7596 [egg-sequelize](53ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin` WHERE `admin`.`registe_time` = '2019-09-08 00:00:00.000';
+2019-09-08 15:55:02,576 INFO 9924 [egg-sequelize](25ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 15:55:40,374 INFO 10124 [egg-sequelize](13ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 15:55:44,471 INFO 10124 [egg-sequelize](7ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin` WHERE `admin`.`registe_time` = '2019-09-08 00:00:00.000';
+2019-09-08 16:00:21,966 INFO 10124 [egg-sequelize](9ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin` WHERE `admin`.`registe_time` = '2019-09-08 00:00:00.000';
+2019-09-08 16:00:23,990 INFO 14916 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 16:00:26,973 INFO 14916 [egg-sequelize](6ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin` WHERE `admin`.`registe_time` = '2019-09-08 00:00:00.000';
+2019-09-08 16:00:29,195 INFO 14916 [egg-sequelize](6ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin` WHERE `admin`.`registe_time` = '2019-09-08 00:00:00.000';
+2019-09-08 16:00:31,176 INFO 14916 [egg-sequelize](6ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin` WHERE `admin`.`registe_time` = '2019-09-08 00:00:00.000';
+2019-09-08 16:00:33,661 INFO 5512 [egg-sequelize](12ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 16:00:37,311 INFO 5512 [egg-sequelize](13ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin` WHERE `admin`.`registe_time` = '2019-09-08 00:00:00.000';
+2019-09-08 16:00:47,340 INFO 5512 [egg-sequelize](8ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin` WHERE `admin`.`registe_time` = '2019-09-08 00:00:00.000';
+2019-09-08 16:02:25,771 INFO 13648 [egg-sequelize](11ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 16:05:42,251 INFO 13648 [egg-sequelize](10ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin` WHERE `admin`.`registe_time` = '2019-09-08 00:00:00.000';
+2019-09-08 16:06:57,346 INFO 13608 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 16:07:03,743 INFO 4368 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 16:07:11,621 INFO 4368 [egg-sequelize](9ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin` WHERE `admin`.`registe_time` = '2019-09-08 00:00:00.000';
+2019-09-08 16:08:35,140 INFO 11892 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 16:08:42,418 INFO 11956 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 16:08:42,672 INFO 11956 [egg-sequelize](8ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin` WHERE `admin`.`registe_time` = '2019-09-08 00:00:00.000';
+2019-09-08 16:09:23,280 INFO 14384 [egg-sequelize](12ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 16:09:32,405 INFO 15096 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 16:09:34,512 INFO 15096 [egg-sequelize](8ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin` WHERE `admin`.`registe_time` = '2019-09-08 00:00:00.000';
+2019-09-08 16:09:42,451 INFO 15096 [egg-sequelize](13ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin` WHERE `admin`.`registe_time` = '2019-09-08 00:00:00.000';
+2019-09-08 16:11:39,491 INFO 13076 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 16:12:16,064 INFO 13076 [egg-sequelize](15ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin` WHERE `admin`.`registe_time` = '2019-09-08 00:00:00.000';
+2019-09-08 16:13:24,200 INFO 2184 [egg-sequelize](12ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 16:13:29,291 INFO 2184 [egg-sequelize](8ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin` WHERE TO_DAYS(`admin`.`registe_time`) >= TO_DAYS(now());
+2019-09-08 16:13:59,796 INFO 3980 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 16:14:07,460 INFO 9352 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 16:14:23,524 INFO 9352 [egg-sequelize](10ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin` WHERE TO_DAYS(`admin`.`registe_time`) = TO_DAYS(now());
+2019-09-08 16:16:37,708 INFO 9280 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 16:16:45,825 INFO 8148 [egg-sequelize](12ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 16:16:51,597 INFO 8148 [egg-sequelize](7ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin` WHERE `admin`.`registe_time` = '2019-09-08 00:00:00.000';
+2019-09-08 16:17:46,482 INFO 13816 [egg-sequelize](13ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 16:17:54,456 INFO 5032 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 16:20:18,642 INFO 3628 [egg-sequelize](12ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 16:20:25,968 INFO 6884 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 16:44:57,300 INFO 10840 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 16:45:05,007 INFO 4492 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 16:47:26,111 INFO 14724 [egg-sequelize](11ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 16:47:47,113 INFO 14724 [egg-sequelize](6ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin` WHERE TO_DAYS(`admin`.`registe_time`) >= TO_DAYS(now());
+2019-09-08 16:47:57,797 INFO 14724 [egg-sequelize](9ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin` WHERE TO_DAYS(`admin`.`registe_time`) >= TO_DAYS(now());
+2019-09-08 16:48:29,828 INFO 14724 [egg-sequelize](10ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin` WHERE TO_DAYS(`admin`.`registe_time`) >= TO_DAYS(now());
+2019-09-08 16:49:21,200 INFO 9844 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 16:49:28,241 INFO 9108 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 16:50:44,383 INFO 9268 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 16:51:02,244 INFO 10884 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 16:51:06,864 INFO 10884 [egg-sequelize](10ms) Executed (default): SELECT count(*) AS `count` FROM `order` AS `order` WHERE TO_DAYS(`order`.`create_time`) >= TO_DAYS(now());
+2019-09-08 16:51:36,170 INFO 7404 [egg-sequelize](43ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 16:51:45,163 INFO 3668 [egg-sequelize](13ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 16:53:56,427 INFO 8416 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 16:54:06,239 INFO 13920 [egg-sequelize](12ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 16:54:30,952 INFO 10704 [egg-sequelize](13ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 16:54:38,286 INFO 13164 [egg-sequelize](39ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 16:55:20,040 INFO 15328 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 16:55:28,709 INFO 10420 [egg-sequelize](53ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 16:56:15,760 INFO 15092 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 16:56:32,031 INFO 7600 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 17:00:51,301 INFO 11096 [egg-sequelize](11ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 17:01:00,229 INFO 13728 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 17:01:09,290 INFO 13728 [egg-sequelize](10ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin` WHERE TO_DAYS(`admin`.`registe_time`) >= TO_DAYS(now());
+2019-09-08 17:01:09,335 INFO 13728 [egg-sequelize](39ms) Executed (default): SELECT count(*) AS `count` FROM `order` AS `order` WHERE TO_DAYS(`order`.`create_time`) >= TO_DAYS(now());
+2019-09-08 17:01:11,757 INFO 13728 [egg-sequelize](8ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin` WHERE TO_DAYS(`admin`.`registe_time`) >= TO_DAYS(now());
+2019-09-08 17:01:11,768 INFO 13728 [egg-sequelize](6ms) Executed (default): SELECT count(*) AS `count` FROM `order` AS `order` WHERE TO_DAYS(`order`.`create_time`) >= TO_DAYS(now());
+2019-09-08 17:03:02,456 INFO 2064 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 17:03:10,158 INFO 6492 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 17:03:27,007 INFO 6492 [egg-sequelize](9ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin` WHERE TO_DAYS(`admin`.`registe_time`) >= TO_DAYS(now());
+2019-09-08 17:03:27,019 INFO 6492 [egg-sequelize](8ms) Executed (default): SELECT count(*) AS `count` FROM `order` AS `order` WHERE TO_DAYS(`order`.`create_time`) >= TO_DAYS(now());
+2019-09-08 17:04:03,405 INFO 4324 [egg-sequelize](12ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 17:04:10,675 INFO 10228 [egg-sequelize](11ms) Executed (default): SELECT 1+1 AS result
+2019-09-08 17:06:14,522 INFO 10228 [egg-sequelize](22ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin` WHERE TO_DAYS(`admin`.`registe_time`) >= TO_DAYS(now());
+2019-09-08 17:06:14,551 INFO 10228 [egg-sequelize](22ms) Executed (default): SELECT count(*) AS `count` FROM `order` AS `order` WHERE TO_DAYS(`order`.`create_time`) >= TO_DAYS(now());
+2019-09-08 17:06:14,565 INFO 10228 [egg-sequelize](10ms) Executed (default): SELECT count(*) AS `count` FROM `admins` AS `admin`;
+2019-09-08 17:06:14,581 INFO 10228 [egg-sequelize](11ms) Executed (default): SELECT count(*) AS `count` FROM `order` AS `order`;

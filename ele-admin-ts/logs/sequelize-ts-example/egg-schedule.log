@@ -634,3 +634,276 @@
 2019-09-05 21:02:36,274 INFO 10808 [egg-schedule]: register schedule e:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
 2019-09-05 21:02:36,274 INFO 10808 [egg-schedule]: register schedule e:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\clean_log.js
 2019-09-05 21:02:36,274 INFO 10808 [egg-schedule]: register schedule e:\饿了吗全链路开发\我的仓库\ele-admin-ts\ele-admin-ts\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 10:33:41,432 INFO 8480 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 10:33:41,432 INFO 8480 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 10:33:41,432 INFO 8480 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 10:33:49,964 INFO 11976 [Timer] F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 64570047ms at 2019-09-09 04:30:00.011
+2019-09-08 10:33:49,965 INFO 11976 [Timer] F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 48370036ms at 2019-09-09 00:00:00.001
+2019-09-08 10:33:49,966 INFO 11976 [Timer] F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 48371035ms at 2019-09-09 00:00:01.001
+2019-09-08 10:43:36,147 INFO 6884 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 10:43:36,147 INFO 6884 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 10:43:36,147 INFO 6884 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 10:43:44,366 INFO 3540 [Timer] F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 63975642ms at 2019-09-09 04:30:00.008
+2019-09-08 10:43:44,367 INFO 3540 [Timer] F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 47775634ms at 2019-09-09 00:00:00.001
+2019-09-08 10:43:44,368 INFO 3540 [Timer] F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 47776633ms at 2019-09-09 00:00:01.001
+2019-09-08 10:44:19,729 INFO 8976 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 10:44:19,729 INFO 8976 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 10:44:19,729 INFO 8976 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 10:44:36,018 INFO 7288 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 10:44:36,018 INFO 7288 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 10:44:36,018 INFO 7288 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 10:45:02,566 INFO 9548 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 10:45:02,566 INFO 9548 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 10:45:02,566 INFO 9548 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 10:50:01,113 INFO 12236 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 10:50:01,113 INFO 12236 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 10:50:01,113 INFO 12236 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 10:50:06,972 INFO 13332 [Timer] F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 63593039ms at 2019-09-09 04:30:00.011
+2019-09-08 10:50:06,974 INFO 13332 [Timer] F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 47393027ms at 2019-09-09 00:00:00.001
+2019-09-08 10:50:06,975 INFO 13332 [Timer] F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 47394026ms at 2019-09-09 00:00:01.001
+2019-09-08 10:53:25,157 INFO 5384 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 10:53:25,157 INFO 5384 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 10:53:25,157 INFO 5384 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 10:54:20,803 INFO 11088 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 10:54:20,803 INFO 11088 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 10:54:20,803 INFO 11088 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 10:54:22,883 INFO 4136 [Timer] F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 63337128ms at 2019-09-09 04:30:00.010
+2019-09-08 10:54:22,885 INFO 4136 [Timer] F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 47137117ms at 2019-09-09 00:00:00.002
+2019-09-08 10:54:22,886 INFO 4136 [Timer] F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 47138115ms at 2019-09-09 00:00:01.001
+2019-09-08 11:55:23,989 INFO 10268 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 11:55:23,989 INFO 10268 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 11:55:23,989 INFO 10268 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 11:55:41,206 INFO 11856 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 11:55:41,206 INFO 11856 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 11:55:41,206 INFO 11856 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 12:15:54,925 INFO 12316 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 12:15:54,925 INFO 12316 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 12:15:54,925 INFO 12316 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 12:16:10,374 INFO 11888 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 12:16:10,374 INFO 11888 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 12:16:10,374 INFO 11888 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 13:35:54,929 INFO 14656 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 13:35:54,930 INFO 14656 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 13:35:54,930 INFO 14656 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 13:36:12,982 INFO 10244 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 13:36:12,982 INFO 10244 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 13:36:12,982 INFO 10244 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 13:41:54,998 INFO 6516 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 13:41:54,998 INFO 6516 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 13:41:54,998 INFO 6516 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 13:42:12,314 INFO 6956 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 13:42:12,315 INFO 6956 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 13:42:12,315 INFO 6956 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 13:42:45,704 INFO 14616 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 13:42:45,704 INFO 14616 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 13:42:45,704 INFO 14616 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 13:43:02,602 INFO 15040 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 13:43:02,602 INFO 15040 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 13:43:02,602 INFO 15040 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 13:55:46,550 INFO 12656 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 13:55:46,551 INFO 12656 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 13:55:46,551 INFO 12656 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 13:55:54,662 INFO 4564 [Timer] F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 52445352ms at 2019-09-09 04:30:00.013
+2019-09-08 13:55:54,663 INFO 4564 [Timer] F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 36245338ms at 2019-09-09 00:00:00.001
+2019-09-08 13:55:54,665 INFO 4564 [Timer] F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 36246337ms at 2019-09-09 00:00:01.002
+2019-09-08 14:07:01,821 INFO 6860 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 14:07:01,821 INFO 6860 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 14:07:01,821 INFO 6860 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 14:16:35,908 INFO 12648 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 14:16:35,908 INFO 12648 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 14:16:35,908 INFO 12648 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 14:16:59,715 INFO 8396 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 14:16:59,715 INFO 8396 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 14:16:59,715 INFO 8396 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 14:17:00,197 INFO 5656 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 14:17:00,197 INFO 5656 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 14:17:00,197 INFO 5656 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 14:17:45,792 INFO 14436 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 14:17:45,792 INFO 14436 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 14:17:45,792 INFO 14436 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 14:18:01,124 INFO 2424 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 14:18:01,124 INFO 2424 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 14:18:01,124 INFO 2424 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 14:18:14,243 INFO 9060 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 14:18:14,243 INFO 9060 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 14:18:14,243 INFO 9060 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 14:18:30,129 INFO 8176 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 14:18:30,129 INFO 8176 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 14:18:30,129 INFO 8176 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 14:19:00,722 INFO 13636 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 14:19:00,722 INFO 13636 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 14:19:00,722 INFO 13636 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 14:19:14,627 INFO 9436 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 14:19:14,627 INFO 9436 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 14:19:14,627 INFO 9436 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 14:20:17,024 INFO 9624 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 14:20:17,024 INFO 9624 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 14:20:17,024 INFO 9624 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 14:20:31,740 INFO 4076 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 14:20:31,740 INFO 4076 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 14:20:31,740 INFO 4076 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 14:21:16,973 INFO 13508 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 14:21:16,973 INFO 13508 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 14:21:16,973 INFO 13508 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 14:21:30,894 INFO 12936 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 14:21:30,894 INFO 12936 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 14:21:30,894 INFO 12936 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 14:23:13,717 INFO 9292 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 14:23:13,717 INFO 9292 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 14:23:13,717 INFO 9292 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 14:23:28,465 INFO 1336 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 14:23:28,465 INFO 1336 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 14:23:28,465 INFO 1336 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 14:26:05,080 INFO 12436 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 14:26:05,080 INFO 12436 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 14:26:05,080 INFO 12436 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 14:26:18,697 INFO 14712 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 14:26:18,697 INFO 14712 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 14:26:18,697 INFO 14712 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 15:54:42,359 INFO 7596 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 15:54:42,359 INFO 7596 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 15:54:42,359 INFO 7596 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 15:55:01,253 INFO 9924 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 15:55:01,253 INFO 9924 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 15:55:01,253 INFO 9924 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 15:55:38,775 INFO 10124 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 15:55:38,775 INFO 10124 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 15:55:38,775 INFO 10124 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 15:55:40,418 INFO 3736 [Timer] F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 45259589ms at 2019-09-09 04:30:00.007
+2019-09-08 15:55:40,418 INFO 3736 [Timer] F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 29059582ms at 2019-09-09 00:00:00.000
+2019-09-08 15:55:40,419 INFO 3736 [Timer] F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 29060582ms at 2019-09-09 00:00:01.001
+2019-09-08 16:00:14,701 INFO 14916 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:00:14,701 INFO 14916 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:00:14,701 INFO 14916 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 16:00:30,879 INFO 5512 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:00:30,879 INFO 5512 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:00:30,879 INFO 5512 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 16:02:23,567 INFO 13648 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:02:23,568 INFO 13648 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:02:23,568 INFO 13648 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 16:02:25,823 INFO 5804 [Timer] F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 44854186ms at 2019-09-09 04:30:00.009
+2019-09-08 16:02:25,823 INFO 5804 [Timer] F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 28654177ms at 2019-09-09 00:00:00.000
+2019-09-08 16:02:25,824 INFO 5804 [Timer] F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 28655176ms at 2019-09-09 00:00:01.000
+2019-09-08 16:06:48,238 INFO 13608 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:06:48,238 INFO 13608 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:06:48,238 INFO 13608 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 16:07:02,366 INFO 4368 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:07:02,366 INFO 4368 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:07:02,366 INFO 4368 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 16:08:25,939 INFO 11892 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:08:25,939 INFO 11892 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:08:25,939 INFO 11892 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 16:08:40,951 INFO 11956 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:08:40,951 INFO 11956 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:08:40,951 INFO 11956 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 16:09:14,921 INFO 14384 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:09:14,921 INFO 14384 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:09:14,921 INFO 14384 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 16:09:29,835 INFO 15096 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:09:29,835 INFO 15096 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:09:29,835 INFO 15096 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 16:11:21,459 INFO 13076 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:11:21,459 INFO 13076 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:11:21,459 INFO 13076 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 16:11:39,548 INFO 13452 [Timer] F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 44300464ms at 2019-09-09 04:30:00.012
+2019-09-08 16:11:39,549 INFO 13452 [Timer] F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 28100451ms at 2019-09-09 00:00:00.000
+2019-09-08 16:11:39,550 INFO 13452 [Timer] F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 28101451ms at 2019-09-09 00:00:01.001
+2019-09-08 16:13:22,471 INFO 2184 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:13:22,471 INFO 2184 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:13:22,471 INFO 2184 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 16:13:24,297 INFO 9240 [Timer] F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 44195718ms at 2019-09-09 04:30:00.015
+2019-09-08 16:13:24,298 INFO 9240 [Timer] F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 27995703ms at 2019-09-09 00:00:00.001
+2019-09-08 16:13:24,299 INFO 9240 [Timer] F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 27996702ms at 2019-09-09 00:00:01.001
+2019-09-08 16:13:50,925 INFO 3980 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:13:50,926 INFO 3980 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:13:50,926 INFO 3980 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 16:14:05,699 INFO 9352 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:14:05,699 INFO 9352 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:14:05,699 INFO 9352 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 16:16:27,840 INFO 9280 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:16:27,840 INFO 9280 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:16:27,840 INFO 9280 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 16:16:44,088 INFO 8148 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:16:44,088 INFO 8148 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:16:44,088 INFO 8148 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 16:17:37,249 INFO 13816 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:17:37,249 INFO 13816 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:17:37,249 INFO 13816 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 16:17:52,552 INFO 5032 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:17:52,552 INFO 5032 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:17:52,552 INFO 5032 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 16:20:09,568 INFO 3628 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:20:09,568 INFO 3628 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:20:09,568 INFO 3628 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 16:20:24,346 INFO 6884 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:20:24,346 INFO 6884 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:20:24,346 INFO 6884 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 16:44:46,614 INFO 10840 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:44:46,614 INFO 10840 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:44:46,614 INFO 10840 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 16:45:03,426 INFO 4492 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:45:03,426 INFO 4492 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:45:03,426 INFO 4492 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 16:47:16,696 INFO 14724 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:47:16,696 INFO 14724 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:47:16,696 INFO 14724 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 16:49:13,204 INFO 9844 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:49:13,204 INFO 9844 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:49:13,204 INFO 9844 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 16:49:26,669 INFO 9108 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:49:26,669 INFO 9108 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:49:26,669 INFO 9108 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 16:50:30,740 INFO 9268 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:50:30,740 INFO 9268 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:50:30,740 INFO 9268 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 16:50:51,478 INFO 10884 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:50:51,478 INFO 10884 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:50:51,479 INFO 10884 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 16:51:26,276 INFO 7404 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:51:26,276 INFO 7404 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:51:26,276 INFO 7404 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 16:51:43,129 INFO 3668 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:51:43,129 INFO 3668 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:51:43,129 INFO 3668 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 16:53:45,713 INFO 8416 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:53:45,713 INFO 8416 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:53:45,713 INFO 8416 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 16:54:03,484 INFO 13920 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:54:03,484 INFO 13920 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:54:03,484 INFO 13920 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 16:54:20,803 INFO 10704 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:54:20,803 INFO 10704 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:54:20,803 INFO 10704 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 16:54:36,440 INFO 13164 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:54:36,440 INFO 13164 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:54:36,440 INFO 13164 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 16:55:09,078 INFO 15328 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:55:09,079 INFO 15328 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:55:09,079 INFO 15328 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 16:55:26,407 INFO 10420 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:55:26,407 INFO 10420 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:55:26,407 INFO 10420 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 16:56:03,536 INFO 15092 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:56:03,536 INFO 15092 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:56:03,536 INFO 15092 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 16:56:21,857 INFO 7600 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 16:56:21,857 INFO 7600 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 16:56:21,857 INFO 7600 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 17:00:41,307 INFO 11096 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 17:00:41,308 INFO 11096 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 17:00:41,308 INFO 11096 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 17:00:58,625 INFO 13728 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 17:00:58,625 INFO 13728 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 17:00:58,625 INFO 13728 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 17:02:53,672 INFO 2064 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 17:02:53,672 INFO 2064 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 17:02:53,672 INFO 2064 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 17:03:08,520 INFO 6492 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 17:03:08,520 INFO 6492 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 17:03:08,520 INFO 6492 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 17:03:55,391 INFO 4324 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 17:03:55,391 INFO 4324 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 17:03:55,391 INFO 4324 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2019-09-08 17:04:08,995 INFO 10228 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-multipart@2.9.0@egg-multipart\app\schedule\clean_tmpdir.js
+2019-09-08 17:04:08,995 INFO 10228 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2019-09-08 17:04:08,995 INFO 10228 [egg-schedule]: register schedule F:\ele-admin-ts\ele-admin-ts\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js

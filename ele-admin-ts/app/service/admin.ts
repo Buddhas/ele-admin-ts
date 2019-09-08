@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 15:38:40
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-03 14:59:40
+ * @LastEditTime: 2019-09-08 17:03:49
  */
 import { Service } from "egg";
 
@@ -53,15 +53,6 @@ class Admin extends Service {
   }
 
   /**
-   * @Descripttion: 获取管理员数量
-   * @Author: 笑佛弥勒
-   * @param {type}
-   * @return:
-   */
-  public async getAdminCount() {
-    return await this.ctx.model.Admin.count();
-  }
-  /**
    * @Descripttion: 管理员列表分页
    * @Author: 笑佛弥勒
    * @param {page} 当前页 {pageSize} 当前页数
@@ -69,6 +60,24 @@ class Admin extends Service {
    */
   public async findAdminByPage(page: number, pageSize: number) {
     return await this.ctx.model.Admin.findAdminByPage(page, pageSize);
+  }
+/**
+ * @Descripttion: 获取当日新注册管理员总数
+ * @Author: 笑佛弥勒
+ * @param {type} 
+ * @return: 
+ */  
+  public async findRegTodayCount() {
+    return await this.ctx.model.Admin.findRegTodayCount()
+  }
+  /**
+   * @Descripttion: 获取管理员数量
+   * @Author: 笑佛弥勒
+   * @param {type} 
+   * @return: 
+   */  
+  public async regCount() {
+    return await this.ctx.model.Admin.count()
   }
 }
 

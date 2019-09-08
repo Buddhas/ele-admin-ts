@@ -12,13 +12,15 @@
       "defaultMiddleware": "csrf,hsts,methodnoallow,noopen,nosniff,csp,xssProtection,xframe,dta",
       "csrf": {
         "enable": false,
-        "useSession": false,
+        "type": "ctoken",
         "ignoreJSON": false,
+        "useSession": false,
         "cookieName": "csrfToken",
         "sessionName": "csrfToken",
         "headerName": "x-csrf-token",
         "bodyName": "_csrf",
-        "queryName": "_csrf"
+        "queryName": "_csrf",
+        "refererWhiteList": []
       },
       "xframe": {
         "enable": true,
@@ -73,7 +75,7 @@
     "onerror": {
       "errorPageUrl": "",
       "appErrorFilter": null,
-      "templatePath": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-onerror\\lib\\onerror_page.mustache"
+      "templatePath": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\lib\\onerror_page.mustache"
     },
     "i18n": {
       "defaultLocale": "en_US",
@@ -86,8 +88,8 @@
     "watcher": {
       "type": "development",
       "eventSources": {
-        "default": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-watcher\\lib\\event-sources\\default",
-        "development": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-watcher\\lib\\event-sources\\development"
+        "default": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-watcher@3.1.0@egg-watcher\\lib\\event-sources\\default",
+        "development": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-watcher@3.1.0@egg-watcher\\lib\\event-sources\\development"
       }
     },
     "customLogger": {
@@ -110,7 +112,7 @@
       "files": 10,
       "fileExtensions": [],
       "whitelist": null,
-      "tmpdir": "C:\\Users\\笑佛弥勒\\AppData\\Local\\Temp\\egg-multipart-tmp\\sequelize-ts-example",
+      "tmpdir": "C:\\Users\\24249\\AppData\\Local\\Temp\\egg-multipart-tmp\\sequelize-ts-example",
       "cleanSchedule": {
         "cron": "0 30 4 * * *"
       }
@@ -133,14 +135,14 @@
     },
     "static": {
       "prefix": "/public/",
-      "dir": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\app\\public",
+      "dir": "f:\\ele-admin-ts\\ele-admin-ts\\app\\public",
       "dynamic": true,
       "preload": false,
       "buffer": false,
       "maxFiles": 1000
     },
     "view": {
-      "root": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\app\\view",
+      "root": "f:\\ele-admin-ts\\ele-admin-ts\\app\\view",
       "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "",
@@ -210,9 +212,9 @@
       "author": "Qi Yu <njuyuqi@gmail.coom>",
       "license": "MIT"
     },
-    "baseDir": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts",
-    "HOME": "C:\\Users\\笑佛弥勒",
-    "rundir": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\run",
+    "baseDir": "f:\\ele-admin-ts\\ele-admin-ts",
+    "HOME": "C:\\Users\\24249",
+    "rundir": "f:\\ele-admin-ts\\ele-admin-ts\\run",
     "dump": {
       "ignore": "<Set>"
     },
@@ -243,7 +245,7 @@
       "onerror": "<Function onerror>"
     },
     "logger": {
-      "dir": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\logs\\sequelize-ts-example",
+      "dir": "f:\\ele-admin-ts\\ele-admin-ts\\logs\\sequelize-ts-example",
       "encoding": "utf8",
       "env": "local",
       "level": "INFO",
@@ -321,8 +323,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\plugin.js",
-      "path": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-session",
+      "from": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\plugin.js",
+      "path": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-session@3.1.0@egg-session",
       "version": "3.1.0"
     },
     "security": {
@@ -334,9 +336,9 @@
         "session"
       ],
       "env": [],
-      "from": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\plugin.js",
-      "path": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security",
-      "version": "2.5.0"
+      "from": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\plugin.js",
+      "path": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-security@2.6.1@egg-security",
+      "version": "2.6.1"
     },
     "jsonp": {
       "enable": true,
@@ -347,8 +349,8 @@
         "security"
       ],
       "env": [],
-      "from": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\plugin.js",
-      "path": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-jsonp",
+      "from": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\plugin.js",
+      "path": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp",
       "version": "2.0.0"
     },
     "onerror": {
@@ -360,8 +362,8 @@
         "jsonp"
       ],
       "env": [],
-      "from": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\plugin.js",
-      "path": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-onerror",
+      "from": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\plugin.js",
+      "path": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-onerror@2.1.0@egg-onerror",
       "version": "2.1.0"
     },
     "i18n": {
@@ -371,8 +373,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\plugin.js",
-      "path": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-i18n",
+      "from": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\plugin.js",
+      "path": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-i18n@2.1.1@egg-i18n",
       "version": "2.1.1"
     },
     "watcher": {
@@ -382,8 +384,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\plugin.js",
-      "path": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-watcher",
+      "from": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\plugin.js",
+      "path": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-watcher@3.1.0@egg-watcher",
       "version": "3.1.0"
     },
     "schedule": {
@@ -393,8 +395,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\plugin.js",
-      "path": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-schedule",
+      "from": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\plugin.js",
+      "path": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-schedule@3.6.4@egg-schedule",
       "version": "3.6.4"
     },
     "multipart": {
@@ -406,9 +408,9 @@
         "schedule"
       ],
       "env": [],
-      "from": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\plugin.js",
-      "path": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-multipart",
-      "version": "2.8.0"
+      "from": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\plugin.js",
+      "path": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-multipart@2.9.0@egg-multipart",
+      "version": "2.9.0"
     },
     "development": {
       "enable": true,
@@ -421,8 +423,8 @@
       "env": [
         "local"
       ],
-      "from": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\plugin.js",
-      "path": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-development",
+      "from": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\plugin.js",
+      "path": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-development@2.4.3@egg-development",
       "version": "2.4.3"
     },
     "logrotator": {
@@ -434,8 +436,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\plugin.js",
-      "path": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-logrotator",
+      "from": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\plugin.js",
+      "path": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator",
       "version": "3.1.0"
     },
     "static": {
@@ -445,8 +447,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\plugin.js",
-      "path": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-static",
+      "from": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\plugin.js",
+      "path": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-static@2.2.0@egg-static",
       "version": "2.2.0"
     },
     "view": {
@@ -456,8 +458,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\plugin.js",
-      "path": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-view",
+      "from": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\plugin.js",
+      "path": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-view@2.1.2@egg-view",
       "version": "2.1.2"
     },
     "sequelize": {
@@ -467,8 +469,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\config\\plugin.ts",
-      "path": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-sequelize",
+      "from": "f:\\ele-admin-ts\\ele-admin-ts\\config\\plugin.ts",
+      "path": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-sequelize@5.2.0@egg-sequelize",
       "version": "5.2.0"
     },
     "cors": {
@@ -478,8 +480,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\config\\plugin.ts",
-      "path": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-cors",
+      "from": "f:\\ele-admin-ts\\ele-admin-ts\\config\\plugin.ts",
+      "path": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-cors@2.2.0@egg-cors",
       "version": "2.2.0"
     },
     "validate": {
@@ -489,8 +491,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\config\\plugin.ts",
-      "path": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-validate",
+      "from": "f:\\ele-admin-ts\\ele-admin-ts\\config\\plugin.ts",
+      "path": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-validate@2.0.2@egg-validate",
       "version": "2.0.2"
     }
   }

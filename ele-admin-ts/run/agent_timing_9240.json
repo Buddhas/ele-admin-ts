@@ -1,0 +1,410 @@
+[
+  {
+    "name": "Application Start",
+    "start": 1567930389328,
+    "end": 1567930396906,
+    "duration": 7578,
+    "pid": 9240,
+    "index": 0
+  },
+  {
+    "name": "Load Plugin",
+    "start": 1567930389339,
+    "end": 1567930389411,
+    "duration": 72,
+    "pid": 9240,
+    "index": 1
+  },
+  {
+    "name": "Load Config",
+    "start": 1567930389412,
+    "end": 1567930389482,
+    "duration": 70,
+    "pid": 9240,
+    "index": 2
+  },
+  {
+    "name": "Require(0) config/config.default.ts",
+    "start": 1567930389414,
+    "end": 1567930389416,
+    "duration": 2,
+    "pid": 9240,
+    "index": 3
+  },
+  {
+    "name": "Require(1) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-session@3.1.0@egg-session/config/config.default.js",
+    "start": 1567930389422,
+    "end": 1567930389423,
+    "duration": 1,
+    "pid": 9240,
+    "index": 4
+  },
+  {
+    "name": "Require(2) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-security@2.6.1@egg-security/config/config.default.js",
+    "start": 1567930389425,
+    "end": 1567930389425,
+    "duration": 0,
+    "pid": 9240,
+    "index": 5
+  },
+  {
+    "name": "Require(3) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-jsonp@2.0.0@egg-jsonp/config/config.default.js",
+    "start": 1567930389429,
+    "end": 1567930389430,
+    "duration": 1,
+    "pid": 9240,
+    "index": 6
+  },
+  {
+    "name": "Require(4) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-onerror@2.1.0@egg-onerror/config/config.default.js",
+    "start": 1567930389431,
+    "end": 1567930389431,
+    "duration": 0,
+    "pid": 9240,
+    "index": 7
+  },
+  {
+    "name": "Require(5) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-i18n@2.1.1@egg-i18n/config/config.default.js",
+    "start": 1567930389433,
+    "end": 1567930389434,
+    "duration": 1,
+    "pid": 9240,
+    "index": 8
+  },
+  {
+    "name": "Require(6) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-watcher@3.1.0@egg-watcher/config/config.default.js",
+    "start": 1567930389435,
+    "end": 1567930389436,
+    "duration": 1,
+    "pid": 9240,
+    "index": 9
+  },
+  {
+    "name": "Require(7) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-schedule@3.6.4@egg-schedule/config/config.default.js",
+    "start": 1567930389438,
+    "end": 1567930389439,
+    "duration": 1,
+    "pid": 9240,
+    "index": 10
+  },
+  {
+    "name": "Require(8) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-multipart@2.9.0@egg-multipart/config/config.default.js",
+    "start": 1567930389441,
+    "end": 1567930389442,
+    "duration": 1,
+    "pid": 9240,
+    "index": 11
+  },
+  {
+    "name": "Require(9) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-development@2.4.3@egg-development/config/config.default.js",
+    "start": 1567930389444,
+    "end": 1567930389445,
+    "duration": 1,
+    "pid": 9240,
+    "index": 12
+  },
+  {
+    "name": "Require(10) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-logrotator@3.1.0@egg-logrotator/config/config.default.js",
+    "start": 1567930389446,
+    "end": 1567930389447,
+    "duration": 1,
+    "pid": 9240,
+    "index": 13
+  },
+  {
+    "name": "Require(11) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-static@2.2.0@egg-static/config/config.default.js",
+    "start": 1567930389449,
+    "end": 1567930389450,
+    "duration": 1,
+    "pid": 9240,
+    "index": 14
+  },
+  {
+    "name": "Require(12) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-view@2.1.2@egg-view/config/config.default.js",
+    "start": 1567930389451,
+    "end": 1567930389452,
+    "duration": 1,
+    "pid": 9240,
+    "index": 15
+  },
+  {
+    "name": "Require(13) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-sequelize@5.2.0@egg-sequelize/config/config.default.js",
+    "start": 1567930389454,
+    "end": 1567930389454,
+    "duration": 0,
+    "pid": 9240,
+    "index": 16
+  },
+  {
+    "name": "Require(14) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-cors@2.2.0@egg-cors/config/config.default.js",
+    "start": 1567930389456,
+    "end": 1567930389456,
+    "duration": 0,
+    "pid": 9240,
+    "index": 17
+  },
+  {
+    "name": "Require(15) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-validate@2.0.2@egg-validate/config/config.default.js",
+    "start": 1567930389458,
+    "end": 1567930389458,
+    "duration": 0,
+    "pid": 9240,
+    "index": 18
+  },
+  {
+    "name": "Require(16) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg@2.23.0@egg/config/config.default.js",
+    "start": 1567930389459,
+    "end": 1567930389460,
+    "duration": 1,
+    "pid": 9240,
+    "index": 19
+  },
+  {
+    "name": "Require(17) config/config.default.ts",
+    "start": 1567930389462,
+    "end": 1567930389462,
+    "duration": 0,
+    "pid": 9240,
+    "index": 20
+  },
+  {
+    "name": "Require(18) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-security@2.6.1@egg-security/config/config.local.js",
+    "start": 1567930389464,
+    "end": 1567930389465,
+    "duration": 1,
+    "pid": 9240,
+    "index": 21
+  },
+  {
+    "name": "Require(19) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-watcher@3.1.0@egg-watcher/config/config.local.js",
+    "start": 1567930389469,
+    "end": 1567930389470,
+    "duration": 1,
+    "pid": 9240,
+    "index": 22
+  },
+  {
+    "name": "Require(20) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-view@2.1.2@egg-view/config/config.local.js",
+    "start": 1567930389476,
+    "end": 1567930389476,
+    "duration": 0,
+    "pid": 9240,
+    "index": 23
+  },
+  {
+    "name": "Require(21) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg@2.23.0@egg/config/config.local.js",
+    "start": 1567930389481,
+    "end": 1567930389481,
+    "duration": 0,
+    "pid": 9240,
+    "index": 24
+  },
+  {
+    "name": "Load extend/agent.js",
+    "start": 1567930389487,
+    "end": 1567930389607,
+    "duration": 120,
+    "pid": 9240,
+    "index": 25
+  },
+  {
+    "name": "Require(22) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-security@2.6.1@egg-security/app/extend/agent.js",
+    "start": 1567930389489,
+    "end": 1567930389491,
+    "duration": 2,
+    "pid": 9240,
+    "index": 26
+  },
+  {
+    "name": "Require(23) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-schedule@3.6.4@egg-schedule/app/extend/agent.js",
+    "start": 1567930389495,
+    "end": 1567930389583,
+    "duration": 88,
+    "pid": 9240,
+    "index": 27
+  },
+  {
+    "name": "Require(24) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/extend/agent.js",
+    "start": 1567930389585,
+    "end": 1567930389592,
+    "duration": 7,
+    "pid": 9240,
+    "index": 28
+  },
+  {
+    "name": "Load extend/context.js",
+    "start": 1567930389607,
+    "end": 1567930389802,
+    "duration": 195,
+    "pid": 9240,
+    "index": 29
+  },
+  {
+    "name": "Require(25) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-security@2.6.1@egg-security/app/extend/context.js",
+    "start": 1567930389609,
+    "end": 1567930389652,
+    "duration": 43,
+    "pid": 9240,
+    "index": 30
+  },
+  {
+    "name": "Require(26) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-jsonp@2.0.0@egg-jsonp/app/extend/context.js",
+    "start": 1567930389653,
+    "end": 1567930389661,
+    "duration": 8,
+    "pid": 9240,
+    "index": 31
+  },
+  {
+    "name": "Require(27) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-i18n@2.1.1@egg-i18n/app/extend/context.js",
+    "start": 1567930389663,
+    "end": 1567930389663,
+    "duration": 0,
+    "pid": 9240,
+    "index": 32
+  },
+  {
+    "name": "Require(28) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-multipart@2.9.0@egg-multipart/app/extend/context.js",
+    "start": 1567930389666,
+    "end": 1567930389773,
+    "duration": 107,
+    "pid": 9240,
+    "index": 33
+  },
+  {
+    "name": "Require(29) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-view@2.1.2@egg-view/app/extend/context.js",
+    "start": 1567930389775,
+    "end": 1567930389778,
+    "duration": 3,
+    "pid": 9240,
+    "index": 34
+  },
+  {
+    "name": "Require(30) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-validate@2.0.2@egg-validate/app/extend/context.js",
+    "start": 1567930389781,
+    "end": 1567930389781,
+    "duration": 0,
+    "pid": 9240,
+    "index": 35
+  },
+  {
+    "name": "Require(31) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg@2.23.0@egg/app/extend/context.js",
+    "start": 1567930389783,
+    "end": 1567930389790,
+    "duration": 7,
+    "pid": 9240,
+    "index": 36
+  },
+  {
+    "name": "Load agent.js",
+    "start": 1567930389802,
+    "end": 1567930389859,
+    "duration": 57,
+    "pid": 9240,
+    "index": 37
+  },
+  {
+    "name": "Require(32) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-security@2.6.1@egg-security/agent.js",
+    "start": 1567930389804,
+    "end": 1567930389805,
+    "duration": 1,
+    "pid": 9240,
+    "index": 38
+  },
+  {
+    "name": "Require(33) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-onerror@2.1.0@egg-onerror/agent.js",
+    "start": 1567930389806,
+    "end": 1567930389807,
+    "duration": 1,
+    "pid": 9240,
+    "index": 39
+  },
+  {
+    "name": "Require(34) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-watcher@3.1.0@egg-watcher/agent.js",
+    "start": 1567930389808,
+    "end": 1567930389819,
+    "duration": 11,
+    "pid": 9240,
+    "index": 40
+  },
+  {
+    "name": "Require(35) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-schedule@3.6.4@egg-schedule/agent.js",
+    "start": 1567930389820,
+    "end": 1567930389824,
+    "duration": 4,
+    "pid": 9240,
+    "index": 41
+  },
+  {
+    "name": "Require(36) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-development@2.4.3@egg-development/agent.js",
+    "start": 1567930389825,
+    "end": 1567930389850,
+    "duration": 25,
+    "pid": 9240,
+    "index": 42
+  },
+  {
+    "name": "Require(37) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-logrotator@3.1.0@egg-logrotator/agent.js",
+    "start": 1567930389851,
+    "end": 1567930389852,
+    "duration": 1,
+    "pid": 9240,
+    "index": 43
+  },
+  {
+    "name": "Require(38) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-sequelize@5.2.0@egg-sequelize/agent.js",
+    "start": 1567930389855,
+    "end": 1567930389855,
+    "duration": 0,
+    "pid": 9240,
+    "index": 44
+  },
+  {
+    "name": "Require(39) F:/ele-admin-ts/ele-admin-ts/node_modules/_egg@2.23.0@egg/agent.js",
+    "start": 1567930389857,
+    "end": 1567930389858,
+    "duration": 1,
+    "pid": 9240,
+    "index": 45
+  },
+  {
+    "name": "Before Start in F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-watcher@3.1.0@egg-watcher/lib/init.js:15:14",
+    "start": 1567930389880,
+    "end": 1567930396733,
+    "duration": 6853,
+    "pid": 9240,
+    "index": 46
+  },
+  {
+    "name": "Before Start in F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-schedule@3.6.4@egg-schedule/agent.js:12:9",
+    "start": 1567930389884,
+    "end": 1567930396690,
+    "duration": 6806,
+    "pid": 9240,
+    "index": 47
+  },
+  {
+    "name": "Before Start in F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-development@2.4.3@egg-development/agent.js:12:9",
+    "start": 1567930389884,
+    "end": 1567930396803,
+    "duration": 6919,
+    "pid": 9240,
+    "index": 48
+  },
+  {
+    "name": "Load \"Symbol(model)\" to Application",
+    "start": 1567930390654,
+    "end": 1567930396574,
+    "duration": 5920,
+    "pid": 9240,
+    "index": 49
+  },
+  {
+    "name": "Before Start in F:/ele-admin-ts/ele-admin-ts/node_modules/_egg-sequelize@5.2.0@egg-sequelize/lib/loader.js:39:7",
+    "start": 1567930396575,
+    "end": 1567930396905,
+    "duration": 330,
+    "pid": 9240,
+    "index": 50
+  }
+]

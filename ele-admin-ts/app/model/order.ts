@@ -4,13 +4,14 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-22 14:03:38
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-26 17:15:40
+ * @LastEditTime: 2019-09-08 16:41:18
  */
 import { Application } from "egg";
 
 export default function (app: Application) {
-    const { INTEGER, DECIMAL, BIGINT, STRING } = app.Sequelize
+    const { INTEGER, DECIMAL, BIGINT, STRING, DATE } = app.Sequelize
     const Op = app.Sequelize.Op
+    const sequelize = app.Sequelize
     const Order = app.model.define(
         "order",
         {
@@ -21,13 +22,13 @@ export default function (app: Application) {
             },
             shop_id: INTEGER,
             price: DECIMAL(10, 2),
-            create_time: BIGINT,
+            create_time: DATE(6),
             user_id: BIGINT,
             ship_fee: DECIMAL(10, 2),
             meals_fee: DECIMAL(10, 2),
             user_address_id: BIGINT,
             preferential_id: BIGINT,
-            status: INTEGER,
+            status: STRING,
             shop_name: STRING(255)
         },
         {
@@ -72,5 +73,16 @@ export default function (app: Application) {
                 }
             })
         }
+        /**
+         * @Descripttion: 当日新增订单数
+         * @Author: 笑佛弥勒
+         * @param {type} 
+         * @return: 
+         */
+        static async findOrderTodayCount() {
+            return await this.count({
+              where: sequelize.where(sequelize.fn('TO_DAYS', sequelize.col('order.create_time')), '>=' ,sequelize.fn('TO_DAYS', sequelize.fn('now')))
+            })
+          }
     }
 }

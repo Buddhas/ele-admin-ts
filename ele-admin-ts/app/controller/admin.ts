@@ -4,12 +4,13 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 16:46:01
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-05 09:52:35
+ * @LastEditTime: 2019-09-08 17:02:48
  */
 
 import { Controller } from "egg"
 import * as path from "path"
 import { mkdirSync, saveImg } from "../util/util"
+import  * as utility from 'utility'
 
 export default class AdminController extends Controller {
   /**
@@ -20,7 +21,7 @@ export default class AdminController extends Controller {
    */
   public async login() {
     const { ctx } = this
-    const { mobile, password } = this.ctx.request.body
+    let { mobile, password } = this.ctx.request.body
     try {
       ctx.validate({ mobile: "mobile" })
       ctx.validate({ password: { type: "string", min: 1, max: 10 } })
@@ -33,6 +34,8 @@ export default class AdminController extends Controller {
     }
 
     let res = await ctx.service.admin.hasUser(mobile)
+    // 加密密码
+    password = utility.md5(password)
     if (!res) {
       await ctx.service.admin.createUser(mobile, password)
       ctx.body = {
@@ -121,5 +124,41 @@ export default class AdminController extends Controller {
         status: 500
       }
     }
+  }
+
+  /**
+   * @Descripttion: 数据总览
+   * @Author: 笑佛弥勒
+   * @param {type} 
+   * @return: 
+   */
+  public async totalData() {
+    try {
+      let todayAd = await this.ctx.service.admin.findRegTodayCount()
+      let todayOrder = await this.ctx.service.order.findOrderTodayCount()
+
+      let countAd = await this.ctx.service.admin.regCount()
+      let countOrder = await this.ctx.service.order.orderCount()
+      
+      this.ctx.body = {
+        data:{
+          today: {
+            admin: todayAd,
+            order: todayOrder
+          },
+          total: {
+            admin: countAd,
+            order: countOrder
+          }
+        },
+        status: 200
+      }
+    } catch (error) {
+      this.ctx.body = {
+        msg: '获取数据出错',
+        status: 500
+      }
+    }
+    
   }
 }

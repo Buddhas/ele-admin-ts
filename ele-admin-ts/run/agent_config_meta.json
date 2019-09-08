@@ -1,298 +1,300 @@
 {
-  "keys": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\config\\config.default.ts",
+  "keys": "f:\\ele-admin-ts\\ele-admin-ts\\config\\config.default.ts",
   "sequelize": {
-    "dialect": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\config\\config.default.ts",
-    "database": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\config\\config.default.ts",
-    "host": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\config\\config.default.ts",
-    "port": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\config\\config.default.ts",
-    "username": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\config\\config.default.ts",
-    "password": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\config\\config.default.ts",
-    "timezone": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\config\\config.default.ts"
+    "dialect": "f:\\ele-admin-ts\\ele-admin-ts\\config\\config.default.ts",
+    "database": "f:\\ele-admin-ts\\ele-admin-ts\\config\\config.default.ts",
+    "host": "f:\\ele-admin-ts\\ele-admin-ts\\config\\config.default.ts",
+    "port": "f:\\ele-admin-ts\\ele-admin-ts\\config\\config.default.ts",
+    "username": "f:\\ele-admin-ts\\ele-admin-ts\\config\\config.default.ts",
+    "password": "f:\\ele-admin-ts\\ele-admin-ts\\config\\config.default.ts",
+    "timezone": "f:\\ele-admin-ts\\ele-admin-ts\\config\\config.default.ts"
   },
   "security": {
     "csrf": {
-      "enable": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\config\\config.default.ts",
-      "useSession": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js",
-      "ignoreJSON": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js",
-      "cookieName": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js",
-      "sessionName": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js",
-      "headerName": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js",
-      "bodyName": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js",
-      "queryName": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "f:\\ele-admin-ts\\ele-admin-ts\\config\\config.default.ts",
+      "type": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-security@2.6.1@egg-security\\config\\config.default.js",
+      "ignoreJSON": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-security@2.6.1@egg-security\\config\\config.default.js",
+      "useSession": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-security@2.6.1@egg-security\\config\\config.default.js",
+      "cookieName": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-security@2.6.1@egg-security\\config\\config.default.js",
+      "sessionName": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-security@2.6.1@egg-security\\config\\config.default.js",
+      "headerName": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-security@2.6.1@egg-security\\config\\config.default.js",
+      "bodyName": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-security@2.6.1@egg-security\\config\\config.default.js",
+      "queryName": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-security@2.6.1@egg-security\\config\\config.default.js",
+      "refererWhiteList": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-security@2.6.1@egg-security\\config\\config.default.js"
     },
-    "domainWhiteList": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js",
-    "protocolWhiteList": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js",
-    "defaultMiddleware": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js",
+    "domainWhiteList": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-security@2.6.1@egg-security\\config\\config.default.js",
+    "protocolWhiteList": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-security@2.6.1@egg-security\\config\\config.default.js",
+    "defaultMiddleware": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-security@2.6.1@egg-security\\config\\config.default.js",
     "xframe": {
-      "enable": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js",
-      "value": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-security@2.6.1@egg-security\\config\\config.default.js",
+      "value": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-security@2.6.1@egg-security\\config\\config.default.js"
     },
     "hsts": {
-      "enable": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.local.js",
-      "maxAge": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js",
-      "includeSubdomains": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-security@2.6.1@egg-security\\config\\config.local.js",
+      "maxAge": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-security@2.6.1@egg-security\\config\\config.default.js",
+      "includeSubdomains": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-security@2.6.1@egg-security\\config\\config.default.js"
     },
     "dta": {
-      "enable": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-security@2.6.1@egg-security\\config\\config.default.js"
     },
     "methodnoallow": {
-      "enable": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-security@2.6.1@egg-security\\config\\config.default.js"
     },
     "noopen": {
-      "enable": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-security@2.6.1@egg-security\\config\\config.default.js"
     },
     "nosniff": {
-      "enable": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-security@2.6.1@egg-security\\config\\config.default.js"
     },
     "referrerPolicy": {
-      "enable": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js",
-      "value": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-security@2.6.1@egg-security\\config\\config.default.js",
+      "value": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-security@2.6.1@egg-security\\config\\config.default.js"
     },
     "xssProtection": {
-      "enable": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js",
-      "value": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-security@2.6.1@egg-security\\config\\config.default.js",
+      "value": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-security@2.6.1@egg-security\\config\\config.default.js"
     },
     "csp": {
-      "enable": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js",
-      "policy": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-security@2.6.1@egg-security\\config\\config.default.js",
+      "policy": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-security@2.6.1@egg-security\\config\\config.default.js"
     },
     "ssrf": {
-      "ipBlackList": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js",
-      "checkAddress": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js"
+      "ipBlackList": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-security@2.6.1@egg-security\\config\\config.default.js",
+      "checkAddress": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-security@2.6.1@egg-security\\config\\config.default.js"
     }
   },
   "cors": {
-    "origin": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\config\\config.default.ts",
-    "allowMethods": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\config\\config.default.ts"
+    "origin": "f:\\ele-admin-ts\\ele-admin-ts\\config\\config.default.ts",
+    "allowMethods": "f:\\ele-admin-ts\\ele-admin-ts\\config\\config.default.ts"
   },
-  "middleware": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\config\\config.default.ts",
+  "middleware": "f:\\ele-admin-ts\\ele-admin-ts\\config\\config.default.ts",
   "session": {
-    "maxAge": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-session\\config\\config.default.js",
-    "key": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-session\\config\\config.default.js",
-    "httpOnly": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-session\\config\\config.default.js",
-    "encrypt": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-session\\config\\config.default.js"
+    "maxAge": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-session@3.1.0@egg-session\\config\\config.default.js",
+    "key": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-session@3.1.0@egg-session\\config\\config.default.js",
+    "httpOnly": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-session@3.1.0@egg-session\\config\\config.default.js",
+    "encrypt": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-session@3.1.0@egg-session\\config\\config.default.js"
   },
   "helper": {
-    "shtml": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-security\\config\\config.default.js"
+    "shtml": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-security@2.6.1@egg-security\\config\\config.default.js"
   },
   "jsonp": {
-    "limit": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-jsonp\\config\\config.default.js",
-    "callback": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-jsonp\\config\\config.default.js",
-    "csrf": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-jsonp\\config\\config.default.js"
+    "limit": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp\\config\\config.default.js",
+    "callback": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp\\config\\config.default.js",
+    "csrf": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp\\config\\config.default.js"
   },
   "onerror": {
-    "errorPageUrl": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-onerror\\config\\config.default.js",
-    "appErrorFilter": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-onerror\\config\\config.default.js",
-    "templatePath": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-onerror\\config\\config.default.js"
+    "errorPageUrl": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\config\\config.default.js",
+    "appErrorFilter": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\config\\config.default.js",
+    "templatePath": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\config\\config.default.js"
   },
   "i18n": {
-    "defaultLocale": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-i18n\\config\\config.default.js",
-    "dirs": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-i18n\\config\\config.default.js",
-    "queryField": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-i18n\\config\\config.default.js",
-    "cookieField": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-i18n\\config\\config.default.js",
-    "cookieDomain": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-i18n\\config\\config.default.js",
-    "cookieMaxAge": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-i18n\\config\\config.default.js"
+    "defaultLocale": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js",
+    "dirs": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js",
+    "queryField": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js",
+    "cookieField": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js",
+    "cookieDomain": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js",
+    "cookieMaxAge": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js"
   },
   "watcher": {
-    "type": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-watcher\\config\\config.local.js",
+    "type": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-watcher@3.1.0@egg-watcher\\config\\config.local.js",
     "eventSources": {
-      "default": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-watcher\\config\\config.default.js",
-      "development": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-watcher\\config\\config.default.js"
+      "default": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-watcher@3.1.0@egg-watcher\\config\\config.default.js",
+      "development": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-watcher@3.1.0@egg-watcher\\config\\config.default.js"
     }
   },
   "customLogger": {
     "scheduleLogger": {
-      "consoleLevel": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-schedule\\config\\config.default.js",
-      "file": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-schedule\\config\\config.default.js"
+      "consoleLevel": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-schedule@3.6.4@egg-schedule\\config\\config.default.js",
+      "file": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-schedule@3.6.4@egg-schedule\\config\\config.default.js"
     }
   },
   "schedule": {
-    "directory": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-schedule\\config\\config.default.js"
+    "directory": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-schedule@3.6.4@egg-schedule\\config\\config.default.js"
   },
   "multipart": {
-    "mode": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-multipart\\config\\config.default.js",
-    "autoFields": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-multipart\\config\\config.default.js",
-    "defaultCharset": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fieldNameSize": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fieldSize": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fields": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fileSize": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-multipart\\config\\config.default.js",
-    "files": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fileExtensions": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-multipart\\config\\config.default.js",
-    "whitelist": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-multipart\\config\\config.default.js",
-    "tmpdir": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-multipart\\config\\config.default.js",
+    "mode": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-multipart@2.9.0@egg-multipart\\config\\config.default.js",
+    "autoFields": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-multipart@2.9.0@egg-multipart\\config\\config.default.js",
+    "defaultCharset": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-multipart@2.9.0@egg-multipart\\config\\config.default.js",
+    "fieldNameSize": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-multipart@2.9.0@egg-multipart\\config\\config.default.js",
+    "fieldSize": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-multipart@2.9.0@egg-multipart\\config\\config.default.js",
+    "fields": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-multipart@2.9.0@egg-multipart\\config\\config.default.js",
+    "fileSize": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-multipart@2.9.0@egg-multipart\\config\\config.default.js",
+    "files": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-multipart@2.9.0@egg-multipart\\config\\config.default.js",
+    "fileExtensions": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-multipart@2.9.0@egg-multipart\\config\\config.default.js",
+    "whitelist": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-multipart@2.9.0@egg-multipart\\config\\config.default.js",
+    "tmpdir": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-multipart@2.9.0@egg-multipart\\config\\config.default.js",
     "cleanSchedule": {
-      "cron": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-multipart\\config\\config.default.js"
+      "cron": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-multipart@2.9.0@egg-multipart\\config\\config.default.js"
     }
   },
   "development": {
-    "watchDirs": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-development\\config\\config.default.js",
-    "ignoreDirs": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-development\\config\\config.default.js",
-    "fastReady": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-development\\config\\config.default.js",
-    "reloadOnDebug": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-development\\config\\config.default.js",
-    "overrideDefault": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-development\\config\\config.default.js"
+    "watchDirs": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-development@2.4.3@egg-development\\config\\config.default.js",
+    "ignoreDirs": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-development@2.4.3@egg-development\\config\\config.default.js",
+    "fastReady": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-development@2.4.3@egg-development\\config\\config.default.js",
+    "reloadOnDebug": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-development@2.4.3@egg-development\\config\\config.default.js",
+    "overrideDefault": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-development@2.4.3@egg-development\\config\\config.default.js"
   },
   "logrotator": {
-    "filesRotateByHour": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "hourDelimiter": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "filesRotateBySize": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "maxFileSize": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "maxFiles": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "rotateDuration": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "maxDays": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-logrotator\\config\\config.default.js"
+    "filesRotateByHour": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "hourDelimiter": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "filesRotateBySize": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "maxFileSize": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "maxFiles": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "rotateDuration": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "maxDays": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js"
   },
   "static": {
-    "prefix": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-static\\config\\config.default.js",
-    "dir": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-static\\config\\config.default.js",
-    "dynamic": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-static\\config\\config.default.js",
-    "preload": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-static\\config\\config.default.js",
-    "buffer": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-static\\config\\config.default.js",
-    "maxFiles": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-static\\config\\config.default.js"
+    "prefix": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "dir": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "dynamic": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "preload": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "buffer": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "maxFiles": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js"
   },
   "view": {
-    "root": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-view\\config\\config.default.js",
-    "cache": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-view\\config\\config.local.js",
-    "defaultExtension": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-view\\config\\config.default.js",
-    "defaultViewEngine": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-view\\config\\config.default.js",
-    "mapping": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-view\\config\\config.default.js"
+    "root": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-view@2.1.2@egg-view\\config\\config.default.js",
+    "cache": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-view@2.1.2@egg-view\\config\\config.local.js",
+    "defaultExtension": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-view@2.1.2@egg-view\\config\\config.default.js",
+    "defaultViewEngine": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-view@2.1.2@egg-view\\config\\config.default.js",
+    "mapping": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-view@2.1.2@egg-view\\config\\config.default.js"
   },
-  "validate": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg-validate\\config\\config.default.js",
-  "env": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-  "name": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-  "proxy": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-  "maxProxyCount": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-  "protocolHeaders": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-  "ipHeaders": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-  "hostHeaders": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
+  "validate": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg-validate@2.0.2@egg-validate\\config\\config.default.js",
+  "env": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+  "name": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+  "proxy": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+  "maxProxyCount": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+  "protocolHeaders": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+  "ipHeaders": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+  "hostHeaders": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
   "pkg": {
-    "name": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-    "version": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-    "description": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-    "private": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
+    "name": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+    "version": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+    "description": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+    "private": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
     "dependencies": {
-      "await-stream-ready": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-      "egg": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-      "egg-cors": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-      "egg-sequelize": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-      "egg-validate": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-      "jsonwebtoken": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-      "mysql2": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js"
+      "await-stream-ready": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+      "egg": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+      "egg-cors": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+      "egg-sequelize": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+      "egg-validate": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+      "jsonwebtoken": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+      "mysql2": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js"
     },
     "devDependencies": {
-      "@types/mocha": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-      "autod": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-      "egg-bin": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-      "egg-mock": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-      "factory-girl": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-      "lodash": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-      "sequelize-cli": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js"
+      "@types/mocha": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+      "autod": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+      "egg-bin": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+      "egg-mock": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+      "factory-girl": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+      "lodash": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+      "sequelize-cli": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js"
     },
     "engines": {
-      "node": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js"
+      "node": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js"
     },
     "egg": {
-      "typescript": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-      "declarations": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js"
+      "typescript": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+      "declarations": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js"
     },
     "scripts": {
-      "dev": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-      "test": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-      "cov": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-      "ci": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-      "autod": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-      "sequelize": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-      "debug": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js"
+      "dev": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+      "test": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+      "cov": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+      "ci": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+      "autod": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+      "sequelize": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+      "debug": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js"
     },
-    "author": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-    "license": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js"
+    "author": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+    "license": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js"
   },
-  "baseDir": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-  "HOME": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-  "rundir": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
+  "baseDir": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+  "HOME": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+  "rundir": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
   "dump": {
-    "ignore": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js"
+    "ignore": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js"
   },
   "confusedConfigurations": {
-    "bodyparser": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-    "notFound": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-    "sitefile": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-    "middlewares": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-    "httpClient": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js"
+    "bodyparser": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+    "notFound": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+    "sitefile": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+    "middlewares": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+    "httpClient": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js"
   },
   "notfound": {
-    "pageUrl": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js"
+    "pageUrl": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js"
   },
   "siteFile": {
-    "/favicon.ico": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js"
+    "/favicon.ico": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js"
   },
   "bodyParser": {
-    "enable": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-    "encoding": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-    "formLimit": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-    "jsonLimit": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-    "strict": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
+    "enable": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+    "encoding": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+    "formLimit": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+    "jsonLimit": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+    "strict": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
     "queryString": {
-      "arrayLimit": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-      "depth": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-      "parameterLimit": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js"
+      "arrayLimit": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+      "depth": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+      "parameterLimit": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js"
     },
-    "onerror": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js"
+    "onerror": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js"
   },
   "logger": {
-    "dir": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-    "encoding": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-    "env": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-    "level": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-    "consoleLevel": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-    "disableConsoleAfterReady": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-    "outputJSON": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-    "buffer": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-    "appLogName": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-    "coreLogName": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-    "agentLogName": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-    "errorLogName": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
+    "dir": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+    "encoding": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+    "env": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+    "level": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+    "consoleLevel": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+    "disableConsoleAfterReady": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+    "outputJSON": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+    "buffer": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+    "appLogName": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+    "coreLogName": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+    "agentLogName": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+    "errorLogName": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
     "coreLogger": {
-      "consoleLevel": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.local.js"
+      "consoleLevel": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.local.js"
     },
-    "allowDebugAtProd": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js"
+    "allowDebugAtProd": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js"
   },
   "httpclient": {
-    "enableDNSCache": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-    "dnsCacheLookupInterval": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-    "dnsCacheMaxLength": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
+    "enableDNSCache": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+    "dnsCacheLookupInterval": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+    "dnsCacheMaxLength": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
     "request": {
-      "timeout": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js"
+      "timeout": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js"
     },
     "httpAgent": {
-      "keepAlive": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-      "freeSocketTimeout": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-      "maxSockets": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-      "maxFreeSockets": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js"
+      "keepAlive": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+      "freeSocketTimeout": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+      "maxSockets": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+      "maxFreeSockets": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js"
     },
     "httpsAgent": {
-      "keepAlive": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-      "freeSocketTimeout": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-      "maxSockets": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-      "maxFreeSockets": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js"
+      "keepAlive": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+      "freeSocketTimeout": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+      "maxSockets": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+      "maxFreeSockets": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js"
     }
   },
   "meta": {
-    "enable": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-    "logging": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js"
+    "enable": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+    "logging": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js"
   },
-  "coreMiddleware": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-  "workerStartTimeout": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-  "serverTimeout": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
+  "coreMiddleware": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+  "workerStartTimeout": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+  "serverTimeout": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
   "cluster": {
     "listen": {
-      "path": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-      "port": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-      "hostname": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js"
+      "path": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+      "port": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+      "hostname": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js"
     }
   },
   "clusterClient": {
-    "maxWaitTime": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js",
-    "responseTimeout": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js"
+    "maxWaitTime": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js",
+    "responseTimeout": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js"
   },
-  "onClientError": "e:\\饿了吗全链路开发\\我的仓库\\ele-admin-ts\\ele-admin-ts\\node_modules\\egg\\config\\config.default.js"
+  "onClientError": "F:\\ele-admin-ts\\ele-admin-ts\\node_modules\\_egg@2.23.0@egg\\config\\config.default.js"
 }
