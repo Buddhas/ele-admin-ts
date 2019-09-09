@@ -1,18 +1,9 @@
-/*
- * @Descripttion:
- * @version:
- * @Author: 笑佛弥勒
- * @Date: 2019-08-06 16:46:01
- * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-08 17:02:48
- */
-
-import { Controller } from "egg"
+import { BaseController } from '../core/baseController'
 import * as path from "path"
 import { mkdirSync, saveImg } from "../util/util"
-import  * as utility from 'utility'
+import * as utility from 'utility'
 
-export default class AdminController extends Controller {
+export default class AdminController extends BaseController {
   /**
    * @Descripttion: 管理员登录 || 注册 接口
    * @Author: 笑佛弥勒
@@ -26,10 +17,7 @@ export default class AdminController extends Controller {
       ctx.validate({ mobile: "mobile" })
       ctx.validate({ password: { type: "string", min: 1, max: 10 } })
     } catch (error) {
-      ctx.body = {
-        msg: error,
-        status: 500
-      }
+      this.fail(500, error)
       return
     }
 
@@ -37,22 +25,19 @@ export default class AdminController extends Controller {
     // 加密密码
     password = utility.md5(password)
     if (!res) {
-      await ctx.service.admin.createUser(mobile, password)
-      ctx.body = {
-        msg: "注册成功",
-        status: 200,
+      try {
+        await ctx.service.admin.createUser(mobile, password)
+        this.success(200, '注册成功')
+      } catch (error) {
+        ctx.logger.error(`-----用户注册失败------`, error)
+        ctx.logger.error(`params：mobile:${mobile}、password:${password}`)
+        this.fail(500, "用户注册失败")
       }
     } else {
       if (res.password == password) {
-        ctx.body = {
-          msg: "登录成功",
-          status: 200
-        }
+        this.success(200, '登录成功')
       } else {
-        ctx.body = {
-          status: 500,
-          msg: "密码错误"
-        }
+        this.fail(500, "密码错误")
       }
     }
   }
@@ -74,15 +59,10 @@ export default class AdminController extends Controller {
       const target = path.join(uplaodBasePath, filename)
       saveImg(stream, target)
       await this.ctx.service.admin.updateAvatar(filename, "17688702092")
-      this.ctx.body = {
-        status: 200,
-        url: filename
-      }
+      this.success(200, '图片保存成功', filename)
     } catch (error) {
-      this.ctx.body = {
-        status: 500,
-        msg: "图片保存失败"
-      }
+      this.ctx.logger.error(`-----图片保存失败------`, error)
+      this.fail(500, "图片保存失败")
     }
   }
   /**
@@ -106,10 +86,7 @@ export default class AdminController extends Controller {
       this.ctx.validate({ page: "number" }, { page: page })
       this.ctx.validate({ pageSize: "number" }, { pageSize: pageSize })
     } catch (error) {
-      this.ctx.body = {
-        msg: "参数错误",
-        status: 500
-      }
+      this.fail(500, "参数错误")
       return
     }
 
@@ -119,10 +96,7 @@ export default class AdminController extends Controller {
         pageSize
       )
     } catch (error) {
-      throw {
-        message: "查询出错",
-        status: 500
-      }
+      this.fail(500, "查询出错")
     }
   }
 
@@ -134,31 +108,25 @@ export default class AdminController extends Controller {
    */
   public async totalData() {
     try {
-      let todayAd = await this.ctx.service.admin.findRegTodayCount()
-      let todayOrder = await this.ctx.service.order.findOrderTodayCount()
-
-      let countAd = await this.ctx.service.admin.regCount()
-      let countOrder = await this.ctx.service.order.orderCount()
-      
-      this.ctx.body = {
-        data:{
-          today: {
-            admin: todayAd,
-            order: todayOrder
-          },
-          total: {
-            admin: countAd,
-            order: countOrder
-          }
+      let todayAd = this.ctx.service.admin.findRegTodayCount()
+      let todayOrder = this.ctx.service.order.findOrderTodayCount()
+      let countAd = this.ctx.service.admin.regCount()
+      let countOrder = this.ctx.service.order.orderCount()
+      await Promise.all([todayAd, todayOrder, countAd, countOrder])
+      let data = {
+        today: {
+          admin: todayAd,
+          order: todayOrder
         },
-        status: 200
+        total: {
+          admin: countAd,
+          order: countOrder
+        }
       }
+
+      this.success(200, '查询成功', data)
     } catch (error) {
-      this.ctx.body = {
-        msg: '获取数据出错',
-        status: 500
-      }
+      this.fail(500, "获取数据出错")
     }
-    
   }
 }
