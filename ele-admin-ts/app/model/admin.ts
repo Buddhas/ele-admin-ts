@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 15:17:07
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-08 16:53:39
+ * @LastEditTime: 2019-09-10 14:14:04
  */
 import { Application } from "egg";
 
@@ -39,13 +39,11 @@ export default function (app: Application) {
       return await this.update({ avatar: url }, { where: { mobile: mobile } });
     }
     static async findByIdMobile(mobile: string) {
-      console.log(sequelize)
       return await this.findOne({
         where: { mobile: mobile }
       });
     }
     static async findAdminByPage(page: number, pageSize: number) {
-      console.log(sequelize)
       return await this.findAndCountAll({
         offset: (page - 1) * pageSize,
         limit: pageSize

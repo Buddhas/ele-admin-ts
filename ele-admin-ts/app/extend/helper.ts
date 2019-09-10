@@ -1,15 +1,24 @@
 /*
+ * @Descripttion: 
+ * @version: 
+ * @Author: 笑佛弥勒
+ * @Date: 2019-08-05 20:17:58
+ * @LastEditors: 笑佛弥勒
+ * @LastEditTime: 2019-08-05 20:17:58
+ */
+/*
  * @Descripttion:
  * @version:
  * @Author: 笑佛弥勒
  * @Date: 2019-08-13 16:39:28
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-15 18:01:11
+ * @LastEditTime: 2019-09-10 15:16:20
  */
 import * as fs from "fs";
 import * as path from "path";
 import * as sendToWormhole from "stream-wormhole";
 import { write as awaitWriteStream } from "await-stream-ready";
+import * as jwt from "jsonwebtoken"
 /**
  * @Descripttion: 同步创建文件夹
  * @Author: 笑佛弥勒
@@ -47,4 +56,17 @@ export async function saveImg(stream, target) {
       await sendToWormhole(stream);
       throw "图片保存失败";
     }
+}
+
+/**
+ * @Descripttion: 生成token
+ * @Author: 笑佛弥勒
+ * @param {type} 
+ * @return: 
+ */
+export async function loginToken(data, expires = 7200) {
+  const exp = Math.floor(Date.now() / 1000) + expires
+  const cert = fs.readFileSync(path.join(__dirname, '../public/tokenKey/rsa_private_key.pem')) // 私钥，看后面生成方法
+  const token = jwt.sign({ data, exp }, cert, { algorithm: 'RS256' })
+  return token
 }

@@ -4,10 +4,11 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 16:46:01
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-10 10:19:15
+ * @LastEditTime: 2019-09-10 19:43:19
  */
 import { BaseController } from "../core/baseController"
 import * as path from "path"
+import { Application } from 'egg'
 import { mkdirSync, saveImg } from "../util/util"
 import * as utility from 'utility'
 
@@ -30,13 +31,15 @@ export default class AdminController extends BaseController {
       
       return
     }
-
+    
     let res = await ctx.service.admin.hasUser(mobile)
     // 加密密码
     password = utility.md5(password)
     if (!res) {
       try {
         await ctx.service.admin.createUser(mobile, password)
+        // 生成token
+        this.ctx.helper.loginToken()
         this.success(200, '注册成功')
       } catch (error) {
         ctx.logger.error(`-----用户注册失败------`, error)
@@ -45,6 +48,9 @@ export default class AdminController extends BaseController {
       }
     } else {
       if (res.password == password) {
+        const token =  this.ctx.helper.loginToken()
+        await this.app.redis.set(mobile + password, token, 'ex', 7200) // 保存到redis
+        ctx.body = { data: { token, expires: this.config.login_token_time }, code: 1, msg: '登录成功' } // 返回
         this.success(200, '登录成功')
       } else {
         this.fail(500, "密码错误")
