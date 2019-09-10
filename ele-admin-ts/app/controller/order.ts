@@ -4,12 +4,12 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 16:46:01
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-05 20:55:49
+ * @LastEditTime: 2019-09-10 10:33:57
  */
 
-import { Controller } from "egg"
+import { BaseController } from "../core/baseController"
 
-export default class Order extends Controller {
+export default class Order extends BaseController {
     /**
      * @Descripttion: 创建订单
      * @Author: 笑佛弥勒
@@ -22,21 +22,22 @@ export default class Order extends Controller {
         try {
             this.ctx.validate({ params: 'addOrder' }, { params: params })
         } catch (error) {
-            this.ctx.body = {
-                msg: error,
-                status: '-1'
-            }
+            this.fail(500, error)
             return
         }
-        Order.createOrderDetail(orderDetail, this.ctx)
+        try {
+            Order.createOrderDetail(orderDetail, this.ctx)
+        } catch (error) {
+            this.fail(500, error)
+            return 
+        }
+        
         try {
             await this.ctx.service.order.createdOrder(params)
         } catch (error) {
-            this.ctx.body = {
-                error: error,
-                msg: "创建订单错误",
-                status: '-1'
-            }
+            this.ctx.logger.error(`-----创建订单错误------`, error)
+            this.ctx.logger.error(`入参params：${params}`)
+            this.fail(500, "创建订单错误")
         }
     }
     /**
@@ -51,21 +52,14 @@ export default class Order extends Controller {
             try {
                 ctx.validate({ orderDetail: 'orderDetail' }, { orderDetail: item })
             } catch (error) {
-                ctx.body = {
-                    msg: error,
-                    status: '-1'
-                }
-                return
+                throw error
             }
             try {
                 await ctx.service.orderDetail.createdOrder(item)
             } catch (error) {
-                ctx.body = {
-                    error: error,
-                    msg: "创建订单错误",
-                    status: '-1'
-                }
-                return
+                ctx.logger.error(`-----用户注册失败------`, error)
+                ctx.logger.error(`入参：orderDetail:${orderDetail}，item: ${item}`)
+                throw "详情创建订单错误"
             }
         }
     }
@@ -84,20 +78,14 @@ export default class Order extends Controller {
             this.ctx.validate({ pageSize: "number" }, { pageSize: pageSize })
             this.ctx.validate({ shopName: "string" }, { shopName: shopName })
         } catch (error) {
-            this.ctx.body = {
-                msg: "参数错误",
-                status: "-1"
-            }
+            this.fail(500, "密码错误")
             return
         }
 
         try {
             this.ctx.body = await this.ctx.service.order.findOrderByPage(page, pageSize, shopName)
         } catch (error) {
-            this.ctx.body = {
-                msg: "查询失败",
-                status: "-1"
-            }
+            this.fail(500, "查询失败")
         }
     }
 }

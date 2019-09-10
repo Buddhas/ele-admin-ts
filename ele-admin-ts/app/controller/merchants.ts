@@ -4,12 +4,12 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 16:59:30
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-05 20:54:48
+ * @LastEditTime: 2019-09-10 10:23:33
  */
-import { Controller } from "egg"
+import { BaseController } from "../core/baseController"
 import * as path from "path"
 
-export default class Merchants extends Controller {
+export default class Merchants extends BaseController {
 
   /**
    * @Descripttion: 创建商户
@@ -27,19 +27,16 @@ export default class Merchants extends Controller {
         msg: error,
         status: 500
       }
+      this.fail(500, error)
       return
     }
     try {
       await this.ctx.service.merchants.createMerchants(params)
-      this.ctx.body = {
-        msg: "创建商户成功",
-        status: 200
-      }
+      this.success(200, '创建商户成功')
     } catch (error) {
-      this.ctx.body = {
-        msg: "创建商户错误",
-        status: 500
-      }
+      this.ctx.logger.error(`-----创建商户错误------`, error)
+      this.ctx.logger.error(`入参params：${params}`)
+      this.fail(500, error)
     }
 
   }
@@ -54,10 +51,7 @@ export default class Merchants extends Controller {
     try {
       this.ctx.validate({ id: "number" }, this.ctx.request.body)
     } catch (error) {
-      this.ctx.body = {
-        msg: "商户id错误",
-        status: 500
-      }
+      this.fail(500, '商户id错误')
       return
     }
 
@@ -66,21 +60,14 @@ export default class Merchants extends Controller {
         this.ctx.request.body.id
       )
       if (res[0]) {
-        this.ctx.body = {
-          msg: "删除商户成功",
-          status: 500
-        }
+        this.success(200, '删除商户成功')
       } else {
-        this.ctx.body = {
-          msg: "商户不存在或者已删除",
-          status: 500
-        }
+        this.fail(500, "商户不存在或者已删除")
       }
     } catch (error) {
-      this.ctx.body = {
-        msg: "删除商户错误",
-        status: 500
-      }
+      this.ctx.logger.error(`-----删除商户错误------`, error)
+      this.ctx.logger.error(`入参params：${this.ctx.request.body}`)
+      this.fail(500, "删除商户错误")
     }
   }
   /**
@@ -132,15 +119,10 @@ export default class Merchants extends Controller {
     try {
       this.ctx.header.mkdirSync(path.join(uploadBasePath))
       this.ctx.header.saveImg(stream, target)
-      this.ctx.body = {
-        url: filename,
-        status: 200
-      }
+      this.success(200, '商户头像上传成功', filename)
     } catch (error) {
-      this.ctx.body = {
-        status: 500,
-        msg: "图片保存失败"
-      }
+      this.ctx.logger.error(`-----更新商户头像失败------`, error)
+      this.fail(500, "更新商户头像失败")
     }
   }
 
@@ -160,15 +142,10 @@ export default class Merchants extends Controller {
     try {
       this.ctx.header.mkdirSync(path.join(uploadBasePath))
       this.ctx.header.saveImg(stream, target)
-      this.ctx.body = {
-        url: filename,
-        status: 200
-      }
+      this.success(200, '商户营业执照上传成功', filename)
     } catch (error) {
-      this.ctx.body = {
-        status: -1,
-        msg: "图片保存失败"
-      }
+      this.ctx.logger.error(`-----更新商户营业执照失败------`, error)
+      this.fail(500, "更新商户营业执照失败")
     }
   }
 
@@ -188,15 +165,10 @@ export default class Merchants extends Controller {
     try {
       this.ctx.header.mkdirSync(path.join(uploadBasePath))
       this.ctx.header.saveImg(stream, target)
-      this.ctx.body = {
-        url: filename,
-        status: 200
-      }
+      this.success(200, '商户餐饮许可证上传成功', filename)
     } catch (error) {
-      this.ctx.body = {
-        status: 500,
-        msg: "图片保存失败"
-      }
+      this.ctx.logger.error(`-----更新商户餐饮许可证失败------`, error)
+      this.fail(500, "更新商户餐饮许可证失败")
     }
   }
   /**
@@ -224,6 +196,9 @@ export default class Merchants extends Controller {
         msg: "更新商铺信息失败",
         status: 500
       }
+      this.ctx.logger.error(`-----更新商铺信息失败------`, error)
+      this.ctx.logger.error(`入参params：${params}`)
+      this.fail(500, "更新商铺信息失败")
     }
   }
 

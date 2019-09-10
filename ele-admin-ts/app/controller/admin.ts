@@ -4,9 +4,9 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 16:46:01
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-10 09:51:38
+ * @LastEditTime: 2019-09-10 10:19:15
  */
-import { BaseController } from '../core/baseController'
+import { BaseController } from "../core/baseController"
 import * as path from "path"
 import { mkdirSync, saveImg } from "../util/util"
 import * as utility from 'utility'
@@ -27,6 +27,7 @@ export default class AdminController extends BaseController {
       ctx.validate({ password: { type: "string", min: 1, max: 10 } })
     } catch (error) {
       this.fail(500, error)
+      
       return
     }
 
@@ -39,7 +40,7 @@ export default class AdminController extends BaseController {
         this.success(200, '注册成功')
       } catch (error) {
         ctx.logger.error(`-----用户注册失败------`, error)
-        ctx.logger.error(`params：mobile:${mobile}、password:${password}`)
+        ctx.logger.error(`入参params：mobile:${mobile}、password:${password}`)
         this.fail(500, "用户注册失败")
       }
     } else {
@@ -68,10 +69,10 @@ export default class AdminController extends BaseController {
       const target = path.join(uplaodBasePath, filename)
       saveImg(stream, target)
       await this.ctx.service.admin.updateAvatar(filename, "17688702092")
-      this.success(200, '图片保存成功', filename)
+      this.success(200, '管理员头像保存成功', filename)
     } catch (error) {
-      this.ctx.logger.error(`-----图片保存失败------`, error)
-      this.fail(500, "图片保存失败")
+      this.ctx.logger.error(`-----修改管理员头像失败------`, error)
+      this.fail(500, "修改管理员头像失败")
     }
   }
   /**

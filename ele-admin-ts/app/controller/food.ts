@@ -4,11 +4,11 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-22 20:17:28
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-03 21:04:51
+ * @LastEditTime: 2019-09-10 10:09:04
  */
-import { Controller } from "egg"
+import { BaseController } from '../core/baseController'
 
-export default class Food extends Controller {
+export default class Food extends BaseController {
     /**
      * @Descripttion: 添加食品
      * @Author: 笑佛弥勒
@@ -20,24 +20,17 @@ export default class Food extends Controller {
         try {
             this.ctx.validate({params: 'addFood', }, {params: params})
         } catch (error) {
-            this.ctx.body = {
-                msg: error,
-                status: 500
-            }
+            this.fail(500, error)
             return
         }
 
         try {
             await this.ctx.service.food.createdFood(params)
-            this.ctx.body = {
-                msg: "添加成功",
-                status: 200
-            }
+            this.success(200, '添加成功')
         } catch (error) {
-            this.ctx.body = {
-                msg: "添加失败",
-                status: 500
-            }
+            this.ctx.logger.error(`-----食品添加失败------`, error)
+            this.ctx.logger.error(`入参params：${params}`)
+            this.fail(500, "添加失败")
         }
     }
 
@@ -52,33 +45,22 @@ export default class Food extends Controller {
         try {
             this.ctx.validate({ foodId: 'number' }, { foodId: Number(foodId) })
         } catch (error) {
-            this.ctx.body = {
-                msg: '参数错误',
-                status: 500
-            }
+            this.fail(500, "参数错误")
             return 
         }
 
         try {
             let res = await this.ctx.service.food.deleteFood(Number(foodId))
             if (res[0]) {
-                this.ctx.body = {
-                    msg: "删除成功",
-                    status: 200
-                }
+                this.success(200, '删除成功')
             } else {
-                this.ctx.body = {
-                    msg: "食品不存在或者已删除",
-                    status: 500
-                }
+                this.fail(500, "食品不存在或者已删除")
             }
         } catch (error) {
-            this.ctx.body = {
-                msg: "删除失败",
-                status: 500
-            }
+            this.ctx.logger.error(`-----食品删除失败------`, error)
+            this.ctx.logger.error(`入参foodId：${foodId}`)
+            this.fail(500, "食品删除失败")
         }
-        
     }
 
     /**
@@ -92,24 +74,17 @@ export default class Food extends Controller {
         try {
             this.ctx.validate({params: 'updatFood', }, {params: params})
         } catch (error) {
-            this.ctx.body = {
-                msg: error,
-                status: 500
-            }
+            this.fail(500, error)
             return
         }
 
         try {
             await this.ctx.service.food.updatedFood(params)
-            this.ctx.body = {
-                msg: '更新食品属性成功',
-                status: 200
-            }
+            this.success(200, '更新食品属性成功')
         } catch (error) {
-            this.ctx.body = {
-                msg: '更新食品属性失败',
-                status: 500
-            }
+            this.ctx.logger.error(`-----更新食品属性失败------`, error)
+            this.ctx.logger.error(`入参params：${params}`)
+            this.fail(500, '更新食品属性失败')
         }
     }
 
@@ -126,20 +101,14 @@ export default class Food extends Controller {
             this.ctx.validate({ page: "number" }, { page: page })
             this.ctx.validate({ pageSize: "number" }, { pageSize: pageSize })
         } catch (error) {
-            this.ctx.body = {
-                msg: "参数错误",
-                status: 500
-            }
+            this.fail(500, '参数错误')
             return
         }
 
         try {
             this.ctx.body = await this.service.food.findFoodByPage(page, pageSize)
         } catch (error) {
-            this.ctx.body = {
-                msg: '查询错误',
-                status: 500
-            }
+            this.fail(500, '查询错误')
         }
     }
 
