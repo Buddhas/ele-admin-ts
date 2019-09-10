@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-05 20:17:58
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-12 20:02:08
+ * @LastEditTime: 2019-09-10 21:04:03
  */
 'use strict';
 
@@ -38,7 +38,14 @@ export default function(appInfo: EggAppConfig) {
   const bizConfig = {
     // your biz config
   };
-
+  config.redis = {
+    client: {
+      port: 6379, // Redis port
+      host: '120.79.131.113', // Redis host
+      password: '',
+      db: 0
+      }
+  }
   return {
     ...config as {},
     ...bizConfig,
