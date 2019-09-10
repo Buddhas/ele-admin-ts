@@ -1,3 +1,11 @@
+/*
+ * @Descripttion: 管理员controller层
+ * @version: 
+ * @Author: 笑佛弥勒
+ * @Date: 2019-08-06 16:46:01
+ * @LastEditors: 笑佛弥勒
+ * @LastEditTime: 2019-09-10 09:51:38
+ */
 import { BaseController } from '../core/baseController'
 import * as path from "path"
 import { mkdirSync, saveImg } from "../util/util"
@@ -10,6 +18,7 @@ export default class AdminController extends BaseController {
    * @param {type}
    * @return:
    */
+  
   public async login() {
     const { ctx } = this
     let { mobile, password } = this.ctx.request.body

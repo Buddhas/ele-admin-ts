@@ -1,4 +1,11 @@
-
+/*
+ * @Descripttion: controller基类
+ * @version: 
+ * @Author: 笑佛弥勒
+ * @Date: 2019-08-06 16:46:01
+ * @LastEditors: 笑佛弥勒
+ * @LastEditTime: 2019-09-10 09:51:26
+ */
 import { Controller } from "egg"
 
 export class BaseController extends Controller {
@@ -23,7 +30,6 @@ export class BaseController extends Controller {
         message: message
       }
     }
-    
   }
 
   /**
