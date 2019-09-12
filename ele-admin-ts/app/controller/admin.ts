@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 16:46:01
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-12 10:29:48
+ * @LastEditTime: 2019-09-12 10:38:23
  */
 import { BaseController } from "../core/baseController"
 import * as path from "path"
@@ -18,7 +18,6 @@ export default class AdminController extends BaseController {
    * @param {type}
    * @return:
    */
-  
   public async login() {
     const { ctx } = this
     let { mobile, password } = this.ctx.request.body

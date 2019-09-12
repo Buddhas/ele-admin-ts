@@ -5,7 +5,6 @@ const jwt = require('jsonwebtoken')
 module.exports = (options, app) => {
   return async function userInterceptor(ctx, next) {
     let authToken = ctx.request.body.token // 获取header里的authorization
-    console.log(authToken)
     if (authToken) {
       const res = verifyToken(authToken) // 解密获取的Token
       if (res) {
