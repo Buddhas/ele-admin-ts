@@ -12,6 +12,7 @@ module.exports = (options, app) => {
         // 此处使用redis进行保存
         const redis_token = await app.redis.get('17688702090') // 获取保存的token
         if (authToken === redis_token) {
+          app.redis.expire('17688702090', 7200) // 重置redis过期时间
           await next()
         } else {
           ctx.body = { code: 50012, msg: '您的账号已在其他地方登录' }

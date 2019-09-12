@@ -12,7 +12,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-13 16:39:28
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-11 21:02:39
+ * @LastEditTime: 2019-09-12 15:45:20
  */
 import * as fs from "fs";
 import * as path from "path";
@@ -68,6 +68,5 @@ export async function loginToken(data, expires = 7200) {
   const exp = Math.floor(Date.now() / 1000) + expires
   const cert = fs.readFileSync(path.join(__dirname, '../public/tokenKey/rsa_private_key.pem')) // 私钥，看后面生成方法
   const token = jwt.sign({ data, exp }, cert, { algorithm: 'RS256' })
-  console.log(token)
   return token
 }

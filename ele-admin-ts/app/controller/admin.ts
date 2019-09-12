@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 16:46:01
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-12 10:38:23
+ * @LastEditTime: 2019-09-12 15:46:44
  */
 import { BaseController } from "../core/baseController"
 import * as path from "path"
@@ -26,7 +26,6 @@ export default class AdminController extends BaseController {
       ctx.validate({ password: { type: "string", min: 1, max: 10 } })
     } catch (error) {
       this.fail(500, error)
-      
       return
     }
     
@@ -39,6 +38,7 @@ export default class AdminController extends BaseController {
         await ctx.service.admin.createUser(mobile, password)
         // 生成token
         await this.ctx.helper.loginToken().then((res) => token = res) // 取到生成token
+        await this.app.redis.set(mobile, token, 'ex', 7200) // 保存到redis
         this.success(200, '注册成功')
       } catch (error) {
         ctx.logger.error(`-----用户注册失败------`, error)
