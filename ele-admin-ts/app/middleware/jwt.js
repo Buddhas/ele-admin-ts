@@ -10,9 +10,9 @@ module.exports = (options, app) => {
       if (res) {
         // 如果需要限制单端登陆或者使用过程中废止某个token，或者更改token的权限。也就是说，一旦 JWT 签发了，在到期之前就会始终有效
         // 此处使用redis进行保存
-        const redis_token = await app.redis.get('17688702090') // 获取保存的token
+        const redis_token = await app.redis.get(res.mobile) // 获取保存的token
         if (authToken === redis_token) {
-          app.redis.expire('17688702090', 7200) // 重置redis过期时间
+          app.redis.expire(res.mobile, 7200) // 重置redis过期时间
           await next()
         } else {
           ctx.body = { code: 50012, msg: '您的账号已在其他地方登录' }
