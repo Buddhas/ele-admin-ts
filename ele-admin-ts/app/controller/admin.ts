@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 16:46:01
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-12 15:46:44
+ * @LastEditTime: 2019-09-17 10:43:02
  */
 import { BaseController } from "../core/baseController"
 import * as path from "path"
@@ -28,17 +28,21 @@ export default class AdminController extends BaseController {
       this.fail(500, error)
       return
     }
-    
+
     let res = await ctx.service.admin.hasUser(mobile)
     // 加密密码
     password = utility.md5(password)
-    let token =  ''
+    let token = ''
     if (!res) {
       try {
         await ctx.service.admin.createUser(mobile, password)
         // 生成token
         await this.ctx.helper.loginToken().then((res) => token = res) // 取到生成token
         await this.app.redis.set(mobile, token, 'ex', 7200) // 保存到redis
+        ctx.cookies.set('authorization', token, {
+          httpOnly: true, // 默认就是 true
+          encrypt: true, // 加密传输
+        }) // 保存到cookie
         this.success(200, '注册成功')
       } catch (error) {
         ctx.logger.error(`-----用户注册失败------`, error)
@@ -47,8 +51,13 @@ export default class AdminController extends BaseController {
       }
     } else {
       if (res.password == password) {
-        await this.ctx.helper.loginToken({mobile: mobile, password: password}).then((res) => token = res) // 取到生成token
+        await this.ctx.helper.loginToken({ mobile: mobile, password: password }).then((res) => token = res) // 取到生成token
         await this.app.redis.set(mobile, token, 'ex', 7200) // 保存到redis
+        ctx.cookies.set('authorization', token, {
+          httpOnly: true, // 默认就是 true
+          encrypt: true, // 加密传输
+          maxAge: 7200
+        }) // 保存到cookie
         ctx.body = { data: { token, expires: this.config.login_token_time }, code: 1, msg: '登录成功' } // 返回
         this.success(200, '登录成功')
       } else {

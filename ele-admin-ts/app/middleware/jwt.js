@@ -4,11 +4,10 @@ const jwt = require('jsonwebtoken')
 
 module.exports = (options, app) => {
   return async function userInterceptor(ctx, next) {
-    let authToken = ctx.request.body.token // 获取header里的authorization
+    let authToken = ctx.cookies.get('authorization') // 获取header里的authorization
     if (authToken) {
       const res = verifyToken(authToken) // 解密获取的Token
       if (res) {
-        // 如果需要限制单端登陆或者使用过程中废止某个token，或者更改token的权限。也就是说，一旦 JWT 签发了，在到期之前就会始终有效
         // 此处使用redis进行保存
         const redis_token = await app.redis.get(res.mobile) // 获取保存的token
         if (authToken === redis_token) {
