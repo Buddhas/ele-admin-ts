@@ -14,13 +14,13 @@ module.exports = (options, app) => {
           app.redis.expire(res.mobile, 7200) // 重置redis过期时间
           await next()
         } else {
-          ctx.body = { code: 50012, msg: '您的账号已在其他地方登录' }
+          ctx.body = { status: 10001, message: '您的账号已在其他地方登录' }
         }
       } else {
-        ctx.body = { code: 50012, msg: '登录状态已过期' }
+        ctx.body = { status: 10002, message: '登录状态已过期' }
       }
     } else {
-      ctx.body = { code: 50008, msg: '请登陆后再进行操作' }
+      ctx.body = { status: 10003, message: '请登陆后再进行操作' }
     }
   }
 }

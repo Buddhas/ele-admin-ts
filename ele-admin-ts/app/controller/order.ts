@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 16:46:01
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-10 10:33:57
+ * @LastEditTime: 2019-09-20 17:23:38
  */
 
 import { BaseController } from "../core/baseController"
@@ -34,6 +34,7 @@ export default class Order extends BaseController {
         
         try {
             await this.ctx.service.order.createdOrder(params)
+            this.success(200, '订单创建成功')
         } catch (error) {
             this.ctx.logger.error(`-----创建订单错误------`, error)
             this.ctx.logger.error(`入参params：${params}`)

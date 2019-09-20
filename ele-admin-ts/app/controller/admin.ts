@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 16:46:01
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-17 10:43:02
+ * @LastEditTime: 2019-09-20 17:06:42
  */
 import { BaseController } from "../core/baseController"
 import * as path from "path"
@@ -127,16 +127,14 @@ export default class AdminController extends BaseController {
   /**
    * @Descripttion: 数据总览
    * @Author: 笑佛弥勒
-   * @param {type} 
    * @return: 
    */
   public async totalData() {
     try {
-      let todayAd = this.ctx.service.admin.findRegTodayCount()
-      let todayOrder = this.ctx.service.order.findOrderTodayCount()
-      let countAd = this.ctx.service.admin.regCount()
-      let countOrder = this.ctx.service.order.orderCount()
-      await Promise.all([todayAd, todayOrder, countAd, countOrder])
+      let todayAd =  await this.ctx.service.admin.findRegTodayCount()
+      let todayOrder =  await this.ctx.service.order.findOrderTodayCount()
+      let countAd =  await this.ctx.service.admin.regCount()
+      let countOrder =  await this.ctx.service.order.orderCount()
       let data = {
         today: {
           admin: todayAd,

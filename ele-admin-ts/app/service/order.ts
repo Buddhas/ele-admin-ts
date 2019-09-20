@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-26 10:32:55
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-08 16:56:08
+ * @LastEditTime: 2019-09-20 17:25:42
  */
 import { Service } from "egg";
 
@@ -19,7 +19,7 @@ class Order extends Service {
         return await this.ctx.model.Order.create({
             shop_id: params.shop_id,
             price: params.price,
-            create_time: params.create_time,
+            create_time: new Date(),
             user_id: params.user_id,
             ship_fee: params.ship_fee,
             meals_fee: params.meals_fee,
