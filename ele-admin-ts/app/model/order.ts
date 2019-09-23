@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-22 14:03:38
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-08 16:41:18
+ * @LastEditTime: 2019-09-23 16:42:47
  */
 import { Application } from "egg";
 
@@ -81,8 +81,19 @@ export default function (app: Application) {
          */
         static async findOrderTodayCount() {
             return await this.count({
-              where: sequelize.where(sequelize.fn('TO_DAYS', sequelize.col('order.create_time')), '>=' ,sequelize.fn('TO_DAYS', sequelize.fn('now')))
+                where: sequelize.where(sequelize.fn('TO_DAYS', sequelize.col('order.create_time')), '>=', sequelize.fn('TO_DAYS', sequelize.fn('now')))
             })
-          }
+        }
+        /**
+         * @Descripttion: 获取当前日期前N天订单总量
+         * @Author: 笑佛弥勒
+         * @param {type} 
+         * @return: 
+         */
+        static async getAdate(day: number) {
+            return await this.count({
+                where: sequelize.where(sequelize.fn('DATE_SUB', sequelize.fn('curdate'), sequelize.literal(`INTERVAL ${day} DAY`)), '=', sequelize.fn('DATE_FORMAT', sequelize.col('order.create_time'), '%Y-%m-%d'))
+            })
+        }
     }
 }

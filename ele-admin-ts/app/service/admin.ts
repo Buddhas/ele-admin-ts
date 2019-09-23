@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 15:38:40
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-08 17:03:49
+ * @LastEditTime: 2019-09-23 15:24:34
  */
 import { Service } from "egg";
 
@@ -61,12 +61,12 @@ class Admin extends Service {
   public async findAdminByPage(page: number, pageSize: number) {
     return await this.ctx.model.Admin.findAdminByPage(page, pageSize);
   }
-/**
- * @Descripttion: 获取当日新注册管理员总数
- * @Author: 笑佛弥勒
- * @param {type} 
- * @return: 
- */  
+  /**
+   * @Descripttion: 获取当日新注册管理员总数
+   * @Author: 笑佛弥勒
+   * @param {type} 
+   * @return: 
+   */
   public async findRegTodayCount() {
     return await this.ctx.model.Admin.findRegTodayCount()
   }
@@ -75,9 +75,52 @@ class Admin extends Service {
    * @Author: 笑佛弥勒
    * @param {type} 
    * @return: 
-   */  
+   */
   public async regCount() {
     return await this.ctx.model.Admin.count()
+  }
+  /**
+   * @Descripttion: 查询一周数据
+   * @Author: 笑佛弥勒
+   * @param {type} 
+   * @return: 
+   */
+  public async dateAWeek() {
+    let adminData: Array<any> = []
+    let orderData: Array<any> = []
+    let weekData = {
+      adminData: adminData,
+      orderData: orderData
+    }
+    for (let i = 0; i < 7; i++) {
+      weekData.adminData.push(await this.ctx.model.Admin.getAdate(i))
+      weekData.orderData.push(await this.ctx.model.Order.getAdate(i))
+    }
+    return weekData
+  }
+
+  /**
+   * @Descripttion: 查询当天数据
+   * @Author: 笑佛弥勒
+   * @param {type} 
+   * @return: 
+   */
+  public async currentData() {
+    let todayAd = await this.ctx.model.Admin.findRegTodayCount()
+    let todayOrder = await this.ctx.model.Order.findOrderTodayCount()
+    let countAd = await this.ctx.model.Admin.count()
+    let countOrder = await this.ctx.model.Order.count()
+    let current = {
+      today: {
+        admin: todayAd,
+        order: todayOrder
+      },
+      total: {
+        admin: countAd,
+        order: countOrder
+      },
+    }
+    return current
   }
 }
 

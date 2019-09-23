@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 16:46:01
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-20 17:06:42
+ * @LastEditTime: 2019-09-23 15:16:21
  */
 import { BaseController } from "../core/baseController"
 import * as path from "path"
@@ -131,21 +131,12 @@ export default class AdminController extends BaseController {
    */
   public async totalData() {
     try {
-      let todayAd =  await this.ctx.service.admin.findRegTodayCount()
-      let todayOrder =  await this.ctx.service.order.findOrderTodayCount()
-      let countAd =  await this.ctx.service.admin.regCount()
-      let countOrder =  await this.ctx.service.order.orderCount()
+      let currentData =  await this.ctx.service.admin.currentData()
+      let dateAWeek = await this.ctx.service.admin.dateAWeek()
       let data = {
-        today: {
-          admin: todayAd,
-          order: todayOrder
-        },
-        total: {
-          admin: countAd,
-          order: countOrder
-        }
+        currentData: currentData,
+        dateAWeek: dateAWeek
       }
-
       this.success(200, '查询成功', data)
     } catch (error) {
       this.fail(500, "获取数据出错")
