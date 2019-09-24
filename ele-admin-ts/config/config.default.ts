@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-05 20:17:58
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-10 21:04:03
+ * @LastEditTime: 2019-09-24 17:34:52
  */
 'use strict';
 
@@ -32,6 +32,11 @@ export default function(appInfo: EggAppConfig) {
   config.cors = {
     origin:'*',
     allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH'
+  };
+  config.multipart = {
+    fieldSize: '60kb',
+    mode: 'stream',
+    fileExtensions: ['.jpg', '.jpeg', '.png'], // 扩展几种上传的文件格式
   };
   // 中间件配置
   config.middleware = ['errorHandler']

@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 16:59:30
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-10 10:23:33
+ * @LastEditTime: 2019-09-24 18:16:43
  */
 import { BaseController } from "../core/baseController"
 import * as path from "path"
@@ -19,14 +19,12 @@ export default class Merchants extends BaseController {
    */
   public async createMerchants() {
     let params = this.ctx.request.body
-
+    console.log(params)
     try {
       this.ctx.validate({ params: "addMerchants" }, { params: params })
     } catch (error) {
-      this.ctx.body = {
-        msg: error,
-        status: 500
-      }
+      console.log('!!!!!参数错误')
+      console.log(error)
       this.fail(500, error)
       return
     }
@@ -117,9 +115,13 @@ export default class Merchants extends BaseController {
       .toLocaleLowerCase()}`
     const target = path.join(uploadBasePath, filename)
     try {
-      this.ctx.header.mkdirSync(path.join(uploadBasePath))
-      this.ctx.header.saveImg(stream, target)
-      this.success(200, '商户头像上传成功', filename)
+      this.ctx.helper.mkdirSync(path.join(uploadBasePath))
+      this.ctx.helper.saveImg(stream, target)
+      let data = {
+        filename: filename,
+        attribute: 'shop_avatar'
+      }
+      this.success(200, '商户头像上传成功', data)
     } catch (error) {
       this.ctx.logger.error(`-----更新商户头像失败------`, error)
       this.fail(500, "更新商户头像失败")
@@ -140,9 +142,13 @@ export default class Merchants extends BaseController {
       .toLocaleLowerCase()}`
     const target = path.join(uploadBasePath, filename)
     try {
-      this.ctx.header.mkdirSync(path.join(uploadBasePath))
-      this.ctx.header.saveImg(stream, target)
-      this.success(200, '商户营业执照上传成功', filename)
+      this.ctx.helper.mkdirSync(path.join(uploadBasePath))
+      this.ctx.helper.saveImg(stream, target)
+      let data = {
+        filename: filename,
+        attribute: 'business_license'
+      }
+      this.success(200, '商户营业执照上传成功', data)
     } catch (error) {
       this.ctx.logger.error(`-----更新商户营业执照失败------`, error)
       this.fail(500, "更新商户营业执照失败")
@@ -163,9 +169,13 @@ export default class Merchants extends BaseController {
       .toLocaleLowerCase()}`
     const target = path.join(uploadBasePath, filename)
     try {
-      this.ctx.header.mkdirSync(path.join(uploadBasePath))
-      this.ctx.header.saveImg(stream, target)
-      this.success(200, '商户餐饮许可证上传成功', filename)
+      this.ctx.helper.mkdirSync(path.join(uploadBasePath))
+      this.ctx.helper.saveImg(stream, target)
+      let data = {
+        filename: filename,
+        attribute: 'catering_license'
+      }
+      this.success(200, '商户餐饮许可证上传成功', data)
     } catch (error) {
       this.ctx.logger.error(`-----更新商户餐饮许可证失败------`, error)
       this.fail(500, "更新商户餐饮许可证失败")
