@@ -8,6 +8,7 @@ import ExportMerchants from '../../../app/service/merchants';
 import ExportOrder from '../../../app/service/order';
 import ExportOrderDetail from '../../../app/service/orderDetail';
 import ExportPreferential from '../../../app/service/preferential';
+import ExportShopCategory from '../../../app/service/shopCategory';
 
 declare module 'egg' {
   interface IService {
@@ -17,5 +18,6 @@ declare module 'egg' {
     order: ExportOrder;
     orderDetail: ExportOrderDetail;
     preferential: ExportPreferential;
+    shopCategory: ExportShopCategory;
   }
 }

@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 16:46:01
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-23 15:16:21
+ * @LastEditTime: 2019-09-26 17:09:13
  */
 import { BaseController } from "../core/baseController"
 import * as path from "path"
@@ -138,6 +138,14 @@ export default class AdminController extends BaseController {
         dateAWeek: dateAWeek
       }
       this.success(200, '查询成功', data)
+    } catch (error) {
+      this.fail(500, "获取数据出错")
+    }
+  }
+  public async getShopCategory() {
+    try {
+      let category = await this.ctx.service.shopCategory.getAllCategory()
+      this.success(200, '查询成功', category)
     } catch (error) {
       this.fail(500, "获取数据出错")
     }
