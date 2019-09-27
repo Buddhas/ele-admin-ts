@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-12 17:24:57
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-05 20:32:55
+ * @LastEditTime: 2019-09-26 20:05:29
  */
 import { Application } from 'egg';
 
@@ -31,7 +31,7 @@ export default function(app: Application) {
             throw "请填写商铺简介"
         } else if (params.slogan.trim().length === 0) {
             throw "请填写商铺标语"
-        } else if (params.category.trim().length === 0) {
+        } else if (params.category.length === 0) {
             throw "请选择商铺分类"
         } else if (Number(params.ship_price) != 0 && !Number(params.ship_price)) {
             throw "请填写配送费"
@@ -47,7 +47,7 @@ export default function(app: Application) {
             throw "请上传营业执照"
         } else if (params.catering_license.trim().length === 0) {
             throw "请上传餐饮许可证"
-        } else if (params.longitude.trim().length === 0 || params.latitude.trim().length === 0 ) {
+        } else if (params.longitude === 0 || params.latitude === 0 ) {
             throw "经纬度错误"
         }
     })

@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 16:21:27
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-05 21:01:31
+ * @LastEditTime: 2019-09-26 20:26:21
  */
 "use strict";
 
@@ -24,7 +24,8 @@ export default function (app: Application) {
       mobile: STRING(20),
       synopsis: STRING(255),
       slogan: STRING(255),
-      category: STRING(255),
+      first_category: STRING(10),
+      second_category: STRING(10),
       ship_price: DECIMAL(3, 0),
       send_price: DECIMAL(3, 0),
       start_time: STRING(10),
