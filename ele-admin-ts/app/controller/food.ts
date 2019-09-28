@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-22 20:17:28
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-10 10:09:04
+ * @LastEditTime: 2019-09-28 15:17:59
  */
 import { BaseController } from '../core/baseController'
 
@@ -89,7 +89,7 @@ export default class Food extends BaseController {
     }
 
     /**
-     * @Descripttion: 食品分类
+     * @Descripttion: 食品分页
      * @Author: 笑佛弥勒
      * @param {type} 
      * @return: 
@@ -109,6 +109,47 @@ export default class Food extends BaseController {
             this.ctx.body = await this.service.food.findFoodByPage(page, pageSize)
         } catch (error) {
             this.fail(500, '查询错误')
+        }
+    }
+
+    /**
+     * @Descripttion: 创建食品分类
+     * @Author: 笑佛弥勒
+     * @param {type} 
+     * @return: 
+     */
+    public async createFoodCategory() {
+        let params = this.ctx.request.body
+        try {
+            this.ctx.validate({ pid: "number" }, { pid: params.pid })
+            this.ctx.validate({ name: "string" }, { name: params.name })
+            this.ctx.validate({ desc: "string" }, { desc: params.desc })
+        } catch (error) {
+            this.fail(500, '参数错误')
+            return
+        }
+
+        try {
+            await this.ctx.service.foodCategory.createCategory(params)
+            this.success(200, '成功')
+        } catch (error) {
+            this.fail(500, '创建食品分类错误')
+            return
+        }
+    }
+    
+    public async getCategoryByPid() {
+        let pid = this.ctx.query.pid
+        try {
+            this.ctx.validate({pid: 'number'},{pid: pid})
+        } catch (error) {
+            this.fail(500, '参数错误')
+        }
+        try {
+            let data = await this.ctx.service.foodCategory.getCategoryByPid(pid)
+            this.success(200, '成功', data)
+        } catch (error) {
+            this.fail(500, '获取食品分类出错')
         }
     }
 
