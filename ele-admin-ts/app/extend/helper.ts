@@ -12,7 +12,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-13 16:39:28
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-12 15:45:20
+ * @LastEditTime: 2019-09-29 20:50:54
  */
 import * as fs from "fs";
 import * as path from "path";
@@ -69,4 +69,16 @@ export async function loginToken(data, expires = 7200) {
   const cert = fs.readFileSync(path.join(__dirname, '../public/tokenKey/rsa_private_key.pem')) // 私钥，看后面生成方法
   const token = jwt.sign({ data, exp }, cert, { algorithm: 'RS256' })
   return token
+}
+
+
+/**
+ * @Descripttion: 生成范围内随机数，[lower, upper)
+ * @Author: 笑佛弥勒
+ * @param {lower} 最小值
+ * @param {upper} 最大值
+ * @return:
+ */
+export function random(lower, upper) {
+  return Math.floor(Math.random() * (upper - lower)) + lower
 }

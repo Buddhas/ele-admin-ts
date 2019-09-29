@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-12 17:24:57
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-26 20:05:29
+ * @LastEditTime: 2019-09-29 20:22:44
  */
 import { Application } from 'egg';
 
@@ -87,6 +87,8 @@ export default function(app: Application) {
             throw "所选商铺有误"
         } else if (!Number(params.price)) {
             throw "请填写食品价格"
+        }else if (!Number(params.package_price)) {
+            throw "请填写食品包装费"
         }
     })
 

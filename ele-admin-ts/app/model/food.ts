@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-22 20:10:27
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-26 10:22:44
+ * @LastEditTime: 2019-09-29 20:40:34
  */
 import { Application } from "egg";
 
@@ -24,6 +24,8 @@ export default function (app: Application) {
           image: STRING(50),
           shop_id: BIGINT,
           price: DECIMAL,
+          package_price: DECIMAL,
+          mon_sale: BIGINT,
           score: STRING(10),
           is_delete: STRING(10)
         },

@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-22 20:17:28
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-28 15:17:59
+ * @LastEditTime: 2019-09-29 21:20:51
  */
 import { BaseController } from '../core/baseController'
 
@@ -18,7 +18,7 @@ export default class Food extends BaseController {
     public async createdFood() {
         let params = this.ctx.request.body
         try {
-            this.ctx.validate({params: 'addFood', }, {params: params})
+            this.ctx.validate({ params: 'addFood', }, { params: params })
         } catch (error) {
             this.fail(500, error)
             return
@@ -46,7 +46,7 @@ export default class Food extends BaseController {
             this.ctx.validate({ foodId: 'number' }, { foodId: Number(foodId) })
         } catch (error) {
             this.fail(500, "参数错误")
-            return 
+            return
         }
 
         try {
@@ -72,7 +72,7 @@ export default class Food extends BaseController {
     public async updatedFood() {
         let params = this.ctx.request.body
         try {
-            this.ctx.validate({params: 'updatFood', }, {params: params})
+            this.ctx.validate({ params: 'updatFood', }, { params: params })
         } catch (error) {
             this.fail(500, error)
             return
@@ -121,7 +121,7 @@ export default class Food extends BaseController {
     public async createFoodCategory() {
         let params = this.ctx.request.body
         try {
-            this.ctx.validate({ pid: "number" }, { pid: params.pid })
+            this.ctx.validate({ pid: "number" }, { pid: Number(params.pid)})
             this.ctx.validate({ name: "string" }, { name: params.name })
             this.ctx.validate({ desc: "string" }, { desc: params.desc })
         } catch (error) {
@@ -137,13 +137,14 @@ export default class Food extends BaseController {
             return
         }
     }
-    
+
     public async getCategoryByPid() {
-        let pid = this.ctx.query.pid
+        let pid = Number(this.ctx.query.pid)
         try {
-            this.ctx.validate({pid: 'number'},{pid: pid})
+            this.ctx.validate({ pid: 'number' }, { pid: pid })
         } catch (error) {
             this.fail(500, '参数错误')
+            return
         }
         try {
             let data = await this.ctx.service.foodCategory.getCategoryByPid(pid)

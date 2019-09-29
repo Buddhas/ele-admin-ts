@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-13 16:39:28
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-21 11:32:12
+ * @LastEditTime: 2019-09-29 20:49:56
  */
 import * as fs from "fs";
 import * as path from "path";
@@ -16,7 +16,7 @@ import { write as awaitWriteStream } from "await-stream-ready";
  * @param {dirname} 文件夹名称
  * @return:
  */
-export function mkdirSync(dirname) {
+export function mkdirSync(dirname:string) {
   try {
     if (fs.existsSync(dirname)) {
       return true;
@@ -30,8 +30,14 @@ export function mkdirSync(dirname) {
     throw "创建文件夹失败";
   }
 }
-
-export async function saveImg(stream, target) {
+/**
+ * @Descripttion: 保存图片
+ * @Author: 笑佛弥勒
+ * @param {stream} 文件流
+ * @param {target} 图片地址
+ * @return:
+ */
+export async function saveImg(stream:any, target:string) {
   const writeStream = fs.createWriteStream(target);
   try {
     //异步把文件流 写入
@@ -41,4 +47,15 @@ export async function saveImg(stream, target) {
     await sendToWormhole(stream);
     throw "图片保存失败";
   }
+}
+
+/**
+ * @Descripttion: 生成范围内随机数，[lower, upper)
+ * @Author: 笑佛弥勒
+ * @param {lower} 最小值
+ * @param {upper} 最大值
+ * @return:
+ */
+export function random(lower, upper) {
+  return Math.floor(Math.random() * (upper - lower)) + lower
 }
