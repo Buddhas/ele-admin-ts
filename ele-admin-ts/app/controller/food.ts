@@ -4,9 +4,10 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-22 20:17:28
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-29 21:20:51
+ * @LastEditTime: 2019-09-30 09:59:51
  */
 import { BaseController } from '../core/baseController'
+import * as path from 'path'
 
 export default class Food extends BaseController {
     /**
@@ -33,7 +34,32 @@ export default class Food extends BaseController {
             this.fail(500, "添加失败")
         }
     }
-
+    /**
+     * @Descripttion: 上传食品图片
+     * @Author: 笑佛弥勒
+     * @param {type} 
+     * @return: 
+     */
+    public async updateFoodImg() {
+        const stream = await this.ctx.getFileStream()
+        const uploadBasePath = "app/public/foodImg"
+        const filename = `${Date.now()}${path
+            .extname(stream.filename)
+            .toLocaleLowerCase()}`
+        const target = path.join(uploadBasePath, filename)
+        try {
+            this.ctx.helper.mkdirSync(path.join(uploadBasePath))
+            this.ctx.helper.saveImg(stream, target)
+            let data = {
+                filename: filename,
+                attribute: 'image'
+            }
+            this.success(200, '食品图片上传成功', data)
+        } catch (error) {
+            this.ctx.logger.error(`-----食品图片上传失败------`, error)
+            this.fail(500, "食品图片上传失败")
+        }
+    }
     /**
      * @Descripttion: 删除食品
      * @Author: 笑佛弥勒
@@ -121,7 +147,7 @@ export default class Food extends BaseController {
     public async createFoodCategory() {
         let params = this.ctx.request.body
         try {
-            this.ctx.validate({ pid: "number" }, { pid: Number(params.pid)})
+            this.ctx.validate({ pid: "number" }, { pid: Number(params.pid) })
             this.ctx.validate({ name: "string" }, { name: params.name })
             this.ctx.validate({ desc: "string" }, { desc: params.desc })
         } catch (error) {
@@ -138,6 +164,12 @@ export default class Food extends BaseController {
         }
     }
 
+    /**
+     * @Descripttion: 获取商铺下食品分类
+     * @Author: 笑佛弥勒
+     * @param {type} 
+     * @return: 
+     */
     public async getCategoryByPid() {
         let pid = Number(this.ctx.query.pid)
         try {

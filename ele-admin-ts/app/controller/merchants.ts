@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 16:59:30
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-24 18:16:43
+ * @LastEditTime: 2019-09-30 09:57:22
  */
 import { BaseController } from "../core/baseController"
 import * as path from "path"
@@ -23,8 +23,6 @@ export default class Merchants extends BaseController {
     try {
       this.ctx.validate({ params: "addMerchants" }, { params: params })
     } catch (error) {
-      console.log('!!!!!参数错误')
-      console.log(error)
       this.fail(500, error)
       return
     }

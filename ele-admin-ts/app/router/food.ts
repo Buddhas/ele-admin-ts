@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 20:45:02
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-28 15:24:28
+ * @LastEditTime: 2019-09-30 10:01:22
  */
 
 export function food(app) {
@@ -16,4 +16,5 @@ export function food(app) {
     router.post('/food/findFoodByPage', controller.food.findFoodByPage)
     router.post('/food/createFoodCategory', controller.food.createFoodCategory)
     router.get('/food/getCategoryByPid', controller.food.getCategoryByPid)
+    router.post('/food/updateFoodImg', controller.food.updateFoodImg)
 }
