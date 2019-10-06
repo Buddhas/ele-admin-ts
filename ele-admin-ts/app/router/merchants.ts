@@ -12,9 +12,11 @@ export function merchants(app) {
 
     router.post('/merchants/createMerchants', controller.merchants.createMerchants)
     router.post('/merchants/deleteMerchants', controller.merchants.deleteMerchants)
-    router.post('/merchants/findMerchantsByPage', controller.merchants.findMerchantsByPage)
+    router.post('/merchants/updateMerchants', controller.merchants.updateMerchants)
+    router.get('/merchants/findMerchantsByPage', controller.merchants.findMerchantsByPage)
     router.post('/merchants/updateShopAvatar', controller.merchants.updateShopAvatar)
     router.post('/merchants/updateBusinessLicense', controller.merchants.updateBusinessLicense)
     router.post('/merchants/updateCateringLicense', controller.merchants.updateCateringLicense)
     router.post('/merchants/findMerchantsByName', controller.merchants.findMerchantsByName)
+    router.get('/merchants/getMerchantsById', controller.merchants.getMerchantsById)
 }

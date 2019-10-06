@@ -13,8 +13,9 @@ export function food(app) {
     router.post('/food/createdFood', controller.food.createdFood)
     router.get('/food/deleteFood', controller.food.deleteFood)
     router.post('/food/updatedFood', controller.food.updatedFood)
-    router.post('/food/findFoodByPage', controller.food.findFoodByPage)
+    router.get('/food/findFoodByPage', controller.food.findFoodByPage)
     router.post('/food/createFoodCategory', controller.food.createFoodCategory)
     router.get('/food/getCategoryByPid', controller.food.getCategoryByPid)
     router.post('/food/updateFoodImg', controller.food.updateFoodImg)
+    router.get('/food/getFoodById', controller.food.getFoodById)
 }

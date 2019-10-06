@@ -39,7 +39,10 @@ export default function (app: Application) {
       static async findFoodByPage(page: number, pageSize: number) {
         return await this.findAndCountAll({
           offset: (page - 1) * pageSize,
-          limit: pageSize
+          limit: pageSize,
+          where: {
+            is_delete: 0
+          }
         });
       }
     }

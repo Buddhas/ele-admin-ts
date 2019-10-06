@@ -31,7 +31,7 @@ class Merchants extends Service {
       shop_avatar: params.shop_avatar,
       business_license: params.business_license,
       catering_license: params.catering_license,
-      score: params.score,
+      score: 4 + Number(Math.random().toFixed(1)), // 随机生成一个食品评分
       longitude: params.longitude,
       latitude: params.latitude,
       is_delete: 0
@@ -71,16 +71,40 @@ class Merchants extends Service {
       slogan: params.slogan,
       first_category: params.category[0],
       second_category: params.category[1],
+      ship_price: params.ship_price,
+      send_price: params.send_price,
+      start_time: params.business_hours.start_time,
+      end_time: params.business_hours.end_time,
       shop_avatar: params.shop_avatar,
+      business_license: params.business_license,
+      catering_license: params.catering_license,
       longitude: params.longitude,
-      latitude: params.latitude,
+      latitude: params.latitude
     }, {
         where: { id: params.id }
       })
   }
-
+  /**
+   * @Descripttion: 根据商铺名称模糊查询商铺
+   * @Author: 笑佛弥勒
+   * @param {type} 
+   * @return: 
+   */
   public async findMerchantsByName(page: number, pageSize: number, name: string) {
     return this.ctx.model.Merchants.findMerchantsByName(page, pageSize, name)
+  }
+  /**
+   * @Descripttion: 查询单个商铺
+   * @Author: 笑佛弥勒
+   * @param {type} 
+   * @return: 
+   */
+  public async getMerchantsById(id: number) {
+    return this.ctx.model.Merchants.findAll({
+      where: {
+        id: id
+      }
+    })
   }
 }
 

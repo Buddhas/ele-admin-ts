@@ -73,11 +73,12 @@ export default class Merchants extends BaseController {
    * @return:
    */
   public async findMerchantsByPage() {
-    let { page, pageSize } = this.ctx.request.body
-
+    let { page, pageSize } = this.ctx.query
+    console.log(page)
+    console.log(pageSize)
     try {
-      this.ctx.validate({ page: "number" }, { page: page })
-      this.ctx.validate({ pageSize: "number" }, { pageSize: pageSize })
+      this.ctx.validate({ page: "number" }, { page: Number(page) })
+      this.ctx.validate({ pageSize: "number" }, { pageSize:  Number(pageSize)})
     } catch (error) {
       this.ctx.body = {
         msg: "参数错误",
@@ -87,10 +88,11 @@ export default class Merchants extends BaseController {
     }
 
     try {
-      this.ctx.body = await this.ctx.service.merchants.findAdminByPage(
-        page,
-        pageSize
+      let data = await this.ctx.service.merchants.findAdminByPage(
+        Number(page),
+        Number(pageSize)
       )
+      this.success(200, '成功', data)
     } catch (error) {
       this.ctx.body = {
         message: "查询出错",
@@ -188,17 +190,15 @@ export default class Merchants extends BaseController {
   public async updateMerchants() {
     let params = this.ctx.request.body
     try {
-      this.ctx.validate({ params: "updateMerchants" })
+      this.ctx.validate({ params: "addMerchants" }, { params: params })
     } catch (error) {
-      this.ctx.body = {
-        msg: error,
-        status: 500
-      }
+      this.fail(500, error)
       return
     }
 
     try {
-      this.ctx.service.merchants.updateMerchants(params)
+      await this.ctx.service.merchants.updateMerchants(params)
+      this.success(200, '商铺信息更新成功')
     } catch (error) {
       this.ctx.body = {
         msg: "更新商铺信息失败",
@@ -239,6 +239,28 @@ export default class Merchants extends BaseController {
         status: 500
       }
     }
+  }
+  /**
+   * @Descripttion: 根据id获取单个商户
+   * @Author: 笑佛弥勒
+   * @param {type} 
+   * @return: 
+   */
+  public async getMerchantsById() {
+    let { id } = this.ctx.query
+    id = Number(id)
+    try {
+      this.ctx.validate({ id: "number" }, { id: id })
+    } catch (error) {
+      this.fail(500, '参数错误')
+      return
+    }
 
+    try {
+      let data = await this.ctx.service.merchants.getMerchantsById(id)
+      this.success(200, '成功', data)
+    } catch (error) {
+      this.fail(500, '查询错误')
+    }
   }
 }

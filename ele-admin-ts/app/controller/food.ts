@@ -67,7 +67,7 @@ export default class Food extends BaseController {
      * @return: 
      */
     public async deleteFood() {
-        let foodId = this.ctx.query.foodId
+        let { foodId } = this.ctx.query
         try {
             this.ctx.validate({ foodId: 'number' }, { foodId: Number(foodId) })
         } catch (error) {
@@ -98,7 +98,7 @@ export default class Food extends BaseController {
     public async updatedFood() {
         let params = this.ctx.request.body
         try {
-            this.ctx.validate({ params: 'updatFood', }, { params: params })
+            this.ctx.validate({ params: 'addFood', }, { params: params })
         } catch (error) {
             this.fail(500, error)
             return
@@ -121,18 +121,19 @@ export default class Food extends BaseController {
      * @return: 
      */
     public async findFoodByPage() {
-        let { page, pageSize } = this.ctx.request.body
+        let { page, pageSize } = this.ctx.query
 
         try {
-            this.ctx.validate({ page: "number" }, { page: page })
-            this.ctx.validate({ pageSize: "number" }, { pageSize: pageSize })
+            this.ctx.validate({ page: "number" }, { page: Number(page) })
+            this.ctx.validate({ pageSize: "number" }, { pageSize: Number(pageSize) })
         } catch (error) {
             this.fail(500, '参数错误')
             return
         }
 
         try {
-            this.ctx.body = await this.service.food.findFoodByPage(page, pageSize)
+            let data =  await this.service.food.findFoodByPage(Number(page), Number(pageSize))
+            this.success(200, '成功', data)
         } catch (error) {
             this.fail(500, '查询错误')
         }
@@ -186,4 +187,25 @@ export default class Food extends BaseController {
         }
     }
 
+    /**
+     * @Descripttion: 获取单个食品详情
+     * @Author: 笑佛弥勒
+     * @param {type} 
+     * @return: 
+     */
+    public async getFoodById() {
+        let foodId = Number(this.ctx.query.foodId)
+        try {
+            this.ctx.validate({ foodId: 'number' }, { foodId: foodId })
+        } catch (error) {
+            this.fail(500, '参数错误')
+            return
+        }
+        try {
+            let data = await this.ctx.service.food.getFoodById(foodId)
+            this.success(200, '成功', data)
+        } catch (error) {
+            this.fail(500, '获取食品详情出错')
+        }
+    }
 }

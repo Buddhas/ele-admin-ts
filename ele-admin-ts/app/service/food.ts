@@ -58,7 +58,8 @@ class Food extends Service {
             introduce: params.introduce,
             category: params.category,
             image: params.image,
-            price: params.price
+            price: params.price,
+            package_price: params.package_price
         },{
             where: {
                 id: params.id
@@ -74,6 +75,19 @@ class Food extends Service {
      */
     public async findFoodByPage(page: number, pageSize: number) {
         return await this.ctx.model.Food.findFoodByPage(page, pageSize);
+    }
+    /**
+     * @Descripttion: 获取单个食品详情
+     * @Author: 笑佛弥勒
+     * @param {page} 当前页 {pageSize} 当前页数
+     * @return: 
+     */
+    public async getFoodById(id: number) {
+        return await this.ctx.model.Food.findAll({
+            where: {
+                id: id
+            }
+        })
     }
 }
 
