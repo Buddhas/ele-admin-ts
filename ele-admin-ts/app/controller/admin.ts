@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 16:46:01
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-26 17:09:13
+ * @LastEditTime: 2019-10-08 20:58:06
  */
 import { BaseController } from "../core/baseController"
 import * as path from "path"
@@ -66,6 +66,22 @@ export default class AdminController extends BaseController {
     }
   }
   /**
+   * @Descripttion: 获取当前管理员信息
+   * @Author: 笑佛弥勒
+   * @param {type}
+   * @return:
+   */
+  public async getCurrentAdmin() {
+    let token = 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im1vYmlsZSI6IjE3Njg4NzAyMDk5IiwicGFzc3dvcmQiOiJlMTBhZGMzOTQ5YmE1OWFiYmU1NmUwNTdmMjBmODgzZSJ9LCJleHAiOjE1NzA1NDExNTcsImlhdCI6MTU3MDUzMzk1N30.t7wHKdm_eunoUKsUQMulUjhk2hIJgtRQrxe2B7Ev9ujkQ5onTVleECsFJW5p04PNL84J1nNUE_9W1aHtCo3UrtX38PPiz8M1aQgLVhbj4-eTShUKILE0Gk2MI_88SyO2HtUzL94u_CZ7wtR_Rh6URK7adR5aAZxu7BE5jrYPVlY'
+    const res = this.ctx.helper.verifyToken(token) // 解密获取的Token
+    try {
+      let data = await this.service.admin.getUser(res.mobile)
+      this.success(200, '成功', data)
+    } catch (error) {
+      this.fail(500, '查询出错')
+    }
+  }
+  /**
    * @Descripttion: 修改管理员头像
    * @Author: 笑佛弥勒
    * @param {type}
@@ -83,7 +99,10 @@ export default class AdminController extends BaseController {
       const target = path.join(uplaodBasePath, filename)
       saveImg(stream, target)
       await this.ctx.service.admin.updateAvatar(filename, "17688702092")
-      this.success(200, '管理员头像保存成功', filename)
+      let data = {
+        filename: filename,
+      }
+      this.success(200, '管理员头像保存成功', data)
     } catch (error) {
       this.ctx.logger.error(`-----修改管理员头像失败------`, error)
       this.fail(500, "修改管理员头像失败")
@@ -131,7 +150,7 @@ export default class AdminController extends BaseController {
    */
   public async totalData() {
     try {
-      let currentData =  await this.ctx.service.admin.currentData()
+      let currentData = await this.ctx.service.admin.currentData()
       let dateAWeek = await this.ctx.service.admin.dateAWeek()
       let data = {
         currentData: currentData,

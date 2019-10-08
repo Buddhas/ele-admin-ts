@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 15:17:07
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-23 14:50:38
+ * @LastEditTime: 2019-10-08 20:25:43
  */
 import { Application } from "egg";
 
@@ -40,6 +40,7 @@ export default function (app: Application) {
     }
     static async findByIdMobile(mobile: string) {
       return await this.findOne({
+        attributes: ['id', 'avatar', 'user_name', 'permissions', 'registe_time'],
         where: { mobile: mobile }
       });
     }
