@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 16:46:01
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-10-08 20:58:06
+ * @LastEditTime: 2019-10-10 21:07:58
  */
 import { BaseController } from "../core/baseController"
 import * as path from "path"
@@ -42,6 +42,7 @@ export default class AdminController extends BaseController {
         ctx.cookies.set('authorization', token, {
           httpOnly: true, // 默认就是 true
           encrypt: true, // 加密传输
+          domain: 'localhost'
         }) // 保存到cookie
         this.success(200, '注册成功')
       } catch (error) {
@@ -55,8 +56,8 @@ export default class AdminController extends BaseController {
         await this.app.redis.set(mobile, token, 'ex', 7200) // 保存到redis
         ctx.cookies.set('authorization', token, {
           httpOnly: true, // 默认就是 true
-          encrypt: true, // 加密传输
-          maxAge: 7200
+          maxAge: 7200,
+          domain: 'localhost',
         }) // 保存到cookie
         ctx.body = { data: { token, expires: this.config.login_token_time }, code: 1, msg: '登录成功' } // 返回
         this.success(200, '登录成功')
@@ -66,13 +67,30 @@ export default class AdminController extends BaseController {
     }
   }
   /**
+   * @Descripttion: 退出登录
+   * @Author: 笑佛弥勒
+   * @param {type} 
+   * @return: 
+   */
+  public async logOut() {
+    let token = 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im1vYmlsZSI6IjE3Njg4NzAyMDk5IiwicGFzc3dvcmQiOiJlMTBhZGMzOTQ5YmE1OWFiYmU1NmUwNTdmMjBmODgzZSJ9LCJleHAiOjE1NzA1NDExNTcsImlhdCI6MTU3MDUzMzk1N30.t7wHKdm_eunoUKsUQMulUjhk2hIJgtRQrxe2B7Ev9ujkQ5onTVleECsFJW5p04PNL84J1nNUE_9W1aHtCo3UrtX38PPiz8M1aQgLVhbj4-eTShUKILE0Gk2MI_88SyO2HtUzL94u_CZ7wtR_Rh6URK7adR5aAZxu7BE5jrYPVlY'
+    const res = this.ctx.helper.verifyToken(token) // 解密获取的Token
+    try {
+      // await this.app.redis.del(res.mobile)
+      await this.app.redis.del('17688702099')
+      this.success(200, '退出登录成功')
+    } catch (error) {
+      this.fail(500, '登出错误')
+    }
+  }
+  /**
    * @Descripttion: 获取当前管理员信息
    * @Author: 笑佛弥勒
    * @param {type}
    * @return:
    */
   public async getCurrentAdmin() {
-    let token = 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im1vYmlsZSI6IjE3Njg4NzAyMDk5IiwicGFzc3dvcmQiOiJlMTBhZGMzOTQ5YmE1OWFiYmU1NmUwNTdmMjBmODgzZSJ9LCJleHAiOjE1NzA1NDExNTcsImlhdCI6MTU3MDUzMzk1N30.t7wHKdm_eunoUKsUQMulUjhk2hIJgtRQrxe2B7Ev9ujkQ5onTVleECsFJW5p04PNL84J1nNUE_9W1aHtCo3UrtX38PPiz8M1aQgLVhbj4-eTShUKILE0Gk2MI_88SyO2HtUzL94u_CZ7wtR_Rh6URK7adR5aAZxu7BE5jrYPVlY'
+    let token = this.ctx.cookies.get('authorization')
     const res = this.ctx.helper.verifyToken(token) // 解密获取的Token
     try {
       let data = await this.service.admin.getUser(res.mobile)
@@ -124,7 +142,9 @@ export default class AdminController extends BaseController {
    * @return:
    */
   public async findAdminByPage() {
-    let { page, pageSize } = this.ctx.request.body
+    let { page, pageSize } = this.ctx.query
+    page = Number(page)
+    pageSize = Number(pageSize)
     try {
       this.ctx.validate({ page: "number" }, { page: page })
       this.ctx.validate({ pageSize: "number" }, { pageSize: pageSize })
@@ -134,10 +154,11 @@ export default class AdminController extends BaseController {
     }
 
     try {
-      this.ctx.body = await this.ctx.service.admin.findAdminByPage(
+      let data = await this.ctx.service.admin.findAdminByPage(
         page,
         pageSize
       )
+      this.success(200, '成功', data)
     } catch (error) {
       this.fail(500, "查询出错")
     }

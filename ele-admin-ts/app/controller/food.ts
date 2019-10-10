@@ -208,4 +208,5 @@ export default class Food extends BaseController {
             this.fail(500, '获取食品详情出错')
         }
     }
+    
 }

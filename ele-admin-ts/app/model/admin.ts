@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 15:17:07
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-10-08 20:25:43
+ * @LastEditTime: 2019-10-10 20:00:45
  */
 import { Application } from "egg";
 
@@ -40,12 +40,13 @@ export default function (app: Application) {
     }
     static async findByIdMobile(mobile: string) {
       return await this.findOne({
-        attributes: ['id', 'avatar', 'user_name', 'permissions', 'registe_time'],
+        attributes: ['id', 'avatar', 'user_name', 'permissions', 'registe_time', 'password'],
         where: { mobile: mobile }
       });
     }
     static async findAdminByPage(page: number, pageSize: number) {
       return await this.findAndCountAll({
+        attributes: ['id', 'avatar', 'user_name', 'permissions', 'registe_time'],
         offset: (page - 1) * pageSize,
         limit: pageSize
       });
