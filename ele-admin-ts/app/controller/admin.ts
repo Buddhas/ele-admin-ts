@@ -57,7 +57,7 @@ export default class AdminController extends BaseController {
         ctx.cookies.set('authorization', token, {
           httpOnly: true, // 默认就是 true
           maxAge: 7200,
-          domain: 'localhost',
+          domain: 'localhost'
         }) // 保存到cookie
         ctx.body = { data: { token, expires: this.config.login_token_time }, code: 1, msg: '登录成功' } // 返回
         this.success(200, '登录成功')
