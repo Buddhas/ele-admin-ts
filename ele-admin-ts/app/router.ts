@@ -13,6 +13,7 @@ import { admin } from "./router/admin"
 import { merchants } from "./router/merchants"
 import { food } from './router/food'
 import { order } from './router/order'
+import { mainIndex } from './router/mainIndex'
 
 export default function (app: Application) {
   
@@ -20,4 +21,5 @@ export default function (app: Application) {
   merchants(app)
   food(app)
   order(app)
+  mainIndex(app)
 }
