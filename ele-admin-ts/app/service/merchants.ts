@@ -3,8 +3,8 @@
  * @version:
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 16:30:21
- * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-26 21:06:51
+ * @LastEditors  : 笑佛弥勒
+ * @LastEditTime : 2020-02-02 17:13:17
  */
 import { Service } from "egg";
 
@@ -26,11 +26,13 @@ class Merchants extends Service {
       second_category: params.category[1],
       ship_price: params.ship_price,
       send_price: params.send_price,
-      start_time: params.business_hours.start_time,
-      end_time: params.business_hours.end_time,
+      start_time: params.start_time,
+      end_time: params.end_time,
       shop_avatar: params.shop_avatar,
       business_license: params.business_license,
       catering_license: params.catering_license,
+      top_up: params.top_up,
+      minus: params.minus,
       score: 4 + Number(Math.random().toFixed(1)), // 随机生成一个食品评分
       longitude: params.longitude,
       latitude: params.latitude,
@@ -100,7 +102,7 @@ class Merchants extends Service {
    * @return: 
    */
   public async getMerchantsById(id: number) {
-    return this.ctx.model.Merchants.findAll({
+    return this.ctx.model.Merchants.findOne({
       where: {
         id: id
       }

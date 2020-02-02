@@ -3,8 +3,8 @@
  * @version: 
  * @Author: 笑佛弥勒
  * @Date: 2019-08-12 17:24:57
- * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-30 11:36:01
+ * @LastEditors  : 笑佛弥勒
+ * @LastEditTime : 2020-02-02 17:13:01
  */
 import { Application } from 'egg';
 
@@ -37,6 +37,8 @@ export default function(app: Application) {
             throw "请填写配送费"
         } else if (Number(params.send_price) != 0 && !Number(params.send_price)) {
             throw "请填写起送价"
+        } else if (params.top_up === 0 || params.minus === 0 || params.top_up <=  params.minus) {
+            throw "满减额错误"
         } else if (params.start_time.trim().length === 0) {
             throw "请选择开始营业时间"
         } else if (params.end_time.trim().length === 0) {

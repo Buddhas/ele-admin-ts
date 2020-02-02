@@ -3,8 +3,8 @@
  * @version:
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 16:21:27
- * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-26 20:26:21
+ * @LastEditors  : 笑佛弥勒
+ * @LastEditTime : 2020-02-02 16:39:52
  */
 "use strict";
 
@@ -33,6 +33,8 @@ export default function (app: Application) {
       shop_avatar: STRING(50),
       business_license: STRING(50),
       catering_license: STRING(50),
+      top_up: INTEGER,
+      minus: INTEGER,
       score: STRING(10),
       longitude: STRING(10),
       latitude: STRING(10),
