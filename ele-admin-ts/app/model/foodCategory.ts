@@ -3,8 +3,8 @@
  * @version:
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 15:17:07
- * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-27 18:27:52
+ * @LastEditors  : Please set LastEditors
+ * @LastEditTime : 2020-02-03 23:26:42
  */
 import { Application } from "egg";
 
@@ -33,7 +33,8 @@ export default function (app: Application) {
       return await this.findAll({
         where: {
           pid: pid
-        }
+        },
+        raw: true
       })
     }
   };

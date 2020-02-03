@@ -3,8 +3,8 @@
  * @version:
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 16:59:30
- * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-10-08 09:40:09
+ * @LastEditors  : Please set LastEditors
+ * @LastEditTime : 2020-02-03 22:57:48
  */
 import { BaseController } from "../core/baseController"
 import * as path from "path"
@@ -262,5 +262,31 @@ export default class Merchants extends BaseController {
     } catch (error) {
       this.fail(500, '查询错误')
     }
+  }
+
+  /**
+   * @Descripttion: 获取商铺下食品
+   * @Author: 笑佛弥勒
+   * @param {type} 
+   * @return: 
+   */
+  public async getFoodByMerId() {
+    let { id } = this.ctx.query
+    id = Number(id)
+    
+    try {
+      this.ctx.validate({ id: "number" }, { id: id })
+    } catch (error) {
+      this.fail(500, '参数错误')
+      return
+    }
+
+    try {
+      let data = await this.ctx.service.merchants.getFoodByMerId(id)
+      this.success(200, '成功', data)
+    } catch (error) {
+      this.fail(500, '查询错误')
+    }
+
   }
 }

@@ -3,8 +3,8 @@
  * @version:
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 16:30:21
- * @LastEditors  : 笑佛弥勒
- * @LastEditTime : 2020-02-02 17:13:17
+ * @LastEditors  : Please set LastEditors
+ * @LastEditTime : 2020-02-03 23:59:42
  */
 import { Service } from "egg";
 
@@ -33,6 +33,8 @@ class Merchants extends Service {
       catering_license: params.catering_license,
       top_up: params.top_up,
       minus: params.minus,
+      need_time: this.ctx.helper.random(20, 60), // 随机生成配送时间
+      mon_sale: this.ctx.helper.random(1000, 20000), //随机生成一个月销售量
       score: 4 + Number(Math.random().toFixed(1)), // 随机生成一个食品评分
       longitude: params.longitude,
       latitude: params.latitude,
@@ -107,6 +109,34 @@ class Merchants extends Service {
         id: id
       }
     })
+  }
+  /**
+   * @Descripttion: 获取商铺下食品
+   * @Author: 笑佛弥勒
+   * @param {type} 
+   * @return: 
+   */
+  public async getFoodByMerId(id: number) {
+    // 查找出商铺下所有分类
+    let foodList:Array<Object> = []
+    let categorys:Array<Object> = await this.ctx.model.FoodCategory.getCategoryByPid(id)
+    
+    for (const category of categorys) {
+      // 查找分类下食品
+      let items:Array<Object> = await this.ctx.model.Food.findAll({
+        where: {
+          category: category['id']
+        },
+        raw: true
+      })
+      if (items) {
+        items.forEach((item, index) => {
+          item['category_name'] = category['name']
+        })
+      }
+      foodList.push(items)
+    }
+    return foodList
   }
 }
 
