@@ -3,8 +3,8 @@
  * @version:
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 16:21:27
- * @LastEditors  : Please set LastEditors
- * @LastEditTime : 2020-02-04 18:52:08
+ * @LastEditors  : 笑佛弥勒
+ * @LastEditTime : 2020-02-08 16:24:36
  */
 "use strict";
 
@@ -31,6 +31,7 @@ export default function (app: Application) {
       start_time: STRING(10),
       end_time: STRING(10),
       shop_avatar: STRING(50),
+      shop_environment: STRING(50),
       business_license: STRING(50),
       catering_license: STRING(50),
       need_time: INTEGER,

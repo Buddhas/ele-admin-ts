@@ -3,8 +3,8 @@
  * @version:
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 16:59:30
- * @LastEditors  : Please set LastEditors
- * @LastEditTime : 2020-02-03 22:57:48
+ * @LastEditors  : 笑佛弥勒
+ * @LastEditTime : 2020-02-08 16:13:52
  */
 import { BaseController } from "../core/baseController"
 import * as path from "path"
@@ -125,6 +125,33 @@ export default class Merchants extends BaseController {
     } catch (error) {
       this.ctx.logger.error(`-----更新商户头像失败------`, error)
       this.fail(500, "更新商户头像失败")
+    }
+  }
+
+  /**
+   * @Descripttion: 更新商家实景图片
+   * @Author: 笑佛弥勒
+   * @param {type}
+   * @return:
+   */
+  public async updateShopEnv() {
+    const stream = await this.ctx.getFileStream()
+    const uploadBasePath = "app/public/environment"
+    const filename = `${Date.now()}${path
+      .extname(stream.filename)
+      .toLocaleLowerCase()}`
+    const target = path.join(uploadBasePath, filename)
+    try {
+      this.ctx.helper.mkdirSync(path.join(uploadBasePath))
+      this.ctx.helper.saveImg(stream, target)
+      let data = {
+        filename: filename,
+        attribute: 'shop_environment'
+      }
+      this.success(200, '商户商家实景图片', data)
+    } catch (error) {
+      this.ctx.logger.error(`-----更新商家实景图片------`, error)
+      this.fail(500, "更新商家实景图片")
     }
   }
 

@@ -3,8 +3,8 @@
  * @version: 
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 20:45:02
- * @LastEditors  : Please set LastEditors
- * @LastEditTime : 2020-02-03 22:50:28
+ * @LastEditors  : 笑佛弥勒
+ * @LastEditTime : 2020-02-08 16:27:36
  */
 
 export function merchants(app) {
@@ -17,6 +17,7 @@ export function merchants(app) {
     router.post('/merchants/updateShopAvatar', controller.merchants.updateShopAvatar)
     router.post('/merchants/updateBusinessLicense', controller.merchants.updateBusinessLicense)
     router.post('/merchants/updateCateringLicense', controller.merchants.updateCateringLicense)
+    router.post('/merchants/updateShopEnv', controller.merchants.updateShopEnv)
     router.post('/merchants/findMerchantsByName', controller.merchants.findMerchantsByName)
     router.get('/merchants/getMerchantsById', controller.merchants.getMerchantsById)
     router.get('/merchants/getFoodByMerId', controller.merchants.getFoodByMerId)

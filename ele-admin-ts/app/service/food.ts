@@ -3,8 +3,8 @@
  * @version: 
  * @Author: 笑佛弥勒
  * @Date: 2019-08-22 20:15:46
- * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-30 11:27:39
+ * @LastEditors  : 笑佛弥勒
+ * @LastEditTime : 2020-02-05 18:13:50
  */
 import { Service } from "egg";
 
@@ -24,6 +24,7 @@ class Food extends Service {
             shop_id: params.shop_id,
             price: params.price,
             package_price: params.package_price,
+            rate: this.ctx.helper.random(90, 100),
             mon_sale: this.ctx.helper.random(100, 2000), // 生成[100, 2000)的随机数
             score: 4 + Number(Math.random().toFixed(1)), // 随机生成一个食品评分
             is_delete: 0

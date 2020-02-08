@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-12 17:24:57
  * @LastEditors  : 笑佛弥勒
- * @LastEditTime : 2020-02-02 17:13:01
+ * @LastEditTime : 2020-02-08 16:23:07
  */
 import { Application } from 'egg';
 
@@ -47,6 +47,8 @@ export default function(app: Application) {
             throw "请上传商铺头像"
         } else if (params.business_license.trim().length === 0) {
             throw "请上传营业执照"
+        } else if (params.shop_environment.trim().length === 0) {
+            throw "请上传商家环境图片"
         } else if (params.catering_license.trim().length === 0) {
             throw "请上传餐饮许可证"
         } else if (params.longitude === 0 || params.latitude === 0 ) {

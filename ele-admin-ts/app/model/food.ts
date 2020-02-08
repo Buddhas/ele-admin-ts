@@ -3,13 +3,13 @@
  * @version: 
  * @Author: 笑佛弥勒
  * @Date: 2019-08-22 20:10:27
- * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-29 20:40:34
+ * @LastEditors  : 笑佛弥勒
+ * @LastEditTime : 2020-02-05 18:12:38
  */
 import { Application } from "egg";
 
 export default function (app: Application) {
-    const { STRING, DECIMAL, BIGINT } = app.Sequelize;
+    const { STRING, DECIMAL, BIGINT, INTEGER } = app.Sequelize;
     const Food = app.model.define(
         "food",
         {
@@ -23,6 +23,7 @@ export default function (app: Application) {
           category: STRING(50),
           image: STRING(50),
           shop_id: BIGINT,
+          rate: INTEGER,
           price: DECIMAL,
           package_price: DECIMAL,
           mon_sale: BIGINT,

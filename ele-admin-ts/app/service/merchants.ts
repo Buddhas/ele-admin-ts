@@ -3,8 +3,8 @@
  * @version:
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 16:30:21
- * @LastEditors  : Please set LastEditors
- * @LastEditTime : 2020-02-04 18:51:42
+ * @LastEditors  : 笑佛弥勒
+ * @LastEditTime : 2020-02-08 17:28:50
  */
 import { Service } from "egg";
 
@@ -29,6 +29,7 @@ class Merchants extends Service {
       start_time: params.start_time,
       end_time: params.end_time,
       shop_avatar: params.shop_avatar,
+      shop_environment: params.shop_environment,
       business_license: params.business_license,
       catering_license: params.catering_license,
       top_up: params.top_up,
@@ -81,6 +82,7 @@ class Merchants extends Service {
       start_time: params.business_hours.start_time,
       end_time: params.business_hours.end_time,
       shop_avatar: params.shop_avatar,
+      shop_environment: params.shop_environment,
       business_license: params.business_license,
       catering_license: params.catering_license,
       longitude: params.longitude,
@@ -105,11 +107,22 @@ class Merchants extends Service {
    * @return: 
    */
   public async getMerchantsById(id: number) {
-    return this.ctx.model.Merchants.findOne({
+    let categorys:Array<Object> = await this.ctx.model.ShopCategory.findAll({raw:true})
+    let merchantDetail:Object =  await this.ctx.model.Merchants.findOne({
       where: {
         id: id
-      }
-    })
+      },
+      raw:true
+    }) || {}
+    if (merchantDetail) {
+    merchantDetail['categorys'] = []
+    categorys.forEach((item, index) => {
+        if (item['id'] == merchantDetail['first_category'] || item['id'] == merchantDetail['second_category']) {
+          merchantDetail['categorys'].push(item['name'])
+        }
+      })
+    }
+    return merchantDetail
   }
   /**
    * @Descripttion: 获取商铺下食品
@@ -134,7 +147,7 @@ class Merchants extends Service {
       })
       if (foods && foods.length > 0) {
         items['name'] = category['name']
-        items['food'] = foods
+        items['foods'] = foods
         foodList.push(items)
       }
     }
