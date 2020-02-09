@@ -1,4 +1,12 @@
 /*
+ * @Descripttion: 
+ * @version: 
+ * @Author: 笑佛弥勒
+ * @Date: 2019-12-31 23:59:22
+ * @LastEditors  : 笑佛弥勒
+ * @LastEditTime : 2020-02-09 23:04:40
+ */
+/*
  * @Descripttion: 店铺分类model层
  * @version:
  * @Author: 笑佛弥勒
@@ -10,7 +18,7 @@ import { Application } from "egg";
 
 export default function (app: Application) {
   const { STRING, BIGINT,  } = app.Sequelize;
-  const ShopCategory = app.model.define(
+  const merchantCategory = app.model.define(
     "shop_category",
     {
       id: {
@@ -28,7 +36,7 @@ export default function (app: Application) {
       timestamps: false
     }
   );
-  return class extends ShopCategory {
+  return class extends merchantCategory {
     
   };
 }

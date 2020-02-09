@@ -5,6 +5,7 @@ import 'egg';
 import ExportAdmin from '../../../app/controller/admin';
 import ExportFood from '../../../app/controller/food';
 import ExportMainIndex from '../../../app/controller/mainIndex';
+import ExportMerchantCategory from '../../../app/controller/merchantCategory';
 import ExportMerchants from '../../../app/controller/merchants';
 import ExportOrder from '../../../app/controller/order';
 
@@ -13,6 +14,7 @@ declare module 'egg' {
     admin: ExportAdmin;
     food: ExportFood;
     mainIndex: ExportMainIndex;
+    merchantCategory: ExportMerchantCategory;
     merchants: ExportMerchants;
     order: ExportOrder;
   }
