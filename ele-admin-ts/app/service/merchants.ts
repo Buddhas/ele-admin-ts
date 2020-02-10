@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 16:30:21
  * @LastEditors  : 笑佛弥勒
- * @LastEditTime : 2020-02-10 00:00:31
+ * @LastEditTime : 2020-02-10 10:39:10
  */
 import { Service } from "egg";
 
@@ -160,16 +160,20 @@ class Merchants extends Service {
    * @param {type} 
    * @return: 
    */
-  public async getMerByCategory(type: number, id: number) {
+  public async getMerByCategory(type: number, id: number, page: number, pageSize:number ) {
     // 一级分类
     if (type === 0) {
-      return this.ctx.model.Merchants.findAll({
+      return await this.ctx.model.Merchants.findAndCountAll({
+        offset: (page - 1) * pageSize,
+        limit: pageSize,
         where: {
           first_category: id
         }
       })
     } else { // 二级分类
-      return this.ctx.model.Merchants.findAll({
+      return await this.ctx.model.Merchants.findAndCountAll({
+        offset: (page - 1) * pageSize,
+        limit: pageSize,
         where: {
           second_category: id
         }

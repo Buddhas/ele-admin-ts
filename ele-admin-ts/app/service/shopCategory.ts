@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-12-31 23:59:22
  * @LastEditors  : 笑佛弥勒
- * @LastEditTime : 2020-02-09 23:47:20
+ * @LastEditTime : 2020-02-10 10:29:17
  */
 import { Service } from "egg";
 
@@ -45,11 +45,14 @@ class shopCatefory extends Service {
    * @return: 
    */
   public async getSecLevelCategory(id: number) {
-    return await this.ctx.model.MerchantCategory.findAll({
+    let first:Object = await this.ctx.model.MerchantCategory.findOne({ raw:true, where:{ id:id }}) || {}
+    let sec:Array<Object> =  await this.ctx.model.MerchantCategory.findAll({
       where: {
         pid: id
       }
     })
+    sec.unshift(first)
+    return sec
   }
   /**
    * @Descripttion: 获取二级分类下的数量

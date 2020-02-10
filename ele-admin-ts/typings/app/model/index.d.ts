@@ -9,7 +9,7 @@ import ExportMerchantCategory from '../../../app/model/merchantCategory';
 import ExportMerchants from '../../../app/model/merchants';
 import ExportOrder from '../../../app/model/order';
 import ExportOrderDetail from '../../../app/model/orderDetail';
-import ExportPreferential from '../../../app/model/merchantCategory';
+import ExportPreferential from '../../../app/model/preferential';
 
 declare module 'egg' {
   interface IModel {
