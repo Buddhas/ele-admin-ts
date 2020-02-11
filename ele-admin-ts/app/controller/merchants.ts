@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 16:59:30
  * @LastEditors  : 笑佛弥勒
- * @LastEditTime : 2020-02-10 10:40:06
+ * @LastEditTime : 2020-02-11 22:26:07
  */
 import { BaseController } from "../core/baseController"
 import * as path from "path"
@@ -318,23 +318,25 @@ export default class Merchants extends BaseController {
   }
 
   public async getMerByCategory() {
-    let { type, id, page, pageSize} = this.ctx.query
+    let { type, id, page, pageSize, orderType} = this.ctx.query
     id = Number(id)
     type = Number(type)
     page = Number(page)
     pageSize = Number(pageSize)
+    orderType = Number(orderType)
     try {
       this.ctx.validate({ id: "number" }, { id: id })
       this.ctx.validate({ type: "number" }, { type: type })
       this.ctx.validate({ page: "number" }, { page: page })
       this.ctx.validate({ pageSize: "number" }, { pageSize: pageSize })
+      this.ctx.validate({ orderType: "number" }, { orderType: orderType })
     } catch (error) {
       this.fail(500, '参数错误')
       return
     }
     
     try {
-      let data = await this.ctx.service.merchants.getMerByCategory(type, id, page, pageSize)
+      let data = await this.ctx.service.merchants.getMerByCategory(type, id, page, pageSize, orderType)
       this.success(200, '成功', data)
     } catch (error) {
       this.fail(500, '查询错误')

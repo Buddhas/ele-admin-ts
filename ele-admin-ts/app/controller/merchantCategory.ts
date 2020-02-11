@@ -40,7 +40,7 @@ export default class merchantCategory extends BaseController {
       this.fail(500, '参数错误')
       return
     }
-
+    console.log('getSecLevelCategory')
     try {
       let data = await this.ctx.service.shopCategory.getSecLevelCategory(id)
       this.success(200, '成功', data)
