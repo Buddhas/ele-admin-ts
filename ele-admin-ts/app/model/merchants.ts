@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 16:21:27
  * @LastEditors  : 笑佛弥勒
- * @LastEditTime : 2020-02-08 16:24:36
+ * @LastEditTime : 2020-02-11 23:24:02
  */
 "use strict";
 
@@ -74,7 +74,7 @@ export default function (app: Application) {
      * @param {type} 
      * @return: 
      */
-    static async findMerchantsByPage(page: number, pageSize: number) {
+    static async getMerchantsByPage(page: number, pageSize: number) {
       return await this.findAndCountAll({
         offset: (page - 1) * pageSize,
         limit: pageSize,

@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 16:59:30
  * @LastEditors  : 笑佛弥勒
- * @LastEditTime : 2020-02-11 22:26:07
+ * @LastEditTime : 2020-02-11 23:29:41
  */
 import { BaseController } from "../core/baseController"
 import * as path from "path"
@@ -72,13 +72,12 @@ export default class Merchants extends BaseController {
    * @param {type}
    * @return:
    */
-  public async findMerchantsByPage() {
-    let { page, pageSize } = this.ctx.query
-    console.log(page)
-    console.log(pageSize)
+  public async getMerchantsByPage() {
+    let { page, pageSize, orderType } = this.ctx.query
     try {
       this.ctx.validate({ page: "number" }, { page: Number(page) })
       this.ctx.validate({ pageSize: "number" }, { pageSize: Number(pageSize) })
+      this.ctx.validate({ orderType: "number" }, { orderType: Number(orderType) })
     } catch (error) {
       this.ctx.body = {
         msg: "参数错误",
@@ -88,9 +87,10 @@ export default class Merchants extends BaseController {
     }
 
     try {
-      let data = await this.ctx.service.merchants.findAdminByPage(
+      let data = await this.ctx.service.merchants.getMerchantsByPage(
         Number(page),
-        Number(pageSize)
+        Number(pageSize),
+        Number(orderType)
       )
       this.success(200, '成功', data)
     } catch (error) {

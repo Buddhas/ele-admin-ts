@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 20:45:02
  * @LastEditors  : 笑佛弥勒
- * @LastEditTime : 2020-02-10 00:09:05
+ * @LastEditTime : 2020-02-11 23:19:41
  */
 
 export function merchants(app) {
@@ -13,7 +13,7 @@ export function merchants(app) {
     router.post('/merchants/createMerchants', controller.merchants.createMerchants)
     router.post('/merchants/deleteMerchants', controller.merchants.deleteMerchants)
     router.post('/merchants/updateMerchants', controller.merchants.updateMerchants)
-    router.get('/merchants/findMerchantsByPage', controller.merchants.findMerchantsByPage)
+    router.get('/merchants/getMerchantsByPage', controller.merchants.getMerchantsByPage)
     router.post('/merchants/updateShopAvatar', controller.merchants.updateShopAvatar)
     router.post('/merchants/updateBusinessLicense', controller.merchants.updateBusinessLicense)
     router.post('/merchants/updateCateringLicense', controller.merchants.updateCateringLicense)

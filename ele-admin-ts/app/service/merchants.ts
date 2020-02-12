@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 16:30:21
  * @LastEditors  : 笑佛弥勒
- * @LastEditTime : 2020-02-11 21:42:00
+ * @LastEditTime : 2020-02-11 23:28:50
  */
 import { Service } from "egg";
 
@@ -59,8 +59,32 @@ class Merchants extends Service {
    * @param {page} 当前页 {pageSize} 当前页数
    * @return:
    */
-  public async findAdminByPage(page: number, pageSize: number) {
-    return await this.ctx.model.Merchants.findMerchantsByPage(page, pageSize);
+  public async getMerchantsByPage(page: number, pageSize: number, orderType: number) {
+    let order:any = [['score', 'desc']]
+    switch (orderType) {
+      case 0:
+        order = [['id', 'desc']] // 综合排序
+        break;
+      case 1:
+        order = [['score', 'desc']] // 好评优先
+        break;
+      case 2:
+        order = [['top_up', 'asc']] // 起送价最低
+        break;
+      case 3:
+        order = [['need_time', 'asc']] // 配送最快
+        break;
+      default:
+        break;
+    }
+    return await this.ctx.model.Merchants.findAndCountAll({
+      offset: (page - 1) * pageSize,
+      limit: pageSize,
+      where: {
+        is_delete: 0
+      },
+      order: order
+    });
   }
   /**
    * @Descripttion: 更新商户信息
