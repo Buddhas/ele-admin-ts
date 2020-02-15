@@ -1,5 +1,5 @@
 /*
- * @Descripttion:
+ * @Descripttion:工具类
  * @version:
  * @Author: 笑佛弥勒
  * @Date: 2019-08-13 16:39:28

@@ -1,14 +1,6 @@
 /*
- * @Descripttion: 
- * @version: 
- * @Author: 笑佛弥勒
- * @Date: 2019-08-05 20:17:58
- * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-08-05 20:17:58
- */
-/*
- * @Descripttion:
- * @version:
+ * @Descripttion:工具类
+ * @version:1.0
  * @Author: 笑佛弥勒
  * @Date: 2019-08-13 16:39:28
  * @LastEditors: 笑佛弥勒
@@ -19,6 +11,7 @@ import * as path from "path";
 import * as sendToWormhole from "stream-wormhole";
 import { write as awaitWriteStream } from "await-stream-ready";
 import * as jwt from "jsonwebtoken"
+import * as request from 'request'
 /**
  * @Descripttion: 同步创建文件夹
  * @Author: 笑佛弥勒
@@ -103,4 +96,48 @@ export function verifyToken(token) {
     console.log(e)
   }
   return res
+}
+
+/**
+ * @Descripttion: 获取全国所有城市
+ * @Author: 笑佛弥勒
+ * @param {type} 
+ * @return: 
+ */
+export async function getAllCity() {
+  let url = `https://restapi.amap.com/v3/config/district?keywords=&subdistrict=1&key=44b1b802a3d72663f2cb9c3288e5311e`
+  var options = {
+    method: 'post',
+    url: url,
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'  // 需指定这个参数 否则 在特定的环境下 会引起406错误
+    }
+  }
+  return request(options, await function(err, res, body) {
+    if (err) {
+      return err
+    } else {
+      let cityList = []
+      return body
+    }
+  })
+}
+
+// 递归获取全部城市列表
+function getAllCityList(cityList:Array<Object>, parent:any) {
+  let exception:Array<string> = ['010', '021', '022', '023'] // 四个直辖市另外处理
+  for(let i = 0; i < parent.length; i++) {
+    if (parent[i].level === 'province') {
+      if (exception.includes(parent[i].citycode)) {
+        parent[i].districts = []
+        parent[i].level = 'city'
+        cityList.push(parent[i])
+      } else {
+        cityList.push(...parent[i].districts)
+      }
+    } else {
+      getAllCityList(cityList, parent.districts)
+    }
+  }
 }
