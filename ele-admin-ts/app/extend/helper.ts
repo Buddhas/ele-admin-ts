@@ -12,6 +12,7 @@ import * as sendToWormhole from "stream-wormhole";
 import { write as awaitWriteStream } from "await-stream-ready";
 import * as jwt from "jsonwebtoken"
 import * as request from 'request'
+import * as pinyin from 'pinyin'
 /**
  * @Descripttion: 同步创建文件夹
  * @Author: 笑佛弥勒
@@ -105,25 +106,55 @@ export function verifyToken(token) {
  * @return: 
  */
 export async function getAllCity() {
-  let url = `https://restapi.amap.com/v3/config/district?keywords=&subdistrict=1&key=44b1b802a3d72663f2cb9c3288e5311e`
+  let url = `https://restapi.amap.com/v3/config/district?keywords=&subdistrict=2&key=44b1b802a3d72663f2cb9c3288e5311e`
   var options = {
-    method: 'post',
+    method: 'get',
     url: url,
     headers: {
       'Content-Type': 'application/json',
       'Accept': 'application/json'  // 需指定这个参数 否则 在特定的环境下 会引起406错误
     }
   }
-  return request(options, await function(err, res, body) {
-    if (err) {
-      return err
-    } else {
-      let cityList = []
-      return body
-    }
+  return await new Promise((resolve, reject) => {
+    request(options, function(err, res, body) {
+      if (err) {
+        reject(err)
+      } else {
+        body = JSON.parse(body)
+        if (body.status == 0) {
+          reject(err)
+        } else {
+          let cityList : Array<Object> = []
+          getAllCityList(cityList, body.districts)
+          cityList = orderByPinYin(cityList)
+          resolve(cityList)
+        }
+      }
+    })
   })
 }
-
+// 给全国城市根据拼音分组
+function orderByPinYin(cityList) {
+  const newCityList: Array<Object> = []
+  const title = [ 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' ]
+  for (let i = 0; i < title.length; i++) {
+    let items:Array<Object> = []
+    newCityList.push({
+      name: title[i],
+      items: []
+    })
+    for (let j = 0; j < cityList.length; j++) {
+      let indexLetter = pinyin(cityList[j].name.substring(0,1), {
+        style: pinyin.STYLE_FIRST_LETTER, // 设置拼音风格
+      })[0][0].toUpperCase() // 提取首字母
+      if (indexLetter === title[i]) {
+        items.push(cityList[j])
+      }
+    }
+    newCityList[i]['items'] = items
+  }
+  return newCityList
+}
 // 递归获取全部城市列表
 function getAllCityList(cityList:Array<Object>, parent:any) {
   let exception:Array<string> = ['010', '021', '022', '023'] // 四个直辖市另外处理
@@ -137,7 +168,7 @@ function getAllCityList(cityList:Array<Object>, parent:any) {
         cityList.push(...parent[i].districts)
       }
     } else {
-      getAllCityList(cityList, parent.districts)
+      getAllCityList(cityList, parent[i].districts)
     }
   }
 }
