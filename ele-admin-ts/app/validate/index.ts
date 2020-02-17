@@ -3,8 +3,8 @@
  * @version: 
  * @Author: 笑佛弥勒
  * @Date: 2019-08-12 17:24:57
- * @LastEditors  : 笑佛弥勒
- * @LastEditTime : 2020-02-08 16:23:07
+ * @LastEditors: 笑佛弥勒
+ * @LastEditTime: 2020-02-17 22:21:23
  */
 import { Application } from 'egg';
 
@@ -144,6 +144,25 @@ export default function(app: Application) {
             throw "食品数量错误"
         } else if (!Number(params.price)) {
             throw "食品价格错误"
+        }
+    })
+
+    // 添加地址校验
+    validator.addRule('addAddress', (rule, params) => {
+        if (params.update && params.update === 1 && !Number(params.id)) {
+            throw "地址id错误"
+        } if (params.user_id.trim().length === 0) {
+            throw "用户id错误"
+        } else if (!Number(params.sex)) {
+            throw "请选择用户性别"
+        } else if (!reg.test(params.mobile)) {
+            throw "手机号格式错误"
+        } else if (params.address.trim().length === 0) {
+            throw "请填写用户地址"
+        } else if (params.detail.trim().length === 0 ) {
+            throw "请填写详细地址"
+        } else if (!Number(params.label)) {
+            throw "请选择地址标签"
         }
     })
 }

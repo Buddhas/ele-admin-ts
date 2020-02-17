@@ -2,6 +2,7 @@
 // Do not modify this file!!!!!!!!!
 
 import 'egg';
+import ExportAddress from '../../../app/service/address';
 import ExportAdmin from '../../../app/service/admin';
 import ExportFood from '../../../app/service/food';
 import ExportFoodCategory from '../../../app/service/foodCategory';
@@ -13,6 +14,7 @@ import ExportShopCategory from '../../../app/service/shopCategory';
 
 declare module 'egg' {
   interface IService {
+    address: ExportAddress;
     admin: ExportAdmin;
     food: ExportFood;
     foodCategory: ExportFoodCategory;

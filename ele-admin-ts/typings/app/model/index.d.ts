@@ -2,6 +2,7 @@
 // Do not modify this file!!!!!!!!!
 
 import 'egg';
+import ExportAddress from '../../../app/model/address';
 import ExportAdmin from '../../../app/model/admin';
 import ExportFood from '../../../app/model/food';
 import ExportFoodCategory from '../../../app/model/foodCategory';
@@ -13,6 +14,7 @@ import ExportPreferential from '../../../app/model/preferential';
 
 declare module 'egg' {
   interface IModel {
+    Address: ReturnType<typeof ExportAddress>;
     Admin: ReturnType<typeof ExportAdmin>;
     Food: ReturnType<typeof ExportFood>;
     FoodCategory: ReturnType<typeof ExportFoodCategory>;

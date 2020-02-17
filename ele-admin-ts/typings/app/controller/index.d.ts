@@ -2,6 +2,7 @@
 // Do not modify this file!!!!!!!!!
 
 import 'egg';
+import ExportAddress from '../../../app/controller/address';
 import ExportAdmin from '../../../app/controller/admin';
 import ExportFood from '../../../app/controller/food';
 import ExportMainIndex from '../../../app/controller/mainIndex';
@@ -11,6 +12,7 @@ import ExportOrder from '../../../app/controller/order';
 
 declare module 'egg' {
   interface IController {
+    address: ExportAddress;
     admin: ExportAdmin;
     food: ExportFood;
     mainIndex: ExportMainIndex;
