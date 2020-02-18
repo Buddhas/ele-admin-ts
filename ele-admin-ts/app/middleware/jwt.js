@@ -1,7 +1,11 @@
-const fs = require('fs')
-const path = require('path')
-const jwt = require('jsonwebtoken') 
-
+/*
+ * @Descripttion: 登陆验证
+ * @version: 1.0
+ * @Author: 笑佛弥勒
+ * @Date: 2019-12-31 23:59:22
+ * @LastEditors: 笑佛弥勒
+ * @LastEditTime: 2020-02-18 22:37:15
+ */
 module.exports = (options, app) => {
   return async function userInterceptor(ctx, next) {
     let authToken = ctx.cookies.get('authorization') // 获取header里的authorization

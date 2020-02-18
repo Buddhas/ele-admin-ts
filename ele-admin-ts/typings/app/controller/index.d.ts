@@ -9,6 +9,7 @@ import ExportMainIndex from '../../../app/controller/mainIndex';
 import ExportMerchantCategory from '../../../app/controller/merchantCategory';
 import ExportMerchants from '../../../app/controller/merchants';
 import ExportOrder from '../../../app/controller/order';
+import ExportUser from '../../../app/controller/user';
 
 declare module 'egg' {
   interface IController {
@@ -19,5 +20,6 @@ declare module 'egg' {
     merchantCategory: ExportMerchantCategory;
     merchants: ExportMerchants;
     order: ExportOrder;
+    user: ExportUser;
   }
 }

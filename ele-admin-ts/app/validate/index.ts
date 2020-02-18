@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-12 17:24:57
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2020-02-17 22:21:23
+ * @LastEditTime: 2020-02-18 16:18:39
  */
 import { Application } from 'egg';
 
@@ -151,7 +151,9 @@ export default function(app: Application) {
     validator.addRule('addAddress', (rule, params) => {
         if (params.update && params.update === 1 && !Number(params.id)) {
             throw "地址id错误"
-        } if (params.user_id.trim().length === 0) {
+        } else if (params.user_name.trim().length === 0) {
+            throw "请填写用户姓名"
+        } else if (!Number(params.user_id)) {
             throw "用户id错误"
         } else if (!Number(params.sex)) {
             throw "请选择用户性别"

@@ -11,6 +11,7 @@ import ExportMerchants from '../../../app/model/merchants';
 import ExportOrder from '../../../app/model/order';
 import ExportOrderDetail from '../../../app/model/orderDetail';
 import ExportPreferential from '../../../app/model/preferential';
+import ExportUser from '../../../app/model/user';
 
 declare module 'egg' {
   interface IModel {
@@ -23,5 +24,6 @@ declare module 'egg' {
     Order: ReturnType<typeof ExportOrder>;
     OrderDetail: ReturnType<typeof ExportOrderDetail>;
     Preferential: ReturnType<typeof ExportPreferential>;
+    User: ReturnType<typeof ExportUser>;
   }
 }

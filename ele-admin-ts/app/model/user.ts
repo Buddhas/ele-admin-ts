@@ -1,17 +1,17 @@
 /*
- * @Descripttion: 地址model层
- * @version: 
+ * @Descripttion: 用户model层
+ * @version: 1.0
  * @Author: 笑佛弥勒
- * @Date: 2019-08-22 20:10:27
+ * @Date: 2020-02-18 16:42:14
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2020-02-17 22:46:01
+ * @LastEditTime: 2020-02-18 16:46:44
  */
 import { Application } from "egg";
 
 export default function (app: Application) {
     const { STRING, DECIMAL, BIGINT, INTEGER,CHAR } = app.Sequelize;
-    const Address = app.model.define(
-        "address",
+    const User = app.model.define(
+        "user",
         {
           id: {
             type: BIGINT,
@@ -19,20 +19,16 @@ export default function (app: Application) {
             autoIncrement: true
           },
           user_name: STRING(255),
-          user_id: INTEGER,
-          sex: INTEGER,
-          mobile: CHAR(20),
-          address: STRING(255),
-          detail: STRING(255),
-          label: INTEGER,
+          email: STRING(255),
+          avatar: STRING(255),
           is_delete: INTEGER
         },
         {
           freezeTableName: false,
-          tableName: "address",
+          tableName: "user",
           timestamps: false
         }
     )
-    return class extends Address {
+    return class extends User {
     }
 }

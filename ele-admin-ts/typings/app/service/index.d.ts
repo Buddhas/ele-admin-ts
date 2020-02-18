@@ -11,6 +11,7 @@ import ExportOrder from '../../../app/service/order';
 import ExportOrderDetail from '../../../app/service/orderDetail';
 import ExportPreferential from '../../../app/service/preferential';
 import ExportShopCategory from '../../../app/service/shopCategory';
+import ExportUser from '../../../app/service/user';
 
 declare module 'egg' {
   interface IService {
@@ -23,5 +24,6 @@ declare module 'egg' {
     orderDetail: ExportOrderDetail;
     preferential: ExportPreferential;
     shopCategory: ExportShopCategory;
+    user: ExportUser;
   }
 }

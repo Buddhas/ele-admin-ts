@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 20:45:02
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-10-10 20:43:48
+ * @LastEditTime: 2020-02-18 22:37:22
  */
 
 export function admin(app) {
@@ -16,7 +16,7 @@ export function admin(app) {
     router.post('/admin/updateAvatar', controller.admin.updateAvatar)
     router.post('/admin/getAdminCount', controller.admin.getAdminCount)
     router.get('/admin/findAdminByPage', controller.admin.findAdminByPage)
-    router.get('/admin/totalData', controller.admin.totalData)
+    router.get('/admin/totalData', jwt, controller.admin.totalData)
     router.get('/admin/getShopCategory', controller.admin.getShopCategory)
     router.get('/admin/getCurrentAdmin', controller.admin.getCurrentAdmin)
 }
