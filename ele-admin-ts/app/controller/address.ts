@@ -4,18 +4,25 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-22 20:17:28
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2020-02-18 15:49:28
+ * @LastEditTime: 2020-03-04 00:27:42
  */
 import { BaseController } from "../core/baseController";
 
 export default class Address extends BaseController {
   /**
-   * @Descripttion: 添加食品
+   * @Descripttion: 获取用户信息
    * @Author: 笑佛弥勒
    * @param {type}
    * @return:
    */
+  public async getUserDetail() {
+    const authorization = this.ctx.cookies.get('authorization')
+    const userMsg = this.ctx.helper.verifyToken(authorization)
+    const userDetail = await this.ctx.service.user.getUserByEmail(userMsg.email)
+    return userDetail
+  }
   public async createdAddress() {
+    let userDetail = await this.getUserDetail()
     let params = this.ctx.request.body;
     try {
       this.ctx.validate({ params: "addAddress" }, { params: params });
