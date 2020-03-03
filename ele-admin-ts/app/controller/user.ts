@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2020-02-18 17:21:14
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2020-02-25 00:20:01
+ * @LastEditTime: 2020-03-03 23:47:25
  */
 
 import { BaseController } from "../core/baseController"
@@ -26,10 +26,9 @@ export default class User extends BaseController {
     }
     try {
       // let data = await this.ctx.helper.sendEmail(email, this.app) // 发送邮箱
-      
       const codeExit = await this.app.redis.get(`code_${email}`)
       if (codeExit) {
-        this.success(200, '不可重复发送')
+        this.success(500, '不可重复发送')
         return
       }
       const code = this.ctx.helper.random(10000,99999)
@@ -58,10 +57,10 @@ export default class User extends BaseController {
         await this.ctx.helper.loginToken({ user_id: userDetail['user_id'], email: userDetail['email'] }).then((res) => token = res) // 取到生成token
         await this.app.redis.set(email, token, 'ex', 7200) // 保存到redis
         this.ctx.cookies.set('authorization', token, {
-          httpOnly: true, // 默认就是 true
-          maxAge: 7200,
+          maxAge: 1000 * 60 * 60, // egg中是以毫秒为单位的
           domain: 'localhost'
         }) // 保存到cookie
+        await this.app.redis.del(`code_${email}`)
         this.success(200, '登录成功')
       } else {
         await this.ctx.service.user.createdUser({
@@ -73,9 +72,10 @@ export default class User extends BaseController {
         await this.app.redis.set(email, token, 'ex', 7200) // 保存到redis
         this.ctx.cookies.set('authorization', token, {
           httpOnly: true, // 默认就是 true
-          maxAge: 7200,
+          maxAge: 1000 * 60 * 60, // egg中是以毫秒为单位的
           domain: 'localhost'
         }) // 保存到cookie
+        await this.app.redis.del(`code_${email}`)
         this.success(200, '注册成功')
       }
     }
