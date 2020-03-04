@@ -4,26 +4,15 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-22 20:17:28
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2020-03-04 00:27:42
+ * @LastEditTime: 2020-03-04 23:45:08
  */
 import { BaseController } from "../core/baseController";
-
+import { User } from '../interface/interface'
 export default class Address extends BaseController {
-  /**
-   * @Descripttion: 获取用户信息
-   * @Author: 笑佛弥勒
-   * @param {type}
-   * @return:
-   */
-  public async getUserDetail() {
-    const authorization = this.ctx.cookies.get('authorization')
-    const userMsg = this.ctx.helper.verifyToken(authorization)
-    const userDetail = await this.ctx.service.user.getUserByEmail(userMsg.email)
-    return userDetail
-  }
   public async createdAddress() {
-    let userDetail = await this.getUserDetail()
-    let params = this.ctx.request.body;
+    let userDetail:User = await this.ctx.helper.getUserMsg(this.ctx)
+    let params = this.ctx.request.body
+    params.id = userDetail.id
     try {
       this.ctx.validate({ params: "addAddress" }, { params: params });
     } catch (error) {
@@ -95,8 +84,7 @@ export default class Address extends BaseController {
     }
   }
 
-  public async getAddressById() {
-    let { id } = this.ctx.query;
+  public async getAddressById(id) {
     try {
       this.ctx.validate({ id: "number" }, { id: Number(id) });
     } catch (error) {
@@ -106,6 +94,26 @@ export default class Address extends BaseController {
 
     try {
         let data = await this.ctx.service.address.getAddressById(Number(id));
+        this.success(200, "成功", data);
+      } catch (error) {
+        this.ctx.logger.error(`-----地址查询失败------`, error);
+        this.ctx.logger.error(`id：${id}`);
+        this.fail(500, "地址查询失败");
+      }
+  }
+
+  public async getAddressList() {
+    let userDetail:User = await this.ctx.helper.getUserMsg(this.ctx)
+    let id:number = userDetail.id
+    try {
+      this.ctx.validate({ id: "number" }, { id: Number(id) });
+    } catch (error) {
+      this.fail(500, "参数错误");
+      return;
+    }
+
+    try {
+        let data = await this.ctx.service.address.getAddressList(Number(id));
         this.success(200, "成功", data);
       } catch (error) {
         this.ctx.logger.error(`-----地址查询失败------`, error);

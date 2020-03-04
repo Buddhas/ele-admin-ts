@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2020-02-18 16:47:33
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2020-02-18 23:47:09
+ * @LastEditTime: 2020-03-04 23:05:01
  */
 import { Service } from "egg";
 
@@ -29,11 +29,12 @@ class User extends Service {
    * @param {type} 
    * @return: 
    */
-  public async getUserByEmail(email1:string) {
+  public async getUserByEmail(email:string) {
     let data:any =  await this.ctx.model.User.findOne({
       where: {
-        email: email1
-      }
+        email: email
+      },
+      attributes: { exclude: ['is_delete'] }
     }) || null
     return data
   }

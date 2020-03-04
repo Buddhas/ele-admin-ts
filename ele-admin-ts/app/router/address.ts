@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 20:45:02
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2020-03-02 23:54:15
+ * @LastEditTime: 2020-03-04 23:43:08
  */
 
 export function address(app) {
@@ -15,4 +15,5 @@ export function address(app) {
   router.post('/userAddress/updatedAddress', jwt, controller.address.updatedAddress)
   router.get('/userAddress/deleteAddress', jwt, controller.address.deleteAddress)
   router.get('/userAddress/getAddressById', jwt, controller.address.getAddressById)
+  router.get('/userAddress/getAddressList', jwt, controller.address.getAddressList)
 }

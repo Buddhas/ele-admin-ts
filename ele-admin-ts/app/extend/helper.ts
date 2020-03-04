@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-13 16:39:28
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2020-02-19 00:04:03
+ * @LastEditTime: 2020-03-04 22:54:17
  */
 import * as fs from "fs";
 import * as path from "path";
@@ -244,4 +244,17 @@ export async function sendEmail(receiver:string,app) {
       }
     })
   })
+}
+
+/**
+ * @Descripttion: 获取用户信息
+ * @Author: 笑佛弥勒
+ * @param {type} 
+ * @return: 
+ */
+export async function getUserMsg(ctx) {
+  const authorization = ctx.cookies.get('authorization')
+  const userMsg = ctx.helper.verifyToken(authorization)
+  const userDetail = await ctx.service.user.getUserByEmail(userMsg.email)
+  return userDetail
 }
