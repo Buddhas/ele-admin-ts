@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-22 20:15:46
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2020-03-04 23:45:43
+ * @LastEditTime: 2020-03-05 23:29:57
  */
 import { Service } from "egg";
 
@@ -37,7 +37,7 @@ class Address extends Service {
   public async deleteAddress(id: number) {
     return await this.ctx.model.Address.update(
       {
-        is_delete: "1"
+        is_delete: 1
       },
       {
         where: {
@@ -88,10 +88,17 @@ class Address extends Service {
     })
   }
 
+  /**
+   * @Descripttion: 获取地址列表
+   * @Author: 笑佛弥勒
+   * @param {type} 
+   * @return: 
+   */
   public async getAddressList(id: number) {
     return await this.ctx.model.Address.findAll({
       where: {
-        user_id: id
+        user_id: id,
+        is_delete: 0
       },
       attributes: { exclude: ['is_delete'] },
       raw: true

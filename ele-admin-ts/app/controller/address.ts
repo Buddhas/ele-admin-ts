@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-22 20:17:28
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2020-03-04 23:45:08
+ * @LastEditTime: 2020-03-05 23:38:58
  */
 import { BaseController } from "../core/baseController";
 import { User } from '../interface/interface'
@@ -62,7 +62,7 @@ export default class Address extends BaseController {
    * @return:
    */
   public async deleteAddress() {
-    let { id } = this.ctx.query;
+    let { id } = this.ctx.request.body
     try {
       this.ctx.validate({ id: "number" }, { id: Number(id) });
     } catch (error) {
@@ -84,6 +84,12 @@ export default class Address extends BaseController {
     }
   }
 
+  /**
+   * @Descripttion: 获取单个地址详情
+   * @Author: 笑佛弥勒
+   * @param {type} 
+   * @return: 
+   */
   public async getAddressById(id) {
     try {
       this.ctx.validate({ id: "number" }, { id: Number(id) });
@@ -102,6 +108,12 @@ export default class Address extends BaseController {
       }
   }
 
+  /**
+   * @Descripttion: 获取地址列表
+   * @Author: 笑佛弥勒
+   * @param {type} 
+   * @return: 
+   */
   public async getAddressList() {
     let userDetail:User = await this.ctx.helper.getUserMsg(this.ctx)
     let id:number = userDetail.id
