@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-12 17:24:57
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2020-03-04 23:19:32
+ * @LastEditTime: 2020-03-06 18:22:35
  */
 import { Application } from 'egg';
 
@@ -153,9 +153,9 @@ export default function(app: Application) {
             throw "地址id错误"
         } else if (params.user_name.trim().length === 0) {
             throw "请填写用户姓名"
-        } else if (!Number(params.user_id)) {
+        } else if (!Number(params.id)) {
             throw "用户id错误"
-        } else if (params.sex) {
+        } else if (!Number(params.sex)) {
             throw "请选择用户性别"
         } else if (!reg.test(params.mobile)) {
             throw "手机号格式错误"

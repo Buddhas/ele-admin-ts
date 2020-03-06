@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-22 20:17:28
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2020-03-05 23:38:58
+ * @LastEditTime: 2020-03-06 17:57:26
  */
 import { BaseController } from "../core/baseController";
 import { User } from '../interface/interface'
@@ -90,7 +90,8 @@ export default class Address extends BaseController {
    * @param {type} 
    * @return: 
    */
-  public async getAddressById(id) {
+  public async getAddressById() {
+    let { id } = this.ctx.request.query
     try {
       this.ctx.validate({ id: "number" }, { id: Number(id) });
     } catch (error) {
