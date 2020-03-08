@@ -3,8 +3,8 @@
  * @version: 
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 20:45:02
- * @LastEditors  : 笑佛弥勒
- * @LastEditTime : 2020-02-11 23:19:41
+ * @LastEditors: 笑佛弥勒
+ * @LastEditTime: 2020-03-07 15:52:31
  */
 
 export function merchants(app) {
@@ -22,4 +22,5 @@ export function merchants(app) {
     router.get('/merchants/getMerchantsById', controller.merchants.getMerchantsById)
     router.get('/merchants/getFoodByMerId', controller.merchants.getFoodByMerId)
     router.get('/merchants/getMerByCategory', controller.merchants.getMerByCategory)
+    router.get('/merchants/getMerByKeyword', controller.merchants.getMerByKeyword)
 }

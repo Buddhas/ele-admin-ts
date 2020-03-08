@@ -3,8 +3,8 @@
  * @version:
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 16:59:30
- * @LastEditors  : 笑佛弥勒
- * @LastEditTime : 2020-02-11 23:29:41
+ * @LastEditors: 笑佛弥勒
+ * @LastEditTime: 2020-03-07 16:02:30
  */
 import { BaseController } from "../core/baseController"
 import * as path from "path"
@@ -337,6 +337,34 @@ export default class Merchants extends BaseController {
     
     try {
       let data = await this.ctx.service.merchants.getMerByCategory(type, id, page, pageSize, orderType)
+      this.success(200, '成功', data)
+    } catch (error) {
+      this.fail(500, '查询错误')
+    }
+  }
+  /**
+   * @Descripttion: 根据名称模糊查询商户
+   * @Author: 笑佛弥勒
+   * @param {type} 
+   * @return: 
+   */
+  public async getMerByKeyword() {
+    let { page, pageSize, keyword } = this.ctx.query
+    page = Number(page)
+    pageSize = Number(pageSize)
+    try {
+      this.ctx.validate({ page: "number" }, { page: page })
+      this.ctx.validate({ pageSize: "number" }, { pageSize: pageSize })
+    } catch (error) {
+      this.ctx.body = {
+        msg: "参数错误",
+        status: 500
+      }
+      return
+    }
+
+    try {
+      let data = await this.ctx.service.merchants.getMerByKeyword(page, pageSize, keyword)
       this.success(200, '成功', data)
     } catch (error) {
       this.fail(500, '查询错误')

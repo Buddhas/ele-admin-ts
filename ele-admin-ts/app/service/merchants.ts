@@ -3,11 +3,11 @@
  * @version:
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 16:30:21
- * @LastEditors  : 笑佛弥勒
- * @LastEditTime : 2020-02-11 23:28:50
+ * @LastEditors: 笑佛弥勒
+ * @LastEditTime: 2020-03-07 15:46:08
  */
 import { Service } from "egg";
-
+import * as Sequelize from 'sequelize' 
 class Merchants extends Service {
   /**
    * @Descripttion: 创建商户
@@ -222,6 +222,25 @@ class Merchants extends Service {
         order: order
       })
     }
+  }
+
+  /**
+   * @Descripttion: 模糊搜索商户
+   * @Author: 笑佛弥勒
+   * @param {type} 
+   * @return: 
+   */
+  public async getMerByKeyword(page: number, pageSize:number, keyword:string) {
+    return await this.ctx.model.Merchants.findAndCountAll({
+      offset: (page - 1) * pageSize,
+      limit: pageSize,
+      where: {
+        is_delete: 0,
+        name: {
+          [Sequelize.Op.like]: `%${keyword}%`
+        }
+      },
+    })
   }
 }
 
