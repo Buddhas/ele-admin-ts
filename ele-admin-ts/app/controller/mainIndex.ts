@@ -7,6 +7,7 @@
  * @LastEditTime : 2020-01-26 12:43:41
  */
 import { BaseController } from "../core/baseController"
+import { Status } from "../util/enum"
 
 export default class AdminController extends BaseController {
   /**
@@ -18,9 +19,9 @@ export default class AdminController extends BaseController {
   public async getShopCategory() {
     try {
       let category = await this.ctx.service.shopCategory.getAllCategory()
-      this.success(200, '查询成功', category)
+      this.success(Status.Success, '查询成功', category)
     } catch (error) {
-      this.fail(500, "获取数据出错")
+      this.fail(Status.SystemError, "获取数据出错")
     }
   }
 

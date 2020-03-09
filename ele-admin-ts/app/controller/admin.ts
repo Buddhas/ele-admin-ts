@@ -4,13 +4,13 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 16:46:01
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-10-10 21:07:58
+ * @LastEditTime: 2020-03-09 10:51:40
  */
 import { BaseController } from "../core/baseController"
 import * as path from "path"
 import { mkdirSync, saveImg } from "../util/util"
 import * as utility from 'utility'
-
+import { Status } from "../util/enum"
 export default class AdminController extends BaseController {
   /**
    * @Descripttion: 管理员登录 || 注册 接口
@@ -25,7 +25,7 @@ export default class AdminController extends BaseController {
       ctx.validate({ mobile: "mobile" })
       ctx.validate({ password: { type: "string", min: 1, max: 10 } })
     } catch (error) {
-      this.fail(500, error)
+      this.fail(Status.InvalidParams, error)
       return
     }
 
@@ -44,11 +44,11 @@ export default class AdminController extends BaseController {
           encrypt: true, // 加密传输
           domain: 'localhost'
         }) // 保存到cookie
-        this.success(200, '注册成功')
+        this.success(Status.Success, '注册成功')
       } catch (error) {
         ctx.logger.error(`-----用户注册失败------`, error)
         ctx.logger.error(`入参params：mobile:${mobile}、password:${password}`)
-        this.fail(500, "用户注册失败")
+        this.fail(Status.SystemError, "用户注册失败")
       }
     } else {
       if (res.password == password) {
@@ -60,9 +60,9 @@ export default class AdminController extends BaseController {
           domain: 'localhost'
         }) // 保存到cookie
         ctx.body = { data: { token, expires: this.config.login_token_time }, code: 1, msg: '登录成功' } // 返回
-        this.success(200, '登录成功')
+        this.success(Status.Success, '登录成功')
       } else {
-        this.fail(500, "密码错误")
+        this.fail(Status.SystemError, "密码错误")
       }
     }
   }
@@ -78,9 +78,9 @@ export default class AdminController extends BaseController {
     try {
       // await this.app.redis.del(res.mobile)
       await this.app.redis.del('17688702099')
-      this.success(200, '退出登录成功')
+      this.success(Status.Success, '退出登录成功')
     } catch (error) {
-      this.fail(500, '登出错误')
+      this.fail(Status.SystemError, '登出错误')
     }
   }
   /**
@@ -94,9 +94,9 @@ export default class AdminController extends BaseController {
     const res = this.ctx.helper.verifyToken(token) // 解密获取的Token
     try {
       let data = await this.service.admin.getUser(res.mobile)
-      this.success(200, '成功', data)
+      this.success(Status.Success, '成功', data)
     } catch (error) {
-      this.fail(500, '查询出错')
+      this.fail(Status.SystemError, '查询出错')
     }
   }
   /**
@@ -120,10 +120,10 @@ export default class AdminController extends BaseController {
       let data = {
         filename: filename,
       }
-      this.success(200, '管理员头像保存成功', data)
+      this.success(Status.Success, '管理员头像保存成功', data)
     } catch (error) {
       this.ctx.logger.error(`-----修改管理员头像失败------`, error)
-      this.fail(500, "修改管理员头像失败")
+      this.fail(Status.SystemError, "修改管理员头像失败")
     }
   }
   /**
@@ -149,7 +149,7 @@ export default class AdminController extends BaseController {
       this.ctx.validate({ page: "number" }, { page: page })
       this.ctx.validate({ pageSize: "number" }, { pageSize: pageSize })
     } catch (error) {
-      this.fail(500, "参数错误")
+      this.fail(Status.InvalidParams, "参数错误")
       return
     }
 
@@ -158,9 +158,9 @@ export default class AdminController extends BaseController {
         page,
         pageSize
       )
-      this.success(200, '成功', data)
+      this.success(Status.Success, '成功', data)
     } catch (error) {
-      this.fail(500, "查询出错")
+      this.fail(Status.SystemError, "查询出错")
     }
   }
 
@@ -177,17 +177,17 @@ export default class AdminController extends BaseController {
         currentData: currentData,
         dateAWeek: dateAWeek
       }
-      this.success(200, '查询成功', data)
+      this.success(Status.Success, '查询成功', data)
     } catch (error) {
-      this.fail(500, "获取数据出错")
+      this.fail(Status.SystemError, "获取数据出错")
     }
   }
   public async getShopCategory() {
     try {
       let category = await this.ctx.service.shopCategory.getAllCategory()
-      this.success(200, '查询成功', category)
+      this.success(Status.Success, '查询成功', category)
     } catch (error) {
-      this.fail(500, "获取数据出错")
+      this.fail(Status.SystemError, "获取数据出错")
     }
   }
 }

@@ -4,11 +4,11 @@
  * @Author: 笑佛弥勒
  * @Date: 2020-02-18 17:21:14
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2020-03-03 23:47:25
+ * @LastEditTime: 2020-03-09 11:08:39
  */
 
 import { BaseController } from "../core/baseController"
-
+import { Status } from "../util/enum"
 export default class User extends BaseController {
 
   /**
@@ -21,21 +21,21 @@ export default class User extends BaseController {
     let { email } = this.ctx.request.body
     let reg = /[\w!#$%&'*+/=?^_`{|}~-]+(?:\.[\w!#$%&'*+/=?^_`{|}~-]+)*@(?:[\w](?:[\w-]*[\w])?\.)+[\w](?:[\w-]*[\w])?/
     if (!reg.test(email)) {
-      this.fail(500, '邮箱格式错误')
+      this.fail(Status.InvalidParams, '邮箱格式错误')
       return
     }
     try {
       // let data = await this.ctx.helper.sendEmail(email, this.app) // 发送邮箱
       const codeExit = await this.app.redis.get(`code_${email}`)
       if (codeExit) {
-        this.success(500, '不可重复发送')
+        this.success(Status.InvalidRequest, '不可重复发送')
         return
       }
       const code = this.ctx.helper.random(10000,99999)
       await this.app.redis.set(`code_${email}`, code, 'ex', 3600)
-      this.success(200, '发送成功', code)
+      this.success(Status.Success, '发送成功', code)
     } catch (error) {
-      this.fail(500, '发送失败')
+      this.fail(Status.SystemError, '发送失败')
     }
   }
 
@@ -49,7 +49,7 @@ export default class User extends BaseController {
     let { email, code } = this.ctx.request.body
     let token:string = ''
     if (await this.app.redis.get(`code_${email}`) != code) {
-      this.fail(500,'验证码错误')
+      this.fail(Status.CodeError,'验证码错误')
     } else {
       let userDetail:any = await this.ctx.service.user.getUserByEmail(email)
       // 如果用户存在了
@@ -61,7 +61,7 @@ export default class User extends BaseController {
           domain: 'localhost'
         }) // 保存到cookie
         await this.app.redis.del(`code_${email}`)
-        this.success(200, '登录成功')
+        this.success(Status.Success, '登录成功')
       } else {
         await this.ctx.service.user.createdUser({
           email: email,
@@ -76,7 +76,7 @@ export default class User extends BaseController {
           domain: 'localhost'
         }) // 保存到cookie
         await this.app.redis.del(`code_${email}`)
-        this.success(200, '注册成功')
+        this.success(Status.Success, '注册成功')
       }
     }
   }

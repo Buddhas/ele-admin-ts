@@ -4,10 +4,9 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 16:46:01
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-10 09:51:26
+ * @LastEditTime: 2020-03-09 10:43:37
  */
 import { Controller } from "egg"
-
 export class BaseController extends Controller {
 
   /**
@@ -17,6 +16,7 @@ export class BaseController extends Controller {
    * @param {data} 响应数据
    * @return:
    */
+  
   success(status: number, message: string, data?: any) {
     if (data) {
       this.ctx.body = {

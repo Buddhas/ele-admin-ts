@@ -4,10 +4,11 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 16:59:30
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2020-03-07 16:02:30
+ * @LastEditTime: 2020-03-09 11:03:14
  */
 import { BaseController } from "../core/baseController"
 import * as path from "path"
+import { Status } from "../util/enum"
 
 export default class Merchants extends BaseController {
 
@@ -23,16 +24,16 @@ export default class Merchants extends BaseController {
     try {
       this.ctx.validate({ params: "addMerchants" }, { params: params })
     } catch (error) {
-      this.fail(500, error)
+      this.fail(Status.InvalidParams, error)
       return
     }
     try {
       await this.ctx.service.merchants.createMerchants(params)
-      this.success(200, '创建商户成功')
+      this.success(Status.Success, '创建商户成功')
     } catch (error) {
       this.ctx.logger.error(`-----创建商户错误------`, error)
       this.ctx.logger.error(`入参params：${params}`)
-      this.fail(500, error)
+      this.fail(Status.SystemError, error)
     }
 
   }
@@ -47,7 +48,7 @@ export default class Merchants extends BaseController {
     try {
       this.ctx.validate({ id: "number" }, this.ctx.request.body)
     } catch (error) {
-      this.fail(500, '商户id错误')
+      this.fail(Status.InvalidParams, '商户id错误')
       return
     }
 
@@ -56,14 +57,14 @@ export default class Merchants extends BaseController {
         this.ctx.request.body.id
       )
       if (res[0]) {
-        this.success(200, '删除商户成功')
+        this.success(Status.Success, '删除商户成功')
       } else {
-        this.fail(500, "商户不存在或者已删除")
+        this.fail(Status.SystemError, "商户不存在或者已删除")
       }
     } catch (error) {
       this.ctx.logger.error(`-----删除商户错误------`, error)
       this.ctx.logger.error(`入参params：${this.ctx.request.body}`)
-      this.fail(500, "删除商户错误")
+      this.fail(Status.SystemError, "删除商户错误")
     }
   }
   /**
@@ -81,7 +82,7 @@ export default class Merchants extends BaseController {
     } catch (error) {
       this.ctx.body = {
         msg: "参数错误",
-        status: 500
+        status: Status.InvalidParams
       }
       return
     }
@@ -92,11 +93,11 @@ export default class Merchants extends BaseController {
         Number(pageSize),
         Number(orderType)
       )
-      this.success(200, '成功', data)
+      this.success(Status.Success, '成功', data)
     } catch (error) {
       this.ctx.body = {
         message: "查询出错",
-        status: 500
+        status: Status.SystemError
       }
     }
   }
@@ -121,10 +122,10 @@ export default class Merchants extends BaseController {
         filename: filename,
         attribute: 'shop_avatar'
       }
-      this.success(200, '商户头像上传成功', data)
+      this.success(Status.Success, '商户头像上传成功', data)
     } catch (error) {
       this.ctx.logger.error(`-----更新商户头像失败------`, error)
-      this.fail(500, "更新商户头像失败")
+      this.fail(Status.SystemError, "更新商户头像失败")
     }
   }
 
@@ -148,10 +149,10 @@ export default class Merchants extends BaseController {
         filename: filename,
         attribute: 'shop_environment'
       }
-      this.success(200, '商户商家实景图片', data)
+      this.success(Status.Success, '商户商家实景图片', data)
     } catch (error) {
       this.ctx.logger.error(`-----更新商家实景图片------`, error)
-      this.fail(500, "更新商家实景图片")
+      this.fail(Status.SystemError, "更新商家实景图片")
     }
   }
 
@@ -175,10 +176,10 @@ export default class Merchants extends BaseController {
         filename: filename,
         attribute: 'business_license'
       }
-      this.success(200, '商户营业执照上传成功', data)
+      this.success(Status.Success, '商户营业执照上传成功', data)
     } catch (error) {
       this.ctx.logger.error(`-----更新商户营业执照失败------`, error)
-      this.fail(500, "更新商户营业执照失败")
+      this.fail(Status.SystemError, "更新商户营业执照失败")
     }
   }
 
@@ -202,10 +203,10 @@ export default class Merchants extends BaseController {
         filename: filename,
         attribute: 'catering_license'
       }
-      this.success(200, '商户餐饮许可证上传成功', data)
+      this.success(Status.Success, '商户餐饮许可证上传成功', data)
     } catch (error) {
       this.ctx.logger.error(`-----更新商户餐饮许可证失败------`, error)
-      this.fail(500, "更新商户餐饮许可证失败")
+      this.fail(Status.SystemError, "更新商户餐饮许可证失败")
     }
   }
   /**
@@ -219,21 +220,21 @@ export default class Merchants extends BaseController {
     try {
       this.ctx.validate({ params: "addMerchants" }, { params: params })
     } catch (error) {
-      this.fail(500, error)
+      this.fail(Status.SystemError, error)
       return
     }
 
     try {
       await this.ctx.service.merchants.updateMerchants(params)
-      this.success(200, '商铺信息更新成功')
+      this.success(Status.Success, '商铺信息更新成功')
     } catch (error) {
       this.ctx.body = {
         msg: "更新商铺信息失败",
-        status: 500
+        status: Status.SystemError
       }
       this.ctx.logger.error(`-----更新商铺信息失败------`, error)
       this.ctx.logger.error(`入参params：${params}`)
-      this.fail(500, "更新商铺信息失败")
+      this.fail(Status.SystemError, "更新商铺信息失败")
     }
   }
 
@@ -253,7 +254,7 @@ export default class Merchants extends BaseController {
     } catch (error) {
       this.ctx.body = {
         msg: "参数错误",
-        status: 500
+        status: Status.InvalidParams
       }
       return
     }
@@ -263,7 +264,7 @@ export default class Merchants extends BaseController {
     } catch (error) {
       this.ctx.body = {
         msg: '查询错误',
-        status: 500
+        status: Status.SystemError
       }
     }
   }
@@ -279,15 +280,15 @@ export default class Merchants extends BaseController {
     try {
       this.ctx.validate({ id: "number" }, { id: id })
     } catch (error) {
-      this.fail(500, '参数错误')
+      this.fail(Status.InvalidParams, '参数错误')
       return
     }
 
     try {
       let data = await this.ctx.service.merchants.getMerchantsById(id)
-      this.success(200, '成功', data)
+      this.success(Status.Success, '成功', data)
     } catch (error) {
-      this.fail(500, '查询错误')
+      this.fail(Status.SystemError, '查询错误')
     }
   }
 
@@ -304,15 +305,15 @@ export default class Merchants extends BaseController {
     try {
       this.ctx.validate({ id: "number" }, { id: id })
     } catch (error) {
-      this.fail(500, '参数错误')
+      this.fail(Status.InvalidParams, '参数错误')
       return
     }
 
     try {
       let data = await this.ctx.service.merchants.getFoodByMerId(id)
-      this.success(200, '成功', data)
+      this.success(Status.Success, '成功', data)
     } catch (error) {
-      this.fail(500, '查询错误')
+      this.fail(Status.SystemError, '查询错误')
     }
 
   }
@@ -331,15 +332,15 @@ export default class Merchants extends BaseController {
       this.ctx.validate({ pageSize: "number" }, { pageSize: pageSize })
       this.ctx.validate({ orderType: "number" }, { orderType: orderType })
     } catch (error) {
-      this.fail(500, '参数错误')
+      this.fail(Status.InvalidParams, '参数错误')
       return
     }
     
     try {
       let data = await this.ctx.service.merchants.getMerByCategory(type, id, page, pageSize, orderType)
-      this.success(200, '成功', data)
+      this.success(Status.Success, '成功', data)
     } catch (error) {
-      this.fail(500, '查询错误')
+      this.fail(Status.SystemError, '查询错误')
     }
   }
   /**
@@ -358,16 +359,16 @@ export default class Merchants extends BaseController {
     } catch (error) {
       this.ctx.body = {
         msg: "参数错误",
-        status: 500
+        status: Status.InvalidParams
       }
       return
     }
 
     try {
       let data = await this.ctx.service.merchants.getMerByKeyword(page, pageSize, keyword)
-      this.success(200, '成功', data)
+      this.success(Status.Success, '成功', data)
     } catch (error) {
-      this.fail(500, '查询错误')
+      this.fail(Status.SystemError, '查询错误')
     }
   }
 }

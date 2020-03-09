@@ -4,10 +4,11 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 16:46:01
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-10-08 09:40:10
+ * @LastEditTime: 2020-03-09 11:04:40
  */
 
 import { BaseController } from "../core/baseController"
+import { Status } from "../util/enum"
 
 export default class Order extends BaseController {
     /**
@@ -22,23 +23,23 @@ export default class Order extends BaseController {
         try {
             this.ctx.validate({ params: 'addOrder' }, { params: params })
         } catch (error) {
-            this.fail(500, error)
+            this.fail(Status.InvalidParams, error)
             return
         }
         try {
             Order.createOrderDetail(orderDetail, this.ctx)
         } catch (error) {
-            this.fail(500, error)
+            this.fail(Status.SystemError, error)
             return
         }
 
         try {
             await this.ctx.service.order.createdOrder(params)
-            this.success(200, '订单创建成功')
+            this.success(Status.Success, '订单创建成功')
         } catch (error) {
             this.ctx.logger.error(`-----创建订单错误------`, error)
             this.ctx.logger.error(`入参params：${params}`)
-            this.fail(500, "创建订单错误")
+            this.fail(Status.SystemError, "创建订单错误")
         }
     }
     /**
@@ -79,14 +80,14 @@ export default class Order extends BaseController {
             this.ctx.validate({ pageSize: "number" }, { pageSize: pageSize })
             this.ctx.validate({ shopName: "string" }, { shopName: shopName })
         } catch (error) {
-            this.fail(500, "密码错误")
+            this.fail(Status.InvalidParams, "参数错误")
             return
         }
 
         try {
             this.ctx.body = await this.ctx.service.order.findOrderByPage(page, pageSize, shopName)
         } catch (error) {
-            this.fail(500, "查询失败")
+            this.fail(Status.SystemError, "查询失败")
         }
     }
 }

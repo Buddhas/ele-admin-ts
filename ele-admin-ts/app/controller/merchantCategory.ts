@@ -7,7 +7,7 @@
  * @LastEditTime : 2020-02-09 23:32:17
  */
 import { BaseController } from "../core/baseController"
-
+import { Status } from "../util/enum"
 export default class merchantCategory extends BaseController {
   /**
    * @Descripttion: 获取二级分类下所有商铺数量
@@ -18,9 +18,9 @@ export default class merchantCategory extends BaseController {
   public async getSecLevelFoodCount() {
     try {
       let data = await this.ctx.service.shopCategory.getSecLevelFoodCount()
-      this.success(200, '成功', data)
+      this.success(Status.Success, '成功', data)
     } catch (error) {
-      this.fail(500, error)
+      this.fail(Status.SystemError, error)
     }
   }
 
@@ -37,15 +37,14 @@ export default class merchantCategory extends BaseController {
     try {
       this.ctx.validate({ id: "number" }, { id: id })
     } catch (error) {
-      this.fail(500, '参数错误')
+      this.fail(Status.InvalidParams, '参数错误')
       return
     }
-    console.log('getSecLevelCategory')
     try {
       let data = await this.ctx.service.shopCategory.getSecLevelCategory(id)
-      this.success(200, '成功', data)
+      this.success(Status.Success, '成功', data)
     } catch (error) {
-      this.fail(500, '查询错误')
+      this.fail(Status.SystemError, '查询错误')
     }
   }
 }

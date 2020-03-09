@@ -8,6 +8,7 @@
  */
 import { BaseController } from '../core/baseController'
 import * as path from 'path'
+import { Status } from "../util/enum"
 
 export default class Food extends BaseController {
     /**
@@ -21,17 +22,17 @@ export default class Food extends BaseController {
         try {
             this.ctx.validate({ params: 'addFood', }, { params: params })
         } catch (error) {
-            this.fail(500, error)
+            this.fail(Status.InvalidParams, error)
             return
         }
 
         try {
             await this.ctx.service.food.createdFood(params)
-            this.success(200, '添加成功')
+            this.success(Status.Success, '添加成功')
         } catch (error) {
             this.ctx.logger.error(`-----食品添加失败------`, error)
             this.ctx.logger.error(`入参params：${params}`)
-            this.fail(500, "添加失败")
+            this.fail(Status.SystemError, "添加失败")
         }
     }
     /**
@@ -54,10 +55,10 @@ export default class Food extends BaseController {
                 filename: filename,
                 attribute: 'image'
             }
-            this.success(200, '食品图片上传成功', data)
+            this.success(Status.Success, '食品图片上传成功', data)
         } catch (error) {
             this.ctx.logger.error(`-----食品图片上传失败------`, error)
-            this.fail(500, "食品图片上传失败")
+            this.fail(Status.SystemError, "食品图片上传失败")
         }
     }
     /**
@@ -71,21 +72,21 @@ export default class Food extends BaseController {
         try {
             this.ctx.validate({ foodId: 'number' }, { foodId: Number(foodId) })
         } catch (error) {
-            this.fail(500, "参数错误")
+            this.fail(Status.InvalidParams, "参数错误")
             return
         }
 
         try {
             let res = await this.ctx.service.food.deleteFood(Number(foodId))
             if (res[0]) {
-                this.success(200, '删除成功')
+                this.success(Status.Success, '删除成功')
             } else {
-                this.fail(500, "食品不存在或者已删除")
+                this.fail(Status.SystemError, "食品不存在或者已删除")
             }
         } catch (error) {
             this.ctx.logger.error(`-----食品删除失败------`, error)
             this.ctx.logger.error(`入参foodId：${foodId}`)
-            this.fail(500, "食品删除失败")
+            this.fail(Status.SystemError, "食品删除失败")
         }
     }
 
@@ -100,17 +101,17 @@ export default class Food extends BaseController {
         try {
             this.ctx.validate({ params: 'addFood', }, { params: params })
         } catch (error) {
-            this.fail(500, error)
+            this.fail(Status.InvalidParams, error)
             return
         }
 
         try {
             await this.ctx.service.food.updatedFood(params)
-            this.success(200, '更新食品属性成功')
+            this.success(Status.Success, '更新食品属性成功')
         } catch (error) {
             this.ctx.logger.error(`-----更新食品属性失败------`, error)
             this.ctx.logger.error(`入参params：${params}`)
-            this.fail(500, '更新食品属性失败')
+            this.fail(Status.SystemError, '更新食品属性失败')
         }
     }
 
@@ -127,15 +128,15 @@ export default class Food extends BaseController {
             this.ctx.validate({ page: "number" }, { page: Number(page) })
             this.ctx.validate({ pageSize: "number" }, { pageSize: Number(pageSize) })
         } catch (error) {
-            this.fail(500, '参数错误')
+            this.fail(Status.InvalidParams, '参数错误')
             return
         }
 
         try {
             let data = await this.service.food.findFoodByPage(Number(page), Number(pageSize))
-            this.success(200, '成功', data)
+            this.success(Status.Success, '成功', data)
         } catch (error) {
-            this.fail(500, '查询错误')
+            this.fail(Status.SystemError, '查询错误')
         }
     }
 
@@ -152,15 +153,15 @@ export default class Food extends BaseController {
             this.ctx.validate({ name: "string" }, { name: params.name })
             this.ctx.validate({ desc: "string" }, { desc: params.desc })
         } catch (error) {
-            this.fail(500, '参数错误')
+            this.fail(Status.InvalidParams, '参数错误')
             return
         }
 
         try {
             await this.ctx.service.foodCategory.createCategory(params)
-            this.success(200, '成功')
+            this.success(Status.Success, '成功')
         } catch (error) {
-            this.fail(500, '创建食品分类错误')
+            this.fail(Status.SystemError, '创建食品分类错误')
             return
         }
     }
@@ -176,14 +177,14 @@ export default class Food extends BaseController {
         try {
             this.ctx.validate({ pid: 'number' }, { pid: pid })
         } catch (error) {
-            this.fail(500, '参数错误')
+            this.fail(Status.InvalidParams, '参数错误')
             return
         }
         try {
             let data = await this.ctx.service.foodCategory.getCategoryByPid(pid)
-            this.success(200, '成功', data)
+            this.success(Status.Success, '成功', data)
         } catch (error) {
-            this.fail(500, '获取食品分类出错')
+            this.fail(Status.SystemError, '获取食品分类出错')
         }
     }
 
@@ -198,14 +199,14 @@ export default class Food extends BaseController {
         try {
             this.ctx.validate({ foodId: 'number' }, { foodId: foodId })
         } catch (error) {
-            this.fail(500, '参数错误')
+            this.fail(Status.InvalidParams, '参数错误')
             return
         }
         try {
             let data = await this.ctx.service.food.getFoodById(foodId)
-            this.success(200, '成功', data)
+            this.success(Status.Success, '成功', data)
         } catch (error) {
-            this.fail(500, '获取食品详情出错')
+            this.fail(Status.SystemError, '获取食品详情出错')
         }
     }
     
