@@ -34,9 +34,9 @@ export default class AdminController extends BaseController {
   public async getAllCity() {
     try {
       let data =  await this.ctx.helper.getAllCity()
-      this.success(200, '查询成功', data)
+      this.success(Status.Success, '查询成功', data)
     } catch (error) {
-      this.success(500, '查询失败')
+      this.success(Status.SystemError, '查询失败')
     }
   }
 }
