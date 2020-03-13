@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2020-02-18 17:21:14
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2020-03-09 11:08:39
+ * @LastEditTime: 2020-03-13 16:21:40
  */
 
 import { BaseController } from "../core/baseController"
@@ -78,6 +78,27 @@ export default class User extends BaseController {
         await this.app.redis.del(`code_${email}`)
         this.success(Status.Success, '注册成功')
       }
+    }
+  }
+
+  /**
+   * @Descripttion: 验证用户是否登录
+   * @Author: 笑佛弥勒
+   * @param {type} 
+   * @return: 
+   */
+  public async isLogin() {
+    let authToken = this.ctx.cookies.get('authorization')
+    if (!authToken) {
+      this.success(Status.Success, '未登录', '')
+      return
+    }
+    const res = this.ctx.helper.verifyToken(authToken)
+    try {
+      let data = await this.ctx.service.user.getUserByEmail(res.email)
+      this.success(Status.Success, '已登录', data)
+    } catch (error) {
+      this.fail(Status.SystemError, '系统错误')
     }
   }
 }

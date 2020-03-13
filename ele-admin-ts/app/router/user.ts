@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 20:45:02
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2020-02-18 23:29:16
+ * @LastEditTime: 2020-03-13 15:53:43
  */
 
 export function user(app) {
@@ -13,4 +13,5 @@ export function user(app) {
   
   router.post('/user/sendEmail', controller.user.sendEmail)
   router.post('/user/login', controller.user.login)
+  router.get('/user/isLogin', controller.user.isLogin)
 }
