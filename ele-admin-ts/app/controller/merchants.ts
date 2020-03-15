@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 16:59:30
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2020-03-09 11:03:14
+ * @LastEditTime: 2020-03-15 15:57:33
  */
 import { BaseController } from "../core/baseController"
 import * as path from "path"
@@ -80,10 +80,7 @@ export default class Merchants extends BaseController {
       this.ctx.validate({ pageSize: "number" }, { pageSize: Number(pageSize) })
       this.ctx.validate({ orderType: "number" }, { orderType: Number(orderType) })
     } catch (error) {
-      this.ctx.body = {
-        msg: "参数错误",
-        status: Status.InvalidParams
-      }
+      this.fail(Status.InvalidParams, '参数错误')
       return
     }
 
@@ -95,10 +92,7 @@ export default class Merchants extends BaseController {
       )
       this.success(Status.Success, '成功', data)
     } catch (error) {
-      this.ctx.body = {
-        message: "查询出错",
-        status: Status.SystemError
-      }
+      this.fail(Status.SystemError, '查询出错')
     }
   }
 
@@ -238,36 +232,6 @@ export default class Merchants extends BaseController {
     }
   }
 
-  /**
-   * @Descripttion: 根据商铺名称模糊查询商铺
-   * @Author: 笑佛弥勒
-   * @param {type} 
-   * @return: 
-   */
-  public async findMerchantsByName() {
-    let { page, pageSize, name } = this.ctx.request.body
-
-    try {
-      this.ctx.validate({ page: "number" }, { page: page })
-      this.ctx.validate({ pageSize: "number" }, { pageSize: pageSize })
-      this.ctx.validate({ name: "string" }, { name: name })
-    } catch (error) {
-      this.ctx.body = {
-        msg: "参数错误",
-        status: Status.InvalidParams
-      }
-      return
-    }
-
-    try {
-      this.ctx.body = await this.service.merchants.findMerchantsByName(Number(page), Number(pageSize), name)
-    } catch (error) {
-      this.ctx.body = {
-        msg: '查询错误',
-        status: Status.SystemError
-      }
-    }
-  }
   /**
    * @Descripttion: 根据id获取单个商户
    * @Author: 笑佛弥勒

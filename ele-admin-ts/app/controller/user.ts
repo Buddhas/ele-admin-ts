@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2020-02-18 17:21:14
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2020-03-13 16:21:40
+ * @LastEditTime: 2020-03-15 12:09:45
  */
 
 import { BaseController } from "../core/baseController"
@@ -99,6 +99,30 @@ export default class User extends BaseController {
       this.success(Status.Success, '已登录', data)
     } catch (error) {
       this.fail(Status.SystemError, '系统错误')
+    }
+  }
+
+  /**
+   * @Descripttion: 获取参数列表
+   * @Author: 笑佛弥勒
+   * @param {type} 
+   * @return: 
+   */
+  public async getUserList() {
+    let { page, pageSize } = this.ctx.query
+    try {
+      this.ctx.validate({ page: "number" }, { page: Number(page) })
+      this.ctx.validate({ pageSize: "number" }, { pageSize: Number(pageSize) })
+    } catch (error) {
+      this.fail(Status.InvalidParams, '参数错误')
+      return
+    }
+
+    try {
+      let data = await this.ctx.service.user.getUserList(Number(page), Number(pageSize))
+      this.success(Status.Success, '查询成功', data)
+    } catch (error) {
+      this.fail(Status.SystemError, '查询失败')
     }
   }
 }

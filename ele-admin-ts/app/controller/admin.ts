@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 16:46:01
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2020-03-09 10:51:40
+ * @LastEditTime: 2020-03-15 18:28:15
  */
 import { BaseController } from "../core/baseController"
 import * as path from "path"
@@ -41,7 +41,7 @@ export default class AdminController extends BaseController {
         await this.app.redis.set(mobile, token, 'ex', 7200) // 保存到redis
         ctx.cookies.set('authorization', token, {
           httpOnly: true, // 默认就是 true
-          encrypt: true, // 加密传输
+          maxAge: 1000 * 60 * 60, // egg中是以毫秒为单位的
           domain: 'localhost'
         }) // 保存到cookie
         this.success(Status.Success, '注册成功')
@@ -56,7 +56,7 @@ export default class AdminController extends BaseController {
         await this.app.redis.set(mobile, token, 'ex', 7200) // 保存到redis
         ctx.cookies.set('authorization', token, {
           httpOnly: true, // 默认就是 true
-          maxAge: 7200,
+          maxAge: 1000 * 60 * 60, // egg中是以毫秒为单位的
           domain: 'localhost'
         }) // 保存到cookie
         ctx.body = { data: { token, expires: this.config.login_token_time }, code: 1, msg: '登录成功' } // 返回
@@ -182,12 +182,39 @@ export default class AdminController extends BaseController {
       this.fail(Status.SystemError, "获取数据出错")
     }
   }
+  /**
+   * @Descripttion: 获取商铺分类
+   * @Author: 笑佛弥勒
+   * @param {type} 
+   * @return: 
+   */
   public async getShopCategory() {
     try {
       let category = await this.ctx.service.shopCategory.getAllCategory()
       this.success(Status.Success, '查询成功', category)
     } catch (error) {
       this.fail(Status.SystemError, "获取数据出错")
+    }
+  }
+
+  /**
+   * @Descripttion: 验证管理员是否登录
+   * @Author: 笑佛弥勒
+   * @param {type} 
+   * @return: 
+   */
+  public async isLogin() {
+    let authToken = this.ctx.cookies.get('authorization')
+    if (!authToken) {
+      this.success(Status.Success, '未登录', '')
+      return
+    }
+    const res = this.ctx.helper.verifyToken(authToken)
+    try {
+      let data = await this.ctx.service.admin.getUser(res.mobile)
+      this.success(Status.Success, '已登录', data)
+    } catch (error) {
+      this.fail(Status.SystemError, '系统错误')
     }
   }
 }
