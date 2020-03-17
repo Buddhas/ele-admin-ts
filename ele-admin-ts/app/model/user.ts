@@ -9,7 +9,7 @@
 import { Application } from "egg";
 
 export default function (app: Application) {
-    const { STRING, DECIMAL, BIGINT, INTEGER,CHAR } = app.Sequelize;
+    const { STRING, DECIMAL, BIGINT, INTEGER,CHAR, DATE } = app.Sequelize;
     const User = app.model.define(
         "user",
         {
@@ -21,6 +21,8 @@ export default function (app: Application) {
           user_name: STRING(255),
           email: STRING(255),
           avatar: STRING(255),
+          created_at: DATE(6),
+          updated_at: DATE(6),
           is_delete: INTEGER
         },
         {

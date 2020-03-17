@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 15:38:40
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-10-08 20:22:56
+ * @LastEditTime: 2020-03-15 18:07:15
  */
 import { Service } from "egg";
 
@@ -18,7 +18,7 @@ class Admin extends Service {
   public async hasUser() {
     try {
       let mobile = this.ctx.request.body.mobile;
-      return await this.ctx.model.Admin.findByIdMobile(mobile);
+      return await this.ctx.model.Admin.getByIdMobile(mobile);
     } catch (error) {
       throw "查询用户出错";
     }
@@ -30,7 +30,7 @@ class Admin extends Service {
    * @return:
    */
   public async getUser(mobile:string) {
-      return await this.ctx.model.Admin.findByIdMobile(mobile);
+      return await this.ctx.model.Admin.getByIdMobile(mobile);
   }
   /**
    * @Descripttion: 创建用户

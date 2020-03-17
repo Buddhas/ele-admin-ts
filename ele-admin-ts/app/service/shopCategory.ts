@@ -3,8 +3,8 @@
  * @version: 
  * @Author: 笑佛弥勒
  * @Date: 2019-12-31 23:59:22
- * @LastEditors  : 笑佛弥勒
- * @LastEditTime : 2020-02-10 10:29:17
+ * @LastEditors: 笑佛弥勒
+ * @LastEditTime: 2020-03-15 15:34:07
  */
 import { Service } from "egg";
 
@@ -16,7 +16,6 @@ class shopCatefory extends Service {
    * @return: 
    */
   public async getAllCategory() {
-    console.log('$$$$$')
     let data =  await this.ctx.model.MerchantCategory.findAll({raw: true}) // 设置Sequelize不自动包装返回结果
     let categoryList: Array<Object> = []
     let items : any 
