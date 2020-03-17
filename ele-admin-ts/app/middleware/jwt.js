@@ -13,7 +13,6 @@ module.exports = (options, app) => {
       const res = ctx.helper.verifyToken(authToken) // 解密获取的Token
       if (res) {
         // 此处使用redis进行保存
-
         const redis_token = await app.redis.get(res.email) // 获取保存的token
         if (authToken === redis_token) {
           app.redis.expire(res.mobile, 7200) // 重置redis过期时间
