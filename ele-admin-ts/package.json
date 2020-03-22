@@ -11,7 +11,10 @@
     "egg-sequelize": "^5.0.0",
     "egg-validate": "^2.0.2",
     "jsonwebtoken": "^8.5.1",
-    "mysql2": "^1.6.1"
+    "mysql2": "^1.6.1",
+    "nodemailer": "^6.4.6",
+    "pinyin": "^2.9.0",
+    "request": "^2.88.2"
   },
   "devDependencies": {
     "@types/mocha": "^5.2.6",
