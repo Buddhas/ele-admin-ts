@@ -8,6 +8,7 @@
     "egg": "^2.10.0",
     "egg-cors": "^2.2.0",
     "egg-redis": "^2.4.0",
+    "egg-scripts": "^2.13.0",
     "egg-sequelize": "^5.0.0",
     "egg-validate": "^2.0.2",
     "jsonwebtoken": "^8.5.1",
@@ -34,7 +35,7 @@
   },
   "scripts": {
     "dev": "egg-bin dev",
-    "start": "egg-scripts start",
+    "start": "egg-scripts start --port=7001 --daemon --title=egg-server-showcase",
     "test": "NODE_ENV=test npm run sequelize -- db:migrate && egg-bin test",
     "cov": "egg-bin cov",
     "ci": "npm run cov",
