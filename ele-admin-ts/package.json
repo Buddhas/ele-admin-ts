@@ -35,7 +35,7 @@
   },
   "scripts": {
     "dev": "egg-bin dev",
-    "start": "egg-scripts start --port=7001",
+    "start": "egg-scripts start --port=7001 --daemon --title=egg-manage --ignore-stderr",
     "test": "NODE_ENV=test npm run sequelize -- db:migrate && egg-bin test",
     "cov": "egg-bin cov",
     "ci": "npm run cov",
