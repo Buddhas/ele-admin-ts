@@ -5,29 +5,41 @@
   "private": true,
   "dependencies": {
     "await-stream-ready": "^1.0.1",
-    "egg": "^2.10.0",
+    "egg": "^2.6.1",
+    "egg-scripts": "^2.6.0",
     "egg-cors": "^2.2.0",
     "egg-redis": "^2.4.0",
-    "egg-scripts": "^2.13.0",
     "egg-sequelize": "^5.0.0",
     "egg-validate": "^2.0.2",
     "jsonwebtoken": "^8.5.1",
+    "egg-ts-helper": "^1.25.7",
     "mysql2": "^1.6.1",
     "nodemailer": "^6.4.6",
     "pinyin": "^2.9.0",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "typescript": "^3.0.0"
   },
   "devDependencies": {
     "@types/mocha": "^5.2.6",
+    "@types/node": "^7.0.12",
+    "@types/supertest": "^2.0.0",
     "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "egg-ci": "^1.8.0",
     "egg-bin": "^4.8.1",
     "egg-mock": "^3.19.2",
+    "egg-ts-helper": "^1.25.7",
+    "tslib": "^1.9.0",
     "factory-girl": "^5.0.2",
     "lodash": "^4.17.10",
-    "sequelize-cli": "^5.0.0"
+    "sequelize-cli": "^5.0.0",
+    "typescript": "^3.0.0"
   },
   "engines": {
     "node": ">=8.9.0"
+  },
+  "ci": {
+    "version": "8"
   },
   "egg": {
     "typescript": true,
@@ -41,8 +53,9 @@
     "ci": "npm run cov",
     "autod": "autod",
     "sequelize": "sequelize --",
-    "debug": "egg-bin debug"
+    "debug": "egg-bin debug",
+    "tsc": "ets && tsc -p tsconfig.json",
+    "clean": "ets clean"
   },
-  "author": "Qi Yu <njuyuqi@gmail.coom>",
-  "license": "MIT"
+  "author": "chen bin"
 }
