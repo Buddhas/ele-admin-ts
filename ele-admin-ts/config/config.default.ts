@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-05 20:17:58
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2019-09-24 17:34:52
+ * @LastEditTime: 2020-03-26 23:31:38
  */
 'use strict';
 
@@ -27,10 +27,11 @@ export default function(appInfo: EggAppConfig) {
   config.security = {
     csrf: {
       enable: false
-    }
+    },
+    domainWhiteList: ['http://localhost:8081'],
   }
   config.cors = {
-    origin:'*',
+    // origin:'*',
     allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH'
   };
   config.multipart = {
