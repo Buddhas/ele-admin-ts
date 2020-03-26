@@ -5,4 +5,5 @@ RUN npm install -g cnpm --registry=https://registry.npm.taobao.org
 RUN cnpm install
 COPY ./ /app
 EXPOSE 7001
-RUN npm start
+RUN npm run tsc
+RUN npm run start
