@@ -49,7 +49,7 @@ export default function(appInfo: EggAppConfig) {
       host: '120.79.131.113', // Redis host
       password: '',
       db: 0
-      }
+    }
   }
   return {
     ...config as {},

@@ -11,8 +11,8 @@ export function user(app) {
   const { router, controller } = app
   const jwt = app.middleware.jwt({}, app)
   
-  router.post('/user/sendEmail', controller.user.sendEmail)
-  router.post('/user/login', controller.user.login)
-  router.get('/user/isLogin', controller.user.isLogin)
-  router.get('/user/getUserList', jwt, controller.user.getUserList)
+  router.post('/api/user/sendEmail', controller.user.sendEmail)
+  router.post('/api/user/login', controller.user.login)
+  router.get('/api/user/isLogin', controller.user.isLogin)
+  router.get('/api/user/getUserList', jwt, controller.user.getUserList)
 }

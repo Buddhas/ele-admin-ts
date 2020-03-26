@@ -9,6 +9,6 @@
 
 export function order(app) {
     const { router, controller } = app
-    router.post('/order/createdOrder', controller.order.createdOrder)
-    router.post('/order/findOrderByPage', controller.order.findOrderByPage)
+    router.post('/api/order/createdOrder', controller.order.createdOrder)
+    router.post('/api/order/findOrderByPage', controller.order.findOrderByPage)
 }

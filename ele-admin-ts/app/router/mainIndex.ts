@@ -10,6 +10,6 @@
 export function mainIndex(app) {
   const { router, controller } = app
   
-  router.get('/mainIndex/getShopCategory', controller.mainIndex.getShopCategory)
-  router.get('/mainIndex/getAllCity', controller.mainIndex.getAllCity)
+  router.get('/api/mainIndex/getShopCategory', controller.mainIndex.getShopCategory)
+  router.get('/api/mainIndex/getAllCity', controller.mainIndex.getAllCity)
 }

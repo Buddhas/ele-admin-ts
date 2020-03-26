@@ -9,6 +9,6 @@
 
 export function merchantCategory(app) {
   const { router, controller } = app
-  router.get('/merchantCategory/getSecLevelFoodCount', controller.merchantCategory.getSecLevelFoodCount)
-  router.get('/merchantCategory/getSecLevelCategory', controller.merchantCategory.getSecLevelCategory)
+  router.get('/api/merchantCategory/getSecLevelFoodCount', controller.merchantCategory.getSecLevelFoodCount)
+  router.get('/api/merchantCategory/getSecLevelCategory', controller.merchantCategory.getSecLevelCategory)
 }
