@@ -42,7 +42,7 @@ export default class AdminController extends BaseController {
         ctx.cookies.set('authorization', token, {
           httpOnly: true, // 默认就是 true
           maxAge: 1000 * 60 * 60, // egg中是以毫秒为单位的
-          domain: '120.79.131.113:8082'
+          domain: '120.79.131.113'
         }) // 保存到cookie
         this.success(Status.Success, '注册成功')
       } catch (error) {
@@ -57,7 +57,7 @@ export default class AdminController extends BaseController {
         ctx.cookies.set('authorization', token, {
           httpOnly: true, // 默认就是 true
           maxAge: 1000 * 60 * 60, // egg中是以毫秒为单位的
-          domain: '120.79.131.113:8082'
+          domain: '120.79.131.113'
         }) // 保存到cookie
         ctx.body = { data: { token, expires: this.config.login_token_time }, code: 1, msg: '登录成功' } // 返回
         this.success(Status.Success, '登录成功')
