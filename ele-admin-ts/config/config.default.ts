@@ -4,11 +4,12 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-05 20:17:58
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2020-03-26 23:31:38
+ * @LastEditTime: 2020-03-27 22:24:26
  */
 'use strict';
 
 import { EggAppConfig, PowerPartial } from 'egg';
+import * as path from 'path'
 
 export default function(appInfo: EggAppConfig) {
   const config = {} as PowerPartial<EggAppConfig>;
@@ -51,6 +52,15 @@ export default function(appInfo: EggAppConfig) {
       password: '',
       db: 0
     }
+  }
+  config.static = {
+    // 静态化访问前缀,如：`http://127.0.0.1:7001/static/images/logo.png`
+    prefix: '/static', 
+    dir: path.join(appInfo.baseDir, 'app/public'), // `String` or `Array:[dir1, dir2, ...]` 静态化目录,可以设置多个静态化目录
+    dynamic: true, // 如果当前访问的静态资源没有缓存，则缓存静态文件，和`preload`配合使用；
+    preload: false,
+    maxAge: 31536000, // in prod env, 0 in other envs
+    buffer: true, // in prod env, false in other envs
   }
   return {
     ...config as {},
