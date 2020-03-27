@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-19 16:59:30
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2020-03-15 15:57:33
+ * @LastEditTime: 2020-03-28 00:33:06
  */
 import { BaseController } from "../core/baseController"
 import * as path from "path"
@@ -111,9 +111,9 @@ export default class Merchants extends BaseController {
     const target = path.join(uploadBasePath, filename)
     try {
       this.ctx.helper.mkdirSync(path.join(uploadBasePath))
-      this.ctx.helper.saveImg(stream, target)
+      await this.ctx.helper.saveImg(stream, target)
       let data = {
-        filename: filename,
+        filename:'shopAvatar/' + filename,
         attribute: 'shop_avatar'
       }
       this.success(Status.Success, '商户头像上传成功', data)
@@ -138,9 +138,9 @@ export default class Merchants extends BaseController {
     const target = path.join(uploadBasePath, filename)
     try {
       this.ctx.helper.mkdirSync(path.join(uploadBasePath))
-      this.ctx.helper.saveImg(stream, target)
+      await this.ctx.helper.saveImg(stream, target)
       let data = {
-        filename: filename,
+        filename: 'environment/' + filename,
         attribute: 'shop_environment'
       }
       this.success(Status.Success, '商户商家实景图片', data)
@@ -165,9 +165,9 @@ export default class Merchants extends BaseController {
     const target = path.join(uploadBasePath, filename)
     try {
       this.ctx.helper.mkdirSync(path.join(uploadBasePath))
-      this.ctx.helper.saveImg(stream, target)
+      await this.ctx.helper.saveImg(stream, target)
       let data = {
-        filename: filename,
+        filename: 'businessLicense/' + filename,
         attribute: 'business_license'
       }
       this.success(Status.Success, '商户营业执照上传成功', data)
@@ -192,9 +192,9 @@ export default class Merchants extends BaseController {
     const target = path.join(uploadBasePath, filename)
     try {
       this.ctx.helper.mkdirSync(path.join(uploadBasePath))
-      this.ctx.helper.saveImg(stream, target)
+      await this.ctx.helper.saveImg(stream, target)
       let data = {
-        filename: filename,
+        filename: 'cateringLicense/' + filename,
         attribute: 'catering_license'
       }
       this.success(Status.Success, '商户餐饮许可证上传成功', data)

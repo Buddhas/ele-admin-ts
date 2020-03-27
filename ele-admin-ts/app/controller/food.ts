@@ -3,8 +3,8 @@
  * @version: 
  * @Author: 笑佛弥勒
  * @Date: 2019-08-22 20:17:28
- * @LastEditors  : sueRimn
- * @LastEditTime : 2020-01-26 12:34:18
+ * @LastEditors: 笑佛弥勒
+ * @LastEditTime: 2020-03-27 23:39:35
  */
 import { BaseController } from '../core/baseController'
 import * as path from 'path'
@@ -52,7 +52,7 @@ export default class Food extends BaseController {
             this.ctx.helper.mkdirSync(path.join(uploadBasePath))
             this.ctx.helper.saveImg(stream, target)
             let data = {
-                filename: filename,
+                filename: 'foodImg/' + filename,
                 attribute: 'image'
             }
             this.success(Status.Success, '食品图片上传成功', data)

@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 16:46:01
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2020-03-26 23:58:23
+ * @LastEditTime: 2020-03-27 23:40:20
  */
 import { BaseController } from "../core/baseController"
 import * as path from "path"
@@ -42,7 +42,8 @@ export default class AdminController extends BaseController {
         ctx.cookies.set('authorization', token, {
           httpOnly: true, // 默认就是 true
           maxAge: 1000 * 60 * 60, // egg中是以毫秒为单位的
-          domain: '120.79.131.113'
+          // domain: '120.79.131.113'
+          domain: 'localhost'
         }) // 保存到cookie
         this.success(Status.Success, '注册成功')
       } catch (error) {
@@ -57,7 +58,8 @@ export default class AdminController extends BaseController {
         ctx.cookies.set('authorization', token, {
           httpOnly: true, // 默认就是 true
           maxAge: 1000 * 60 * 60, // egg中是以毫秒为单位的
-          domain: '120.79.131.113'
+          // domain: '120.79.131.113'
+          domain: 'localhost'
         }) // 保存到cookie
         ctx.body = { data: { token, expires: this.config.login_token_time }, code: 1, msg: '登录成功' } // 返回
         this.success(Status.Success, '登录成功')
@@ -118,7 +120,7 @@ export default class AdminController extends BaseController {
       saveImg(stream, target)
       await this.ctx.service.admin.updateAvatar(filename, "17688702092")
       let data = {
-        filename: filename,
+        filename: 'adminAvatar/' + filename,
       }
       this.success(Status.Success, '管理员头像保存成功', data)
     } catch (error) {
