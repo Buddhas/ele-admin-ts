@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-12-31 23:59:22
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2020-03-17 20:43:53
+ * @LastEditTime: 2020-03-28 23:06:09
  */
 module.exports = (options, app) => {
   return async function userInterceptor(ctx, next) {
@@ -19,13 +19,13 @@ module.exports = (options, app) => {
           res.email ? app.redis.expire(res.email, 7200) : app.redis.expire(res.mobile, 7200) // 重置redis过期时间
           await next()
         } else {
-          ctx.body = { status: 10001, message: '您的账号已在其他地方登录' }
+          ctx.body = { status: 1004, message: '登录态失效' }
         }
       } else {
-        ctx.body = { status: 10002, message: '登录状态已过期' }
+        ctx.body = { status: 1004, message: '登录态失效' }
       }
     } else {
-      ctx.body = { status: 10003, message: '请登陆后再进行操作' }
+      ctx.body = { status: 1003, message: '请登陆后再进行操作' }
     }
   }
 }

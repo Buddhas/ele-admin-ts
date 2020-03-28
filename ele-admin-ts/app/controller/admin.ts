@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-06 16:46:01
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2020-03-28 00:41:22
+ * @LastEditTime: 2020-03-28 23:00:08
  */
 import { BaseController } from "../core/baseController"
 import * as path from "path"
@@ -42,8 +42,8 @@ export default class AdminController extends BaseController {
         ctx.cookies.set('authorization', token, {
           httpOnly: true, // 默认就是 true
           maxAge: 1000 * 60 * 60, // egg中是以毫秒为单位的
-          domain: '120.79.131.113'
-          // domain: 'localhost'
+          // domain: '120.79.131.113'
+          domain: 'localhost'
         }) // 保存到cookie
         this.success(Status.Success, '注册成功')
       } catch (error) {
@@ -58,8 +58,8 @@ export default class AdminController extends BaseController {
         ctx.cookies.set('authorization', token, {
           httpOnly: true, // 默认就是 true
           maxAge: 1000 * 60 * 60, // egg中是以毫秒为单位的
-          domain: '120.79.131.113'
-          // domain: 'localhost'
+          // domain: '120.79.131.113'
+          domain: 'localhost'
         }) // 保存到cookie
         ctx.body = { data: { token, expires: this.config.login_token_time }, code: 1, msg: '登录成功' } // 返回
         this.success(Status.Success, '登录成功')
@@ -75,13 +75,16 @@ export default class AdminController extends BaseController {
    * @return: 
    */
   public async logOut() {
-    let token = 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im1vYmlsZSI6IjE3Njg4NzAyMDk5IiwicGFzc3dvcmQiOiJlMTBhZGMzOTQ5YmE1OWFiYmU1NmUwNTdmMjBmODgzZSJ9LCJleHAiOjE1NzA1NDExNTcsImlhdCI6MTU3MDUzMzk1N30.t7wHKdm_eunoUKsUQMulUjhk2hIJgtRQrxe2B7Ev9ujkQ5onTVleECsFJW5p04PNL84J1nNUE_9W1aHtCo3UrtX38PPiz8M1aQgLVhbj4-eTShUKILE0Gk2MI_88SyO2HtUzL94u_CZ7wtR_Rh6URK7adR5aAZxu7BE5jrYPVlY'
-    const res = this.ctx.helper.verifyToken(token) // 解密获取的Token
-    try {
-      // await this.app.redis.del(res.mobile)
-      await this.app.redis.del('17688702099')
-      this.success(Status.Success, '退出登录成功')
-    } catch (error) {
+    let authToken = this.ctx.cookies.get('authorization')
+    const res = this.ctx.helper.verifyToken(authToken) // 解密获取的Token
+    if (res) {
+      try {
+        await this.app.redis.del(res.mobile)
+        this.success(Status.Success, '退出登录成功')
+      } catch (error) {
+        this.fail(Status.SystemError, '登出错误')
+      }
+    } else {
       this.fail(Status.SystemError, '登出错误')
     }
   }
@@ -118,7 +121,9 @@ export default class AdminController extends BaseController {
       mkdirSync(path.join(uplaodBasePath))
       const target = path.join(uplaodBasePath, filename)
       saveImg(stream, target)
-      await this.ctx.service.admin.updateAvatar(filename, "17688702092")
+      const authorization = this.ctx.cookies.get('authorization')
+      const userMsg = this.ctx.helper.verifyToken(authorization)
+      await this.ctx.service.admin.updateAvatar('adminAvatar/' + filename, userMsg.mobile)
       let data = {
         filename: 'adminAvatar/' + filename,
       }
