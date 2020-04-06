@@ -4,7 +4,7 @@
  * @Author: 笑佛弥勒
  * @Date: 2019-08-22 20:17:28
  * @LastEditors: 笑佛弥勒
- * @LastEditTime: 2020-03-27 23:39:35
+ * @LastEditTime: 2020-04-06 12:14:59
  */
 import { BaseController } from '../core/baseController'
 import * as path from 'path'
@@ -50,7 +50,7 @@ export default class Food extends BaseController {
         const target = path.join(uploadBasePath, filename)
         try {
             this.ctx.helper.mkdirSync(path.join(uploadBasePath))
-            this.ctx.helper.saveImg(stream, target)
+            await this.ctx.helper.saveImg(stream, target)
             let data = {
                 filename: 'foodImg/' + filename,
                 attribute: 'image'
