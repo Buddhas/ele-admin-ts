@@ -1,7 +1,11 @@
-// This file is created by egg-ts-helper@1.25.6
+// This file is created by egg-ts-helper@1.25.7
 // Do not modify this file!!!!!!!!!
 
 import 'egg';
+type AnyClass = new (...args: any[]) => any;
+type AnyFunc<T = any> = (...args: any[]) => T;
+type CanExportFunc = AnyFunc<Promise<any>> | AnyFunc<IterableIterator<any>>;
+type AutoInstanceType<T, U = T extends CanExportFunc ? T : T extends AnyFunc ? ReturnType<T> : T> = U extends AnyClass ? InstanceType<U> : U;
 import ExportAddress from '../../../app/service/address';
 import ExportAdmin from '../../../app/service/admin';
 import ExportFood from '../../../app/service/food';
@@ -15,15 +19,15 @@ import ExportUser from '../../../app/service/user';
 
 declare module 'egg' {
   interface IService {
-    address: ExportAddress;
-    admin: ExportAdmin;
-    food: ExportFood;
-    foodCategory: ExportFoodCategory;
-    merchants: ExportMerchants;
-    order: ExportOrder;
-    orderDetail: ExportOrderDetail;
-    preferential: ExportPreferential;
-    shopCategory: ExportShopCategory;
-    user: ExportUser;
+    address: AutoInstanceType<typeof ExportAddress>;
+    admin: AutoInstanceType<typeof ExportAdmin>;
+    food: AutoInstanceType<typeof ExportFood>;
+    foodCategory: AutoInstanceType<typeof ExportFoodCategory>;
+    merchants: AutoInstanceType<typeof ExportMerchants>;
+    order: AutoInstanceType<typeof ExportOrder>;
+    orderDetail: AutoInstanceType<typeof ExportOrderDetail>;
+    preferential: AutoInstanceType<typeof ExportPreferential>;
+    shopCategory: AutoInstanceType<typeof ExportShopCategory>;
+    user: AutoInstanceType<typeof ExportUser>;
   }
 }

@@ -208,7 +208,8 @@ class Merchants extends Service {
         offset: (page - 1) * pageSize,
         limit: pageSize,
         where: {
-          first_category: id
+          first_category: id,
+          is_delete: 0
         },
         order: order
       })
@@ -217,7 +218,8 @@ class Merchants extends Service {
         offset: (page - 1) * pageSize,
         limit: pageSize,
         where: {
-          second_category: id
+          second_category: id,
+          is_delete: 0
         },
         order: order
       })
