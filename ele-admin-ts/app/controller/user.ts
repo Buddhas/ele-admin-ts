@@ -58,7 +58,7 @@ export default class User extends BaseController {
         await this.app.redis.set(email, token, 'ex', 7200) // 保存到redis
         this.ctx.cookies.set('authorization', token, {
           maxAge: 1000 * 60 * 60, // egg中是以毫秒为单位的
-          domain: this.app.config.env == 'prod' ? '120.79.131.113' : 'localhost'
+          domain: this.app.config.env == 'prod' ? 'www.smileele.net' : 'localhost'
         }) // 保存到cookie
         await this.app.redis.del(`code_${email}`)
         this.success(Status.Success, '登录成功')
@@ -73,7 +73,7 @@ export default class User extends BaseController {
         this.ctx.cookies.set('authorization', token, {
           httpOnly: true, // 默认就是 true
           maxAge: 1000 * 60 * 60, // egg中是以毫秒为单位的
-          domain: this.app.config.env == 'prod' ? '120.79.131.113' : 'localhost'
+          domain: this.app.config.env == 'prod' ? 'www.smileele.net' : 'localhost'
         }) // 保存到cookie
         await this.app.redis.del(`code_${email}`)
         this.success(Status.Success, '注册成功')

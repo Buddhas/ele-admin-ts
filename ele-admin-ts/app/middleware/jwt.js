@@ -29,4 +29,3 @@ module.exports = (options, app) => {
     }
   }
 }
-

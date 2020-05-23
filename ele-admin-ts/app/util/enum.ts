@@ -13,5 +13,6 @@ export enum Status {
   LoginOut = 1003, // 未登录
   LoginFail = 1004, // 登录失效
   CodeError = 1005, // 验证码错误
-  InvalidRequest = 1006 // 无效请求
+  InvalidRequest = 1006, // 无效请求
+  TokenError = 1007 // token失效
 }
