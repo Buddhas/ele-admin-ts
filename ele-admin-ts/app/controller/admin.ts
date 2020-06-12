@@ -37,7 +37,7 @@ export default class AdminController extends BaseController {
       try {
         await ctx.service.admin.createUser(mobile, password)
         // 生成token
-        await this.ctx.helper.loginToken().then((res) => token = res) // 取到生成token
+        await this.ctx.helper.loginToken({ mobile: mobile, password: password }).then((res) => token = res) // 取到生成token
         await this.app.redis.set(mobile, token, 'ex', 7200) // 保存到redis
         ctx.cookies.set('authorization', token, {
           httpOnly: true, // 默认就是 true
