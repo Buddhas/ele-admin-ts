@@ -18,7 +18,6 @@ export default class AdminController extends BaseController {
    */
   public async getShopCategory() {
     try {
-      console.log(this.app.config.env, '++++++++++++++++')
       let category = await this.ctx.service.shopCategory.getAllCategory()
       this.success(Status.Success, '查询成功', category)
     } catch (error) {
@@ -34,8 +33,14 @@ export default class AdminController extends BaseController {
    */
   public async getAllCity() {
     try {
-      let data =  await this.ctx.helper.getAllCity()
-      this.success(Status.Success, '查询成功', data)
+      const all_city_list = await this.app.redis.get('all_city_list')
+      if (!all_city_list) {
+        let data =  await this.ctx.helper.getAllCity()
+        await this.app.redis.set('all_city_list', JSON.stringify(data), 'ex', 60*60*24) // 保存到redis
+        this.success(Status.Success, '查询成功', data)
+      } else {
+        this.success(Status.Success, '查询成功', JSON.parse(all_city_list))
+      }
     } catch (error) {
       this.success(Status.SystemError, '查询失败')
     }
