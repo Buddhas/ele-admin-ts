@@ -21,8 +21,8 @@ export default function(appInfo: EggAppConfig) {
     database: 'ele',
     host: '120.79.131.113',
     port: 3306,
-    username: 'root',
-    password: 'rootpassword',
+    username: '',
+    password: '',
     timezone: '+08:00'
   };
   config.security = {
