@@ -7,8 +7,8 @@
  * @LastEditTime: 2020-03-04 23:21:24
  */
 export interface User {
-  id: number,
-  user_name: string,
-  email: string,
-  avatar: string
+  id ?: number,
+  user_name ?: string,
+  email ?: string,
+  avatar ?: string
 }
