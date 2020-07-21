@@ -19,6 +19,6 @@ export default function(app: MockApplication) {
 
 declare module 'egg' {
   interface Application {
-    factory: any;
+    factory: any;   
   }
 }
